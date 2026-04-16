@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.rinai.top/rewards/index.html</loc>
+    <loc>https://blog.rinai.top/2026/04/16/00000000014/</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/2026/04/16/00000000014/</loc>
+    <loc>https://blog.rinai.top/rewards/index.html</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -180,6 +180,41 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E5%A6%84%E6%83%B3%E5%A4%A9%E4%BD%BF/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/zzz/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E7%BB%9D%E5%8C%BA%E9%9B%B6/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/QT/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/AOD/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://blog.rinai.top/tags/twikoo/</loc>
