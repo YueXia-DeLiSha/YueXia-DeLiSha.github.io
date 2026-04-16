@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.rinai.top/2026/04/14/0000000013/</loc>
+    
+    <lastmod>2026-04-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.rinai.top/index.html</loc>
     
     <lastmod>2026-04-16</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://blog.rinai.top/links/index.html</loc>
-    
-    <lastmod>2026-04-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/2026/04/14/0000000013/</loc>
     
     <lastmod>2026-04-14</lastmod>
     
