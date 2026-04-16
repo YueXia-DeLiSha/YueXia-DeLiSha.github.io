@@ -1,52 +1,69 @@
 (() => {
   const startTime = new Date('2023-03-28 00:00:00').getTime();
   
-  // 尝试多种可能的页脚容器选择器
-  function findFooterContainer() {
-    const selectors = [
-      '.footer-links',           // 原主题可能使用
-      '.footer .copyright',      // 常见版权信息位置
-      '.site-footer',            // 部分主题的页脚类
-      'footer .footer-inner',    // 内层容器
-      'footer',                  // 最终降级使用整个footer
-    ];
-    
-    for (const sel of selectors) {
-      const el = document.querySelector(sel);
-      if (el) return el;
+  // 等待DOM完全加载
+  function init() {
+    // 避免重复创建
+    if (document.getElementById('site-runtime')) {
+      updateRuntime();
+      return;
     }
-    return null;
-  }
-  
-  // 创建或获取显示元素
-  function getRuntimeElement() {
-    let el = document.getElementById('site-runtime');
-    if (el) return el;
+
+    // 尝试找到包含特定文字的链接元素作为插入位置
+    const links = document.querySelectorAll('footer a, .footer a, .site-footer a, .copyright a');
+    let targetElement = null;
     
-    const container = findFooterContainer();
-    if (!container) {
-      console.warn('未找到页脚容器，计时器无法插入');
-      return null;
+    // 按文字内容查找
+    for (let link of links) {
+      if (link.textContent.includes('可以分享文章') || link.textContent.includes('赞赏支持')) {
+        targetElement = link;
+        break;
+      }
     }
     
-    el = document.createElement('span');
-    el.id = 'site-runtime';
-    el.style.marginLeft = '8px';
-    el.style.whiteSpace = 'nowrap';
+    // 如果没找到，尝试其他常见页脚元素
+    if (!targetElement) {
+      const footer = document.querySelector('footer');
+      if (footer) {
+        // 查找最后一个链接
+        const allFooterLinks = footer.querySelectorAll('a');
+        targetElement = allFooterLinks[allFooterLinks.length - 1];
+      }
+    }
     
-    // 尝试添加到版权信息后，否则追加到容器末尾
-    const copyright = container.querySelector('.copyright, .site-info, .footer-copyright');
-    if (copyright) {
-      copyright.appendChild(el);
+    if (!targetElement) {
+      console.warn('未找到合适的插入位置，将在5秒后重试');
+      setTimeout(init, 5000);
+      return;
+    }
+
+    // 创建计时器容器
+    const runtimeDiv = document.createElement('div');
+    runtimeDiv.id = 'site-runtime';
+    runtimeDiv.style.display = 'block'; // 确保换行
+    runtimeDiv.style.marginTop = '8px';
+    runtimeDiv.style.fontSize = '0.9em';
+    runtimeDiv.style.opacity = '0.8';
+    
+    // 插入到目标元素后面（如果是链接，插入到其父元素内之后）
+    if (targetElement.parentNode) {
+      targetElement.parentNode.insertBefore(runtimeDiv, targetElement.nextSibling);
     } else {
-      container.appendChild(el);
+      targetElement.after(runtimeDiv);
     }
+
+    // 如果已经存在计时器则先清除
+    if (window._runtimeInterval) clearInterval(window._runtimeInterval);
     
-    return el;
+    // 立即更新一次
+    updateRuntime();
+    
+    // 每秒更新
+    window._runtimeInterval = setInterval(updateRuntime, 1000);
   }
   
   function updateRuntime() {
-    const el = getRuntimeElement();
+    const el = document.getElementById('site-runtime');
     if (!el) return;
     
     const diff = Date.now() - startTime;
@@ -56,21 +73,14 @@
     const seconds = Math.floor((diff % 60000) / 1000);
     const pad = (n) => String(n).padStart(2, '0');
     
-    el.innerHTML = ` | 本站已运行 ${days}天 ${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+    el.textContent = `本站已运行 ${days}天 ${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
   }
   
-  // 初始化（支持Pjax）
-  function init() {
-    updateRuntime();
-    // 避免重复创建计时器
-    if (window._runtimeInterval) clearInterval(window._runtimeInterval);
-    window._runtimeInterval = setInterval(updateRuntime, 1000);
-  }
-  
-  // 监听页面加载和Pjax完成事件
+  // 监听页面事件
   document.addEventListener('DOMContentLoaded', init);
   document.addEventListener('pjax:complete', init);
-  // 如果页面已加载（脚本在DOM之后执行），立即执行
+  
+  // 如果DOM已就绪
   if (document.readyState === 'complete' || document.readyState === 'interactive') {
     setTimeout(init, 100);
   }
