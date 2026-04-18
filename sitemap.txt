@@ -17,6 +17,11 @@ https://blog.rinai.top/2026/02/11/0000011/
 https://blog.rinai.top/about/index.html
 https://blog.rinai.top/live2d_models/delisha/delisha.model.json
 https://blog.rinai.top/live2d_models/delisha/physics.json
+https://blog.rinai.top/live2d-widget/README.html
+https://blog.rinai.top/live2d-widget/package.json
+https://blog.rinai.top/live2d-widget/waifu-tips.json
+https://blog.rinai.top/live2d-widget/demo/demo.html
+https://blog.rinai.top/live2d-widget/demo/login.html
 https://blog.rinai.top/
 https://blog.rinai.top/tags/%E5%A6%84%E6%83%B3%E5%A4%A9%E4%BD%BF/
 https://blog.rinai.top/tags/zzz/
