@@ -35,7 +35,7 @@ if (screen.width >= 768) {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
 			//apiPath: "https://live2d.fghrsh.net/api/",
-			cdnPath: "/live2d_models/delisha/delisha.model.json",
+			cdnPath: "/live2d_models/delisha/",
 			tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
 		});
 	});
