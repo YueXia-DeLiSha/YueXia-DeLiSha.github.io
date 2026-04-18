@@ -1,4 +1,5 @@
 https://blog.rinai.top/live2d_models/model_list.json
+https://blog.rinai.top/live2d_models/model/delisha/model_list.json
 https://blog.rinai.top/live2d_models/model/undefined/model_list.json
 https://blog.rinai.top/2026/04/16/00000000014/
 https://blog.rinai.top/rewards/index.html
@@ -17,7 +18,9 @@ https://blog.rinai.top/2025/12/21/0000008/
 https://blog.rinai.top/2025/12/20/0000010/
 https://blog.rinai.top/2026/02/11/0000011/
 https://blog.rinai.top/about/index.html
+https://blog.rinai.top/live2d_models/model/delisha/index.json
 https://blog.rinai.top/live2d_models/model/undefined/index.json
+https://blog.rinai.top/live2d_models/model/delisha/physics.json
 https://blog.rinai.top/live2d_models/model/undefined/physics.json
 https://blog.rinai.top/live2d-widget/README.html
 https://blog.rinai.top/live2d-widget/package.json
@@ -88,7 +91,7 @@ https://blog.rinai.top/categories/windows/
 https://blog.rinai.top/categories/paypal/%E8%B7%A8%E5%A2%83%E8%B4%AD%E7%89%A9/
 https://blog.rinai.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/
 https://blog.rinai.top/categories/%E7%BB%B4%E4%BF%AE%E8%AE%B0%E5%BD%95/
-https://blog.rinai.top/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/
 https://blog.rinai.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/Ubuntu/
 https://blog.rinai.top/categories/windows/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E9%94%99/
 https://blog.rinai.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/Ubuntu/Linux/
+https://blog.rinai.top/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/
