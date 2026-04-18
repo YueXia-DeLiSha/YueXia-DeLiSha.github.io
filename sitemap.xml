@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://blog.rinai.top/live2d_models/model/delisha/model_list.json</loc>
+    
+    <lastmod>2026-04-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.rinai.top/2026/04/16/00000000014/</loc>
     
     <lastmod>2026-04-16</lastmod>
@@ -173,7 +182,25 @@
   </url>
   
   <url>
+    <loc>https://blog.rinai.top/live2d_models/model/delisha/index.json</loc>
+    
+    <lastmod>2026-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.rinai.top/live2d_models/delisha/physics.json</loc>
+    
+    <lastmod>2025-06-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/live2d_models/model/delisha/physics.json</loc>
     
     <lastmod>2025-06-18</lastmod>
     
@@ -679,6 +706,13 @@
   </url>
   
   <url>
+    <loc>https://blog.rinai.top/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.rinai.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/Ubuntu/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -694,13 +728,6 @@
   
   <url>
     <loc>https://blog.rinai.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/Ubuntu/Linux/</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
