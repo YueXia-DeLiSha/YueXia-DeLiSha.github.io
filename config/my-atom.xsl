@@ -13,11 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <title><xsl:value-of select="atom:feed/atom:title"/> · 订阅文章</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
       body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
         background: #f7f9fc;
@@ -26,10 +22,9 @@
         padding: 2rem 1rem;
       }
       .container {
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
       }
-      /* 头部信息 */
       .site-header {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         border-radius: 28px;
@@ -42,12 +37,6 @@
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 0.5rem;
-        letter-spacing: -0.01em;
-      }
-      .site-sub {
-        font-size: 1rem;
-        opacity: 0.9;
-        margin-top: 0.5rem;
       }
       .site-meta {
         display: flex;
@@ -56,27 +45,40 @@
         font-size: 0.9rem;
         flex-wrap: wrap;
       }
-      .site-meta a {
-        color: #fff;
-        text-decoration: none;
-        border-bottom: 1px dotted rgba(255,255,255,0.5);
-      }
-      /* 文章列表 */
       .entry-list {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2rem;
       }
       .entry-card {
         background: white;
         border-radius: 24px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
       }
       .entry-card:hover {
         transform: translateY(-2px);
         box-shadow: 0 12px 24px -12px rgba(0,0,0,0.15);
+      }
+      /* 封面图区域 */
+      .entry-cover {
+        width: 100%;
+        max-height: 240px;
+        overflow: hidden;
+        background: #f0f2f5;
+      }
+      .entry-cover img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      .entry-card:hover .entry-cover img {
+        transform: scale(1.02);
       }
       .entry-inner {
         padding: 1.8rem;
@@ -84,12 +86,10 @@
       .entry-title {
         font-size: 1.6rem;
         margin: 0 0 0.5rem 0;
-        line-height: 1.3;
       }
       .entry-title a {
         color: #1e2a3a;
         text-decoration: none;
-        transition: color 0.2s;
       }
       .entry-title a:hover {
         color: #667eea;
@@ -105,28 +105,9 @@
         border-bottom: 1px solid #eef2f6;
         padding-bottom: 0.8rem;
       }
-      .entry-date {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.3rem;
-      }
-      .entry-date::before {
-        content: "📅";
-        font-size: 0.9rem;
-      }
-      .entry-cats, .entry-tags {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.3rem;
-        flex-wrap: wrap;
-      }
-      .entry-cats::before {
-        content: "📂";
-      }
-      .entry-tags::before {
-        content: "🏷️";
-      }
-      .category, .tag {
+      .entry-date::before { content: "📅 "; }
+      .entry-cats::before { content: "📂 "; }
+      .category {
         background: #eef2ff;
         padding: 0.2rem 0.6rem;
         border-radius: 20px;
@@ -137,10 +118,6 @@
         color: #2d3e50;
         margin: 0.8rem 0;
         line-height: 1.6;
-        font-size: 0.98rem;
-      }
-      .entry-summary p {
-        margin: 0.5rem 0;
       }
       .read-more {
         display: inline-block;
@@ -151,12 +128,7 @@
         font-size: 0.85rem;
         color: #4f46e5;
         text-decoration: none;
-        transition: background 0.2s;
       }
-      .read-more:hover {
-        background: #e4e7ef;
-      }
-      /* 页脚 */
       .footer {
         margin-top: 3rem;
         text-align: center;
@@ -168,66 +140,49 @@
       @media (max-width: 640px) {
         .entry-inner { padding: 1.2rem; }
         .entry-title { font-size: 1.3rem; }
-        .site-header { padding: 1.5rem; }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <!-- 站点信息 -->
       <div class="site-header">
-        <div class="site-title">
-          <xsl:value-of select="atom:feed/atom:title"/>
-        </div>
-        <div class="site-sub">
-          <xsl:value-of select="atom:feed/atom:subtitle"/>
-        </div>
+        <div class="site-title"><xsl:value-of select="atom:feed/atom:title"/></div>
         <div class="site-meta">
-          <span>📬 订阅地址：
-            <a>
-              <xsl:attribute name="href">
-                <xsl:value-of select="atom:feed/atom:link[@rel='self']/@href"/>
-              </xsl:attribute>
-              RSS/Atom
-            </a>
-          </span>
           <span>📝 文章总数：<xsl:value-of select="count(atom:feed/atom:entry)"/></span>
-          <span>🕒 最后更新：
-            <xsl:value-of select="substring(atom:feed/atom:updated,1,10)"/>
-          </span>
+          <span>🕒 最后更新：<xsl:value-of select="substring(atom:feed/atom:updated,1,10)"/></span>
+          <span>📡 <a href="{atom:feed/atom:link[@rel='self']/@href}" style="color:white;">订阅源</a></span>
         </div>
       </div>
 
-      <!-- 文章列表 -->
       <div class="entry-list">
         <xsl:for-each select="atom:feed/atom:entry">
           <div class="entry-card">
+            <!-- 封面图：优先使用 enclosure 链接 -->
+            <xsl:if test="atom:link[@rel='enclosure']">
+              <div class="entry-cover">
+                <img>
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="atom:link[@rel='enclosure']/@href"/>
+                  </xsl:attribute>
+                  <xsl:attribute name="alt">封面图：<xsl:value-of select="atom:title"/></xsl:attribute>
+                </img>
+              </div>
+            </xsl:if>
             <div class="entry-inner">
               <h2 class="entry-title">
-                <a>
-                  <xsl:attribute name="href">
-                    <xsl:value-of select="atom:link[@rel='alternate']/@href"/>
-                  </xsl:attribute>
-                  <xsl:value-of select="atom:title"/>
-                </a>
+                <a href="{atom:link[@rel='alternate']/@href}"><xsl:value-of select="atom:title"/></a>
               </h2>
               <div class="entry-meta">
-                <span class="entry-date">
-                  <xsl:value-of select="concat(substring(atom:published,1,10), ' ', substring(atom:published,12,5))"/>
-                </span>
-                <!-- 分类（如果有） -->
+                <span class="entry-date"><xsl:value-of select="substring(atom:published,1,10)"/></span>
                 <xsl:if test="atom:category">
                   <span class="entry-cats">
                     <xsl:for-each select="atom:category">
-                      <span class="category">
-                        <xsl:value-of select="@term"/>
-                      </span>
+                      <span class="category"><xsl:value-of select="@term"/></span>
                     </xsl:for-each>
                   </span>
                 </xsl:if>
               </div>
               <div class="entry-summary">
-                <!-- 显示摘要，去除图片标签避免过大 -->
                 <xsl:choose>
                   <xsl:when test="atom:summary">
                     <xsl:value-of select="atom:summary" disable-output-escaping="yes"/>
@@ -237,21 +192,13 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </div>
-              <a class="read-more">
-                <xsl:attribute name="href">
-                  <xsl:value-of select="atom:link[@rel='alternate']/@href"/>
-                </xsl:attribute>
-                阅读全文 →
-              </a>
+              <a class="read-more" href="{atom:link[@rel='alternate']/@href}">阅读全文 →</a>
             </div>
           </div>
         </xsl:for-each>
       </div>
-
       <div class="footer">
-        <p>© <xsl:value-of select="atom:feed/atom:rights"/> · 
-        <a href="/">返回博客首页</a> · 
-        订阅 <a href="{atom:feed/atom:link[@rel='self']/@href}">XML 源文件</a></p>
+        <p>© <xsl:value-of select="atom:feed/atom:rights"/> · <a href="/">返回博客首页</a></p>
       </div>
     </div>
   </body>
