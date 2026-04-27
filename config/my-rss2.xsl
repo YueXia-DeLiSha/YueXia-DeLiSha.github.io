@@ -62,21 +62,19 @@
         transform: translateY(-2px);
         box-shadow: 0 12px 24px -12px rgba(0,0,0,0.15);
       }
+      /* 封面图区域：完整显示，不裁剪 */
       .entry-cover {
         width: 100%;
-        max-height: 240px;
-        overflow: hidden;
         background: #f0f2f5;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
       }
       .entry-cover img {
         width: 100%;
         height: auto;
-        object-fit: cover;
         display: block;
-        transition: transform 0.3s ease;
-      }
-      .entry-card:hover .entry-cover img {
-        transform: scale(1.02);
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
       }
       .entry-inner {
         padding: 1.8rem;
@@ -155,7 +153,7 @@
       <div class="entry-list">
         <xsl:for-each select="/rss/channel/item">
           <div class="entry-card">
-            <!-- 封面图：RSS 2.0 中使用 enclosure 元素 -->
+            <!-- 封面图：如有则完整显示 -->
             <xsl:if test="enclosure">
               <div class="entry-cover">
                 <img>
