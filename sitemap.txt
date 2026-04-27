@@ -19,8 +19,8 @@ https://blog.rinai.top/2025/12/21/0000008/
 https://blog.rinai.top/2025/12/20/0000010/
 https://blog.rinai.top/2026/02/11/0000011/
 https://blog.rinai.top/about/index.html
-https://blog.rinai.top/live2d_models/model/undefined/index.json
 https://blog.rinai.top/live2d_models/model/delisha/index.json
+https://blog.rinai.top/live2d_models/model/undefined/index.json
 https://blog.rinai.top/live2d_models/model/delisha/physics.json
 https://blog.rinai.top/live2d_models/model/undefined/physics.json
 https://blog.rinai.top/live2d-widget/README.html
