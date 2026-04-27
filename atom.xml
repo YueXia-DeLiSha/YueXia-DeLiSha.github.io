@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="/config/my-atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+  <script xmlns="http://www.w3.org/1999/xhtml" src="/xslt-polyfill.min.js"></script>
   <author>
     <name>挽着红月缓缓走</name>
   </author>
