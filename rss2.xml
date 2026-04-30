@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/config/my-rss2.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <script xmlns="http://www.w3.org/1999/xhtml" src="/xslt-polyfill.min.js"></script>
     <title>挽着红月缓缓走的个人小站</title>
     <link>https://blog.rinai.top/</link>
+    <description>一个技术情感博客</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, 挽着红月缓缓走</copyright>
     <lastBuildDate>Thu, 16 Apr 2026 11:29:30 GMT</lastBuildDate>
