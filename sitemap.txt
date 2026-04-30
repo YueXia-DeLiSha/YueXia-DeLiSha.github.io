@@ -1,3 +1,4 @@
+https://blog.rinai.top/rss/index.html
 https://blog.rinai.top/links/index.html
 https://blog.rinai.top/about/index.html
 https://blog.rinai.top/live2d-widget/waifu-tips.json
