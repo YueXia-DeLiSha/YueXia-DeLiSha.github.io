@@ -1,5 +1,5 @@
-https://blog.rinai.top/rss/index.html
 https://blog.rinai.top/links/index.html
+https://blog.rinai.top/rss/index.html
 https://blog.rinai.top/about/index.html
 https://blog.rinai.top/live2d-widget/waifu-tips.json
 https://blog.rinai.top/live2d_models/model_list.json
