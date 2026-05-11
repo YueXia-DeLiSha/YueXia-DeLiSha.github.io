@@ -6,14 +6,19 @@
     <description>一个技术情感博客</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, 挽着红月缓缓走</copyright>
-    <lastBuildDate>Sun, 10 May 2026 22:46:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 00:10:40 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://blog.rinai.top/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>15</title>
+      <title>CPP学习记录1</title>
       <link>https://blog.rinai.top/2026/05/11/000000015/</link>
       <author>挽着红月缓缓走</author>
-      <enclosure url="https://blog.rinai.top/" type="application/octet-stream"/>
+      <category domain="https://blog.rinai.top/tags/CPP/">CPP</category>
+      <category domain="https://blog.rinai.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</category>
+      <category domain="https://blog.rinai.top/tags/%E7%BC%96%E7%A8%8B/">编程</category>
+      <category domain="https://blog.rinai.top/tags/C/">C++</category>
+      <category domain="https://blog.rinai.top/tags/%E9%9A%8F%E8%AE%B0/">随记</category>
+      <enclosure url="https://blog.rinai.top/img/cpp.png" type="image/png"/>
       <pubDate>Sun, 10 May 2026 22:46:10 GMT</pubDate>
     </item>
     <item>

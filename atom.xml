@@ -10,17 +10,22 @@
   <rights>All rights reserved 2026, 挽着红月缓缓走</rights>
   <subtitle>一个技术情感博客</subtitle>
   <title>挽着红月缓缓走的个人小站</title>
-  <updated>2026-05-10T22:46:10.868Z</updated>
+  <updated>2026-05-11T00:10:40.182Z</updated>
   <entry>
     <author>
       <name>挽着红月缓缓走</name>
     </author>
+    <category term="CPP" scheme="https://blog.rinai.top/tags/CPP/"/>
+    <category term="学习笔记" scheme="https://blog.rinai.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="编程" scheme="https://blog.rinai.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    <category term="C++" scheme="https://blog.rinai.top/tags/C/"/>
+    <category term="随记" scheme="https://blog.rinai.top/tags/%E9%9A%8F%E8%AE%B0/"/>
     <id>https://blog.rinai.top/2026/05/11/000000015/</id>
     <link href="https://blog.rinai.top/2026/05/11/000000015/" rel="alternate"/>
-    <link href="https://blog.rinai.top/" rel="enclosure" type="application/octet-stream"/>
+    <link href="https://blog.rinai.top/img/cpp.png" rel="enclosure" type="image/png"/>
     <published>2026-05-10T22:46:10.000Z</published>
-    <title>15</title>
-    <updated>2026-05-10T22:46:10.868Z</updated>
+    <title>CPP学习记录1</title>
+    <updated>2026-05-11T00:10:40.182Z</updated>
   </entry>
   <entry>
     <author>
