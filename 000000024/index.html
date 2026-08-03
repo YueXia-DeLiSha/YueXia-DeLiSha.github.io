@@ -1,0 +1,565 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>OSPF之特殊路由与路由优化 | 挽着红月缓缓走的个人小站</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="/img/dls.webp"><link rel="stylesheet" href="/css/index.css?v=3.0.21"><link rel="canonical" href="https://blog.rinai.top/000000024/index.html"><link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.7.2/css/all.min.css"><!-- Feature-specific CSS--><!-- aplayer--><!-- swiper--><!-- fancybox ui--><!-- katex--><!-- Open Graph--><meta name="description" content="OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由优化与常见排错，帮助你把末节区域路由表压缩到最小并安全引入外部路由。"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="挽着红月缓缓走的个人小站"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="/img/dls.webp"><link rel="apple-touch-icon" href="/img/dls.webp" sizes="180x180"><script>console.log(' %c Solitude %c ' + '3.0.21' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><link rel="stylesheet" href="/live2d-widget/waifu.css"><link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">  <!-- 新增 --><link href="https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.2.6/index.min.css" rel="stylesheet"><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
+
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
+
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+            },
+            diffDateFormat: (selector) => {
+                selector.forEach(item => {
+                    const date = new Date(item.getAttribute('datetime') || item.textContent);
+                    item.textContent = (date.getMonth() + 1).toString()+'/'+date.getDate().toString();
+                });
+            },
+        }
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><script>const GLOBAL_CONFIG = {
+    root: '/',
+    algolia: undefined,
+    localsearch: undefined,
+    runtime: 'Tue Mar 28 2023 08:00:00 GMT+0800 (香港标准时间)',
+    lazyload: {
+        enable: true,
+        error: '/img/error_load.avif'
+    },
+    copyright: {"limit":50,"author":"作者: 挽着红月缓缓走","link":"链接: ","source":"来源: 挽着红月缓缓走的个人小站","info":"著作权归作者所有。 商业转载请联系作者获得授权，非商业转载请注明出处。"},
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: false,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可"},
+    aside: {
+        state: {
+            morning: "✨ 早上好呀，新的一天开始了舰长",
+            noon: "🍲 记得吃午餐哦，舰长",
+            afternoon: "🌞 下午好呀，舰长",
+            night: "早点休息哦，舰长",
+            goodnight: "晚安啦舰长 😴",
+        },
+        witty_words: [],
+        witty_comment: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: false
+    },
+    comment: false,
+    lightbox: 'null',
+    right_menu: false,
+    translate: {"translateDelay":0,"defaultEncoding":2},
+    lure: {"jump":"欢迎再来哦","back":"ヾ(≧∇≦*)ゝ你回来啦"},
+    expire: false,
+};</script><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: true,
+    comment: true,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="挽着红月缓缓走的个人小站" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="挽着红月缓缓走的个人小站" type="application/rss+xml">
+</head><body id="body"><div><div id="loading-box" onclick="preloader.endLoading();" style="zoom:1"><div class="loading-bg"><img class="loading-img nolazyload" src="/img/dls.webp" alt="loading image"></div></div><script>const preloader = {
+    isLoaded: false,
+    endLoading: () => {
+        if (!preloader.isLoaded) {
+            document.getElementById('loading-box').classList.add('loaded');
+            preloader.isLoaded = true;
+            preloader.togglePaceDone();
+        }
+    },
+    initLoading: () => {
+        document.getElementById('loading-box').classList.remove('loaded');
+        preloader.isLoaded = false;
+        preloader.togglePaceDone();
+    },
+    togglePaceDone: () => {
+        document.getElementById('body').className = preloader.isLoaded ? 'pace-done' : '';
+    }
+}
+
+window.addEventListener('load', () => {
+    preloader.endLoading();
+});
+
+window.addEventListener('pjax:send', () => {
+    preloader.initLoading();
+});
+
+document.addEventListener('pjax:complete', () => {
+    preloader.endLoading();
+});
+
+setTimeout(() => {
+    preloader.endLoading();
+}, 5000);</script></div><div id="console"><div class="close-btn" onclick="sco.hideConsole()"><i class="solitude fas fa-xmark"></i></div><div class="console-card-group"><div class="console-card-group-right"><div class="console-card tags" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">寻找感兴趣的领域</div></div><div class="card-tag-cloud"><a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">阿里云<sup>1</sup></a><a href="/tags/ESA/">ESA<sup>1</sup></a><a href="/tags/CDN/">CDN<sup>1</sup></a><a href="/tags/%E5%B0%8F%E8%AF%B4%E6%8E%A8%E8%8D%90/">小说推荐<sup>1</sup></a><a href="/tags/%E9%9A%94%E5%A3%81%E5%A4%A9%E4%BD%BF%E6%97%A0%E6%84%8F%E9%97%B4%E6%8A%8A%E6%88%91%E5%85%BB%E6%88%90%E5%BA%9F%E6%9D%90%E4%BA%86%E8%BF%99%E4%BB%B6%E4%BA%8B/">隔壁天使无意间把我养成废材了这件事<sup>1</sup></a><a href="/tags/%E9%82%BB%E5%AE%B6%E5%A4%A9%E4%BD%BF/">邻家天使<sup>1</sup></a><a href="/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/">轻小说<sup>1</sup></a><a href="/tags/%E5%8A%A8%E6%BC%AB%E6%8E%A8%E8%8D%90/">动漫推荐<sup>1</sup></a><a href="/tags/%E6%B2%BB%E6%84%88%E7%B3%BB/">治愈系<sup>1</sup></a><a href="/tags/%E5%A6%84%E6%83%B3%E5%A4%A9%E4%BD%BF/">妄想天使<sup>1</sup></a><a href="/tags/zzz/">zzz<sup>1</sup></a><a href="/tags/%E7%BB%9D%E5%8C%BA%E9%9B%B6/">绝区零<sup>1</sup></a><a href="/tags/QT/">QT<sup>1</sup></a><a href="/tags/AOD/">AOD<sup>1</sup></a><a href="/tags/twikoo/">twikoo<sup>1</sup></a><a href="/tags/Twikoo/">Twikoo<sup>1</sup></a><a href="/tags/%E5%B8%B8%E8%A7%81%E5%B0%8F%E9%97%AE%E9%A2%98/">常见小问题<sup>1</sup></a><a href="/tags/GPG/">GPG<sup>1</sup></a><a href="/tags/%E6%95%99%E7%A8%8B/">教程<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8/">安全<sup>1</sup></a><a href="/tags/%E5%8A%A0%E5%AF%86/">加密<sup>1</sup></a><a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学<sup>1</sup></a><a href="/tags/Git/">Git<sup>1</sup></a><a href="/tags/Visual-Studio/">Visual Studio<sup>1</sup></a><a href="/tags/C/">C++<sup>2</sup></a><a href="/tags/%E5%BC%80%E5%8F%91/">开发<sup>1</sup></a><a href="/tags/vs2022/">vs2022<sup>1</sup></a><a href="/tags/%E6%8A%A5%E9%94%99/">报错<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/">网络运维<sup>5</sup></a><a href="/tags/%E7%AC%94%E8%AE%B0/">笔记<sup>4</sup></a><a href="/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">交换机<sup>5</sup></a><a href="/tags/STP/">STP<sup>2</sup></a><a href="/tags/MSTP/">MSTP<sup>1</sup></a><a href="/tags/%E7%94%9F%E6%88%90%E6%A0%91%E5%8D%8F%E8%AE%AE/">生成树协议<sup>2</sup></a><a href="/tags/CPP/">CPP<sup>1</sup></a><a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记<sup>1</sup></a><a href="/tags/%E7%BC%96%E7%A8%8B/">编程<sup>1</sup></a><a href="/tags/%E9%9A%8F%E8%AE%B0/">随记<sup>1</sup></a><a href="/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/">故障排查<sup>1</sup></a><a href="/tags/ospf/">ospf<sup>1</sup></a><a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器<sup>3</sup></a><a href="/tags/OSPF/">OSPF<sup>2</sup></a><a href="/tags/%E5%85%B3%E7%B3%BB%E8%BE%B9%E7%95%8C/">关系边界<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F%E6%AD%A2%E6%8D%9F/">情感止损<sup>1</sup></a><a href="/tags/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E5%8F%99%E4%BA%8B/">第一人称叙事<sup>1</sup></a><a href="/tags/%E7%8E%B0%E4%BB%A3%E5%85%B3%E7%B3%BB%E8%A7%82%E5%AF%9F/">现代关系观察<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F%E7%BA%AA%E5%AE%9E/">情感纪实<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全<sup>1</sup></a><a href="/tags/%E6%BC%8F%E6%B4%9E%E6%82%AC%E8%B5%8F/">漏洞悬赏<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8%E5%AE%9E%E6%88%98/">安全实战<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8%E5%A4%8D%E7%9B%98/">安全复盘<sup>1</sup></a><a href="/tags/Cloudflare/">Cloudflare<sup>1</sup></a><a href="/tags/paypal/">paypal<sup>1</sup></a><a href="/tags/%E9%93%B6%E8%A1%8C/">银行<sup>1</sup></a><a href="/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/">跨境支付<sup>1</sup></a><a href="/tags/%E6%94%AF%E4%BB%98%E5%AE%89%E5%85%A8/">支付安全<sup>1</sup></a><a href="/tags/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C/">个人经验<sup>1</sup></a><a href="/tags/%E7%94%9F%E5%91%BD%E6%80%9D%E8%80%83/">生命思考<sup>1</sup></a><a href="/tags/%E7%BB%88%E5%9C%BA%E6%9C%AA%E7%9F%A5/">终场未知<sup>1</sup></a><a href="/tags/%E6%95%A3%E6%96%87%E9%9A%8F%E7%AC%94/">散文随笔<sup>1</sup></a><a href="/tags/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/">人生感悟<sup>1</sup></a><a href="/tags/%E5%B8%B7%E5%B9%95%E8%90%BD%E4%B8%8B/">帷幕落下<sup>1</sup></a><a href="/tags/Ubuntu%E6%95%99%E7%A8%8B/">Ubuntu教程<sup>1</sup></a><a href="/tags/FTP%E4%BC%A0%E8%BE%93/">FTP传输<sup>1</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86/">服务器管理<sup>1</sup></a><a href="/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">开发环境搭建<sup>1</sup></a><a href="/tags/vs2022/">-vs2022<sup>1</sup></a><a href="/tags/%E7%A2%A7%E8%93%9D%E8%88%AA%E7%BA%BF/">碧蓝航线<sup>1</sup></a><a href="/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E7%BD%AE/">游戏设置<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%8D%93%E6%95%99%E7%A8%8B/">安卓教程<sup>1</sup></a><a href="/tags/Shizuku/">Shizuku<sup>1</sup></a><a href="/tags/ADB%E8%B0%83%E8%AF%95/">ADB调试<sup>1</sup></a><a href="/tags/%E7%BB%B4%E4%BF%AE/">维修<sup>1</sup></a><a href="/tags/%E6%80%9D%E5%9F%9F/">思域<sup>1</sup></a><a href="/tags/%E6%B1%BD%E4%BF%AE/">汽修<sup>1</sup></a><a href="/tags/%E6%89%8B%E6%9C%BA/">手机<sup>1</sup></a><a href="/tags/%E7%BD%91%E8%B4%AD/">网购<sup>1</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/">生活记录<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F/">情感<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F%E8%83%8C%E5%8F%9B/">情感背叛<sup>1</sup></a><a href="/tags/%E8%BE%B9%E7%95%8C%E6%84%9F/">边界感<sup>1</sup></a><a href="/tags/%E5%85%B3%E7%B3%BB%E4%B8%AD%E7%9A%84%E8%B0%8E%E8%A8%80/">关系中的谎言<sup>1</sup></a><a href="/tags/%E7%AC%AC%E4%B8%89%E8%80%85/">第三者<sup>1</sup></a><a href="/tags/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E5%8F%99%E8%BF%B0-https/">第一人称叙述[](https://)<sup>1</sup></a><a href="/tags/%E5%85%B3%E7%B3%BB%E5%90%AF%E7%A4%BA%E5%BD%95/">关系启示录<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F%E4%B8%BB%E6%9D%83/">情感主权<sup>1</sup></a><a href="/tags/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90/">汽车电子<sup>1</sup></a><a href="/tags/%E6%95%85%E9%9A%9C%E8%AF%8A%E6%96%AD/">故障诊断<sup>1</sup></a><a href="/tags/%E9%97%B4%E6%AD%87%E6%80%A7%E6%95%85%E9%9A%9C/">间歇性故障<sup>1</sup></a></div></div><div class="console-card history" onclick="sco.hideConsole()"><ul class="card-archive-list"><li class="item"><a href="/archives/2026/08/"><span class="date">2026/08</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2026/07/"><span class="date">2026/07</span><div class="count-group"><span class="count">4</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2026/06/"><span class="date">2026/06</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2026/05/"><span class="date">2026/05</span><div class="count-group"><span class="count">3</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2026/04/"><span class="date">2026/04</span><div class="count-group"><span class="count">2</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2026/02/"><span class="date">2026/02</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2026/01/"><span class="date">2026/01</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2025/12/"><span class="date">2025/12</span><div class="count-group"><span class="count">7</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2025/11/"><span class="date">2025/11</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/2025/07/"><span class="date">2025/07</span><div class="count-group"><span class="count">1</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/"><span class="date">全部文章</span><div class="count-group"><span class="count">23</span><span class="unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" onclick="sco.switchDarkMode()" title="昼夜切换"><i class="solitude fas fa-circle-half-stroke"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" onclick="sco.switchHideAside()" title="边栏显示控制"><i class="solitude fas fa-arrows-left-right-to-line"></i></span></div></div><div class="console-mask" onclick="sco.hideConsole()"></div></div><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fas fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文章</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>友链</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/links/"><i class="solitude  fas fa-user-group"></i><span>友情链接</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-user"></i><span>关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>赞赏</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/rewards/"><span>赞赏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>RSS订阅</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/rss/"><i class="solitude  fas fa-rss"></i><span>RSS</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="card-tag-cloud"><a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">阿里云<sup>1</sup></a><a href="/tags/ESA/">ESA<sup>1</sup></a><a href="/tags/CDN/">CDN<sup>1</sup></a><a href="/tags/%E5%B0%8F%E8%AF%B4%E6%8E%A8%E8%8D%90/">小说推荐<sup>1</sup></a><a href="/tags/%E9%9A%94%E5%A3%81%E5%A4%A9%E4%BD%BF%E6%97%A0%E6%84%8F%E9%97%B4%E6%8A%8A%E6%88%91%E5%85%BB%E6%88%90%E5%BA%9F%E6%9D%90%E4%BA%86%E8%BF%99%E4%BB%B6%E4%BA%8B/">隔壁天使无意间把我养成废材了这件事<sup>1</sup></a><a href="/tags/%E9%82%BB%E5%AE%B6%E5%A4%A9%E4%BD%BF/">邻家天使<sup>1</sup></a><a href="/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/">轻小说<sup>1</sup></a><a href="/tags/%E5%8A%A8%E6%BC%AB%E6%8E%A8%E8%8D%90/">动漫推荐<sup>1</sup></a><a href="/tags/%E6%B2%BB%E6%84%88%E7%B3%BB/">治愈系<sup>1</sup></a><a href="/tags/%E5%A6%84%E6%83%B3%E5%A4%A9%E4%BD%BF/">妄想天使<sup>1</sup></a><a href="/tags/zzz/">zzz<sup>1</sup></a><a href="/tags/%E7%BB%9D%E5%8C%BA%E9%9B%B6/">绝区零<sup>1</sup></a><a href="/tags/QT/">QT<sup>1</sup></a><a href="/tags/AOD/">AOD<sup>1</sup></a><a href="/tags/twikoo/">twikoo<sup>1</sup></a><a href="/tags/Twikoo/">Twikoo<sup>1</sup></a><a href="/tags/%E5%B8%B8%E8%A7%81%E5%B0%8F%E9%97%AE%E9%A2%98/">常见小问题<sup>1</sup></a><a href="/tags/GPG/">GPG<sup>1</sup></a><a href="/tags/%E6%95%99%E7%A8%8B/">教程<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8/">安全<sup>1</sup></a><a href="/tags/%E5%8A%A0%E5%AF%86/">加密<sup>1</sup></a><a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学<sup>1</sup></a><a href="/tags/Git/">Git<sup>1</sup></a><a href="/tags/Visual-Studio/">Visual Studio<sup>1</sup></a><a href="/tags/C/">C++<sup>2</sup></a><a href="/tags/%E5%BC%80%E5%8F%91/">开发<sup>1</sup></a><a href="/tags/vs2022/">vs2022<sup>1</sup></a><a href="/tags/%E6%8A%A5%E9%94%99/">报错<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/">网络运维<sup>5</sup></a><a href="/tags/%E7%AC%94%E8%AE%B0/">笔记<sup>4</sup></a><a href="/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">交换机<sup>5</sup></a><a href="/tags/STP/">STP<sup>2</sup></a><a href="/tags/MSTP/">MSTP<sup>1</sup></a><a href="/tags/%E7%94%9F%E6%88%90%E6%A0%91%E5%8D%8F%E8%AE%AE/">生成树协议<sup>2</sup></a><a href="/tags/CPP/">CPP<sup>1</sup></a><a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记<sup>1</sup></a><a href="/tags/%E7%BC%96%E7%A8%8B/">编程<sup>1</sup></a><a href="/tags/%E9%9A%8F%E8%AE%B0/">随记<sup>1</sup></a><a href="/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/">故障排查<sup>1</sup></a><a href="/tags/ospf/">ospf<sup>1</sup></a><a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器<sup>3</sup></a><a href="/tags/OSPF/">OSPF<sup>2</sup></a><a href="/tags/%E5%85%B3%E7%B3%BB%E8%BE%B9%E7%95%8C/">关系边界<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F%E6%AD%A2%E6%8D%9F/">情感止损<sup>1</sup></a><a href="/tags/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E5%8F%99%E4%BA%8B/">第一人称叙事<sup>1</sup></a><a href="/tags/%E7%8E%B0%E4%BB%A3%E5%85%B3%E7%B3%BB%E8%A7%82%E5%AF%9F/">现代关系观察<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F%E7%BA%AA%E5%AE%9E/">情感纪实<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全<sup>1</sup></a><a href="/tags/%E6%BC%8F%E6%B4%9E%E6%82%AC%E8%B5%8F/">漏洞悬赏<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8%E5%AE%9E%E6%88%98/">安全实战<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%85%A8%E5%A4%8D%E7%9B%98/">安全复盘<sup>1</sup></a><a href="/tags/Cloudflare/">Cloudflare<sup>1</sup></a><a href="/tags/paypal/">paypal<sup>1</sup></a><a href="/tags/%E9%93%B6%E8%A1%8C/">银行<sup>1</sup></a><a href="/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/">跨境支付<sup>1</sup></a><a href="/tags/%E6%94%AF%E4%BB%98%E5%AE%89%E5%85%A8/">支付安全<sup>1</sup></a><a href="/tags/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C/">个人经验<sup>1</sup></a><a href="/tags/%E7%94%9F%E5%91%BD%E6%80%9D%E8%80%83/">生命思考<sup>1</sup></a><a href="/tags/%E7%BB%88%E5%9C%BA%E6%9C%AA%E7%9F%A5/">终场未知<sup>1</sup></a><a href="/tags/%E6%95%A3%E6%96%87%E9%9A%8F%E7%AC%94/">散文随笔<sup>1</sup></a><a href="/tags/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/">人生感悟<sup>1</sup></a><a href="/tags/%E5%B8%B7%E5%B9%95%E8%90%BD%E4%B8%8B/">帷幕落下<sup>1</sup></a><a href="/tags/Ubuntu%E6%95%99%E7%A8%8B/">Ubuntu教程<sup>1</sup></a><a href="/tags/FTP%E4%BC%A0%E8%BE%93/">FTP传输<sup>1</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86/">服务器管理<sup>1</sup></a><a href="/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">开发环境搭建<sup>1</sup></a><a href="/tags/vs2022/">-vs2022<sup>1</sup></a><a href="/tags/%E7%A2%A7%E8%93%9D%E8%88%AA%E7%BA%BF/">碧蓝航线<sup>1</sup></a><a href="/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E7%BD%AE/">游戏设置<sup>1</sup></a><a href="/tags/%E5%AE%89%E5%8D%93%E6%95%99%E7%A8%8B/">安卓教程<sup>1</sup></a><a href="/tags/Shizuku/">Shizuku<sup>1</sup></a><a href="/tags/ADB%E8%B0%83%E8%AF%95/">ADB调试<sup>1</sup></a><a href="/tags/%E7%BB%B4%E4%BF%AE/">维修<sup>1</sup></a><a href="/tags/%E6%80%9D%E5%9F%9F/">思域<sup>1</sup></a><a href="/tags/%E6%B1%BD%E4%BF%AE/">汽修<sup>1</sup></a><a href="/tags/%E6%89%8B%E6%9C%BA/">手机<sup>1</sup></a><a href="/tags/%E7%BD%91%E8%B4%AD/">网购<sup>1</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/">生活记录<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F/">情感<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F%E8%83%8C%E5%8F%9B/">情感背叛<sup>1</sup></a><a href="/tags/%E8%BE%B9%E7%95%8C%E6%84%9F/">边界感<sup>1</sup></a><a href="/tags/%E5%85%B3%E7%B3%BB%E4%B8%AD%E7%9A%84%E8%B0%8E%E8%A8%80/">关系中的谎言<sup>1</sup></a><a href="/tags/%E7%AC%AC%E4%B8%89%E8%80%85/">第三者<sup>1</sup></a><a href="/tags/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E5%8F%99%E8%BF%B0-https/">第一人称叙述[](https://)<sup>1</sup></a><a href="/tags/%E5%85%B3%E7%B3%BB%E5%90%AF%E7%A4%BA%E5%BD%95/">关系启示录<sup>1</sup></a><a href="/tags/%E6%83%85%E6%84%9F%E4%B8%BB%E6%9D%83/">情感主权<sup>1</sup></a><a href="/tags/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90/">汽车电子<sup>1</sup></a><a href="/tags/%E6%95%85%E9%9A%9C%E8%AF%8A%E6%96%AD/">故障诊断<sup>1</sup></a><a href="/tags/%E9%97%B4%E6%AD%87%E6%80%A7%E6%95%85%E9%9A%9C/">间歇性故障<sup>1</sup></a></div></div><span class="sidebar-menu-item-title">网站信息</span><div class="webinfo"><div class="webinfo-item"><div class="item-name">全站字数 :</div><div class="item-count">34k</div></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><a href="/" title="返回博客主页" id="site-name"><span class="title">挽着红月缓缓走</span><i class="solitude fas fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">OSPF之特殊路由与路由优化</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文章</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>友链</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/links/"><i class="solitude  fas fa-user-group"></i><span>友情链接</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-user"></i><span>关于</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>赞赏</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/rewards/"><span>赞赏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>RSS订阅</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/rss/"><i class="solitude  fas fa-rss"></i><span>RSS</span></a></li></ul></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude fas fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fas fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="/img/1999(13).webp" alt="OSPF之特殊路由与路由优化"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>网络运维</span></a><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>笔记</span></a><a class="post-meta__tags" href="/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>交换机</span></a><a class="post-meta__tags" href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>路由器</span></a><a class="post-meta__tags" href="/tags/OSPF/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>OSPF</span></a></div></div></div></div><h1 class="post-title">OSPF之特殊路由与路由优化</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date" title="发布于 2026-08-03 12:44:51"><i class="post-meta-icon solitude fas fa-calendar-days"></i><time datetime="2026-08-03T04:44:51.000Z">2026-08-03T04:44:51.000Z</time></span><span class="post-meta-wordcount"><i class="post-meta-icon solitude fas fa-file-word" title="文章字数"></i><span class="word-count">2.2k</span><span class="post-meta-separator"></span></span></div></div></div><div class="post-radius-bottom"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content article-container"><h2 id="📘-OSPF-第三阶段实验笔记：特殊区域与路由优化（Stub-Totally-Stub-NSSA）"><a href="#📘-OSPF-第三阶段实验笔记：特殊区域与路由优化（Stub-Totally-Stub-NSSA）" class="headerlink" title="📘 OSPF 第三阶段实验笔记：特殊区域与路由优化（Stub &#x2F; Totally Stub &#x2F; NSSA）"></a>📘 OSPF 第三阶段实验笔记：特殊区域与路由优化（Stub &#x2F; Totally Stub &#x2F; NSSA）</h2><p><strong>适用场景</strong>：在一个多区域OSPF网络中，边缘区域（如分公司、监控网段）的路由器性能较弱，不需要知道全网详细的外部路由（比如互联网路由），只需要知道“怎么走出去”即可。</p>
+<hr>
+<h3 id="一、核心概念铺垫（先理解“为什么要学这个”）"><a href="#一、核心概念铺垫（先理解“为什么要学这个”）" class="headerlink" title="一、核心概念铺垫（先理解“为什么要学这个”）"></a>一、核心概念铺垫（先理解“为什么要学这个”）</h3><h4 id="问题场景："><a href="#问题场景：" class="headerlink" title="问题场景："></a>问题场景：</h4><p>假设你有Area 0（骨干区）、Area 1（办公区）、Area 2（监控区）。Area 2里有200台监控摄像头，它们不需要知道总部有多少网段，也不需要知道互联网怎么走，它们只需要配置好“默认路由”把所有外网流量甩给总部即可。</p>
+<p>如果让Area 2接收全网的Type 3（区域间）和Type 5（外部引入）LSA，路由表里会有成百上千条路由，会耗尽摄像头上联交换机的内存。</p>
+<h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><p>把Area 2配置为<strong>特殊区域</strong>，让ABR（区域边界路由器）<strong>代替</strong>该区域里的路由器向外发请求，只给它们留下一句“实在不行，找我就对了”（默认路由 0.0.0.0&#x2F;0）。</p>
+<hr>
+<h3 id="二、OSPF特殊区域的三大类型（考试必须分清）"><a href="#二、OSPF特殊区域的三大类型（考试必须分清）" class="headerlink" title="二、OSPF特殊区域的三大类型（考试必须分清）"></a>二、OSPF特殊区域的三大类型（考试必须分清）</h3><table>
+<thead>
+<tr>
+<th align="left">区域类型</th>
+<th align="left">允许进入的LSA类型</th>
+<th align="left">是否保留默认路由</th>
+<th align="left">可否引入外部路由（重分发）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>普通区域</strong></td>
+<td align="left">Type 1, 2, 3, 4, 5</td>
+<td align="left">无（按需）</td>
+<td align="left">✅ 可以</td>
+</tr>
+<tr>
+<td align="left"><strong>Stub（末节区域）</strong></td>
+<td align="left">Type 1, 2, 3（不接收4&#x2F;5）</td>
+<td align="left">✅ 自动注入一条（0.0.0.0&#x2F;0）</td>
+<td align="left">❌ 禁止</td>
+</tr>
+<tr>
+<td align="left"><strong>Totally Stub（完全末节）</strong></td>
+<td align="left"><strong>只有 Type 1, 2</strong>（不收3&#x2F;4&#x2F;5）</td>
+<td align="left">✅ 自动注入一条（0.0.0.0&#x2F;0）</td>
+<td align="left">❌ 禁止</td>
+</tr>
+<tr>
+<td align="left"><strong>NSSA（非完全末节）</strong></td>
+<td align="left">Type 1, 2, 3（不收4&#x2F;5），但可生成Type 7</td>
+<td align="left">✅ 可手动注入</td>
+<td align="left">✅ 可以（外部路由被转换成Type 7）</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>记忆口诀（新手向）</strong>：</p>
+<ul>
+<li><strong>Stub</strong> &#x3D; “我啥也不想看，你给我一条默认路由就行”。</li>
+<li><strong>Totally Stub</strong> &#x3D; “我连区域间的细路由都不想看，默认路由就够了”。</li>
+<li><strong>NSSA</strong> &#x3D; “我也是末节，但我自己也要引入外部路由（比如把另一家公司的网段带进来）”。</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="三、实验拓扑与IP规划（基于第二阶段扩展）"><a href="#三、实验拓扑与IP规划（基于第二阶段扩展）" class="headerlink" title="三、实验拓扑与IP规划（基于第二阶段扩展）"></a>三、实验拓扑与IP规划（基于第二阶段扩展）</h3><p>沿用第二阶段的三台设备，在Area 1里模拟“外部路由引入”的场景。</p>
+<table>
+<thead>
+<tr>
+<th align="left">设备</th>
+<th align="left">接口</th>
+<th align="left">IP地址&#x2F;掩码</th>
+<th align="left">所属OSPF区域</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>R1</strong></td>
+<td align="left">G0&#x2F;0&#x2F;0 &#x2F; Loop0</td>
+<td align="left"><code>10.0.12.1/24</code> &#x2F; <code>1.1.1.1/32</code></td>
+<td align="left">Area 0</td>
+<td align="left">骨干路由器</td>
+</tr>
+<tr>
+<td align="left"><strong>R2</strong></td>
+<td align="left">G0&#x2F;0&#x2F;0 &#x2F; G0&#x2F;0&#x2F;1</td>
+<td align="left"><code>10.0.12.2/24</code> &#x2F; <code>10.0.23.2/24</code></td>
+<td align="left">Area 0 &#x2F; Area 1</td>
+<td align="left"><strong>ABR（区域边界路由器）</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>R3</strong></td>
+<td align="left">G0&#x2F;0&#x2F;1 &#x2F; Loop0</td>
+<td align="left"><code>10.0.23.3/24</code> &#x2F; <code>3.3.3.3/32</code></td>
+<td align="left">Area 1</td>
+<td align="left">末节区域路由器</td>
+</tr>
+<tr>
+<td align="left"><strong>R3</strong></td>
+<td align="left">静态路由（模拟外部网络）</td>
+<td align="left"><code>4.4.4.4/32</code>（下一跳出接口Null 0）</td>
+<td align="left">—</td>
+<td align="left">模拟“外部公司网段”</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="四、配置流程与命令详解"><a href="#四、配置流程与命令详解" class="headerlink" title="四、配置流程与命令详解"></a>四、配置流程与命令详解</h3><h4 id="第一步：搭好OSPF基础（先确保第二阶段已经跑通）"><a href="#第一步：搭好OSPF基础（先确保第二阶段已经跑通）" class="headerlink" title="第一步：搭好OSPF基础（先确保第二阶段已经跑通）"></a>第一步：搭好OSPF基础（先确保第二阶段已经跑通）</h4><p>在R1、R2、R3上配好基础IP和OSPF宣告（参考第二阶段笔记），确保 <code>display ospf peer brief</code> 显示R1-R2、R2-R3邻居均为<code>Full</code>。</p>
+<h4 id="第二步：在R3上引入一条外部路由（模拟连接了一个外部网络）"><a href="#第二步：在R3上引入一条外部路由（模拟连接了一个外部网络）" class="headerlink" title="第二步：在R3上引入一条外部路由（模拟连接了一个外部网络）"></a>第二步：在R3上引入一条外部路由（模拟连接了一个外部网络）</h4><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[R3] ip route-static 4.4.4.4 32 NULL 0</span><br><span class="line">[R3] ospf 1</span><br><span class="line">[R3-ospf-1] import-route static</span><br><span class="line">[R3-ospf-1] quit</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">白话解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>ip route-static 4.4.4.4 32 NULL 0</code></td>
+<td align="left">写一条静态路由指向“黑洞”接口（NULL 0），表示这个网段存在于本设备上（实际工作中可能是指向另一台外部路由器）。</td>
+</tr>
+<tr>
+<td align="left"><code>import-route static</code></td>
+<td align="left">把静态路由“引入”OSPF，让全网都知道 <code>4.4.4.4</code> 这个网段。这条路由在OSPF里会变成 <strong>Type 5 LSA（外部路由）</strong>。</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="第三步：配置-Stub-区域（让Area-1成为“末节区域”）"><a href="#第三步：配置-Stub-区域（让Area-1成为“末节区域”）" class="headerlink" title="第三步：配置 Stub 区域（让Area 1成为“末节区域”）"></a>第三步：配置 Stub 区域（让Area 1成为“末节区域”）</h4><p><strong>关键约束</strong>：在Stub区域中，<strong>该区域内的所有路由器都必须配置 <code>stub</code> 命令</strong>（包括ABR R2 和内部路由器R3）。</p>
+<p><strong>R3配置：</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[R3] ospf 1</span><br><span class="line">[R3-ospf-1] area 1</span><br><span class="line">[R3-ospf-1-area-0.0.0.1] stub</span><br><span class="line">[R3-ospf-1-area-0.0.0.1] quit</span><br><span class="line">[R3-ospf-1] quit</span><br></pre></td></tr></table></figure>
+
+<p><strong>R2配置（ABR）：</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[R2] ospf 1</span><br><span class="line">[R2-ospf-1] area 1</span><br><span class="line">[R2-ospf-1-area-0.0.0.1] stub</span><br><span class="line">[R2-ospf-1-area-0.0.0.1] quit</span><br><span class="line">[R2-ospf-1] quit</span><br></pre></td></tr></table></figure>
+
+<p><strong>验证命令：</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[R3] display ip routing-table</span><br></pre></td></tr></table></figure>
+<p>此时，你会在R3的路由表里看到一条：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.0.0.0/0   OSPF   10   1   10.0.23.2   G0/0/1</span><br></pre></td></tr></table></figure>
+<p><strong>解释</strong>：R3不再接收<code>4.4.4.4</code>这个Type 5外部路由，取而代之的是ABR（R2）给R3发了一条默认路由（<code>0.0.0.0/0</code>），告诉它：“你要去任何外网，都找我（10.0.23.2）”。</p>
+<hr>
+<h4 id="第四步：配置-Totally-Stub-区域（进一步缩小路由表）"><a href="#第四步：配置-Totally-Stub-区域（进一步缩小路由表）" class="headerlink" title="第四步：配置 Totally Stub 区域（进一步缩小路由表）"></a>第四步：配置 Totally Stub 区域（进一步缩小路由表）</h4><p><strong>这步会彻底抛弃Type 3 LSA（区域间路由），让路由表缩到最小。</strong></p>
+<p><strong>只在ABR（R2）上加一条命令</strong>，内部路由器R3保持原有<code>stub</code>配置不变。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[R2] ospf 1</span><br><span class="line">[R2-ospf-1] area 1</span><br><span class="line">[R2-ospf-1-area-0.0.0.1] stub no-summary   // 关键参数！</span><br><span class="line">[R2-ospf-1-area-0.0.0.1] quit</span><br><span class="line">[R2-ospf-1] quit</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">白话解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>stub no-summary</code></td>
+<td align="left">只<strong>在ABR上</strong>敲。它的意思是：“我不仅不给你发外部路由（Type 5），连区域间路由（Type 3）我也不给你发了，只给你发一条默认路由。”</td>
+</tr>
+</tbody></table>
+<p><strong>验证命令：</strong><br>在R3上敲 <code>display ip routing-table</code>，你会发现：</p>
+<ul>
+<li><strong>没有了</strong> <code>10.0.12.0/24</code>（原本它是Type 3区域间路由）。</li>
+<li><strong>只留下</strong> <code>0.0.0.0/0</code> 默认路由。</li>
+</ul>
+<p><strong>这就是Totally Stub的效果：路由表被压缩到极致，只留一条默认路由。</strong></p>
+<hr>
+<h4 id="第五步：配置-NSSA（非完全末节区域）——-引入外部路由的唯一解法"><a href="#第五步：配置-NSSA（非完全末节区域）——-引入外部路由的唯一解法" class="headerlink" title="第五步：配置 NSSA（非完全末节区域）—— 引入外部路由的唯一解法"></a>第五步：配置 NSSA（非完全末节区域）—— 引入外部路由的唯一解法</h4><p>如果你想让Area 1成为“末节”（不收外部Type 5 LSA），但同时又想<strong>让Area 1自己引入一条外部路由</strong>（比如R3要接入一个外部网络<code>5.5.5.5</code>），此时Stub会报错（因为Stub禁止<code>import-route</code>），必须用NSSA。</p>
+<p><strong>把R3和R2的Area 1改成NSSA：</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// R3（内部路由器）</span><br><span class="line">[R3] ospf 1</span><br><span class="line">[R3-ospf-1] area 1</span><br><span class="line">[R3-ospf-1-area-0.0.0.1] nssa   // 改成NSSA</span><br><span class="line">[R3-ospf-1-area-0.0.0.1] quit</span><br><span class="line">[R3-ospf-1] quit</span><br><span class="line"></span><br><span class="line">// R2（ABR）</span><br><span class="line">[R2] ospf 1</span><br><span class="line">[R2-ospf-1] area 1</span><br><span class="line">[R2-ospf-1-area-0.0.0.1] nssa   // ABR也必须同步改</span><br><span class="line">[R2-ospf-1-area-0.0.0.1] quit</span><br><span class="line">[R2-ospf-1] quit</span><br></pre></td></tr></table></figure>
+
+<p><strong>在NSSA区域里引入外部路由（仅限R3）：</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[R3] ip route-static 5.5.5.5 32 NULL 0</span><br><span class="line">[R3] ospf 1</span><br><span class="line">[R3-ospf-1] import-route static   // 这条命令在Stub里会报错，但在NSSA里生效！</span><br><span class="line">[R3-ospf-1] quit</span><br></pre></td></tr></table></figure>
+
+<p><strong>验证（关键观察）：</strong><br>在R3上敲 <code>display ospf lsdb</code>，你会看到多出一条 <strong>Type 7 LSA（NSSA外部路由）</strong>，而不是Type 5。<br>在R1上敲 <code>display ospf lsdb</code>，你会看到R2（ABR）已经把R3的Type 7 LSA转换成了 <strong>Type 5 LSA</strong> 传给了Area 0。</p>
+<table>
+<thead>
+<tr>
+<th align="left">LSA类型</th>
+<th align="left">产生者</th>
+<th align="left">作用范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Type 7</td>
+<td align="left">NSSA区域内的ASBR</td>
+<td align="left">仅在NSSA区域内传递</td>
+</tr>
+<tr>
+<td align="left">Type 5</td>
+<td align="left">ABR（转换器）</td>
+<td align="left">在整个OSPF域（除了Stub区域）传递</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="五、第三阶段排错流程（新手避坑指南）"><a href="#五、第三阶段排错流程（新手避坑指南）" class="headerlink" title="五、第三阶段排错流程（新手避坑指南）"></a>五、第三阶段排错流程（新手避坑指南）</h3><h4 id="❌-场景1：配置-Stub-后，邻居关系中断（卡在-Exstart-状态）"><a href="#❌-场景1：配置-Stub-后，邻居关系中断（卡在-Exstart-状态）" class="headerlink" title="❌ 场景1：配置 Stub 后，邻居关系中断（卡在 Exstart 状态）"></a>❌ 场景1：配置 Stub 后，邻居关系中断（卡在 <code>Exstart</code> 状态）</h4><p><strong>原因</strong>：Stub区域内的<strong>所有路由器</strong>（包括ABR和内部路由器）的 <code>stub</code> 配置标志必须完全一致。如果R3配了<code>stub</code>，但R2（ABR）忘了配<code>stub</code>，两台设备关于“该区域是否支持Stub”的认知不一致，邻居会起不来。</p>
+<p><strong>解决方法</strong>：在R2上补敲 <code>stub</code>，并重启OSPF进程（<code>reset ospf 1</code> 或 <code>quit</code> 后重新进入）。</p>
+<h4 id="❌-场景2：在Stub区域里敲-import-route-static-报错"><a href="#❌-场景2：在Stub区域里敲-import-route-static-报错" class="headerlink" title="❌ 场景2：在Stub区域里敲 import-route static 报错"></a>❌ 场景2：在Stub区域里敲 <code>import-route static</code> 报错</h4><p><strong>原因</strong>：Stub区域禁止引入外部路由（这是协议规则）。必须把区域改成NSSA，或者把R3从Stub区域移到普通区域。</p>
+<h4 id="❌-场景3：NSSA区域里引入了外部路由，但在R1上看不到"><a href="#❌-场景3：NSSA区域里引入了外部路由，但在R1上看不到" class="headerlink" title="❌ 场景3：NSSA区域里引入了外部路由，但在R1上看不到"></a>❌ 场景3：NSSA区域里引入了外部路由，但在R1上看不到</h4><p><strong>排查步骤</strong>：</p>
+<ol>
+<li>在R2（ABR）上敲 <code>display ospf lsdb | include 5.5.5.5</code>，确认R2是否成功把Type 7转换成了Type 5。</li>
+<li>检查R2上是否开启了 <code>nssa</code> 并确保没有加 <code>no-summary</code> 参数（除非你确认不需要Type 3）。</li>
+</ol>
+<h4 id="❌-场景4：忘了写-no-summary，导致路由表没缩小"><a href="#❌-场景4：忘了写-no-summary，导致路由表没缩小" class="headerlink" title="❌ 场景4：忘了写 no-summary，导致路由表没缩小"></a>❌ 场景4：忘了写 <code>no-summary</code>，导致路由表没缩小</h4><p><strong>原因</strong>：<code>stub</code> 只会阻隔Type 4&#x2F;5（外部路由），Type 3（区域间路由）依然会发进来。你必须明确敲 <code>stub no-summary</code> 才能彻底清除Type 3 LSA。</p>
+<hr>
+<h3 id="六、第三阶段核心笔记总结（速记口诀）"><a href="#六、第三阶段核心笔记总结（速记口诀）" class="headerlink" title="六、第三阶段核心笔记总结（速记口诀）"></a>六、第三阶段核心笔记总结（速记口诀）</h3><table>
+<thead>
+<tr>
+<th align="left">场景</th>
+<th align="left">命令</th>
+<th align="left">效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">我要让一个区域不接收外部路由，且有默认路由</td>
+<td align="left"><code>area 1 stub</code>（区域<strong>所有</strong>设备都要敲）</td>
+<td align="left">阻止Type 4&#x2F;5，生成默认路由</td>
+</tr>
+<tr>
+<td align="left">我要让一个区域连区域间路由都不收，只要默认路由</td>
+<td align="left">仅在ABR上敲 <code>stub no-summary</code></td>
+<td align="left">阻止Type 3&#x2F;4&#x2F;5，只留默认路由</td>
+</tr>
+<tr>
+<td align="left">我要让一个区域不接收外部路由，但我自己还要引入外部</td>
+<td align="left"><code>area 1 nssa</code>（区域所有设备都要敲）</td>
+<td align="left">允许Type 7 LSA，由ABR转换成Type 5</td>
+</tr>
+<tr>
+<td align="left">查看当前区域类型</td>
+<td align="left"><code>display ospf brief</code></td>
+<td align="left">检查 <code>Area Type</code> 显示为 <code>Stub</code> &#x2F; <code>NSSA</code></td>
+</tr>
+</tbody></table>
+<hr>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><div class="post-copyright__author_img"><img class="post-copyright__author_img_front" src= "" data-lazy-src="/img/dls.webp"></div><div class="post-copyright__author_name">挽着红月缓缓走</div><div class="post-copyright__author_desc">一个技术情感博客</div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div><div class="post-reward"><div class="reward-button" title="赞赏作者" onclick="AddRewardMask()"><i class="solitude fas fa-heart"></i>赞赏作者</div><div class="reward-main"><ul class="reward-all"><span class="reward-title"></span><ul class="reward-group"></ul><a class="reward-main-btn" href="/rewards/"><div class="reward-text">赞赏名单</div><div class="reward-dec"></div></a></ul></div></div><script>function RemoveRewardMask() {
+    let rewardMainElements = document.querySelectorAll(".reward-main");
+    let quitBoxElement = document.querySelector("#quit-box");
+
+    rewardMainElements.forEach(element => {
+        element.style.display = "none";
+    });
+
+    if (quitBoxElement) {
+        quitBoxElement.style.display = "none";
+    }
+}
+
+function AddRewardMask() {
+    let rewardMainElements = document.querySelectorAll(".reward-main");
+    let quitBoxElement = document.querySelector("#quit-box");
+
+    rewardMainElements.forEach(element => {
+        element.style.display = "flex";
+    });
+
+    if (quitBoxElement) {
+        quitBoxElement.style.display = "flex";
+    }
+}</script><div class="reward-link mode"><a class="reward-link-button" href="/rss2.xml"><i class="solitude fas fa-seedling"></i>订阅</a></div></div></div><div class="social-share"><a class="social-share-ico icon-qq" target="_blank" rel="noopener" href="https://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Fblog.rinai.top%2F000000024%2F&amp;title=OSPF%E4%B9%8B%E7%89%B9%E6%AE%8A%E8%B7%AF%E7%94%B1%E4%B8%8E%E8%B7%AF%E7%94%B1%E4%BC%98%E5%8C%96&amp;desc=OSPF%20%E7%89%B9%E6%AE%8A%E5%8C%BA%E5%9F%9F%E5%AE%9E%E6%88%98%EF%BC%9A%E8%AF%A6%E8%A7%A3%20Stub%E3%80%81Totally%20Stub%E3%80%81NSSA%20%E7%9A%84%E9%85%8D%E7%BD%AE%E3%80%81%E8%B7%AF%E7%94%B1%E4%BC%98%E5%8C%96%E4%B8%8E%E5%B8%B8%E8%A7%81%E6%8E%92%E9%94%99%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BD%A0%E6%8A%8A%E6%9C%AB%E8%8A%82%E5%8C%BA%E5%9F%9F%E8%B7%AF%E7%94%B1%E8%A1%A8%E5%8E%8B%E7%BC%A9%E5%88%B0%E6%9C%80%E5%B0%8F%E5%B9%B6%E5%AE%89%E5%85%A8%E5%BC%95%E5%85%A5%E5%A4%96%E9%83%A8%E8%B7%AF%E7%94%B1%E3%80%82&amp;summary=OSPF%20%E7%89%B9%E6%AE%8A%E5%8C%BA%E5%9F%9F%E5%AE%9E%E6%88%98%EF%BC%9A%E8%AF%A6%E8%A7%A3%20Stub%E3%80%81Totally%20Stub%E3%80%81NSSA%20%E7%9A%84%E9%85%8D%E7%BD%AE%E3%80%81%E8%B7%AF%E7%94%B1%E4%BC%98%E5%8C%96%E4%B8%8E%E5%B8%B8%E8%A7%81%E6%8E%92%E9%94%99%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BD%A0%E6%8A%8A%E6%9C%AB%E8%8A%82%E5%8C%BA%E5%9F%9F%E8%B7%AF%E7%94%B1%E8%A1%A8%E5%8E%8B%E7%BC%A9%E5%88%B0%E6%9C%80%E5%B0%8F%E5%B9%B6%E5%AE%89%E5%85%A8%E5%BC%95%E5%85%A5%E5%A4%96%E9%83%A8%E8%B7%AF%E7%94%B1%E3%80%82&amp;site=OSPF%E4%B9%8B%E7%89%B9%E6%AE%8A%E8%B7%AF%E7%94%B1%E4%B8%8E%E8%B7%AF%E7%94%B1%E4%BC%98%E5%8C%96&amp;pics=%2Fimg%2F1999(13).webp" title="分享到QQ"><i class="solitude fab fa-qq"></i></a><a class="social-share-ico icon-weibo" target="_blank" rel="noopener" href="http://service.weibo.com/share/share.php?url=https%3A%2F%2Fblog.rinai.top%2F000000024%2F&amp;title=OSPF%E4%B9%8B%E7%89%B9%E6%AE%8A%E8%B7%AF%E7%94%B1%E4%B8%8E%E8%B7%AF%E7%94%B1%E4%BC%98%E5%8C%96&amp;pic=%2Fimg%2F1999(13).webp" title="分享到微博"><i class="solitude fab fa-weibo"></i></a><a class="social-share-ico icon-whatsapp" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?text=OSPF%E4%B9%8B%E7%89%B9%E6%AE%8A%E8%B7%AF%E7%94%B1%E4%B8%8E%E8%B7%AF%E7%94%B1%E4%BC%98%E5%8C%96 https%3A%2F%2Fblog.rinai.top%2F000000024%2F" title="分享到WhatsApp"><i class="solitude fab fa-whatsapp"></i></a></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/">挽着红月缓缓走的个人小站</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>网络运维<span class="tagsPageCount">5</span></span></a><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>笔记<span class="tagsPageCount">4</span></span></a><a class="post-meta__tags" href="/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>交换机<span class="tagsPageCount">5</span></span></a><a class="post-meta__tags" href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>路由器<span class="tagsPageCount">3</span></span></a><a class="post-meta__tags" href="/tags/OSPF/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>OSPF<span class="tagsPageCount">2</span></span></a></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="next-post pull-full"><a href="/000000023/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">OSPF之LSA与LSDB</div></div></a></div></nav>
+        <div class="relatedPosts">
+            <div class="headline">
+                <i class="solitude fas fa-star"></i>
+                <span>喜欢这篇的人也看了</span>
+                <div class="relatedPosts-link">
+                    <a onclick="event.preventDefault(); toRandomPost();" href="javascript:void(0);" rel="external nofollow" data-pjax-state="">随便逛逛</a>
+                </div>
+            </div>
+            <div class="relatedPosts-list">
+            <div>
+                <a href="/000000023/" title="OSPF之LSA与LSDB">
+                    <img class="cover" src= "" data-lazy-src="/img/1999(8).webp" alt="cover">
+                    <div class="content is-center">
+                        <div class="title">OSPF之LSA与LSDB</div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/000000022/" title="OSPF之建立邻居教程">
+                    <img class="cover" src= "" data-lazy-src="/img/bh3rd(3).webp" alt="cover">
+                    <div class="content is-center">
+                        <div class="title">OSPF之建立邻居教程</div>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="solitude fas fa-comment"></i><span> 评论</span></div></div><div class="comment-wrap"><div id="twikoo-wrap"></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="top-group"><div class="sayhi" id="sayhi" onclick="sco.changeWittyWord()"></div></div></div><div class="avatar"><img alt="头像" src= "" data-lazy-src="/img/dls.webp"></div><div class="description"></div><div class="bottom-group"><span class="left"><div class="name">挽着红月缓缓走</div><div class="desc">终会相聚，与你同在</div></span><div class="social-icons is-center"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fas fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%98-OSPF-%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%E5%AE%9E%E9%AA%8C%E7%AC%94%E8%AE%B0%EF%BC%9A%E7%89%B9%E6%AE%8A%E5%8C%BA%E5%9F%9F%E4%B8%8E%E8%B7%AF%E7%94%B1%E4%BC%98%E5%8C%96%EF%BC%88Stub-Totally-Stub-NSSA%EF%BC%89"><span class="toc-text">📘 OSPF 第三阶段实验笔记：特殊区域与路由优化（Stub &#x2F; Totally Stub &#x2F; NSSA）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E9%93%BA%E5%9E%AB%EF%BC%88%E5%85%88%E7%90%86%E8%A7%A3%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E8%BF%99%E4%B8%AA%E2%80%9D%EF%BC%89"><span class="toc-text">一、核心概念铺垫（先理解“为什么要学这个”）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%9C%BA%E6%99%AF%EF%BC%9A"><span class="toc-text">问题场景：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%9A"><span class="toc-text">解决方案：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81OSPF%E7%89%B9%E6%AE%8A%E5%8C%BA%E5%9F%9F%E7%9A%84%E4%B8%89%E5%A4%A7%E7%B1%BB%E5%9E%8B%EF%BC%88%E8%80%83%E8%AF%95%E5%BF%85%E9%A1%BB%E5%88%86%E6%B8%85%EF%BC%89"><span class="toc-text">二、OSPF特殊区域的三大类型（考试必须分清）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E9%AA%8C%E6%8B%93%E6%89%91%E4%B8%8EIP%E8%A7%84%E5%88%92%EF%BC%88%E5%9F%BA%E4%BA%8E%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E6%89%A9%E5%B1%95%EF%BC%89"><span class="toc-text">三、实验拓扑与IP规划（基于第二阶段扩展）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%85%8D%E7%BD%AE%E6%B5%81%E7%A8%8B%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3"><span class="toc-text">四、配置流程与命令详解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E6%90%AD%E5%A5%BDOSPF%E5%9F%BA%E7%A1%80%EF%BC%88%E5%85%88%E7%A1%AE%E4%BF%9D%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E5%B7%B2%E7%BB%8F%E8%B7%91%E9%80%9A%EF%BC%89"><span class="toc-text">第一步：搭好OSPF基础（先确保第二阶段已经跑通）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E5%9C%A8R3%E4%B8%8A%E5%BC%95%E5%85%A5%E4%B8%80%E6%9D%A1%E5%A4%96%E9%83%A8%E8%B7%AF%E7%94%B1%EF%BC%88%E6%A8%A1%E6%8B%9F%E8%BF%9E%E6%8E%A5%E4%BA%86%E4%B8%80%E4%B8%AA%E5%A4%96%E9%83%A8%E7%BD%91%E7%BB%9C%EF%BC%89"><span class="toc-text">第二步：在R3上引入一条外部路由（模拟连接了一个外部网络）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E9%85%8D%E7%BD%AE-Stub-%E5%8C%BA%E5%9F%9F%EF%BC%88%E8%AE%A9Area-1%E6%88%90%E4%B8%BA%E2%80%9C%E6%9C%AB%E8%8A%82%E5%8C%BA%E5%9F%9F%E2%80%9D%EF%BC%89"><span class="toc-text">第三步：配置 Stub 区域（让Area 1成为“末节区域”）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E9%85%8D%E7%BD%AE-Totally-Stub-%E5%8C%BA%E5%9F%9F%EF%BC%88%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%BC%A9%E5%B0%8F%E8%B7%AF%E7%94%B1%E8%A1%A8%EF%BC%89"><span class="toc-text">第四步：配置 Totally Stub 区域（进一步缩小路由表）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5%EF%BC%9A%E9%85%8D%E7%BD%AE-NSSA%EF%BC%88%E9%9D%9E%E5%AE%8C%E5%85%A8%E6%9C%AB%E8%8A%82%E5%8C%BA%E5%9F%9F%EF%BC%89%E2%80%94%E2%80%94-%E5%BC%95%E5%85%A5%E5%A4%96%E9%83%A8%E8%B7%AF%E7%94%B1%E7%9A%84%E5%94%AF%E4%B8%80%E8%A7%A3%E6%B3%95"><span class="toc-text">第五步：配置 NSSA（非完全末节区域）—— 引入外部路由的唯一解法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%E6%8E%92%E9%94%99%E6%B5%81%E7%A8%8B%EF%BC%88%E6%96%B0%E6%89%8B%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97%EF%BC%89"><span class="toc-text">五、第三阶段排错流程（新手避坑指南）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%9D%8C-%E5%9C%BA%E6%99%AF1%EF%BC%9A%E9%85%8D%E7%BD%AE-Stub-%E5%90%8E%EF%BC%8C%E9%82%BB%E5%B1%85%E5%85%B3%E7%B3%BB%E4%B8%AD%E6%96%AD%EF%BC%88%E5%8D%A1%E5%9C%A8-Exstart-%E7%8A%B6%E6%80%81%EF%BC%89"><span class="toc-text">❌ 场景1：配置 Stub 后，邻居关系中断（卡在 Exstart 状态）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%9D%8C-%E5%9C%BA%E6%99%AF2%EF%BC%9A%E5%9C%A8Stub%E5%8C%BA%E5%9F%9F%E9%87%8C%E6%95%B2-import-route-static-%E6%8A%A5%E9%94%99"><span class="toc-text">❌ 场景2：在Stub区域里敲 import-route static 报错</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%9D%8C-%E5%9C%BA%E6%99%AF3%EF%BC%9ANSSA%E5%8C%BA%E5%9F%9F%E9%87%8C%E5%BC%95%E5%85%A5%E4%BA%86%E5%A4%96%E9%83%A8%E8%B7%AF%E7%94%B1%EF%BC%8C%E4%BD%86%E5%9C%A8R1%E4%B8%8A%E7%9C%8B%E4%B8%8D%E5%88%B0"><span class="toc-text">❌ 场景3：NSSA区域里引入了外部路由，但在R1上看不到</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%9D%8C-%E5%9C%BA%E6%99%AF4%EF%BC%9A%E5%BF%98%E4%BA%86%E5%86%99-no-summary%EF%BC%8C%E5%AF%BC%E8%87%B4%E8%B7%AF%E7%94%B1%E8%A1%A8%E6%B2%A1%E7%BC%A9%E5%B0%8F"><span class="toc-text">❌ 场景4：忘了写 no-summary，导致路由表没缩小</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%E6%A0%B8%E5%BF%83%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93%EF%BC%88%E9%80%9F%E8%AE%B0%E5%8F%A3%E8%AF%80%EF%BC%89"><span class="toc-text">六、第三阶段核心笔记总结（速记口诀）</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fas fa-map"></i><span>最近发布</span></div><div class="aside-list"><a class="aside-list-item" href="/000000024/" title="OSPF之特殊路由与路由优化"><div class="thumbnail"><img alt="OSPF之特殊路由与路由优化" src= "" data-lazy-src="/img/1999(13).webp"></div><div class="content"><span class="title" href="/000000024/" title="OSPF之特殊路由与路由优化">OSPF之特殊路由与路由优化</span></div></a><a class="aside-list-item" href="/000000023/" title="OSPF之LSA与LSDB"><div class="thumbnail"><img alt="OSPF之LSA与LSDB" src= "" data-lazy-src="/img/1999(8).webp"></div><div class="content"><span class="title" href="/000000023/" title="OSPF之LSA与LSDB">OSPF之LSA与LSDB</span></div></a><a class="aside-list-item" href="/000000022/" title="OSPF之建立邻居教程"><div class="thumbnail"><img alt="OSPF之建立邻居教程" src= "" data-lazy-src="/img/bh3rd(3).webp"></div><div class="content"><span class="title" href="/000000022/" title="OSPF之建立邻居教程">OSPF之建立邻居教程</span></div></a><a class="aside-list-item" href="/0000000021/" title="STP教程之display stp命令详解"><div class="thumbnail"><img alt="STP教程之display stp命令详解" src= "" data-lazy-src="/img/zzz(11).webp"></div><div class="content"><span class="title" href="/0000000021/" title="STP教程之display stp命令详解">STP教程之display stp命令详解</span></div></a><a class="aside-list-item" href="/000000020/" title="STP生成树协议笔记"><div class="thumbnail"><img alt="STP生成树协议笔记" src= "" data-lazy-src="/img/dls02.webp"></div><div class="content"><span class="title" href="/000000020/" title="STP生成树协议笔记">STP生成树协议笔记</span></div></a></div></div></div></div></main><footer id="footer"><div id="st-footer"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2023 - 2026 By<a class="footer-bar-link" href="/" title="挽着红月缓缓走">挽着红月缓缓走</a></div><div class="beian-group"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://hexo.io/" title="框架：Hexo">框架：Hexo</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude" title="主题：Solitude">主题：Solitude</a></div></div><div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/yuexia-delisha" title="">挽着红月缓缓走</a><a class="footer-bar-link" href="/about/" title="">如果觉得文章对你有帮助</a><a class="footer-bar-link" href="/about/" title="">可以分享文章或者赞赏支持一下哦</a></div></div></div></div><div class="comment-barrage needEndHide"></div></footer></div><div><!-- Critical scripts loaded synchronously--><script src="/js/utils.js?v=3.0.21"></script><script src="/js/main.js?v=3.0.21"></script><!-- Non-critical scripts loaded asynchronously--><script async src="/js/third_party/waterfall.min.js?v=3.0.21"></script><script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/pjax/0.2.8/pjax.min.js"></script><!-- Feature-specific scripts loaded asynchronously--><script defer src="/js/tw_cn.js?v=3.0.21"></script><!-- UI enhancement scripts--><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script defer src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/node-snackbar/0.1.16/snackbar.min.js"></script><!-- Music player scripts--><!-- Cover color processing scripts--><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+utils.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+</script><script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/pace/1.2.4/pace.min.js"></script><!-- Search functionality--><!-- Right menu functionality--><script src="/live2d-widget/autoload.js"></script><div class="js-pjax"><script>(() => {
+    const getCount = () => {
+        const ele = document.querySelectorAll('.twikoo-count')
+        if (!ele) return
+        twikoo.getCommentsCount({
+            envId: 'https://rinaidelisha.netlify.app/.netlify/functions/twikoo',
+            region: '',
+            urls: [window.location.pathname],
+            includeReply: false
+        }).then(res => {
+            ele.forEach(item => item.textContent = res[0].count)
+        }).catch(err => {
+            console.error(err)
+        })
+    }
+    const init = () => {
+        twikoo.init(Object.assign({
+            el: '#twikoo-wrap',
+            envId: 'https://rinaidelisha.netlify.app/.netlify/functions/twikoo',
+            region: '',
+            path: window.location.pathname,
+            onCommentLoaded: () => {
+                GLOBAL_CONFIG.lightbox && utils.lightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+            }
+        }, null))
+
+        
+        sco.owoBig({
+            body: '.OwO-body',
+            item: '.OwO-items li'
+        })
+
+        false && barrageTwikoo()
+    }
+
+    const loadTwikoo = () => {
+        if (typeof twikoo === 'object') setTimeout(init,0)
+        else utils.getScript('https://unpkg.com/twikoo@1.7.12/dist/twikoo.all.min.js').then(init)
+    }
+
+    if ('Twikoo' === 'Twikoo' || true) {
+        if (true) utils.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+        else loadTwikoo()
+    } else {
+        window.loadTwoComment = loadTwikoo
+    }
+})()
+</script></div></div><!-- pjax--><script>let pjax = null;
+
+function initPjax() {
+    if (typeof Pjax === 'undefined') {
+        console.warn('Pjax is not loaded yet, retrying...');
+        setTimeout(initPjax, 100);
+        return;
+    }
+
+    pjax = new Pjax({
+        elements: 'a:not([target="_blank"])',
+        selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
+        cacheBust: false,
+        analytics: false,
+        scrollRestoration: false
+    })
+
+    // 将 pjax 实例挂载到全局
+    window.pjax = pjax;
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    document.addEventListener('pjax:complete', () => {
+        window.refreshFn()
+
+        document.querySelectorAll('script[data-pjax]').forEach(item => {
+            const newScript = document.createElement('script')
+            const content = item.text || item.textContent || item.innerHTML || ""
+            Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+            newScript.appendChild(document.createTextNode(content))
+            item.parentNode.replaceChild(newScript, item)
+        })
+
+        GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+    })
+
+    document.addEventListener('pjax:error', (e) => {
+        if (e.request.status === 404) {
+            pjax.loadUrl('/404.html')
+        }
+    })
+}
+
+// 初始化 Pjax
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPjax);
+} else {
+    initPjax();
+}</script><!-- google adsense--></body></html>
+        <script>
+            const posts = ["000000024/","000000023/","000000022/","0000000021/","000000020/","0000000019/","0000000000018/","000000000017/","0000000016/","000000015/","00000000014/","0000000013/","0000011/","0000002/","0000001/","0000004/","0000003/","0000009/","0000007/","0000008/","0000010/","0000006/","0000005/"];
+            function toRandomPost() {
+                const randomPost = posts[Math.floor(Math.random() * posts.length)];
+                pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
+            }
+        </script>
