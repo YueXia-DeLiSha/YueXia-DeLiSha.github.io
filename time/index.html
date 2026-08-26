@@ -11,6 +11,17 @@
 
 <div id="event-log-scoped" data-theme="light">
 <style>
+/* Body background for theme switching */
+body.el-dark, body.el-light {
+    transition: background-color 0.3s ease;
+}
+body.el-dark {
+    background: #0f0f0f !important;
+}
+body.el-light {
+    background: #ffffff !important;
+}
+
 /* ===== Scoped Reset ===== */
 #event-log-scoped {
     font-family: 'LXGW WenKai Screen', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif !important;
@@ -403,6 +414,8 @@ const EVENTS = [
     function applyTheme(theme) {
         root.setAttribute('data-theme', theme);
         try { localStorage.setItem('el-theme', theme); } catch(e){}
+        document.body.classList.toggle('el-dark', theme === 'dark');
+        document.body.classList.toggle('el-light', theme !== 'dark');
     }
 
     var saved = null;
