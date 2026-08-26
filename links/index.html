@@ -15,7 +15,7 @@
             font-family: 'LXGW WenKai Screen',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
             color: #1a1a1a;
             line-height: 1.6;
-            background-color: transparent;
+            background-color: var(--lp-root-bg, #ffffff);
             /* 突破主题容器 padding，实现 100vw 全宽 */
             width: 100vw;
             position: relative;
@@ -25,6 +25,7 @@
             margin-right: -50vw;
             padding: 2rem 1rem 3rem;
             overflow-x: hidden;
+            transition: background-color 0.3s ease;
         }
 
         #link-page-scoped * {
@@ -475,6 +476,7 @@
         /* ===== 深色模式（切换按钮给 #link-page-scoped 添加 data-theme="dark"） ===== */
         #link-page-scoped[data-theme="dark"] {
             --theme-body-bg: #1e1e1e;
+            --lp-root-bg: #1e1e1e;
             color: #d1d5db;
         }
 
@@ -564,6 +566,15 @@
 
         #link-page-scoped[data-theme="dark"] .lp-brand-name-overlay {
             color: #f3f4f6;
+        }
+
+        /* 有背景图的卡片：浅色默认背景也切换为深色 */
+        #link-page-scoped[data-theme="dark"] .lp-card-bg {
+            background-color: #2a2a2a !important;
+        }
+
+        #link-page-scoped[data-theme="dark"] .lp-friend-card.lp-has-bg .lp-card-bg {
+            background-color: #2a2a2a !important;
         }
 
         /* 右上角工具条深色适配 */
