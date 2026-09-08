@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/0000000000018/</loc>
+    <loc>https://blog.rinai.top/000000000017/</loc>
     
     <lastmod>2026-08-31</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/000000000017/</loc>
+    <loc>https://blog.rinai.top/0000000000018/</loc>
     
     <lastmod>2026-08-31</lastmod>
     
@@ -146,15 +146,6 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/000000022/</loc>
-    
-    <lastmod>2026-08-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/000000023/</loc>
     
     <lastmod>2026-08-31</lastmod>
@@ -173,6 +164,15 @@
   </url>
   
   <url>
+    <loc>https://blog.rinai.top/000000022/</loc>
+    
+    <lastmod>2026-08-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.rinai.top/000000026/</loc>
     
     <lastmod>2026-08-31</lastmod>
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/0000002/</loc>
+    <loc>https://blog.rinai.top/0000003/</loc>
     
     <lastmod>2026-08-31</lastmod>
     
@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/0000003/</loc>
+    <loc>https://blog.rinai.top/0000002/</loc>
     
     <lastmod>2026-08-31</lastmod>
     
@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/undefined/model_list.json</loc>
+    <loc>https://blog.rinai.top/live2d_models/model/delisha/model_list.json</loc>
     
     <lastmod>2026-04-18</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/delisha/model_list.json</loc>
+    <loc>https://blog.rinai.top/live2d_models/model/undefined/model_list.json</loc>
     
     <lastmod>2026-04-18</lastmod>
     
@@ -344,15 +344,6 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/undefined/index.json</loc>
-    
-    <lastmod>2026-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/live2d_models/model/delisha/index.json</loc>
     
     <lastmod>2026-01-01</lastmod>
@@ -362,7 +353,16 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/undefined/physics.json</loc>
+    <loc>https://blog.rinai.top/live2d_models/model/undefined/index.json</loc>
+    
+    <lastmod>2026-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/live2d_models/model/delisha/physics.json</loc>
     
     <lastmod>2025-06-18</lastmod>
     
@@ -371,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/delisha/physics.json</loc>
+    <loc>https://blog.rinai.top/live2d_models/model/undefined/physics.json</loc>
     
     <lastmod>2025-06-18</lastmod>
     
@@ -425,27 +425,6 @@
 
   
   <url>
-    <loc>https://blog.rinai.top/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/ESA/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/CDN/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/tags/%E5%B0%8F%E8%AF%B4%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -482,6 +461,27 @@
   
   <url>
     <loc>https://blog.rinai.top/tags/%E6%B2%BB%E6%84%88%E7%B3%BB/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/ESA/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/CDN/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -586,41 +586,6 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/Visual-Studio/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/C/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/vs2022/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E6%8A%A5%E9%94%99/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -663,14 +628,35 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/OSPF/</loc>
+    <loc>https://blog.rinai.top/tags/Visual-Studio/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/</loc>
+    <loc>https://blog.rinai.top/tags/C/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/vs2022/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E6%8A%A5%E9%94%99/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -685,6 +671,27 @@
   
   <url>
     <loc>https://blog.rinai.top/tags/%E9%9A%8F%E8%B0%88/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/OSPF/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -713,13 +720,6 @@
   
   <url>
     <loc>https://blog.rinai.top/tags/%E9%9A%8F%E8%AE%B0/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -768,76 +768,6 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E6%BC%8F%E6%B4%9E%E6%82%AC%E8%B5%8F/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E5%AE%89%E5%85%A8%E5%AE%9E%E6%88%98/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E5%AE%89%E5%85%A8%E5%A4%8D%E7%9B%98/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/Cloudflare/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E7%94%9F%E5%91%BD%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E7%BB%88%E5%9C%BA%E6%9C%AA%E7%9F%A5/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E6%95%A3%E6%96%87%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E5%B8%B7%E5%B9%95%E8%90%BD%E4%B8%8B/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/tags/paypal/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -873,6 +803,41 @@
   </url>
   
   <url>
+    <loc>https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E6%BC%8F%E6%B4%9E%E6%82%AC%E8%B5%8F/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E5%AE%89%E5%85%A8%E5%AE%9E%E6%88%98/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E5%AE%89%E5%85%A8%E5%A4%8D%E7%9B%98/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/Cloudflare/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.rinai.top/tags/Ubuntu%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -888,6 +853,41 @@
   
   <url>
     <loc>https://blog.rinai.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E7%94%9F%E5%91%BD%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E7%BB%88%E5%9C%BA%E6%9C%AA%E7%9F%A5/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E6%95%A3%E6%96%87%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E5%B8%B7%E5%B9%95%E8%90%BD%E4%B8%8B/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -943,6 +943,27 @@
   </url>
   
   <url>
+    <loc>https://blog.rinai.top/tags/%E6%89%8B%E6%9C%BA/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E7%BD%91%E8%B4%AD/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.rinai.top/tags/%E7%BB%B4%E4%BF%AE/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -964,21 +985,21 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/%E6%89%8B%E6%9C%BA/</loc>
+    <loc>https://blog.rinai.top/tags/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/%E7%BD%91%E8%B4%AD/</loc>
+    <loc>https://blog.rinai.top/tags/%E6%95%85%E9%9A%9C%E8%AF%8A%E6%96%AD/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://blog.rinai.top/tags/%E9%97%B4%E6%AD%87%E6%80%A7%E6%95%85%E9%9A%9C/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1041,41 +1062,6 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E6%95%85%E9%9A%9C%E8%AF%8A%E6%96%AD/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E9%97%B4%E6%AD%87%E6%80%A7%E6%95%85%E9%9A%9C/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E5%85%89%E7%8C%AB/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E6%A1%A5%E6%8E%A5/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/tags/BOC/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -1111,14 +1097,14 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/hexo/</loc>
+    <loc>https://blog.rinai.top/tags/%E5%85%89%E7%8C%AB/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/cloudflare/</loc>
+    <loc>https://blog.rinai.top/tags/%E6%A1%A5%E6%8E%A5/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1152,6 +1138,20 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://blog.rinai.top/tags/hexo/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/cloudflare/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -1169,14 +1169,14 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/categories/%E6%83%85%E6%84%9F/%E7%88%B1%E6%83%85/</loc>
+    <loc>https://blog.rinai.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/</loc>
+    <loc>https://blog.rinai.top/categories/%E6%83%85%E6%84%9F/%E7%88%B1%E6%83%85/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1190,13 +1190,6 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/categories/paypal/%E8%B7%A8%E5%A2%83%E8%B4%AD%E7%89%A9/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -1204,7 +1197,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/categories/%E7%BB%B4%E4%BF%AE%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://blog.rinai.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1219,6 +1212,13 @@
   
   <url>
     <loc>https://blog.rinai.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E7%BB%B4/Ubuntu/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/categories/%E7%BB%B4%E4%BF%AE%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
