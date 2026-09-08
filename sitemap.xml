@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/delisha/model_list.json</loc>
+    <loc>https://blog.rinai.top/live2d_models/model/undefined/model_list.json</loc>
     
     <lastmod>2026-04-18</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/undefined/model_list.json</loc>
+    <loc>https://blog.rinai.top/live2d_models/model/delisha/model_list.json</loc>
     
     <lastmod>2026-04-18</lastmod>
     
@@ -344,15 +344,6 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/delisha/index.json</loc>
-    
-    <lastmod>2026-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/live2d_models/model/undefined/index.json</loc>
     
     <lastmod>2026-01-01</lastmod>
@@ -362,7 +353,16 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/delisha/physics.json</loc>
+    <loc>https://blog.rinai.top/live2d_models/model/delisha/index.json</loc>
+    
+    <lastmod>2026-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/live2d_models/model/undefined/physics.json</loc>
     
     <lastmod>2025-06-18</lastmod>
     
@@ -371,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d_models/model/undefined/physics.json</loc>
+    <loc>https://blog.rinai.top/live2d_models/model/delisha/physics.json</loc>
     
     <lastmod>2025-06-18</lastmod>
     
@@ -803,41 +803,6 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/tags/paypal/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E9%93%B6%E8%A1%8C/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E6%94%AF%E4%BB%98%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.rinai.top/tags/%E7%94%9F%E5%91%BD%E6%80%9D%E8%80%83/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -867,6 +832,41 @@
   
   <url>
     <loc>https://blog.rinai.top/tags/%E5%B8%B7%E5%B9%95%E8%90%BD%E4%B8%8B/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/paypal/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E9%93%B6%E8%A1%8C/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E6%94%AF%E4%BB%98%E5%AE%89%E5%85%A8/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1190,14 +1190,14 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/categories/paypal/%E8%B7%A8%E5%A2%83%E8%B4%AD%E7%89%A9/</loc>
+    <loc>https://blog.rinai.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.rinai.top/categories/paypal/%E8%B7%A8%E5%A2%83%E8%B4%AD%E7%89%A9/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
