@@ -7,6 +7,8 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     <link rel="icon" type="image/webp" href="https://blog.delishahk.com/img/dls.webp">
     <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css">
+    <!-- 站点统计 -->
+    <script defer src="https://main.rinai.top/assets/main.js" data-website-id="bcd4e8f3-f837-45c4-b007-be70191c474a" data-host-url="https://main.rinai.top"></script>
 </head>
 <body>
 
@@ -239,6 +241,27 @@ body.el-light {
     color: #9ca3af;
 }
 
+/* ---- Bottom Badges ---- */
+#event-log-scoped .el-badges {
+    max-width: 680px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;   /* 一行一个，竖向排列 */
+    align-items: flex-end;    /* 整体靠右 */
+    gap: 0.9rem;
+}
+#event-log-scoped .el-badge-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* 每行内部也靠右 */
+}
+#event-log-scoped .el-badge-row img {
+    display: block;
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+}
+
 /* ===== Dark Mode ===== */
 #event-log-scoped[data-theme="dark"] {
     --el-bg: #1a1a1a;
@@ -317,6 +340,19 @@ body.el-light {
 
 <!-- Footer -->
 <footer>© <span id="el-year"></span> 博客事件记录</footer>
+
+<!-- Bottom Badges：两行，均右对齐 -->
+<div class="el-badges">
+    <div class="el-badge-row">
+        <img src="https://blog.delishahk.com/img/mynumber.svg" alt="访客计数" loading="lazy">
+    </div>
+    <div class="el-badge-row">
+        <a href="https://www.blogsclub.org/rank.html" target="_blank" rel="noopener">
+            <img src="https://www.blogsclub.org/badge/blog.rinai.top/theme/simple-dark"
+                 style="height:60px!important" loading="lazy" alt="BlogsClub 排名">
+        </a>
+    </div>
+</div>
 
 <script>
 /* ====================================================
