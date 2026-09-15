@@ -261,6 +261,10 @@ body.el-light {
     width: auto;
     max-width: 100%;
 }
+/* mynumber 单独放大 */
+#event-log-scoped .el-badge-row--number img {
+    height: 90px;
+}
 
 /* ===== Dark Mode ===== */
 #event-log-scoped[data-theme="dark"] {
@@ -343,7 +347,7 @@ body.el-light {
 
 <!-- Bottom Badges：两行，均右对齐 -->
 <div class="el-badges">
-    <div class="el-badge-row">
+    <div class="el-badge-row el-badge-row--number">
         <img src="https://blog.delishahk.com/img/mynumber.svg" alt="访客计数" loading="lazy">
     </div>
     <div class="el-badge-row">
