@@ -104,7 +104,7 @@
 initTheme()</script><script>const GLOBAL_CONFIG = {
     root: '/',
     algolia: undefined,
-    localsearch: undefined,
+    localsearch: {"preload":false,"path":"/search.json"},
     runtime: 'Wed Nov 13 2024 20:46:39 GMT+0800 (香港标准时间)',
     lazyload: {
         enable: true,
@@ -329,7 +329,7 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initPjax);
 } else {
     initPjax();
-}</script><!-- google adsense--></body></html>
+}</script><!-- google adsense--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="solitude fas fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找"></div><div id="search-results"><div id="search-hits"></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/js/search/local.js?v=3.0.21"></script></body></html>
         <script>
             const posts = ["DNSSEC/","ITMS/","hexo-blog-setup-guide/","rdap-whois-api/","get-boc-debit-card/","0000000027/","000000026/","0000000025/","000000024/","000000023/","000000022/","0000000021/","000000020/","0000000019/","0000000000018/","000000000017/","0000000016/","000000015/","00000000014/","0000000013/","0000011/","0000002/","0000001/","0000004/","0000003/","0000009/","0000007/","0000008/","0000010/","0000006/","0000005/"];
             function toRandomPost() {
