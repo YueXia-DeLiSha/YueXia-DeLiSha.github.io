@@ -281,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/about/index.html</loc>
+    <loc>https://blog.rinai.top/about/</loc>
     
     <lastmod>2026-05-21</lastmod>
     
@@ -290,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/rss/index.html</loc>
+    <loc>https://blog.rinai.top/rss/</loc>
     
     <lastmod>2026-04-30</lastmod>
     
@@ -335,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/rewards/index.html</loc>
+    <loc>https://blog.rinai.top/rewards/</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -344,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/index.html</loc>
+    <loc>https://blog.rinai.top/</loc>
     
     <lastmod>2026-04-16</lastmod>
     
@@ -389,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d-widget/README.html</loc>
+    <loc>https://blog.rinai.top/live2d-widget/README</loc>
     
     <lastmod>2022-11-12</lastmod>
     
@@ -407,7 +407,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d-widget/demo/demo.html</loc>
+    <loc>https://blog.rinai.top/live2d-widget/demo/demo</loc>
     
     <lastmod>2022-11-12</lastmod>
     
@@ -416,7 +416,7 @@
   </url>
   
   <url>
-    <loc>https://blog.rinai.top/live2d-widget/demo/login.html</loc>
+    <loc>https://blog.rinai.top/live2d-widget/demo/login</loc>
     
     <lastmod>2022-11-12</lastmod>
     
@@ -553,6 +553,41 @@
   </url>
   
   <url>
+    <loc>https://blog.rinai.top/tags/Visual-Studio/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/C/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/vs2022/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rinai.top/tags/%E6%8A%A5%E9%94%99/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.rinai.top/tags/GPG/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -589,41 +624,6 @@
   
   <url>
     <loc>https://blog.rinai.top/tags/Git/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/Visual-Studio/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/C/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/vs2022/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rinai.top/tags/%E6%8A%A5%E9%94%99/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
