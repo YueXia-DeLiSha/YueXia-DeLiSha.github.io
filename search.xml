@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>阿里云ESA与阿里云CDN使用体验</title>
-    <url>/0000000000018/</url>
-    <content><![CDATA[阿里云ESA与阿里云CDN使用体验在我用CloudFlare的CDN时感觉服务不错，我就在想如果换近一点的CDN会不会更好啊？我考虑了很多CDN服务商，发现阿里云的CDN有着不错的口碑和性能表现，于是我决定试试
-我换到阿里云CDN后，感觉性能提升很大，尤其是国内访问明显加快了很多，例如之前用CF时候地图上显示的访问是淡绿色的，换完以后变成了深绿色，说明速度提升了很多，用了一段时间后，我在翻找阿里云控制台时发现了另一款产品——阿里云ESA（Edge Security Accelerator）。我对这个产品很感兴趣，决定也试用一下看看效果如何。由于大部分服务都在CF上不能把域名迁移到阿里云ESA上，我只能通过NS记录的方式将该子域名指向阿里云的ESA节点。设置完成后，我发现速度提升不明显，甚至有些时候还下降了，地图变成了黄色然后向官方反馈，他们说要调整缓存时间，针对静态的文件例如*.css,.js，.png等进行更长时间的缓存，调整后速度有所提升，但是感觉还是比不上纯CDN的效果，总的来说ESA产品很好，适合以下场景使用：
-
-需要更高安全性的场景：ESA提供了DDoS防护、Web应用防火墙等安全功能，可以有效保护网站免受攻击。
-需要更高性能的场景：ESA通过边缘计算技术，可以将计算任务分布在全球多个节点上，减少了数据传输的距离和时间，提高了网站的响应速度。
-需要更高可用性的场景：ESA提供了多节点部署和自动故障转移功能，可以确保网站在节点故障时仍然能够正常访问。
-
-ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ESA的价格稍贵，因为包含了WAF和DDOS等安全防护功能，所以价格相对较高。CDN的话采取的是XX&#x2F;GB的计费方式，价格相对来说更适合大多数站长需求，尤其是对于那些主要关注访问速度和稳定性的站长来说，CDN可能是更经济实惠的选择。不过，如果你的网站需要更高的安全性和性能，并且预算允许，那么ESA可能是一个值得考虑的选项。总之，在选择CDN还是ESA时，站长们需要根据自己的需求和预算来做出决策，以确保能够获得最佳的性能和安全性。总的来说，选 CDN 还是 ESA，本质上是‘极致性能’与‘安全集成’的取舍。
-如果单纯追求国内访问速度且预算有限，阿里云 CDN 绝对是最佳拍档；但如果你的站点涉及交易、登录或频繁遭受扫描攻击，ESA 多出来的费用可以看作是买了一份额外的“安全保险”。至少在我的个人博客场景下，CDN 依然是我的首选。
-最后提个醒：切换 ESA 后如果觉得变慢了，别急着放弃，先去缓存配置页把静态资源的过期时间拉长，你会有惊喜。
-]]></content>
-      <tags>
-        <tag>阿里云</tag>
-        <tag>ESA</tag>
-        <tag>CDN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《隔壁天使无意间把我养成废材了这件事》《邻家天使》强烈推荐！</title>
     <url>/000000000017/</url>
     <content><![CDATA[你或许想问，这部小说或者动漫的情节是怎么样的？为什么要推荐她？
@@ -43,41 +23,105 @@ ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ES
       </tags>
   </entry>
   <entry>
-    <title>关于妄想天使三小只的专属音乐播放器制作旅程</title>
-    <url>/00000000014/</url>
-    <content><![CDATA[事情开端在看完绝区零新剧情的妄想天使三小只的支线剧情以及妄想天使的主题活动后，萌生了为三小只制作一个同人专属播放器的想法绝对不是因为太可爱才出现想法的，让我为你介绍一下三小只成员一：千夏，妄想天使团队的编曲大人可爱小哭包
-成员二：南宫羽，妄想天使的舞蹈担当兼队长团队财务担当，
-成员三：爱芮，妄想天使的主唱，香香软软的构造体
-技术选型采用了QT6.10进行开发软件，为什么选择这个呢？因为作者恰巧会一点点的CPP索性就选择了QT，原计划是双端开发的(win和android)但是只开发出了win端绝对不是因为作者不熟悉android开发才放弃的开发时遇到的一些小问题：原计划采用相对路径进行文件的存放，但是QT组件播放器没办法读取到，可能是因为作者的QT技艺不太熟练造成的，反反复复的试验做了5版才完成了开发，猜你想问怎么解决的，解决方法就是放入QRC文件中这个笨办法不要模仿，在进行安卓开发时一直遇到白屏问题和闪退就放弃了android开发UI设计与选型解决完技术问题后现在开始UI设计了，当我去翻找妄想天使的图片时却发现并没有合适的图片，正苦于没图片可用时脑中突然想起还有一个群聊，群里可能有我需要的图片，我便在群里将我的想法说出，顷刻间一呼百应源源不断的消息向我袭来，我一条条翻看着，在众多消息中发现了我想要的图片，我将得来的图片当作软件的背景图，配合上小千夏作为进度条，左上角是三小只的按钮按下它会有神奇效果哦项目发布项目地址在github，点击即可跳转哦，也可以复制链接手动打开哦,https://github.com/YueXia-DeLiSha/AOD_ZZZ项目图片如下：
+    <title>阿里云ESA与阿里云CDN使用体验</title>
+    <url>/0000000000018/</url>
+    <content><![CDATA[阿里云ESA与阿里云CDN使用体验在我用CloudFlare的CDN时感觉服务不错，我就在想如果换近一点的CDN会不会更好啊？我考虑了很多CDN服务商，发现阿里云的CDN有着不错的口碑和性能表现，于是我决定试试
+我换到阿里云CDN后，感觉性能提升很大，尤其是国内访问明显加快了很多，例如之前用CF时候地图上显示的访问是淡绿色的，换完以后变成了深绿色，说明速度提升了很多，用了一段时间后，我在翻找阿里云控制台时发现了另一款产品——阿里云ESA（Edge Security Accelerator）。我对这个产品很感兴趣，决定也试用一下看看效果如何。由于大部分服务都在CF上不能把域名迁移到阿里云ESA上，我只能通过NS记录的方式将该子域名指向阿里云的ESA节点。设置完成后，我发现速度提升不明显，甚至有些时候还下降了，地图变成了黄色然后向官方反馈，他们说要调整缓存时间，针对静态的文件例如*.css,.js，.png等进行更长时间的缓存，调整后速度有所提升，但是感觉还是比不上纯CDN的效果，总的来说ESA产品很好，适合以下场景使用：
+
+需要更高安全性的场景：ESA提供了DDoS防护、Web应用防火墙等安全功能，可以有效保护网站免受攻击。
+需要更高性能的场景：ESA通过边缘计算技术，可以将计算任务分布在全球多个节点上，减少了数据传输的距离和时间，提高了网站的响应速度。
+需要更高可用性的场景：ESA提供了多节点部署和自动故障转移功能，可以确保网站在节点故障时仍然能够正常访问。
+
+ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ESA的价格稍贵，因为包含了WAF和DDOS等安全防护功能，所以价格相对较高。CDN的话采取的是XX&#x2F;GB的计费方式，价格相对来说更适合大多数站长需求，尤其是对于那些主要关注访问速度和稳定性的站长来说，CDN可能是更经济实惠的选择。不过，如果你的网站需要更高的安全性和性能，并且预算允许，那么ESA可能是一个值得考虑的选项。总之，在选择CDN还是ESA时，站长们需要根据自己的需求和预算来做出决策，以确保能够获得最佳的性能和安全性。总的来说，选 CDN 还是 ESA，本质上是‘极致性能’与‘安全集成’的取舍。
+如果单纯追求国内访问速度且预算有限，阿里云 CDN 绝对是最佳拍档；但如果你的站点涉及交易、登录或频繁遭受扫描攻击，ESA 多出来的费用可以看作是买了一份额外的“安全保险”。至少在我的个人博客场景下，CDN 依然是我的首选。
+最后提个醒：切换 ESA 后如果觉得变慢了，别急着放弃，先去缓存配置页把静态资源的过期时间拉长，你会有惊喜。
 ]]></content>
       <tags>
-        <tag>妄想天使</tag>
-        <tag>zzz</tag>
-        <tag>绝区零</tag>
-        <tag>QT</tag>
-        <tag>AOD</tag>
+        <tag>阿里云</tag>
+        <tag>ESA</tag>
+        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
-    <title>关于twikoo不显示设置的问题</title>
-    <url>/0000000013/</url>
-    <content><![CDATA[Twikoo 评论系统：找不到设置按钮？一招解决问题现象当你部署好 Twikoo 评论系统后，想进入后台管理面板，却发现页面上怎么也找不到那个“齿轮”或“设置”图标，这是怎么回事？
-原因分析Twikoo 的设计逻辑是：只有被识别为博主（管理员）的访客，才能看到管理入口。如果你还没有在评论框中输入过你预设的博主昵称并提交一条评论，系统就无法确认你的身份，自然也就不会显示设置按钮。
-解决步骤第一步：输入博主昵称在评论区的昵称栏，输入你在 Twikoo 管理端（或环境变量）中设置的 ADMIN_NAME（博主昵称）。
-第二步：发表一条评论随便输入一条评论内容，例如“测试”，然后点击提交。
-第三步：刷新页面评论提交成功后，按 F5 刷新页面。现在你应该能在评论区的右上角看到“设置”图标（齿轮状）了。点击它即可进入 Twikoo 管理面板。
-其他可能的原因如果以上操作后仍未出现，请检查：
+    <title>VS2022报错RC22103解决方法</title>
+    <url>/0000000019/</url>
+    <content><![CDATA[VS2022报错RC22103解决方法在使用Visual Studio 2022进行C++开发时，在添加资源时有时候会遇到报错RC22103的问题。这个错误通常是由于资源文件的路径或格式不正确引起的。下面将详细介绍解决该问题的步骤。
 
-你的 Twikoo 版本是否为最新。
-浏览器控制台（F12）是否有报错信息。
-是否在 Twikoo 环境变量中正确配置了 ADMIN_NAME。
+检查资源文件路径确保资源文件的路径正确，并且文件存在于指定的位置。可以尝试将资源文件移动到项目的根目录下，或者使用绝对路径来引用资源文件。
+检查资源文件格式确保资源文件的格式是正确的。例如，图像文件应为常见的格式如PNG、JPG等，音频文件应为WAV或MP3等。避免使用不支持的格式。
+清理和重建项目在Visual Studio中，选择“生成”菜单，然后点击“清理解决方案”，接着点击“重新生成解决方案”。这将清除所有临时文件，并重新编译项目，有助于解决由于缓存引起的错误。
+检查资源文件的编码确保资源文件的编码格式是正确的。对于文本资源文件，建议使用UTF-8编码。可以使用文本编辑器（如VS Code）来检查和修改文件的编码格式。
+一个特殊情况 关闭VS2022，右键VS2022选择用管理员身份运行重新打开项目，再次尝试添加资源文件，通常可以解决RC22103报错问题。
 
-总结Twikoo 通过评论昵称来识别博主身份，这是一个非常巧妙且无需额外登录的安全机制。只要记住先“评论”再“管理”的逻辑即可。
-结后语作者热衷于帮每个人去解决一些力所能及的事情，如果你有问题可以联系mail@rinai这个邮箱哦，也可以在关于页看看作者的其他联系方式哦]]></content>
+随记 我是怎么发现的呢？是因为我在学习SFML的时候，想要添加一个图片资源结果报错RC22103，经过一番查找资料和尝试，最终总结出以上解决方法，希望对大家有所帮助。如果遇到RC1015报错，可以参考我的另一篇文章《VS2022报错RC1015解决方法》。
+]]></content>
       <tags>
-        <tag>twikoo</tag>
-        <tag>Twikoo</tag>
-        <tag>常见小问题</tag>
+        <tag>Visual Studio</tag>
+        <tag>C++</tag>
+        <tag>开发</tag>
+        <tag>vs2022</tag>
+        <tag>报错</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>STP教程之display stp命令详解</title>
+    <url>/0000000021/</url>
+    <content><![CDATA[命令执行结果假设我们执行display stp命令假设得到如下数据：
+[sw1]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-ccde-02e8Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-ccde-02e8 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :12TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:2m:12sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][DISCARDING]---- Port Protocol       :Enabled Port Role           :Alternate Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :3                       TCN: 0, Config: 0, RST: 0, MST: 3 BPDU Received       :438                       TCN: 0, Config: 0, RST: 0, MST: 438----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :5 BPDU Sent           :4                       TCN: 0, Config: 0, RST: 0, MST: 4 BPDU Received       :440                       TCN: 0, Config: 0, RST: 0, MST: 440                                              [sw3]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc2b-47baConfig Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 0CIST RegRoot/IRPC   :32768.4c1f-cc2b-47ba / 0CIST RootPortId     :0.0BPDU-Protection     :DisabledTC or TCN received  :4TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:4m:52sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/1----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :1 TC or TCN received  :0 BPDU Sent           :132                       TCN: 0, Config: 0, RST: 0, MST: 132 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :0 BPDU Sent           :226                       TCN: 0, Config: 0, RST: 0, MST: 226 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1          &lt;sw2&gt;system-viewEnter system view, return user view with Ctrl+Z.[sw2]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc38-0f51Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-cc38-0f51 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :9TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:0m:3sNumber of TC        :8Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :9 TC or TCN received  :2 BPDU Sent           :545                       TCN: 0, Config: 0, RST: 0, MST: 545 BPDU Received       :3                       TCN: 0, Config: 0, RST: 0, MST: 3----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :6                       TCN: 0, Config: 0, RST: 0, MST: 6 BPDU Received       :549                       TCN: 0, Config: 0, RST: 0, MST: 549```          我们可以按照如下流程解读得到的数据：这是一份非常完整的STP（生成树协议）信息输出\## 📌 一、全局信息（Global Info）—— 网络的大局观这部分描述的是&quot;整个生成树网络&quot;的整体情况。
+——-[CIST Global Info][Mode MSTP]——-
+**解释**：CIST 是&quot;公共与内部生成树&quot;的缩写，是 MSTP 中所有实例的&quot;总根&quot;所在的树。`[Mode MSTP]` 表示当前运行的是多生成树协议模式。| 参数 | 数值（以SW1为例） | 直白翻译 | 作用 || :--- | :--- | :--- | :--- || **CIST Bridge** | `32768.4c1f-ccde-02e8` | **我（这台交换机）的身份ID**。由&quot;优先级(32768)+MAC地址&quot;组成。 | 在STP选举中，每个交换机都用这个ID标识自己。数值越小越优先。 || **Config Times** | `Hello 2s MaxAge 20s FwDly 15s MaxHop 20` | **配置的计时器参数**。 | 这是默认写在配置里的时间参数。Hello=2秒发一次心跳包；MaxAge=20秒收不到心跳就认为链路断了；FwDly=15秒状态切换延迟；MaxHop=20跳最大网络直径。 || **Active Times** | `Hello 2s MaxAge 20s FwDly 15s MaxHop 20` | **当前正在生效的计时器参数**。 | 正常情况下与Config一致。如果手动改了配置，这里显示实际生效的值。 || **CIST Root/ERPC** | `32768.4c1f-cc2b-47ba / 20000` | **根桥是谁，我到它的开销是多少。** | **这是最关键的信息之一**。根桥ID是`32768.4c1f-cc2b-47ba`，SW1到根桥的累计路径开销是20000。 || **CIST RegRoot/IRPC** | `32768.4c1f-ccde-02e8 / 0` | **我所在区域的根桥是谁，我到区域根的开销。** | 在MSTP中，每个区域有自己的根。这里显示区域根就是SW1自己（因为我的ID就是它），到自己开销为0。 || **CIST RootPortId** | `128.2` | **我去往根桥的&quot;出口&quot;是哪个端口。** | `128.2` 表示：端口优先级128 + 端口号2（即GigabitEthernet0/0/2）。意思就是：**SW1通过2号口去往根桥。** || **BPDU-Protection** | `Disabled` | **BPDU保护功能已关闭。** | 如果开启，当边缘端口收到BPDU时会自动关闭该端口，防止非法交换机接入。 || **TC or TCN received** | `12` | **这台交换机一共收到了12次拓扑变化通知。** | TC = Topology Change（拓扑变化）。每发生一次网络变动（比如线断了），这个数字就加1。如果数字疯狂增长，说明网络不稳定。 || **TC count per hello** | `0` | **每个Hello周期内收到的TC数量。** | 当前为0，表示最近网络很稳定，没有频繁变动。 || **STP Converge Mode** | `Normal` | **收敛模式为普通模式。** | 华为设备还有&quot;Fast&quot;模式，可以加速收敛。Normal是默认的。 || **Time since last TC** | `0 days 0h:2m:12s` | **距离上次拓扑变化过去了2分12秒。** | 说明网络在2分钟前刚发生过变化（可能你刚插拔了网线）。 || **Number of TC** | `7` | **已经累计发生了7次拓扑变化。** | 这是自从交换机开机以来的总次数。 || **Last TC occurred** | `GigabitEthernet0/0/2` | **最后一次拓扑变化发生在2号口。** | 说明最后一次网络变动是2号口引起的（可能拔插了2号口的线）。 |---## 📌 二、端口信息（Port Info）—— 每个接口的&quot;体检报告&quot;这部分针对每个物理端口，详细描述它在STP中的角色和状态。### 🔹 Port1（GigabitEthernet0/0/1）—— 被阻塞的备用端口
+—-[Port1(GigabitEthernet0&#x2F;0&#x2F;1)][DISCARDING]—-
+| 参数 | 数值 | 直白翻译 | 作用 || :--- | :--- | :--- | :--- || **Port Protocol** | `Enabled` | 这个端口启用了STP协议。 | 如果Disabled，这个口不参与STP计算，可能造成环路。 || **Port Role** | `Alternate Port` | **端口角色：替代端口（备用）** | 这是被阻塞的端口，平时不转发数据，只监听BPDU。如果根端口（ROOT）挂了，它会上位。 || **Port Priority** | `128` | 端口优先级为128。 | 默认值。在选举时，数值越小越优先。 || **Port Cost(Dot1T)** | `Config=auto / Active=20000` | 配置为自动计算，实际生效开销为20000。 | 端口开销表示&quot;通过这个口出去要花多大代价&quot;。越大说明路径越差。Active=20000是因为这是千兆口（默认开销值）。 || **Designated Bridge/Port** | `32768.4c1f-cc38-0f51 / 128.1` | **这条链路对面的交换机ID和对面的端口号。** | 对面是SW2（MAC `...38-0f51`），它用1号口连接我。这说明了&quot;谁在对岸&quot;。 || **Port Edged** | `Config=default / Active=disabled` | 配置默认，实际未启用边缘端口。 | 边缘端口是专门接PC的，能快速收敛。这里Disabled说明接的是交换机。 || **Point-to-point** | `Config=auto / Active=true` | 自动检测，实际为点对点链路。 | 说明这个口接的是另一台交换机（而不是集线器），全双工。 || **Transit Limit** | `147 packets/hello-time` | 每个Hello周期内最多发送147个BPDU。 | 防止BPDU风暴的限速机制。 || **Protection Type** | `None` | 未开启任何端口保护。 | 常见保护类型有：Root（根保护）、Loop（环路保护）、BPDU（BPDU保护）。 || **Port STP Mode** | `MSTP` | 这个端口运行的是MSTP协议。 | 与全局一致。 || **Port Protocol Type** | `Config=auto / Active=dot1s` | 协议类型自动，实际为dot1s（MSTP标准）。 | dot1s是IEEE关于MSTP的标准编号。 || **BPDU Encapsulation** | `Config=stp / Active=stp` | BPDU封装格式为STP标准格式。 | 华为设备默认使用标准格式，保持兼容性。 || **PortTimes** | `Hello 2s MaxAge 20s FwDly 15s RemHop 20` | 这个端口的计时器参数。 | RemHop=剩余跳数，每经过一台设备减1。到达0时BPDU被丢弃，控制网络直径。 || **TC or TCN send** | `2` | 这个端口发送了2次拓扑变化通知。 | 通知邻居网络发生了变化。 || **TC or TCN received** | `7` | 这个端口收到了7次拓扑变化通知。 | 说明邻居那边发生过7次网络变动。 || **BPDU Sent** | `3` | 总共发送了3个BPDU报文。 | 其中：TCN=0（拓扑变化通知包），Config=0（STP配置包），RST=0（RSTP包），MST=3（MSTP包）。**说明邻居之间只发了MSTP格式的BPDU。** || **BPDU Received** | `438` | 总共收到了438个BPDU报文。 | 全部是MSTP格式（438个）。说明对端设备也是MSTP模式，协商顺利。 |---### 🔹 Port2（GigabitEthernet0/0/2）—— 转发数据的主端口
+—-[Port2(GigabitEthernet0&#x2F;0&#x2F;2)][FORWARDING]—-
+
+与Port1类似，但这里有几个关键差异：
+
+| 参数 | 数值 | 解读 |
+| :--- | :--- | :--- |
+| **Port Role** | `Root Port` | **这是根端口！** 这个口是SW1去往根桥（SW3）的通道，正在转发数据。 |
+| **Designated Bridge/Port** | `32768.4c1f-cc2b-47ba / 128.1` | 对端是根桥SW3（MAC `...2b-47ba`），它用1号口连接我。**这说明SW1的2号口直接连到了根桥SW3的1号口！** |
+
+---
+
+## 🧠 三、综合&quot;案件分析&quot;—— 三台交换机的关系网
+
+根据你提供的三台交换机的输出，我们可以还原出整个拓扑：
+
+| 交换机 | CIST Bridge（自己ID） | 根桥是谁？ | 根端口是哪个？ | 端口角色总结 |
+| :--- | :--- | :--- | :--- | :--- |
+| **SW1** | `32768.4c1f-ccde-02e8` | SW3 | Port2（G0/0/2） | Port1=ALTE（阻塞），Port2=ROOT（转发） |
+| **SW2** | `32768.4c1f-cc38-0f51` | SW3 | Port2（G0/0/2） | Port1=DESI（转发），Port2=ROOT（转发） |
+| **SW3** | `32768.4c1f-cc2b-47ba` | 自己（根桥） | 无 | Port1=DESI（转发），Port2=DESI（转发） |
+
+### 🎯 结论：
+
+1. **根桥是 SW3**（因为它的 `CIST Root/ERPC` 中，根桥ID就是它自己，且 ERPC = 0）。
+2. **SW1 的 2 号口连到了 SW3 的 1 号口**（从 `Designated Bridge/Port` 可以确认）。
+3. **SW1 的 1 号口连到了 SW2 的 1 号口**（因为对面是 `...38-0f51`，即SW2）。
+4. **SW2 的 2 号口连到了 SW3 的 2 号口**（因为对面是 `...2b-47ba`，即SW3）。
+5. **环路被切断的位置**：SW1 的 1 号口被阻塞（`DISCARDING` / `Alternate Port`），因为 SW2 在链路竞争中获胜。
+
+---
+
+## 💎 快速记忆口诀（背下来，面试有用）
+
+- **CIST Bridge** = 我的身份证。
+- **CIST Root/ERPC** = 老大是谁，我到老大有多远。
+- **Root Port** = 我的耳朵（听老大的）。
+- **Designated Port** = 我的嘴巴（对下发言）。
+- **Alternate Port** = 我的备用耳朵（平时堵着，老大失聪了才用）。
+- **TC count** = 网络波动计数器，数字乱跳就说明网络不稳。
+
+这份笔记覆盖了华为交换机 `display stp` 输出的全部核心字段。
+
+]]></content>
+      <tags>
+        <tag>网络运维</tag>
+        <tag>笔记</tag>
+        <tag>交换机</tag>
+        <tag>STP</tag>
+        <tag>MSTP</tag>
+        <tag>生成树协议</tag>
       </tags>
   </entry>
   <entry>
@@ -842,320 +886,25 @@ GPG &gt;&#x3D;2.1
       </tags>
   </entry>
   <entry>
-    <title>VS2022报错RC22103解决方法</title>
-    <url>/0000000019/</url>
-    <content><![CDATA[VS2022报错RC22103解决方法在使用Visual Studio 2022进行C++开发时，在添加资源时有时候会遇到报错RC22103的问题。这个错误通常是由于资源文件的路径或格式不正确引起的。下面将详细介绍解决该问题的步骤。
+    <title>关于twikoo不显示设置的问题</title>
+    <url>/0000000013/</url>
+    <content><![CDATA[Twikoo 评论系统：找不到设置按钮？一招解决问题现象当你部署好 Twikoo 评论系统后，想进入后台管理面板，却发现页面上怎么也找不到那个“齿轮”或“设置”图标，这是怎么回事？
+原因分析Twikoo 的设计逻辑是：只有被识别为博主（管理员）的访客，才能看到管理入口。如果你还没有在评论框中输入过你预设的博主昵称并提交一条评论，系统就无法确认你的身份，自然也就不会显示设置按钮。
+解决步骤第一步：输入博主昵称在评论区的昵称栏，输入你在 Twikoo 管理端（或环境变量）中设置的 ADMIN_NAME（博主昵称）。
+第二步：发表一条评论随便输入一条评论内容，例如“测试”，然后点击提交。
+第三步：刷新页面评论提交成功后，按 F5 刷新页面。现在你应该能在评论区的右上角看到“设置”图标（齿轮状）了。点击它即可进入 Twikoo 管理面板。
+其他可能的原因如果以上操作后仍未出现，请检查：
 
-检查资源文件路径确保资源文件的路径正确，并且文件存在于指定的位置。可以尝试将资源文件移动到项目的根目录下，或者使用绝对路径来引用资源文件。
-检查资源文件格式确保资源文件的格式是正确的。例如，图像文件应为常见的格式如PNG、JPG等，音频文件应为WAV或MP3等。避免使用不支持的格式。
-清理和重建项目在Visual Studio中，选择“生成”菜单，然后点击“清理解决方案”，接着点击“重新生成解决方案”。这将清除所有临时文件，并重新编译项目，有助于解决由于缓存引起的错误。
-检查资源文件的编码确保资源文件的编码格式是正确的。对于文本资源文件，建议使用UTF-8编码。可以使用文本编辑器（如VS Code）来检查和修改文件的编码格式。
-一个特殊情况 关闭VS2022，右键VS2022选择用管理员身份运行重新打开项目，再次尝试添加资源文件，通常可以解决RC22103报错问题。
+你的 Twikoo 版本是否为最新。
+浏览器控制台（F12）是否有报错信息。
+是否在 Twikoo 环境变量中正确配置了 ADMIN_NAME。
 
-随记 我是怎么发现的呢？是因为我在学习SFML的时候，想要添加一个图片资源结果报错RC22103，经过一番查找资料和尝试，最终总结出以上解决方法，希望对大家有所帮助。如果遇到RC1015报错，可以参考我的另一篇文章《VS2022报错RC1015解决方法》。
-]]></content>
+总结Twikoo 通过评论昵称来识别博主身份，这是一个非常巧妙且无需额外登录的安全机制。只要记住先“评论”再“管理”的逻辑即可。
+结后语作者热衷于帮每个人去解决一些力所能及的事情，如果你有问题可以联系mail@rinai这个邮箱哦，也可以在关于页看看作者的其他联系方式哦]]></content>
       <tags>
-        <tag>Visual Studio</tag>
-        <tag>C++</tag>
-        <tag>开发</tag>
-        <tag>vs2022</tag>
-        <tag>报错</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>STP教程之display stp命令详解</title>
-    <url>/0000000021/</url>
-    <content><![CDATA[命令执行结果假设我们执行display stp命令假设得到如下数据：
-[sw1]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-ccde-02e8Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-ccde-02e8 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :12TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:2m:12sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][DISCARDING]---- Port Protocol       :Enabled Port Role           :Alternate Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :3                       TCN: 0, Config: 0, RST: 0, MST: 3 BPDU Received       :438                       TCN: 0, Config: 0, RST: 0, MST: 438----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :5 BPDU Sent           :4                       TCN: 0, Config: 0, RST: 0, MST: 4 BPDU Received       :440                       TCN: 0, Config: 0, RST: 0, MST: 440                                              [sw3]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc2b-47baConfig Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 0CIST RegRoot/IRPC   :32768.4c1f-cc2b-47ba / 0CIST RootPortId     :0.0BPDU-Protection     :DisabledTC or TCN received  :4TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:4m:52sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/1----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :1 TC or TCN received  :0 BPDU Sent           :132                       TCN: 0, Config: 0, RST: 0, MST: 132 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :0 BPDU Sent           :226                       TCN: 0, Config: 0, RST: 0, MST: 226 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1          &lt;sw2&gt;system-viewEnter system view, return user view with Ctrl+Z.[sw2]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc38-0f51Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-cc38-0f51 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :9TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:0m:3sNumber of TC        :8Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :9 TC or TCN received  :2 BPDU Sent           :545                       TCN: 0, Config: 0, RST: 0, MST: 545 BPDU Received       :3                       TCN: 0, Config: 0, RST: 0, MST: 3----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :6                       TCN: 0, Config: 0, RST: 0, MST: 6 BPDU Received       :549                       TCN: 0, Config: 0, RST: 0, MST: 549```          我们可以按照如下流程解读得到的数据：这是一份非常完整的STP（生成树协议）信息输出\## 📌 一、全局信息（Global Info）—— 网络的大局观这部分描述的是&quot;整个生成树网络&quot;的整体情况。
-——-[CIST Global Info][Mode MSTP]——-
-**解释**：CIST 是&quot;公共与内部生成树&quot;的缩写，是 MSTP 中所有实例的&quot;总根&quot;所在的树。`[Mode MSTP]` 表示当前运行的是多生成树协议模式。| 参数 | 数值（以SW1为例） | 直白翻译 | 作用 || :--- | :--- | :--- | :--- || **CIST Bridge** | `32768.4c1f-ccde-02e8` | **我（这台交换机）的身份ID**。由&quot;优先级(32768)+MAC地址&quot;组成。 | 在STP选举中，每个交换机都用这个ID标识自己。数值越小越优先。 || **Config Times** | `Hello 2s MaxAge 20s FwDly 15s MaxHop 20` | **配置的计时器参数**。 | 这是默认写在配置里的时间参数。Hello=2秒发一次心跳包；MaxAge=20秒收不到心跳就认为链路断了；FwDly=15秒状态切换延迟；MaxHop=20跳最大网络直径。 || **Active Times** | `Hello 2s MaxAge 20s FwDly 15s MaxHop 20` | **当前正在生效的计时器参数**。 | 正常情况下与Config一致。如果手动改了配置，这里显示实际生效的值。 || **CIST Root/ERPC** | `32768.4c1f-cc2b-47ba / 20000` | **根桥是谁，我到它的开销是多少。** | **这是最关键的信息之一**。根桥ID是`32768.4c1f-cc2b-47ba`，SW1到根桥的累计路径开销是20000。 || **CIST RegRoot/IRPC** | `32768.4c1f-ccde-02e8 / 0` | **我所在区域的根桥是谁，我到区域根的开销。** | 在MSTP中，每个区域有自己的根。这里显示区域根就是SW1自己（因为我的ID就是它），到自己开销为0。 || **CIST RootPortId** | `128.2` | **我去往根桥的&quot;出口&quot;是哪个端口。** | `128.2` 表示：端口优先级128 + 端口号2（即GigabitEthernet0/0/2）。意思就是：**SW1通过2号口去往根桥。** || **BPDU-Protection** | `Disabled` | **BPDU保护功能已关闭。** | 如果开启，当边缘端口收到BPDU时会自动关闭该端口，防止非法交换机接入。 || **TC or TCN received** | `12` | **这台交换机一共收到了12次拓扑变化通知。** | TC = Topology Change（拓扑变化）。每发生一次网络变动（比如线断了），这个数字就加1。如果数字疯狂增长，说明网络不稳定。 || **TC count per hello** | `0` | **每个Hello周期内收到的TC数量。** | 当前为0，表示最近网络很稳定，没有频繁变动。 || **STP Converge Mode** | `Normal` | **收敛模式为普通模式。** | 华为设备还有&quot;Fast&quot;模式，可以加速收敛。Normal是默认的。 || **Time since last TC** | `0 days 0h:2m:12s` | **距离上次拓扑变化过去了2分12秒。** | 说明网络在2分钟前刚发生过变化（可能你刚插拔了网线）。 || **Number of TC** | `7` | **已经累计发生了7次拓扑变化。** | 这是自从交换机开机以来的总次数。 || **Last TC occurred** | `GigabitEthernet0/0/2` | **最后一次拓扑变化发生在2号口。** | 说明最后一次网络变动是2号口引起的（可能拔插了2号口的线）。 |---## 📌 二、端口信息（Port Info）—— 每个接口的&quot;体检报告&quot;这部分针对每个物理端口，详细描述它在STP中的角色和状态。### 🔹 Port1（GigabitEthernet0/0/1）—— 被阻塞的备用端口
-—-[Port1(GigabitEthernet0&#x2F;0&#x2F;1)][DISCARDING]—-
-| 参数 | 数值 | 直白翻译 | 作用 || :--- | :--- | :--- | :--- || **Port Protocol** | `Enabled` | 这个端口启用了STP协议。 | 如果Disabled，这个口不参与STP计算，可能造成环路。 || **Port Role** | `Alternate Port` | **端口角色：替代端口（备用）** | 这是被阻塞的端口，平时不转发数据，只监听BPDU。如果根端口（ROOT）挂了，它会上位。 || **Port Priority** | `128` | 端口优先级为128。 | 默认值。在选举时，数值越小越优先。 || **Port Cost(Dot1T)** | `Config=auto / Active=20000` | 配置为自动计算，实际生效开销为20000。 | 端口开销表示&quot;通过这个口出去要花多大代价&quot;。越大说明路径越差。Active=20000是因为这是千兆口（默认开销值）。 || **Designated Bridge/Port** | `32768.4c1f-cc38-0f51 / 128.1` | **这条链路对面的交换机ID和对面的端口号。** | 对面是SW2（MAC `...38-0f51`），它用1号口连接我。这说明了&quot;谁在对岸&quot;。 || **Port Edged** | `Config=default / Active=disabled` | 配置默认，实际未启用边缘端口。 | 边缘端口是专门接PC的，能快速收敛。这里Disabled说明接的是交换机。 || **Point-to-point** | `Config=auto / Active=true` | 自动检测，实际为点对点链路。 | 说明这个口接的是另一台交换机（而不是集线器），全双工。 || **Transit Limit** | `147 packets/hello-time` | 每个Hello周期内最多发送147个BPDU。 | 防止BPDU风暴的限速机制。 || **Protection Type** | `None` | 未开启任何端口保护。 | 常见保护类型有：Root（根保护）、Loop（环路保护）、BPDU（BPDU保护）。 || **Port STP Mode** | `MSTP` | 这个端口运行的是MSTP协议。 | 与全局一致。 || **Port Protocol Type** | `Config=auto / Active=dot1s` | 协议类型自动，实际为dot1s（MSTP标准）。 | dot1s是IEEE关于MSTP的标准编号。 || **BPDU Encapsulation** | `Config=stp / Active=stp` | BPDU封装格式为STP标准格式。 | 华为设备默认使用标准格式，保持兼容性。 || **PortTimes** | `Hello 2s MaxAge 20s FwDly 15s RemHop 20` | 这个端口的计时器参数。 | RemHop=剩余跳数，每经过一台设备减1。到达0时BPDU被丢弃，控制网络直径。 || **TC or TCN send** | `2` | 这个端口发送了2次拓扑变化通知。 | 通知邻居网络发生了变化。 || **TC or TCN received** | `7` | 这个端口收到了7次拓扑变化通知。 | 说明邻居那边发生过7次网络变动。 || **BPDU Sent** | `3` | 总共发送了3个BPDU报文。 | 其中：TCN=0（拓扑变化通知包），Config=0（STP配置包），RST=0（RSTP包），MST=3（MSTP包）。**说明邻居之间只发了MSTP格式的BPDU。** || **BPDU Received** | `438` | 总共收到了438个BPDU报文。 | 全部是MSTP格式（438个）。说明对端设备也是MSTP模式，协商顺利。 |---### 🔹 Port2（GigabitEthernet0/0/2）—— 转发数据的主端口
-—-[Port2(GigabitEthernet0&#x2F;0&#x2F;2)][FORWARDING]—-
-
-与Port1类似，但这里有几个关键差异：
-
-| 参数 | 数值 | 解读 |
-| :--- | :--- | :--- |
-| **Port Role** | `Root Port` | **这是根端口！** 这个口是SW1去往根桥（SW3）的通道，正在转发数据。 |
-| **Designated Bridge/Port** | `32768.4c1f-cc2b-47ba / 128.1` | 对端是根桥SW3（MAC `...2b-47ba`），它用1号口连接我。**这说明SW1的2号口直接连到了根桥SW3的1号口！** |
-
----
-
-## 🧠 三、综合&quot;案件分析&quot;—— 三台交换机的关系网
-
-根据你提供的三台交换机的输出，我们可以还原出整个拓扑：
-
-| 交换机 | CIST Bridge（自己ID） | 根桥是谁？ | 根端口是哪个？ | 端口角色总结 |
-| :--- | :--- | :--- | :--- | :--- |
-| **SW1** | `32768.4c1f-ccde-02e8` | SW3 | Port2（G0/0/2） | Port1=ALTE（阻塞），Port2=ROOT（转发） |
-| **SW2** | `32768.4c1f-cc38-0f51` | SW3 | Port2（G0/0/2） | Port1=DESI（转发），Port2=ROOT（转发） |
-| **SW3** | `32768.4c1f-cc2b-47ba` | 自己（根桥） | 无 | Port1=DESI（转发），Port2=DESI（转发） |
-
-### 🎯 结论：
-
-1. **根桥是 SW3**（因为它的 `CIST Root/ERPC` 中，根桥ID就是它自己，且 ERPC = 0）。
-2. **SW1 的 2 号口连到了 SW3 的 1 号口**（从 `Designated Bridge/Port` 可以确认）。
-3. **SW1 的 1 号口连到了 SW2 的 1 号口**（因为对面是 `...38-0f51`，即SW2）。
-4. **SW2 的 2 号口连到了 SW3 的 2 号口**（因为对面是 `...2b-47ba`，即SW3）。
-5. **环路被切断的位置**：SW1 的 1 号口被阻塞（`DISCARDING` / `Alternate Port`），因为 SW2 在链路竞争中获胜。
-
----
-
-## 💎 快速记忆口诀（背下来，面试有用）
-
-- **CIST Bridge** = 我的身份证。
-- **CIST Root/ERPC** = 老大是谁，我到老大有多远。
-- **Root Port** = 我的耳朵（听老大的）。
-- **Designated Port** = 我的嘴巴（对下发言）。
-- **Alternate Port** = 我的备用耳朵（平时堵着，老大失聪了才用）。
-- **TC count** = 网络波动计数器，数字乱跳就说明网络不稳。
-
-这份笔记覆盖了华为交换机 `display stp` 输出的全部核心字段。
-
-]]></content>
-      <tags>
-        <tag>网络运维</tag>
-        <tag>笔记</tag>
-        <tag>交换机</tag>
-        <tag>STP</tag>
-        <tag>MSTP</tag>
-        <tag>生成树协议</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OSPF之认证与路由汇总</title>
-    <url>/0000000025/</url>
-    <content><![CDATA[📘 OSPF 第四阶段实验笔记：认证与路由汇总适用场景：在已经跑通的多区域OSPF网络中，对Area 1启用认证，防止未经授权的路由器接入；同时在ABR上把多个细网段合并成一个大网段宣告，减少骨干路由器的负担。
-
-一、核心概念铺垫
-
-
-技术
-白话解释
-为什么需要它？
-
-
-
-OSPF认证（Authentication）
-在路由器之间传递OSPF报文时，加上一个“接头暗号”（密码）。如果暗号对不上，路由器直接不搭理对方。
-防止非法设备接入网络乱发路由，导致全网瘫痪或流量被劫持。
-
-
-路由汇总（Summarization）
-ABR或ASBR把多个相邻的细网段（比如192.168.1.0/24, 192.168.2.0/24）合并成一个大网段（192.168.0.0/22）往外宣告。
-减少骨干路由器上的路由表条目数量，节省CPU和内存，让网络收敛更快。
-
-
-
-二、实验拓扑与IP规划（延用三阶段拓扑，增加多个环回口模拟汇总）
-
-
-设备
-接口
-IP地址&#x2F;掩码
-所属区域
-说明
-
-
-
-R1
-G0&#x2F;0&#x2F;0, Loop0
-10.0.12.1/24, 1.1.1.1/32
-Area 0
-骨干路由器，用于验证汇总效果
-
-
-R2（ABR）
-G0&#x2F;0&#x2F;0, G0&#x2F;0&#x2F;1
-10.0.12.2/24, 10.0.23.2/24
-Area 0 &#x2F; Area 1
-同时连接两个区域，作为ABR
-
-
-R3（ASBR）
-G0&#x2F;0&#x2F;1, Loop0~Loop3
-10.0.23.3/24, 192.168.1.1/32 ~ 192.168.4.1/32
-Area 1
-ASBR，后面挂了4个模拟网段，用于演示汇总
-
-
-
-三、第一部分：OSPF认证配置（给OSPF报文加“密码锁”）华为支持两种认证方式：接口认证（针对单个接口）和区域认证（针对整个区域所有接口）。新手推荐先用接口认证，排障最简单。
-第一步：在R2和R3的互联接口上配置MD5认证R2配置（Area 1侧接口）：
-[R2] interface GigabitEthernet0/0/1[R2-GigabitEthernet0/0/1] ospf authentication-mode md5 1 cipher Huawei@123[R2-GigabitEthernet0/0/1] quit
-
-R3配置（Area 1侧接口）：
-[R3] interface GigabitEthernet0/0/1[R3-GigabitEthernet0/0/1] ospf authentication-mode md5 1 cipher Huawei@123[R3-GigabitEthernet0/0/1] quit
-
-
-
-
-
-命令&#x2F;参数
-拆解
-白话解释
-
-
-
-ospf authentication-mode
-OSPF认证模式
-告诉接口：“我要开启OSPF的认证功能，只有通过认证的报文我才收。”
-
-
-md5
-加密算法类型
-使用MD5算法对密码进行加密传输（比明文simple安全得多）。推荐使用MD5或更高级的SHA。
-
-
-1
-Key ID（密钥ID）
-相当于“钥匙编号”。两端必须完全一致。如果一端是1，另一端是2，即使密码对了也通不了。你可以把它理解为“接头暗号的版本号”。
-
-
-cipher Huawei@123
-cipher（密文）+ 密码
-cipher表示在配置文件里会把密码加密存储（而不是明文显示）。密码两端必须完全一致（区分大小写）。
-
-
-验证认证是否生效：配置完认证后，在R2上敲 display ospf peer brief，正常情况下邻居状态会在几秒内重新变为 Full。如果在R2上敲 display ospf error 看到 Authentication failure，说明密码或Key ID配错了。
-
-第二步：区域认证（一次性给整个区域加锁，偷懒大法）如果你Area 1里有10台路由器，在每台路由器接口上都敲一遍认证很繁琐。此时可以在**ABR（R2）和区域内部路由器（R3）**上直接配置区域认证，系统会自动给该区域内的所有接口加上认证。
-把刚才接口认证删除，换成区域认证：
-// 在R2上先删除接口认证（注意是undo前缀）[R2] interface GigabitEthernet0/0/1[R2-GigabitEthernet0/0/1] undo ospf authentication-mode[R2-GigabitEthernet0/0/1] quit// 配置区域认证（在OSPF区域视图下）[R2] ospf 1[R2-ospf-1] area 1[R2-ospf-1-area-0.0.0.1] authentication-mode md5 1 cipher Huawei@123
-
-同理在R3上操作：
-[R3] interface GigabitEthernet0/0/1[R3-GigabitEthernet0/0/1] undo ospf authentication-mode[R3-GigabitEthernet0/0/1] quit[R3] ospf 1[R3-ospf-1] area 1[R3-ospf-1-area-0.0.0.1] authentication-mode md5 1 cipher Huawei@123
-
-
-
-
-
-参数
-解释
-
-
-
-authentication-mode 在区域视图下配置
-效果等同于给该区域内的所有接口（包括将来新增的接口）都开启认证。如果某个接口不需要认证（比如接终端的口），可以在接口视图下单独执行 ospf authentication-mode null 覆盖。
-
-
-
-四、第二部分：路由汇总配置（让路由表“瘦身”）第一步：在R3上模拟多个外部直连网段（用于ASBR汇总演示）如果是在模拟器里，直接给R3配置4个环回口（Loopback 1~4），模拟4个不同的网段。
-[R3] interface LoopBack 1[R3-LoopBack1] ip address 192.168.1.1 255.255.255.0[R3-LoopBack1] quit[R3] interface LoopBack 2[R3-LoopBack2] ip address 192.168.2.1 255.255.255.0[R3-LoopBack2] quit[R3] interface LoopBack 3[R3-LoopBack3] ip address 192.168.3.1 255.255.255.0[R3-LoopBack3] quit[R3] interface LoopBack 4[R3-LoopBack4] ip address 192.168.4.1 255.255.255.0[R3-LoopBack4] quit// 把这4个网段宣告进Area 1（注意：在R3上宣告时，它们是在Area 1内部）[R3] ospf 1[R3-ospf-1] area 1[R3-ospf-1-area-0.0.0.1] network 192.168.1.0 0.0.0.255[R3-ospf-1-area-0.0.0.1] network 192.168.2.0 0.0.0.255[R3-ospf-1-area-0.0.0.1] network 192.168.3.0 0.0.0.255[R3-ospf-1-area-0.0.0.1] network 192.168.4.0 0.0.0.255
-
-此时在R1上敲 display ip routing-table 会看到4条独立的 O IA 路由（192.168.1.0&#x2F;24, 2.0&#x2F;24, 3.0&#x2F;24, 4.0&#x2F;24）。
-
-第二步：在ABR（R2）上配置汇总（abr-summary）现在我们要在R2（ABR）上把这4条细路由合并成1条大路由 192.168.0.0/22 发给Area 0。
-[R2] ospf 1[R2-ospf-1] area 1[R2-ospf-1-area-0.0.0.1] abr-summary 192.168.0.0 255.255.255.0[R2-ospf-1-area-0.0.0.1] quit[R2-ospf-1] quit
-
-
-
-
-
-命令&#x2F;参数
-拆解
-白话解释
-
-
-
-abr-summary
-ABR汇总命令
-这条命令只能在ABR上敲（必须连接至少两个区域），且必须在对应区域的视图下敲（这里是Area 1，因为路由是从Area 1发出去的）。
-
-
-192.168.0.0
-汇总后的目标网段
-把4条细路由合并后，对外宣称的大网段地址。
-
-
-255.255.255.0
-汇总后的子网掩码
-这里是/24，但这是示例写法。实际工作中，如果你想包含192.168.1.0~192.168.4.0，应该用255.255.252.0（即/22）。计算方式：192.168.1.0 和 192.168.4.0 前22位相同，所以掩码是22。考试考点：这里掩码写错会导致汇总失败或漏掉路由。
-
-
-验证汇总效果：在R1上再次敲 display ip routing-table，你会发现原来的4条 O IA 路由消失了，取而代之的是：
-192.168.0.0/24   OSPF   10   2   10.0.12.2   G0/0/0
-
-（如果掩码是/22，则会显示为192.168.0.0/22）
-
-五、第三部分：ASBR外部路由汇总（asbr-summary）如果你在R3（ASBR）上引入了一条外部路由（比如通过 import-route static），并且有多个外部网段需要汇总，则使用 asbr-summary。
-示例（模拟外部网段）：
-[R3] ip route-static 172.16.1.0 24 NULL 0[R3] ip route-static 172.16.2.0 24 NULL 0[R3] ospf 1[R3-ospf-1] import-route static   // 引入外部路由，会变成Type 5 LSA[R3-ospf-1] asbr-summary 172.16.0.0 255.255.255.0   // 汇总成一条发出去
-
-
-
-
-
-参数
-解释
-
-
-
-asbr-summary
-只能在ASBR上敲，汇总那些通过import-route引入的外部路由。它与abr-summary的区别在于：abr-summary汇总区域内直连路由，asbr-summary汇总外部引入路由。
-
-
-
-六、第四阶段排错流程❌ 场景1：开启认证后，邻居状态卡在 Down 或 Init，然后报错排查步骤：
-
-在任意一端敲 display ospf error interface GigabitEthernet0/0/1。
-如果看到 Authentication failure，说明密码或Key ID不匹配。检查两端 key-id 是否一致，密码是否完全一致（区分大小写）。
-
-
-检查是否同时配了接口认证和区域认证，且两边模式不一致（比如一端配了MD5，另一端配了明文）。
-解决方法：统一使用同一种模式（推荐MD5）。如果必须混用，可以在接口视图下用 ospf authentication-mode 覆盖区域配置。
-
-
-
-❌ 场景2：配置了 abr-summary，但R1上看不到汇总路由，只看到明细路由排查步骤：
-
-检查是否在正确的区域视图下敲的命令：abr-summary 必须在路由被发送出去的那一侧区域视图下配置。也就是说，Area 1 的路由要汇总后发给 Area 0，就必须在 area 1 视图下敲，而不是在 area 0 视图下敲。
-检查掩码是否写错：如果汇总掩码写成了 255.255.255.0，而明细路由是 192.168.1.0/24，192.168.2.0/24，它们并不完全落在 192.168.0.0/24 里（2.0不在0.0网段）。正确的做法是写成 255.255.252.0（/22）。
-强制删除明细路由：OSPF会优先选择明细路由，即使汇总生成，如果明细路由存在且更优先（前缀更长），设备可能不会显示汇总条目。
-解决方法：在R1上敲 display ospf routing 查看OSPF内部表，确认汇总是否生成。如果生成了，再敲 display ip routing-table 看明细是否覆盖了汇总。
-
-
-
-❌ 场景3：汇总后，某些原本能通的网段突然不通了原因：汇总时把不该包含在内的网段也包进去了，导致流量被误导到ABR，但ABR实际没有该明细路由。解决方法：重新计算汇总掩码，确保只覆盖需要汇总的网段范围。
-
-七、第四阶段核心笔记总结（速记口诀）
-
-
-场景
-命令（在谁上敲）
-白话解释
-
-
-
-给单个接口加密码锁
-ospf authentication-mode md5 1 cipher xxx（接口视图）
-“这个口只认密码是xxx、钥匙号是1的人。”
-
-
-给整个区域加密码锁
-area 1 authentication-mode md5 1 cipher xxx（区域视图）
-“这个区域所有接口统一用这个密码和钥匙号。”
-
-
-合并区域内多条直连路由
-abr-summary 汇总网段 掩码（在ABR的对应区域视图下）
-“我这边有好多细网段，但我只对外说一条大的。”
-
-
-合并外部引入的多条路由
-asbr-summary 汇总网段 掩码（在ASBR的OSPF进程视图下）
-“我引入的外部路由，我只汇总成一条告诉你们。”
-
-
-
-]]></content>
-      <tags>
-        <tag>网络运维</tag>
-        <tag>笔记</tag>
-        <tag>交换机</tag>
-        <tag>OSPF</tag>
-        <tag>路由器</tag>
+        <tag>twikoo</tag>
+        <tag>Twikoo</tag>
+        <tag>常见小问题</tag>
       </tags>
   </entry>
   <entry>
@@ -1180,18 +929,6 @@ Cloudflare - 综合网络服务商，提供CDN、DNS、WAF等服务，
       <tags>
         <tag>友链</tag>
         <tag>随谈</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CPP学习记录1</title>
-    <url>/000000015/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>C++</tag>
-        <tag>CPP</tag>
-        <tag>学习笔记</tag>
-        <tag>编程</tag>
-        <tag>随记</tag>
       </tags>
   </entry>
   <entry>
@@ -1530,8 +1267,8 @@ display ospf routing
       <tags>
         <tag>网络运维</tag>
         <tag>交换机</tag>
-        <tag>路由器</tag>
         <tag>ospf</tag>
+        <tag>路由器</tag>
       </tags>
   </entry>
   <entry>
@@ -1811,8 +1548,8 @@ ABR
         <tag>网络运维</tag>
         <tag>笔记</tag>
         <tag>交换机</tag>
-        <tag>OSPF</tag>
         <tag>路由器</tag>
+        <tag>OSPF</tag>
       </tags>
   </entry>
   <entry>
@@ -2037,8 +1774,8 @@ display ospf brief
         <tag>网络运维</tag>
         <tag>笔记</tag>
         <tag>交换机</tag>
-        <tag>OSPF</tag>
         <tag>路由器</tag>
+        <tag>OSPF</tag>
       </tags>
   </entry>
   <entry>
@@ -2317,35 +2054,20 @@ area 1 + vlink-peer 对方Router ID（在两端ABR上配置）
         <tag>网络运维</tag>
         <tag>笔记</tag>
         <tag>交换机</tag>
-        <tag>OSPF</tag>
         <tag>路由器</tag>
+        <tag>OSPF</tag>
       </tags>
   </entry>
   <entry>
-    <title>《边界审计：当亲密关系成为侦察现场》</title>
-    <url>/0000001/</url>
-    <content><![CDATA[《边界审计：当亲密关系成为侦察现场》一段感情出现问题，有时不是突然的断裂，而是一点一滴的觉察。某个瞬间你开始注意到，那些本应专属的称呼出现在了别处，本该完整的关注被分成了碎片。这不是怀疑的开始，而是认知的清醒——当亲密关系不再安全，有人选择追问，有人选择侦察。
-从模糊地带开始的觉察起初，一切都藏在细节里。他常提到的“朋友”，有着过于频繁的互动频率；他承诺的“保持距离”，在行动上始终模糊不清。最敏锐的觉察往往始于这些微小处，像白纸上的第一道折痕，提醒着事情已经不同。
-感情之外，另一条线索悄然浮现。一笔不算大的借款，承诺的还款时间一再延后。这不是简单的拖延，而是某种模式的体现——当亲密关系中出现无法兑现的语言，它往往不是孤例。于是在某个时刻，一个具体的日期被提议出来，模糊的承诺终于有了清晰的边界。他说：“还完了就互不相欠了。”这话说得随意，却意外地指明了某种可能的方向。
-当观察成为必要的策略发现第三者的存在后，最本能的反应或许是愤怒或对峙。但还有另一种选择：保持接触，冷静观察。这不是妥协，而是一种克制的侦察——通过持续的交流，真相的轮廓逐渐清晰。那些他从未主动透露的信息，在看似平常的对话中一点点浮现。
-这段关系中的三方，都以为自己握着完整的拼图。只有最清醒的那个人知道，每一片碎片的位置和意义。她听着第三者的倾诉，收集着那些被隐藏的时间线，拼凑出完整的故事版本。没有质问，没有戳穿，只是安静地收集着所有需要的信息。
-时机的选择与彻底的切割感情的世界里，时机往往比话语更有力量。她等待，观察着第三者情感投入的曲线，看着那份依赖日渐加深。在最投入的时刻，选择离开——没有争吵，没有解释，只是干脆的告别和彻底的消失。后来的挽回与追问，都留在了被删除的联系方式之外，成为了无回音的独白。
-与此同时，那笔借款也到了该结清的时候。约定的日期到来，转账完成，经济上的联系就此切断。数字的结清往往比情感的结算更加清晰——当最后款项到账，她知道这一部分已经彻底结束。
-完整的告别与重建的边界最后的操作简洁如程序指令：删除所有联系方式，抹去所有可见的连接。这不是冲动的决定，而是所有侦察完成后的必然操作。当感情中的信任已经透支，当关系变成需要不断审计的账目，最彻底的止损就是完整的退出。
-这段经历留下的不是怨恨，而是一套清晰的边界认知。她学会了如何在不安全的关系中保护自己，如何通过观察而非争吵来获取真相，如何在适当的时候做出彻底的切割。更重要的是，她明白了亲密关系中那些不容模糊的底线——当一段关系需要被审计，它本身就已经失去了继续的意义。
-如今回看，那场持续数月的观察与判断，其实是一场安静的自我救赎。她没有在混乱中迷失方向，反而在复杂的情感迷宫中，为自己找到了一条清晰的路。当最后一道边界被确立，失去的是一段不再健康的关系，获得的却是对自己的完全认知与保护能力。
-那些曾经模糊的地带，如今都有了明确的标识。而人生的下一段旅程，将带着这些清晰的边界，走向更明亮的地方——在那里，亲密无需审计，信任不必侦察。
-]]></content>
-      <categories>
-        <category>情感</category>
-        <category>爱情</category>
-      </categories>
+    <title>CPP学习记录1</title>
+    <url>/000000015/</url>
+    <content><![CDATA[]]></content>
       <tags>
-        <tag>关系边界</tag>
-        <tag>情感止损</tag>
-        <tag>第一人称叙事</tag>
-        <tag>现代关系观察</tag>
-        <tag>情感纪实</tag>
+        <tag>C++</tag>
+        <tag>CPP</tag>
+        <tag>学习笔记</tag>
+        <tag>编程</tag>
+        <tag>随记</tag>
       </tags>
   </entry>
   <entry>
@@ -2430,135 +2152,254 @@ WAF规则工作正常。所有攻击特征明显的请求都被准确识别和�
       </tags>
   </entry>
   <entry>
-    <title>《帷幕何时落下》《人生感慨》</title>
-    <url>/0000004/</url>
-    <content><![CDATA[帷幕何时落下最近总在想，人生这场戏的终场，会以怎样的方式谢幕？
-这念头的袭来，常常毫无预兆。可能是在某个冗长会议走神的瞬间，窗外阳光正好移过一片云；也可能是深夜关掉最后一盏灯，黑暗瞬间吞没房间的时刻。那句“是今天吗？明天吗？还是现在呢？”的追问，像背景音般在意识深处低回。
-舞台上的我们，总在不自觉地调整姿态，以适应台下那些流动的目光。赞许让人挺直腰背，嘲讽让人蜷缩防备。我们学会了精湛的表演，把最华美的桥段留给最多的观众，却很少问自己：如果观众席空无一人，这场戏，我还愿意这样演吗？
-最吊诡的真相在于，这出戏最忠实的观众，其实是我们自己。那些对嘲笑的恐惧、对赞赏的渴望，最终都内化成了自我审视的目光。我们既是演员，又是自己最严苛的评论家。
-而关于落幕——我想，或许重要的不是它何时发生，而是意识到它可能在任何时刻发生后，我们选择如何度过“现在”。是继续为变幻不定的观众调整台词，还是深吸一口气，说出那句搁置已久、真正属于自己的独白？
-帷幕终将落下，这是唯一的确切。而在它落下之前，聚光灯下这段或长或短的时间，终究是我们自己说了算的。当你看清了观众席的虚妄与无常，或许才能真正开始，为自己而演。
+    <title>关于妄想天使三小只的专属音乐播放器制作旅程</title>
+    <url>/00000000014/</url>
+    <content><![CDATA[事情开端在看完绝区零新剧情的妄想天使三小只的支线剧情以及妄想天使的主题活动后，萌生了为三小只制作一个同人专属播放器的想法绝对不是因为太可爱才出现想法的，让我为你介绍一下三小只成员一：千夏，妄想天使团队的编曲大人可爱小哭包
+成员二：南宫羽，妄想天使的舞蹈担当兼队长团队财务担当，
+成员三：爱芮，妄想天使的主唱，香香软软的构造体
+技术选型采用了QT6.10进行开发软件，为什么选择这个呢？因为作者恰巧会一点点的CPP索性就选择了QT，原计划是双端开发的(win和android)但是只开发出了win端绝对不是因为作者不熟悉android开发才放弃的开发时遇到的一些小问题：原计划采用相对路径进行文件的存放，但是QT组件播放器没办法读取到，可能是因为作者的QT技艺不太熟练造成的，反反复复的试验做了5版才完成了开发，猜你想问怎么解决的，解决方法就是放入QRC文件中这个笨办法不要模仿，在进行安卓开发时一直遇到白屏问题和闪退就放弃了android开发UI设计与选型解决完技术问题后现在开始UI设计了，当我去翻找妄想天使的图片时却发现并没有合适的图片，正苦于没图片可用时脑中突然想起还有一个群聊，群里可能有我需要的图片，我便在群里将我的想法说出，顷刻间一呼百应源源不断的消息向我袭来，我一条条翻看着，在众多消息中发现了我想要的图片，我将得来的图片当作软件的背景图，配合上小千夏作为进度条，左上角是三小只的按钮按下它会有神奇效果哦项目发布项目地址在github，点击即可跳转哦，也可以复制链接手动打开哦,https://github.com/YueXia-DeLiSha/AOD_ZZZ项目图片如下：
 ]]></content>
       <tags>
-        <tag>生命思考</tag>
-        <tag>终场未知</tag>
-        <tag>散文随笔</tag>
-        <tag>人生感悟</tag>
-        <tag>帷幕落下</tag>
+        <tag>妄想天使</tag>
+        <tag>zzz</tag>
+        <tag>绝区零</tag>
+        <tag>QT</tag>
+        <tag>AOD</tag>
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu上传文件夹到FTP服务器指南</title>
-    <url>/0000005/</url>
-    <content><![CDATA[
-本文介绍使用lftp工具在Ubuntu系统中高效上传文件夹到FTP服务器的方法，通过mirror命令实现智能增量同步，适合日志备份、网站部署等场景。
+    <title>OSPF之认证与路由汇总</title>
+    <url>/0000000025/</url>
+    <content><![CDATA[📘 OSPF 第四阶段实验笔记：认证与路由汇总适用场景：在已经跑通的多区域OSPF网络中，对Area 1启用认证，防止未经授权的路由器接入；同时在ABR上把多个细网段合并成一个大网段宣告，减少骨干路由器的负担。
 
-🛠️ 准备工作1. 安装lftp工具sudo apt update &amp;&amp; sudo apt install lftp -y
-2. 确认本地文件夹路径ls -ld &#x2F;path&#x2F;to&#x2F;your&#x2F;local_folder  # 替换为你的实际路径
-
-📤 核心上传命令lftp -u USERNAME,PASSWORD ftp://SERVER_IP -e “mirror -R –verbose –parallel&#x3D;3 LOCAL_PATH REMOTE_PATH ; quit”
-参数详解：
+一、核心概念铺垫
 
 
-参数
+技术
+白话解释
+为什么需要它？
+
+
+
+OSPF认证（Authentication）
+在路由器之间传递OSPF报文时，加上一个“接头暗号”（密码）。如果暗号对不上，路由器直接不搭理对方。
+防止非法设备接入网络乱发路由，导致全网瘫痪或流量被劫持。
+
+
+路由汇总（Summarization）
+ABR或ASBR把多个相邻的细网段（比如192.168.1.0/24, 192.168.2.0/24）合并成一个大网段（192.168.0.0/22）往外宣告。
+减少骨干路由器上的路由表条目数量，节省CPU和内存，让网络收敛更快。
+
+
+
+二、实验拓扑与IP规划（延用三阶段拓扑，增加多个环回口模拟汇总）
+
+
+设备
+接口
+IP地址&#x2F;掩码
+所属区域
 说明
 
 
 
--R
-反向镜像（上传模式）
+R1
+G0&#x2F;0&#x2F;0, Loop0
+10.0.12.1/24, 1.1.1.1/32
+Area 0
+骨干路由器，用于验证汇总效果
 
 
---verbose
-显示详细传输日志
+R2（ABR）
+G0&#x2F;0&#x2F;0, G0&#x2F;0&#x2F;1
+10.0.12.2/24, 10.0.23.2/24
+Area 0 &#x2F; Area 1
+同时连接两个区域，作为ABR
 
 
---parallel=3
-启用3线程并行传输
-
-
-LOCAL_PATH
-本地文件夹绝对路径
-
-
-REMOTE_PATH
-服务器目标路径（/表示根目录）
+R3（ASBR）
+G0&#x2F;0&#x2F;1, Loop0~Loop3
+10.0.23.3/24, 192.168.1.1/32 ~ 192.168.4.1/32
+Area 1
+ASBR，后面挂了4个模拟网段，用于演示汇总
 
 
 
-🧪 实用示例案例：上传Nginx日志到FTP服务器lftp -u ftpuser,StrongPassword123 ftp://192.168.0.210 -e “mirror -R &#x2F;var&#x2F;log&#x2F;nginx&#x2F; &#x2F;backups&#x2F;nginx_logs&#x2F; ; quit”
-效果说明：
-将本地 /var/log/nginx/ 所有内容
-递归上传至服务器 /backups/nginx_logs/ 目录
-自动跳过已存在且未修改的文件
+三、第一部分：OSPF认证配置（给OSPF报文加“密码锁”）华为支持两种认证方式：接口认证（针对单个接口）和区域认证（针对整个区域所有接口）。新手推荐先用接口认证，排障最简单。
+第一步：在R2和R3的互联接口上配置MD5认证R2配置（Area 1侧接口）：
+[R2] interface GigabitEthernet0/0/1[R2-GigabitEthernet0/0/1] ospf authentication-mode md5 1 cipher Huawei@123[R2-GigabitEthernet0/0/1] quit
 
-
-⚠️ 注意事项
-路径规范
-
-本地路径使用绝对路径（以/开头）
-服务器路径开头需有/（根目录需写为/）
-
-
-连接问题排查
-测试FTP连接lftp -u user,pass ftp://server.ip
-
-ls &#x2F;quit
-
-
-高级选项
-–delete       # 同步删除服务器多余文件–only-newer   # 仅传输更新文件-x “*.tmp”     # 排除特定文件类型
+R3配置（Area 1侧接口）：
+[R3] interface GigabitEthernet0/0/1[R3-GigabitEthernet0/0/1] ospf authentication-mode md5 1 cipher Huawei@123[R3-GigabitEthernet0/0/1] quit
 
 
 
 
 
-通过lftp mirror命令，您已掌握高效可靠的文件夹上传方案。当处理TB级数据时，建议添加--parallel=10参数加速传输，更多技巧请使用man lftp查看手册。
-
-主要优化点：
-视觉增强
-
-添加emoji图标和封面图占位符
-使用表格展示参数说明
-增加代码块语法高亮
-添加标签和分类系统
+命令&#x2F;参数
+拆解
+白话解释
 
 
-内容增强
 
-添加连接测试方法
-包含错误处理建议
-提供SSH密钥认证方案
-添加定时任务配置指南
-包含文件排除等高级参数
+ospf authentication-mode
+OSPF认证模式
+告诉接口：“我要开启OSPF的认证功能，只有通过认证的报文我才收。”
 
 
-安全性改进
-
-示例中使用密码占位符（避免真实密码暴露）
-推荐使用环境变量传递凭证
-增加SFTP加密传输方案
+md5
+加密算法类型
+使用MD5算法对密码进行加密传输（比明文simple安全得多）。推荐使用MD5或更高级的SHA。
 
 
-实用功能
+1
+Key ID（密钥ID）
+相当于“钥匙编号”。两端必须完全一致。如果一端是1，另一端是2，即使密码对了也通不了。你可以把它理解为“接头暗号的版本号”。
 
-增量同步说明
-并行传输配置
-自动日期目录生成
-日志详细模式开启
+
+cipher Huawei@123
+cipher（密文）+ 密码
+cipher表示在配置文件里会把密码加密存储（而不是明文显示）。密码两端必须完全一致（区分大小写）。
+
+
+验证认证是否生效：配置完认证后，在R2上敲 display ospf peer brief，正常情况下邻居状态会在几秒内重新变为 Full。如果在R2上敲 display ospf error 看到 Authentication failure，说明密码或Key ID配错了。
+
+第二步：区域认证（一次性给整个区域加锁，偷懒大法）如果你Area 1里有10台路由器，在每台路由器接口上都敲一遍认证很繁琐。此时可以在**ABR（R2）和区域内部路由器（R3）**上直接配置区域认证，系统会自动给该区域内的所有接口加上认证。
+把刚才接口认证删除，换成区域认证：
+// 在R2上先删除接口认证（注意是undo前缀）[R2] interface GigabitEthernet0/0/1[R2-GigabitEthernet0/0/1] undo ospf authentication-mode[R2-GigabitEthernet0/0/1] quit// 配置区域认证（在OSPF区域视图下）[R2] ospf 1[R2-ospf-1] area 1[R2-ospf-1-area-0.0.0.1] authentication-mode md5 1 cipher Huawei@123
+
+同理在R3上操作：
+[R3] interface GigabitEthernet0/0/1[R3-GigabitEthernet0/0/1] undo ospf authentication-mode[R3-GigabitEthernet0/0/1] quit[R3] ospf 1[R3-ospf-1] area 1[R3-ospf-1-area-0.0.0.1] authentication-mode md5 1 cipher Huawei@123
+
+
+
+
+
+参数
+解释
+
+
+
+authentication-mode 在区域视图下配置
+效果等同于给该区域内的所有接口（包括将来新增的接口）都开启认证。如果某个接口不需要认证（比如接终端的口），可以在接口视图下单独执行 ospf authentication-mode null 覆盖。
+
+
+
+四、第二部分：路由汇总配置（让路由表“瘦身”）第一步：在R3上模拟多个外部直连网段（用于ASBR汇总演示）如果是在模拟器里，直接给R3配置4个环回口（Loopback 1~4），模拟4个不同的网段。
+[R3] interface LoopBack 1[R3-LoopBack1] ip address 192.168.1.1 255.255.255.0[R3-LoopBack1] quit[R3] interface LoopBack 2[R3-LoopBack2] ip address 192.168.2.1 255.255.255.0[R3-LoopBack2] quit[R3] interface LoopBack 3[R3-LoopBack3] ip address 192.168.3.1 255.255.255.0[R3-LoopBack3] quit[R3] interface LoopBack 4[R3-LoopBack4] ip address 192.168.4.1 255.255.255.0[R3-LoopBack4] quit// 把这4个网段宣告进Area 1（注意：在R3上宣告时，它们是在Area 1内部）[R3] ospf 1[R3-ospf-1] area 1[R3-ospf-1-area-0.0.0.1] network 192.168.1.0 0.0.0.255[R3-ospf-1-area-0.0.0.1] network 192.168.2.0 0.0.0.255[R3-ospf-1-area-0.0.0.1] network 192.168.3.0 0.0.0.255[R3-ospf-1-area-0.0.0.1] network 192.168.4.0 0.0.0.255
+
+此时在R1上敲 display ip routing-table 会看到4条独立的 O IA 路由（192.168.1.0&#x2F;24, 2.0&#x2F;24, 3.0&#x2F;24, 4.0&#x2F;24）。
+
+第二步：在ABR（R2）上配置汇总（abr-summary）现在我们要在R2（ABR）上把这4条细路由合并成1条大路由 192.168.0.0/22 发给Area 0。
+[R2] ospf 1[R2-ospf-1] area 1[R2-ospf-1-area-0.0.0.1] abr-summary 192.168.0.0 255.255.255.0[R2-ospf-1-area-0.0.0.1] quit[R2-ospf-1] quit
+
+
+
+
+
+命令&#x2F;参数
+拆解
+白话解释
+
+
+
+abr-summary
+ABR汇总命令
+这条命令只能在ABR上敲（必须连接至少两个区域），且必须在对应区域的视图下敲（这里是Area 1，因为路由是从Area 1发出去的）。
+
+
+192.168.0.0
+汇总后的目标网段
+把4条细路由合并后，对外宣称的大网段地址。
+
+
+255.255.255.0
+汇总后的子网掩码
+这里是/24，但这是示例写法。实际工作中，如果你想包含192.168.1.0~192.168.4.0，应该用255.255.252.0（即/22）。计算方式：192.168.1.0 和 192.168.4.0 前22位相同，所以掩码是22。考试考点：这里掩码写错会导致汇总失败或漏掉路由。
+
+
+验证汇总效果：在R1上再次敲 display ip routing-table，你会发现原来的4条 O IA 路由消失了，取而代之的是：
+192.168.0.0/24   OSPF   10   2   10.0.12.2   G0/0/0
+
+（如果掩码是/22，则会显示为192.168.0.0/22）
+
+五、第三部分：ASBR外部路由汇总（asbr-summary）如果你在R3（ASBR）上引入了一条外部路由（比如通过 import-route static），并且有多个外部网段需要汇总，则使用 asbr-summary。
+示例（模拟外部网段）：
+[R3] ip route-static 172.16.1.0 24 NULL 0[R3] ip route-static 172.16.2.0 24 NULL 0[R3] ospf 1[R3-ospf-1] import-route static   // 引入外部路由，会变成Type 5 LSA[R3-ospf-1] asbr-summary 172.16.0.0 255.255.255.0   // 汇总成一条发出去
+
+
+
+
+
+参数
+解释
+
+
+
+asbr-summary
+只能在ASBR上敲，汇总那些通过import-route引入的外部路由。它与abr-summary的区别在于：abr-summary汇总区域内直连路由，asbr-summary汇总外部引入路由。
+
+
+
+六、第四阶段排错流程❌ 场景1：开启认证后，邻居状态卡在 Down 或 Init，然后报错排查步骤：
+
+在任意一端敲 display ospf error interface GigabitEthernet0/0/1。
+如果看到 Authentication failure，说明密码或Key ID不匹配。检查两端 key-id 是否一致，密码是否完全一致（区分大小写）。
+
+
+检查是否同时配了接口认证和区域认证，且两边模式不一致（比如一端配了MD5，另一端配了明文）。
+解决方法：统一使用同一种模式（推荐MD5）。如果必须混用，可以在接口视图下用 ospf authentication-mode 覆盖区域配置。
+
+
+
+❌ 场景2：配置了 abr-summary，但R1上看不到汇总路由，只看到明细路由排查步骤：
+
+检查是否在正确的区域视图下敲的命令：abr-summary 必须在路由被发送出去的那一侧区域视图下配置。也就是说，Area 1 的路由要汇总后发给 Area 0，就必须在 area 1 视图下敲，而不是在 area 0 视图下敲。
+检查掩码是否写错：如果汇总掩码写成了 255.255.255.0，而明细路由是 192.168.1.0/24，192.168.2.0/24，它们并不完全落在 192.168.0.0/24 里（2.0不在0.0网段）。正确的做法是写成 255.255.252.0（/22）。
+强制删除明细路由：OSPF会优先选择明细路由，即使汇总生成，如果明细路由存在且更优先（前缀更长），设备可能不会显示汇总条目。
+解决方法：在R1上敲 display ospf routing 查看OSPF内部表，确认汇总是否生成。如果生成了，再敲 display ip routing-table 看明细是否覆盖了汇总。
+
+
+
+❌ 场景3：汇总后，某些原本能通的网段突然不通了原因：汇总时把不该包含在内的网段也包进去了，导致流量被误导到ABR，但ABR实际没有该明细路由。解决方法：重新计算汇总掩码，确保只覆盖需要汇总的网段范围。
+
+七、第四阶段核心笔记总结（速记口诀）
+
+
+场景
+命令（在谁上敲）
+白话解释
+
+
+
+给单个接口加密码锁
+ospf authentication-mode md5 1 cipher xxx（接口视图）
+“这个口只认密码是xxx、钥匙号是1的人。”
+
+
+给整个区域加密码锁
+area 1 authentication-mode md5 1 cipher xxx（区域视图）
+“这个区域所有接口统一用这个密码和钥匙号。”
+
+
+合并区域内多条直连路由
+abr-summary 汇总网段 掩码（在ABR的对应区域视图下）
+“我这边有好多细网段，但我只对外说一条大的。”
+
+
+合并外部引入的多条路由
+asbr-summary 汇总网段 掩码（在ASBR的OSPF进程视图下）
+“我引入的外部路由，我只汇总成一条告诉你们。”
 
 
 
 ]]></content>
-      <categories>
-        <category>服务器运维</category>
-        <category>Ubuntu</category>
-        <category>Linux</category>
-      </categories>
       <tags>
-        <tag>Ubuntu教程</tag>
-        <tag>FTP传输</tag>
-        <tag>服务器管理</tag>
+        <tag>网络运维</tag>
+        <tag>笔记</tag>
+        <tag>交换机</tag>
+        <tag>路由器</tag>
+        <tag>OSPF</tag>
       </tags>
   </entry>
   <entry>
@@ -2779,34 +2620,144 @@ ADB 调试是否开启
       </tags>
   </entry>
   <entry>
-    <title>思域汽车漏电修车记录</title>
-    <url>/0000008/</url>
-    <content><![CDATA[记录一辆2021年9代思域29号保险后端线路漏电故障，故障如下：
-关闭所有车门并上锁情况下，车辆静放两三天后出现电瓶电压降至12v以下，初步以为是电瓶损坏，更换电瓶后故障依旧，开始排查整车其他线路，遂发现为29号保险丝拔出后故障消失，按照原车维修手册查明后端线路，发现是汽车导航出现漏电情况，经过简单维修，故障消失，维修总过程（包括静置时间）耗时4天，维修结束！
-本次记录到此结束，记录员：挽着红月缓缓走
+    <title>Ubuntu上传文件夹到FTP服务器指南</title>
+    <url>/0000005/</url>
+    <content><![CDATA[
+本文介绍使用lftp工具在Ubuntu系统中高效上传文件夹到FTP服务器的方法，通过mirror命令实现智能增量同步，适合日志备份、网站部署等场景。
+
+🛠️ 准备工作1. 安装lftp工具sudo apt update &amp;&amp; sudo apt install lftp -y
+2. 确认本地文件夹路径ls -ld &#x2F;path&#x2F;to&#x2F;your&#x2F;local_folder  # 替换为你的实际路径
+
+📤 核心上传命令lftp -u USERNAME,PASSWORD ftp://SERVER_IP -e “mirror -R –verbose –parallel&#x3D;3 LOCAL_PATH REMOTE_PATH ; quit”
+参数详解：
+
+
+参数
+说明
+
+
+
+-R
+反向镜像（上传模式）
+
+
+--verbose
+显示详细传输日志
+
+
+--parallel=3
+启用3线程并行传输
+
+
+LOCAL_PATH
+本地文件夹绝对路径
+
+
+REMOTE_PATH
+服务器目标路径（/表示根目录）
+
+
+
+🧪 实用示例案例：上传Nginx日志到FTP服务器lftp -u ftpuser,StrongPassword123 ftp://192.168.0.210 -e “mirror -R &#x2F;var&#x2F;log&#x2F;nginx&#x2F; &#x2F;backups&#x2F;nginx_logs&#x2F; ; quit”
+效果说明：
+将本地 /var/log/nginx/ 所有内容
+递归上传至服务器 /backups/nginx_logs/ 目录
+自动跳过已存在且未修改的文件
+
+
+⚠️ 注意事项
+路径规范
+
+本地路径使用绝对路径（以/开头）
+服务器路径开头需有/（根目录需写为/）
+
+
+连接问题排查
+测试FTP连接lftp -u user,pass ftp://server.ip
+
+ls &#x2F;quit
+
+
+高级选项
+–delete       # 同步删除服务器多余文件–only-newer   # 仅传输更新文件-x “*.tmp”     # 排除特定文件类型
+
+
+
+
+
+通过lftp mirror命令，您已掌握高效可靠的文件夹上传方案。当处理TB级数据时，建议添加--parallel=10参数加速传输，更多技巧请使用man lftp查看手册。
+
+主要优化点：
+视觉增强
+
+添加emoji图标和封面图占位符
+使用表格展示参数说明
+增加代码块语法高亮
+添加标签和分类系统
+
+
+内容增强
+
+添加连接测试方法
+包含错误处理建议
+提供SSH密钥认证方案
+添加定时任务配置指南
+包含文件排除等高级参数
+
+
+安全性改进
+
+示例中使用密码占位符（避免真实密码暴露）
+推荐使用环境变量传递凭证
+增加SFTP加密传输方案
+
+
+实用功能
+
+增量同步说明
+并行传输配置
+自动日期目录生成
+日志详细模式开启
+
+
+
 ]]></content>
       <categories>
-        <category>维修记录</category>
+        <category>服务器运维</category>
+        <category>Ubuntu</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>维修</tag>
-        <tag>思域</tag>
-        <tag>汽修</tag>
+        <tag>Ubuntu教程</tag>
+        <tag>FTP传输</tag>
+        <tag>服务器管理</tag>
       </tags>
   </entry>
   <entry>
-    <title>小米新机体验</title>
-    <url>/0000009/</url>
-    <content><![CDATA[小手一点,小米到手(≧∀≦)ゞ你好呀，欢迎点击本文章本篇文章是为了记录我在TB网购小米手机的经过而诞生的哦
-在我看着手上的手机日渐卡顿，萌生了换手机的想法，于是便向AI提问“我想用xxx预算购买一台小米手机，你有什么推荐嘛”，当我问完时，AI给出的回复像潮水一样向我涌来我在这众多的答案中，找到了一款极具性价比的手机，它就是Redmi Troub4!你敢想象嘛，16+512的配置才1611￥!有图有真相
+    <title>《边界审计：当亲密关系成为侦察现场》</title>
+    <url>/0000001/</url>
+    <content><![CDATA[《边界审计：当亲密关系成为侦察现场》一段感情出现问题，有时不是突然的断裂，而是一点一滴的觉察。某个瞬间你开始注意到，那些本应专属的称呼出现在了别处，本该完整的关注被分成了碎片。这不是怀疑的开始，而是认知的清醒——当亲密关系不再安全，有人选择追问，有人选择侦察。
+从模糊地带开始的觉察起初，一切都藏在细节里。他常提到的“朋友”，有着过于频繁的互动频率；他承诺的“保持距离”，在行动上始终模糊不清。最敏锐的觉察往往始于这些微小处，像白纸上的第一道折痕，提醒着事情已经不同。
+感情之外，另一条线索悄然浮现。一笔不算大的借款，承诺的还款时间一再延后。这不是简单的拖延，而是某种模式的体现——当亲密关系中出现无法兑现的语言，它往往不是孤例。于是在某个时刻，一个具体的日期被提议出来，模糊的承诺终于有了清晰的边界。他说：“还完了就互不相欠了。”这话说得随意，却意外地指明了某种可能的方向。
+当观察成为必要的策略发现第三者的存在后，最本能的反应或许是愤怒或对峙。但还有另一种选择：保持接触，冷静观察。这不是妥协，而是一种克制的侦察——通过持续的交流，真相的轮廓逐渐清晰。那些他从未主动透露的信息，在看似平常的对话中一点点浮现。
+这段关系中的三方，都以为自己握着完整的拼图。只有最清醒的那个人知道，每一片碎片的位置和意义。她听着第三者的倾诉，收集着那些被隐藏的时间线，拼凑出完整的故事版本。没有质问，没有戳穿，只是安静地收集着所有需要的信息。
+时机的选择与彻底的切割感情的世界里，时机往往比话语更有力量。她等待，观察着第三者情感投入的曲线，看着那份依赖日渐加深。在最投入的时刻，选择离开——没有争吵，没有解释，只是干脆的告别和彻底的消失。后来的挽回与追问，都留在了被删除的联系方式之外，成为了无回音的独白。
+与此同时，那笔借款也到了该结清的时候。约定的日期到来，转账完成，经济上的联系就此切断。数字的结清往往比情感的结算更加清晰——当最后款项到账，她知道这一部分已经彻底结束。
+完整的告别与重建的边界最后的操作简洁如程序指令：删除所有联系方式，抹去所有可见的连接。这不是冲动的决定，而是所有侦察完成后的必然操作。当感情中的信任已经透支，当关系变成需要不断审计的账目，最彻底的止损就是完整的退出。
+这段经历留下的不是怨恨，而是一套清晰的边界认知。她学会了如何在不安全的关系中保护自己，如何通过观察而非争吵来获取真相，如何在适当的时候做出彻底的切割。更重要的是，她明白了亲密关系中那些不容模糊的底线——当一段关系需要被审计，它本身就已经失去了继续的意义。
+如今回看，那场持续数月的观察与判断，其实是一场安静的自我救赎。她没有在混乱中迷失方向，反而在复杂的情感迷宫中，为自己找到了一条清晰的路。当最后一道边界被确立，失去的是一段不再健康的关系，获得的却是对自己的完全认知与保护能力。
+那些曾经模糊的地带，如今都有了明确的标识。而人生的下一段旅程，将带着这些清晰的边界，走向更明亮的地方——在那里，亲密无需审计，信任不必侦察。
 ]]></content>
       <categories>
-        <category>生活记录</category>
+        <category>情感</category>
+        <category>爱情</category>
       </categories>
       <tags>
-        <tag>手机</tag>
-        <tag>网购</tag>
-        <tag>生活记录</tag>
+        <tag>关系边界</tag>
+        <tag>情感止损</tag>
+        <tag>第一人称叙事</tag>
+        <tag>现代关系观察</tag>
+        <tag>情感纪实</tag>
       </tags>
   </entry>
   <entry>
@@ -2835,6 +2786,21 @@ ADB 调试是否开启
         <tag>第一人称叙述[](https://)</tag>
         <tag>关系启示录</tag>
         <tag>情感主权</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小米新机体验</title>
+    <url>/0000009/</url>
+    <content><![CDATA[小手一点,小米到手(≧∀≦)ゞ你好呀，欢迎点击本文章本篇文章是为了记录我在TB网购小米手机的经过而诞生的哦
+在我看着手上的手机日渐卡顿，萌生了换手机的想法，于是便向AI提问“我想用xxx预算购买一台小米手机，你有什么推荐嘛”，当我问完时，AI给出的回复像潮水一样向我涌来我在这众多的答案中，找到了一款极具性价比的手机，它就是Redmi Troub4!你敢想象嘛，16+512的配置才1611￥!有图有真相
+]]></content>
+      <categories>
+        <category>生活记录</category>
+      </categories>
+      <tags>
+        <tag>手机</tag>
+        <tag>网购</tag>
+        <tag>生活记录</tag>
       </tags>
   </entry>
   <entry>
@@ -2875,6 +2841,22 @@ ADB 调试是否开启
       </tags>
   </entry>
   <entry>
+    <title>思域汽车漏电修车记录</title>
+    <url>/0000008/</url>
+    <content><![CDATA[记录一辆2021年9代思域29号保险后端线路漏电故障，故障如下：
+关闭所有车门并上锁情况下，车辆静放两三天后出现电瓶电压降至12v以下，初步以为是电瓶损坏，更换电瓶后故障依旧，开始排查整车其他线路，遂发现为29号保险丝拔出后故障消失，按照原车维修手册查明后端线路，发现是汽车导航出现漏电情况，经过简单维修，故障消失，维修总过程（包括静置时间）耗时4天，维修结束！
+本次记录到此结束，记录员：挽着红月缓缓走
+]]></content>
+      <categories>
+        <category>维修记录</category>
+      </categories>
+      <tags>
+        <tag>维修</tag>
+        <tag>思域</tag>
+        <tag>汽修</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>域名解析异常：DNSSEC 起了什么作用？</title>
     <url>/DNSSEC/</url>
     <content><![CDATA[前言事情是这样的：
@@ -2893,18 +2875,19 @@ ADB 调试是否开启
       </tags>
   </entry>
   <entry>
-    <title>光猫桥接后租期一过就断网：ITMS 未注册背后的真相</title>
-    <url>/ITMS/</url>
-    <content><![CDATA[事情起因事情起因是这样的，在凌晨三点多，睡醒了下意识看了眼手机，在wifi图标上有一个显眼的感叹号，点开微信一看，提示说当前网络无法上网请检查连接
-看到这么多证据都指向网络问题，我看了眼路由器的指示灯，发现是黄色故障灯，心里一紧，打开路由器后台看到代表网络的地球图标那条线上有一个红色叉叉,然后看了眼WAN口信息，拨号失败，我就重启了一下光猫与路由器，等了几分钟，指示灯还是黄色，看了眼光猫的PON灯常亮，也就代表着光纤没问题，我思考了一会
-登录光猫后台决定上光猫后台看看，将路由器的IP改为静态IP，改为了192.168.1.x，这样子相当于临时搭建了一座桥，方便进入光猫后台查看各项信息，刚开始我没发现问题，原因是刚睡醒有点不太清醒，导致略过一些信息。当时我就疑惑了，没问题吗？ 不可能！经验告诉我，一定是在光猫这边的问题，我仔仔细细看了一遍，发现除了光纤的收发值有点小异常，在该项下面显眼的写着ITMS未注册，经验告诉我，问题就是这个了
-知识科普我来科普一下，ITMS是光猫的一个远程管理系统功能，专门用于运营商的远程管理，调整配置，监控链路状态等功能，ITMS未注册意味着光猫无法与远程管理系统通信，导致触发了一些规则，光猫在ITMS未注册状态下，会触发本地的数据面策略锁，拒绝转发所有去往Internet方向的数据帧。怎么解决的呢？我的解决方法如下：将网络链路从桥接改为了路由模式，这一步是让光猫与机房重新通信获取一个新的ITMS配置与新的地址租期，这样子相当于重置了地址租期，然后再改回桥接让路由器进行拨号上网。
-原理总结总结一下：注意哦，改模式前建议先把当前配置页面截图，避免误操作后忘记原参数哦。桥接模式下，光猫的管理进程会因CPU空闲而被系统调度器“冷冻”，导致ITMS心跳丢失。恰好与DHCP租期和OLT会话超时同步。切换至路由模式强制唤醒了TR-069进程并触发了ITMS重新注册，改回桥接后保留了新的租期状态，从而避开了原故障窗口。问题解决啦，希望本次凌晨三点爬起来的网络运维，能给你们带来一点有用的经验
+    <title>Hexo博客搭建指南</title>
+    <url>/hexo-blog-setup-guide/</url>
+    <content><![CDATA[本小站也运行了1.8年，659天了，是时候介绍一下我的博客是怎么搭建的，为什么选这个框架了。
+建站初衷选择搭建博客是因为我想要一个属于自己的空间，记录一下生活琐事与学习时的笔记并分享一些我踩过的坑与解决办法。
+初探wordpress重量级框架的烦恼刚开始我选择的是本地服务器加wordpress博客框架，简称WP，但是WP的搭建过程比较复杂，首先下载WP的框架加MYSQL数据库，然后配置PHP环境，最后设置域名解析与端口映射，整个配置过程花了我 2 个小时。完成后我发现了一个奇怪的问题：通过域名访问时，会被强制带上端口号，导致访问报错。排查后发现是重定向配置的问题，修改 NGINX 配置文件后得以解决。虽然本地访问 WP 后台一切正常，但切换到域名访问时依然很慢，甚至偶尔打不开。后面我就查询了一下Cloudflare tunnel的相关文档，发现 Tunnel 虽然好用，但配合本地运行沉重的 WordPress（PHP+MySQL）会导致资源占用过高且动态内容难以缓存，索性放弃了 WP，开始寻找一些轻量级的博客框架，最好是静态的。
+邂逅HEXO经过关键词搜索，我找到了hexo,经过上手使用还挺不错，hexo是一个静态博客框架，使用nodejs开发的，安装起来也很简单，配置也很简单，最重要的是它是静态的，不需要数据库支持，直接生成静态文件就可以了。
+部署到github pages只不过呢后面我追求更快的速度和不想维护服务器就看到了hexo可以部署到github pages上面，我顿时一喜：太好了！于是我根据相关教程配置了github的上传插件与配置文件，成功部署到了github pages上面，只不过这个方案还是存在弊端，就是访问速度不太稳定，会不定时的阻断，我查了相关文档配置上了CF的CDN服务，解决了这个问题，稳定了访问速度，经过一段时间使用，发现好像速度还是不太满意，我就在想了，这难道是极限了吗？我发现CF有很多功能我都没有用上，其中提升速度最强的功能就是缓存规则，这个功能是让访问的资源存在CF的全球众多CDN中，保证了资源的访问速度，只不过如果将文章也长时间缓存的话，文章更新后就不能及时看到新文章了，所以我就只配置了图片与一些大文件的长缓存，再把图片压缩成webp格式，既保证了速度也能及时看见新文章，将访问速度从平均8s的加载降低到了平均2.7s,提升了5.3s,这个速度已经是现有条件的最好选择了，好啦本次搭建与优化就到这里啦！
+结语顺便一提我用的主题是solitude哦，如果各位朋友还有什么问题可以发到我邮箱(mail@delishahk.com)哦，我会及时回复并解决问题哒，谢谢阅读
 ]]></content>
       <tags>
-        <tag>网络运维</tag>
-        <tag>光猫</tag>
-        <tag>桥接</tag>
+        <tag>笔记</tag>
+        <tag>hexo</tag>
+        <tag>cloudflare</tag>
       </tags>
   </entry>
   <entry>
@@ -2945,19 +2928,36 @@ ADB 调试是否开启
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客搭建指南</title>
-    <url>/hexo-blog-setup-guide/</url>
-    <content><![CDATA[本小站也运行了1.8年，659天了，是时候介绍一下我的博客是怎么搭建的，为什么选这个框架了。
-建站初衷选择搭建博客是因为我想要一个属于自己的空间，记录一下生活琐事与学习时的笔记并分享一些我踩过的坑与解决办法。
-初探wordpress重量级框架的烦恼刚开始我选择的是本地服务器加wordpress博客框架，简称WP，但是WP的搭建过程比较复杂，首先下载WP的框架加MYSQL数据库，然后配置PHP环境，最后设置域名解析与端口映射，整个配置过程花了我 2 个小时。完成后我发现了一个奇怪的问题：通过域名访问时，会被强制带上端口号，导致访问报错。排查后发现是重定向配置的问题，修改 NGINX 配置文件后得以解决。虽然本地访问 WP 后台一切正常，但切换到域名访问时依然很慢，甚至偶尔打不开。后面我就查询了一下Cloudflare tunnel的相关文档，发现 Tunnel 虽然好用，但配合本地运行沉重的 WordPress（PHP+MySQL）会导致资源占用过高且动态内容难以缓存，索性放弃了 WP，开始寻找一些轻量级的博客框架，最好是静态的。
-邂逅HEXO经过关键词搜索，我找到了hexo,经过上手使用还挺不错，hexo是一个静态博客框架，使用nodejs开发的，安装起来也很简单，配置也很简单，最重要的是它是静态的，不需要数据库支持，直接生成静态文件就可以了。
-部署到github pages只不过呢后面我追求更快的速度和不想维护服务器就看到了hexo可以部署到github pages上面，我顿时一喜：太好了！于是我根据相关教程配置了github的上传插件与配置文件，成功部署到了github pages上面，只不过这个方案还是存在弊端，就是访问速度不太稳定，会不定时的阻断，我查了相关文档配置上了CF的CDN服务，解决了这个问题，稳定了访问速度，经过一段时间使用，发现好像速度还是不太满意，我就在想了，这难道是极限了吗？我发现CF有很多功能我都没有用上，其中提升速度最强的功能就是缓存规则，这个功能是让访问的资源存在CF的全球众多CDN中，保证了资源的访问速度，只不过如果将文章也长时间缓存的话，文章更新后就不能及时看到新文章了，所以我就只配置了图片与一些大文件的长缓存，再把图片压缩成webp格式，既保证了速度也能及时看见新文章，将访问速度从平均8s的加载降低到了平均2.7s,提升了5.3s,这个速度已经是现有条件的最好选择了，好啦本次搭建与优化就到这里啦！
-结语顺便一提我用的主题是solitude哦，如果各位朋友还有什么问题可以发到我邮箱(mail@delishahk.com)哦，我会及时回复并解决问题哒，谢谢阅读
+    <title>《帷幕何时落下》《人生感慨》</title>
+    <url>/0000004/</url>
+    <content><![CDATA[帷幕何时落下最近总在想，人生这场戏的终场，会以怎样的方式谢幕？
+这念头的袭来，常常毫无预兆。可能是在某个冗长会议走神的瞬间，窗外阳光正好移过一片云；也可能是深夜关掉最后一盏灯，黑暗瞬间吞没房间的时刻。那句“是今天吗？明天吗？还是现在呢？”的追问，像背景音般在意识深处低回。
+舞台上的我们，总在不自觉地调整姿态，以适应台下那些流动的目光。赞许让人挺直腰背，嘲讽让人蜷缩防备。我们学会了精湛的表演，把最华美的桥段留给最多的观众，却很少问自己：如果观众席空无一人，这场戏，我还愿意这样演吗？
+最吊诡的真相在于，这出戏最忠实的观众，其实是我们自己。那些对嘲笑的恐惧、对赞赏的渴望，最终都内化成了自我审视的目光。我们既是演员，又是自己最严苛的评论家。
+而关于落幕——我想，或许重要的不是它何时发生，而是意识到它可能在任何时刻发生后，我们选择如何度过“现在”。是继续为变幻不定的观众调整台词，还是深吸一口气，说出那句搁置已久、真正属于自己的独白？
+帷幕终将落下，这是唯一的确切。而在它落下之前，聚光灯下这段或长或短的时间，终究是我们自己说了算的。当你看清了观众席的虚妄与无常，或许才能真正开始，为自己而演。
 ]]></content>
       <tags>
-        <tag>笔记</tag>
-        <tag>hexo</tag>
-        <tag>cloudflare</tag>
+        <tag>生命思考</tag>
+        <tag>终场未知</tag>
+        <tag>散文随笔</tag>
+        <tag>人生感悟</tag>
+        <tag>帷幕落下</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>光猫桥接后租期一过就断网：ITMS 未注册背后的真相</title>
+    <url>/ITMS/</url>
+    <content><![CDATA[事情起因事情起因是这样的，在凌晨三点多，睡醒了下意识看了眼手机，在wifi图标上有一个显眼的感叹号，点开微信一看，提示说当前网络无法上网请检查连接
+看到这么多证据都指向网络问题，我看了眼路由器的指示灯，发现是黄色故障灯，心里一紧，打开路由器后台看到代表网络的地球图标那条线上有一个红色叉叉,然后看了眼WAN口信息，拨号失败，我就重启了一下光猫与路由器，等了几分钟，指示灯还是黄色，看了眼光猫的PON灯常亮，也就代表着光纤没问题，我思考了一会
+登录光猫后台决定上光猫后台看看，将路由器的IP改为静态IP，改为了192.168.1.x，这样子相当于临时搭建了一座桥，方便进入光猫后台查看各项信息，刚开始我没发现问题，原因是刚睡醒有点不太清醒，导致略过一些信息。当时我就疑惑了，没问题吗？ 不可能！经验告诉我，一定是在光猫这边的问题，我仔仔细细看了一遍，发现除了光纤的收发值有点小异常，在该项下面显眼的写着ITMS未注册，经验告诉我，问题就是这个了
+知识科普我来科普一下，ITMS是光猫的一个远程管理系统功能，专门用于运营商的远程管理，调整配置，监控链路状态等功能，ITMS未注册意味着光猫无法与远程管理系统通信，导致触发了一些规则，光猫在ITMS未注册状态下，会触发本地的数据面策略锁，拒绝转发所有去往Internet方向的数据帧。怎么解决的呢？我的解决方法如下：将网络链路从桥接改为了路由模式，这一步是让光猫与机房重新通信获取一个新的ITMS配置与新的地址租期，这样子相当于重置了地址租期，然后再改回桥接让路由器进行拨号上网。
+原理总结总结一下：注意哦，改模式前建议先把当前配置页面截图，避免误操作后忘记原参数哦。桥接模式下，光猫的管理进程会因CPU空闲而被系统调度器“冷冻”，导致ITMS心跳丢失。恰好与DHCP租期和OLT会话超时同步。切换至路由模式强制唤醒了TR-069进程并触发了ITMS重新注册，改回桥接后保留了新的租期状态，从而避开了原故障窗口。问题解决啦，希望本次凌晨三点爬起来的网络运维，能给你们带来一点有用的经验
+]]></content>
+      <tags>
+        <tag>网络运维</tag>
+        <tag>光猫</tag>
+        <tag>桥接</tag>
       </tags>
   </entry>
   <entry>

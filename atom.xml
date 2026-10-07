@@ -138,8 +138,8 @@
     <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
     <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
     <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
     <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
     <content>
       <![CDATA[<p><img src="https://blog.delishahk.com/img/dls_047.webp" alt="OSPF之重分发、默认路由注入与虚链路（高级特性与综合排障）" /></p>
 OSPF 第五阶段实验笔记，讲解重分发、默认路由注入与虚链路配置与排错，适用于多协议互通与非骨干区域连通场景。]]>
@@ -159,8 +159,8 @@ OSPF 第五阶段实验笔记，讲解重分发、默认路由注入与虚链路
     <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
     <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
     <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
     <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
     <content>
       <![CDATA[<p><img src="https://blog.delishahk.com/img/dls_070.webp" alt="OSPF之认证与路由汇总" /></p>
 OSPF 第四阶段实验笔记，包含认证配置、ABR/ASBR 汇总和排错思路，适用于多区域网络优化。]]>
@@ -180,8 +180,8 @@ OSPF 第四阶段实验笔记，包含认证配置、ABR/ASBR 汇总和排错思
     <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
     <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
     <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
     <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
     <content>
       <![CDATA[<p><img src="https://blog.delishahk.com/img/1999(13).webp" alt="OSPF之特殊路由与路由优化" /></p>
 OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由优化与常见排错，帮助你把末节区域路由表压缩到最小并安全引入外部路由。]]>
@@ -201,8 +201,8 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
     <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
     <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
     <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
     <content>
       <![CDATA[<p><img src="https://blog.delishahk.com/img/1999(8).webp" alt="OSPF之LSA与LSDB" /></p>
 面向网络运维的 OSPF 指南：理解 LSA/LSDB 与区域间路由（O vs O IA），并给出配置示例与排错流程。]]>
@@ -221,8 +221,8 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     </author>
     <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
     <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     <category term="ospf" scheme="https://blog.rinai.top/tags/ospf/"/>
+    <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     <content>
       <![CDATA[<p><img src="https://blog.delishahk.com/img/bh3rd(3).webp" alt="OSPF之建立邻居教程" /></p>
 本文讲解华为路由器直连运行 OSPF 建立邻居关系的配置流程，包括接口地址、OSPF 进程与 Area 宣告，以及常见排障思路]]>
