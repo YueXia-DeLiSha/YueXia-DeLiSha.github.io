@@ -6,7 +6,7 @@
     <description>一个技术情感博客</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, 挽着红月缓缓走</copyright>
-    <lastBuildDate>Mon, 14 Sep 2026 14:10:07 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 15:53:30 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://blog.rinai.top/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
@@ -17,10 +17,10 @@
       <category domain="https://blog.rinai.top/tags/DNSSEC/">DNSSEC</category>
       <category domain="https://blog.rinai.top/tags/DNS/">DNS</category>
       <category domain="https://blog.rinai.top/tags/%E5%9F%9F%E5%90%8D/">域名</category>
-      <enclosure url="https://blog.delishahk.com/img/2024-11-21_045548.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/2024-11-21_045548.webp" type="image/webp"/>
       <pubDate>Mon, 14 Sep 2026 13:17:18 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/2024-11-21_045548.webp" alt="域名解析异常：DNSSEC 起了什么作用？" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/2024-11-21_045548.webp" alt="域名解析异常：DNSSEC 起了什么作用？" /></p>
 本文解析了 DNSSEC 的作用，并分享一次排查 DNS 解析异常的踩坑经验，提供一套清晰的排查思路。]]>
       </content:encoded>
     </item>
@@ -32,10 +32,10 @@
       <category domain="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/">网络运维</category>
       <category domain="https://blog.rinai.top/tags/%E5%85%89%E7%8C%AB/">光猫</category>
       <category domain="https://blog.rinai.top/tags/%E6%A1%A5%E6%8E%A5/">桥接</category>
-      <enclosure url="https://blog.delishahk.com/img/bh3_001.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/bh3_001.webp" type="image/webp"/>
       <pubDate>Mon, 07 Sep 2026 20:11:03 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/bh3_001.webp" alt="光猫桥接后租期一过就断网：ITMS 未注册背后的真相" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/bh3_001.webp" alt="光猫桥接后租期一过就断网：ITMS 未注册背后的真相" /></p>
 本文记录了一次半夜断网的光猫运维记录，从路由器重启到网线排查，再到光猫后台查看链路状态再进行维护]]>
       </content:encoded>
     </item>
@@ -47,10 +47,10 @@
       <category domain="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
       <category domain="https://blog.rinai.top/tags/hexo/">hexo</category>
       <category domain="https://blog.rinai.top/tags/cloudflare/">cloudflare</category>
-      <enclosure url="https://blog.delishahk.com/img/dls(84).webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/dls(84).webp" type="image/webp"/>
       <pubDate>Thu, 03 Sep 2026 13:22:09 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/dls(84).webp" alt="Hexo博客搭建指南" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/dls(84).webp" alt="Hexo博客搭建指南" /></p>
 介绍了静态博客的搭建选型与搭建心得]]>
       </content:encoded>
     </item>
@@ -64,10 +64,10 @@
       <category domain="https://blog.rinai.top/tags/RDAP/">RDAP</category>
       <category domain="https://blog.rinai.top/tags/whois/">whois</category>
       <category domain="https://blog.rinai.top/tags/%E9%97%B2%E8%81%8A/">闲聊</category>
-      <enclosure url="https://blog.delishahk.com/img/qx.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/qx.webp" type="image/webp"/>
       <pubDate>Mon, 31 Aug 2026 15:02:45 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/qx.webp" alt="你想查询WHOIS？这是我的RDAP方案" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/qx.webp" alt="你想查询WHOIS？这是我的RDAP方案" /></p>
 解释我是怎么搭建RDAP查询API，为什么搭建API的过程]]>
       </content:encoded>
     </item>
@@ -84,10 +84,10 @@
       <category domain="https://blog.rinai.top/tags/%E7%A4%BE%E4%BF%9D%E5%8D%A1/">社保卡</category>
       <category domain="https://blog.rinai.top/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%99%AE/">金融科普</category>
       <category domain="https://blog.rinai.top/tags/%E6%97%A5%E5%B8%B8%E5%88%86%E4%BA%AB/">日常分享</category>
-      <enclosure url="https://blog.delishahk.com/img/1999_019.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/1999_019.webp" type="image/webp"/>
       <pubDate>Fri, 28 Aug 2026 02:23:55 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/1999_019.webp" alt="BOC Debit Card Guide 2026: 无业状态成功申请中行社保卡金融账户实录" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/1999_019.webp" alt="BOC Debit Card Guide 2026: 无业状态成功申请中行社保卡金融账户实录" /></p>
 <blockquote><p><strong>💡 阅读提示与免责声明：</strong><br>本文仅为作者 2026 年在无业状态下申请中国银行（BOC）社保卡金融账户的个人经历分享，<strong>不构成任何业务办理指导</strong>。银行政策与社保规定因地而异且随时]]>
       </content:encoded>
     </item>
@@ -98,10 +98,10 @@
       <author>挽着红月缓缓走</author>
       <category domain="https://blog.rinai.top/tags/%E5%8F%8B%E9%93%BE/">友链</category>
       <category domain="https://blog.rinai.top/tags/%E9%9A%8F%E8%B0%88/">随谈</category>
-      <enclosure url="https://blog.delishahk.com/img/ys001.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/ys001.webp" type="image/webp"/>
       <pubDate>Mon, 24 Aug 2026 11:31:53 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/ys001.webp" alt="友链界面大更新！" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/ys001.webp" alt="友链界面大更新！" /></p>
 描述了友链界面更新的原因与更新的内容]]>
       </content:encoded>
     </item>
@@ -113,12 +113,12 @@
       <category domain="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/">网络运维</category>
       <category domain="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
       <category domain="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">交换机</category>
-      <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
       <category domain="https://blog.rinai.top/tags/OSPF/">OSPF</category>
-      <enclosure url="https://blog.delishahk.com/img/dls_047.webp" type="image/webp"/>
+      <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
+      <enclosure url="https://delishahk.com/img/dls_047.webp" type="image/webp"/>
       <pubDate>Fri, 07 Aug 2026 16:11:42 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/dls_047.webp" alt="OSPF之重分发、默认路由注入与虚链路（高级特性与综合排障）" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/dls_047.webp" alt="OSPF之重分发、默认路由注入与虚链路（高级特性与综合排障）" /></p>
 OSPF 第五阶段实验笔记，讲解重分发、默认路由注入与虚链路配置与排错，适用于多协议互通与非骨干区域连通场景。]]>
       </content:encoded>
     </item>
@@ -130,12 +130,12 @@ OSPF 第五阶段实验笔记，讲解重分发、默认路由注入与虚链路
       <category domain="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/">网络运维</category>
       <category domain="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
       <category domain="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">交换机</category>
-      <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
       <category domain="https://blog.rinai.top/tags/OSPF/">OSPF</category>
-      <enclosure url="https://blog.delishahk.com/img/dls_070.webp" type="image/webp"/>
+      <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
+      <enclosure url="https://delishahk.com/img/dls_070.webp" type="image/webp"/>
       <pubDate>Fri, 07 Aug 2026 12:01:12 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/dls_070.webp" alt="OSPF之认证与路由汇总" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/dls_070.webp" alt="OSPF之认证与路由汇总" /></p>
 OSPF 第四阶段实验笔记，包含认证配置、ABR/ASBR 汇总和排错思路，适用于多区域网络优化。]]>
       </content:encoded>
     </item>
@@ -147,12 +147,12 @@ OSPF 第四阶段实验笔记，包含认证配置、ABR/ASBR 汇总和排错思
       <category domain="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/">网络运维</category>
       <category domain="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
       <category domain="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">交换机</category>
-      <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
       <category domain="https://blog.rinai.top/tags/OSPF/">OSPF</category>
-      <enclosure url="https://blog.delishahk.com/img/1999(13).webp" type="image/webp"/>
+      <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
+      <enclosure url="https://delishahk.com/img/1999(13).webp" type="image/webp"/>
       <pubDate>Mon, 03 Aug 2026 04:44:51 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/1999(13).webp" alt="OSPF之特殊路由与路由优化" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/1999(13).webp" alt="OSPF之特殊路由与路由优化" /></p>
 OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由优化与常见排错，帮助你把末节区域路由表压缩到最小并安全引入外部路由。]]>
       </content:encoded>
     </item>
@@ -164,12 +164,12 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/">网络运维</category>
       <category domain="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
       <category domain="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">交换机</category>
-      <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
       <category domain="https://blog.rinai.top/tags/OSPF/">OSPF</category>
-      <enclosure url="https://blog.delishahk.com/img/1999(8).webp" type="image/webp"/>
+      <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
+      <enclosure url="https://delishahk.com/img/1999(8).webp" type="image/webp"/>
       <pubDate>Sat, 01 Aug 2026 07:14:13 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/1999(8).webp" alt="OSPF之LSA与LSDB" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/1999(8).webp" alt="OSPF之LSA与LSDB" /></p>
 面向网络运维的 OSPF 指南：理解 LSA/LSDB 与区域间路由（O vs O IA），并给出配置示例与排错流程。]]>
       </content:encoded>
     </item>
@@ -180,12 +180,12 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <author>挽着红月缓缓走</author>
       <category domain="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/">网络运维</category>
       <category domain="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">交换机</category>
-      <category domain="https://blog.rinai.top/tags/ospf/">ospf</category>
       <category domain="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</category>
-      <enclosure url="https://blog.delishahk.com/img/bh3rd(3).webp" type="image/webp"/>
+      <category domain="https://blog.rinai.top/tags/ospf/">ospf</category>
+      <enclosure url="https://delishahk.com/img/bh3rd(3).webp" type="image/webp"/>
       <pubDate>Fri, 31 Jul 2026 03:09:45 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/bh3rd(3).webp" alt="OSPF之建立邻居教程" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(3).webp" alt="OSPF之建立邻居教程" /></p>
 本文讲解华为路由器直连运行 OSPF 建立邻居关系的配置流程，包括接口地址、OSPF 进程与 Area 宣告，以及常见排障思路]]>
       </content:encoded>
     </item>
@@ -200,10 +200,10 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/STP/">STP</category>
       <category domain="https://blog.rinai.top/tags/MSTP/">MSTP</category>
       <category domain="https://blog.rinai.top/tags/%E7%94%9F%E6%88%90%E6%A0%91%E5%8D%8F%E8%AE%AE/">生成树协议</category>
-      <enclosure url="https://blog.delishahk.com/img/zzz(11).webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/zzz(11).webp" type="image/webp"/>
       <pubDate>Tue, 28 Jul 2026 09:14:40 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/zzz(11).webp" alt="STP教程之display stp命令详解" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/zzz(11).webp" alt="STP教程之display stp命令详解" /></p>
 华为交换机 display stp 输出解析，逐项说明 CIST 全局信息、端口角色、BPDU 和拓扑变化，帮助理解 MSTP 生成树状态。]]>
       </content:encoded>
     </item>
@@ -218,10 +218,10 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/STP/">STP</category>
       <category domain="https://blog.rinai.top/tags/%E7%94%9F%E6%88%90%E6%A0%91%E5%8D%8F%E8%AE%AE/">生成树协议</category>
       <category domain="https://blog.rinai.top/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/">故障排查</category>
-      <enclosure url="https://blog.delishahk.com/img/dls02_2.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/dls02_2.webp" type="image/webp"/>
       <pubDate>Sun, 26 Jul 2026 16:28:27 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/dls02_2.webp" alt="STP生成树协议笔记" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/dls02_2.webp" alt="STP生成树协议笔记" /></p>
 本文详细解释了STP生成树协议中根桥选取机制以及如何防环路，适合各位想了解STP生成树协议的读者]]>
       </content:encoded>
     </item>
@@ -235,10 +235,10 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/%E5%BC%80%E5%8F%91/">开发</category>
       <category domain="https://blog.rinai.top/tags/vs2022/">vs2022</category>
       <category domain="https://blog.rinai.top/tags/%E6%8A%A5%E9%94%99/">报错</category>
-      <enclosure url="https://blog.delishahk.com/img/dls02_2.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/dls02_2.webp" type="image/webp"/>
       <pubDate>Tue, 07 Jul 2026 02:34:44 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/dls02_2.webp" alt="VS2022报错RC22103解决方法" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/dls02_2.webp" alt="VS2022报错RC22103解决方法" /></p>
 一步步解决VS2022报错RC22103的方法]]>
       </content:encoded>
     </item>
@@ -250,10 +250,10 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">阿里云</category>
       <category domain="https://blog.rinai.top/tags/ESA/">ESA</category>
       <category domain="https://blog.rinai.top/tags/CDN/">CDN</category>
-      <enclosure url="https://blog.delishahk.com/img/bh3rd(6).webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/bh3rd(6).webp" type="image/webp"/>
       <pubDate>Sun, 21 Jun 2026 09:07:34 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/bh3rd(6).webp" alt="阿里云ESA与阿里云CDN使用体验" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(6).webp" alt="阿里云ESA与阿里云CDN使用体验" /></p>
 这篇文章分享了我在使用阿里云ESA和阿里云CDN的体验，包括性能、稳定性等方面的评价。]]>
       </content:encoded>
     </item>
@@ -268,10 +268,10 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/">轻小说</category>
       <category domain="https://blog.rinai.top/tags/%E5%8A%A8%E6%BC%AB%E6%8E%A8%E8%8D%90/">动漫推荐</category>
       <category domain="https://blog.rinai.top/tags/%E6%B2%BB%E6%84%88%E7%B3%BB/">治愈系</category>
-      <enclosure url="https://blog.delishahk.com/img/zhenzhou.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/zhenzhou.webp" type="image/webp"/>
       <pubDate>Sat, 23 May 2026 18:39:29 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/zhenzhou.webp" alt="《隔壁天使无意间把我养成废材了这件事》《邻家天使》强烈推荐！" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/zhenzhou.webp" alt="《隔壁天使无意间把我养成废材了这件事》《邻家天使》强烈推荐！" /></p>
 一部让人看完只想躺平被照顾的治愈系轻小说，《邻家天使》究竟如何“废材养成”？来聊聊这部糖分超标的恋爱喜剧。《隔壁天使无意间把我养成废材了这件事》（又名《邻家天使》）是一部治愈系轻小说，讲述了一个普通少年被隔壁的天使女孩无意间照顾得越来越废材的故事。小说以其甜蜜的恋爱喜剧元素和温馨的日常描写，深受读者喜爱。本文将深入探讨这部小说的魅力所在，以及为什么它成为了众多轻小说迷心中的宝藏。]]>
       </content:encoded>
     </item>
@@ -288,10 +288,10 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/%E5%8A%A0%E5%AF%86/">加密</category>
       <category domain="https://blog.rinai.top/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</category>
       <category domain="https://blog.rinai.top/tags/Git/">Git</category>
-      <enclosure url="https://blog.delishahk.com/img/bh3rd(6).webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/bh3rd(6).webp" type="image/webp"/>
       <pubDate>Mon, 18 May 2026 10:41:32 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/bh3rd(6).webp" alt="GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(6).webp" alt="GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密" /></p>
 <h1 id="GnuPG-GPG-完整使用指南"><a href="#GnuPG-GPG-完整使用指南" class="headerlink" title="GnuPG (GPG) 完整使用指南"></a>GnuPG (GPG) 完整使用指南</h1><blockquote>]]>
       </content:encoded>
     </item>
@@ -304,7 +304,7 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</category>
       <category domain="https://blog.rinai.top/tags/%E7%BC%96%E7%A8%8B/">编程</category>
       <category domain="https://blog.rinai.top/tags/%E9%9A%8F%E8%AE%B0/">随记</category>
-      <enclosure url="https://blog.delishahk.com/img/cpp.png" type="image/png"/>
+      <enclosure url="https://delishahk.com/img/cpp.png" type="image/png"/>
       <pubDate>Sun, 10 May 2026 22:46:10 GMT</pubDate>
     </item>
     <item>
@@ -317,10 +317,10 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/%E7%BB%9D%E5%8C%BA%E9%9B%B6/">绝区零</category>
       <category domain="https://blog.rinai.top/tags/QT/">QT</category>
       <category domain="https://blog.rinai.top/tags/AOD/">AOD</category>
-      <enclosure url="https://blog.delishahk.com/img/wxts.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/wxts.webp" type="image/webp"/>
       <pubDate>Thu, 16 Apr 2026 05:55:44 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/wxts.webp" alt="关于妄想天使三小只的专属音乐播放器制作旅程" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/wxts.webp" alt="关于妄想天使三小只的专属音乐播放器制作旅程" /></p>
 记录我用 QT 框架为《绝区零》妄想天使阵营制作专属同人音乐播放器的全过程，包含界面设计、音频播放实现、以及遇到的坑与解决方法。]]>
       </content:encoded>
     </item>
@@ -334,10 +334,10 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <category domain="https://blog.rinai.top/tags/twikoo/">twikoo</category>
       <category domain="https://blog.rinai.top/tags/Twikoo/">Twikoo</category>
       <category domain="https://blog.rinai.top/tags/%E5%B8%B8%E8%A7%81%E5%B0%8F%E9%97%AE%E9%A2%98/">常见小问题</category>
-      <enclosure url="https://blog.delishahk.com/img/1999(13).webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/1999(13).webp" type="image/webp"/>
       <pubDate>Tue, 14 Apr 2026 03:48:07 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://blog.delishahk.com/img/1999(13).webp" alt="关于twikoo不显示设置的问题" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/1999(13).webp" alt="关于twikoo不显示设置的问题" /></p>
 <h1 id="Twikoo-评论系统：找不到设置按钮？一招解决"><a href="#Twikoo-评论系统：找不到设置按钮？一招解决" class="headerlink" title="Twikoo 评论系统：找不到设置按钮？一招解决"></a>Twikoo 评论系统：找不]]>
       </content:encoded>
     </item>
