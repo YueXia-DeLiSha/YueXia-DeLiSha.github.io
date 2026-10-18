@@ -43,22 +43,6 @@ ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ES
       </tags>
   </entry>
   <entry>
-    <title>关于妄想天使三小只的专属音乐播放器制作旅程</title>
-    <url>/00000000014/</url>
-    <content><![CDATA[事情开端在看完绝区零新剧情的妄想天使三小只的支线剧情以及妄想天使的主题活动后，萌生了为三小只制作一个同人专属播放器的想法绝对不是因为太可爱才出现想法的，让我为你介绍一下三小只成员一：千夏，妄想天使团队的编曲大人可爱小哭包
-成员二：南宫羽，妄想天使的舞蹈担当兼队长团队财务担当，
-成员三：爱芮，妄想天使的主唱，香香软软的构造体
-技术选型采用了QT6.10进行开发软件，为什么选择这个呢？因为作者恰巧会一点点的CPP索性就选择了QT，原计划是双端开发的(win和android)但是只开发出了win端绝对不是因为作者不熟悉android开发才放弃的开发时遇到的一些小问题：原计划采用相对路径进行文件的存放，但是QT组件播放器没办法读取到，可能是因为作者的QT技艺不太熟练造成的，反反复复的试验做了5版才完成了开发，猜你想问怎么解决的，解决方法就是放入QRC文件中这个笨办法不要模仿，在进行安卓开发时一直遇到白屏问题和闪退就放弃了android开发UI设计与选型解决完技术问题后现在开始UI设计了，当我去翻找妄想天使的图片时却发现并没有合适的图片，正苦于没图片可用时脑中突然想起还有一个群聊，群里可能有我需要的图片，我便在群里将我的想法说出，顷刻间一呼百应源源不断的消息向我袭来，我一条条翻看着，在众多消息中发现了我想要的图片，我将得来的图片当作软件的背景图，配合上小千夏作为进度条，左上角是三小只的按钮按下它会有神奇效果哦项目发布项目地址在github，点击即可跳转哦，也可以复制链接手动打开哦,https://github.com/YueXia-DeLiSha/AOD_ZZZ项目图片如下：
-]]></content>
-      <tags>
-        <tag>妄想天使</tag>
-        <tag>zzz</tag>
-        <tag>绝区零</tag>
-        <tag>QT</tag>
-        <tag>AOD</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于twikoo不显示设置的问题</title>
     <url>/0000000013/</url>
     <content><![CDATA[Twikoo 评论系统：找不到设置按钮？一招解决问题现象当你部署好 Twikoo 评论系统后，想进入后台管理面板，却发现页面上怎么也找不到那个“齿轮”或“设置”图标，这是怎么回事？
@@ -78,6 +62,22 @@ ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ES
         <tag>twikoo</tag>
         <tag>Twikoo</tag>
         <tag>常见小问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于妄想天使三小只的专属音乐播放器制作旅程</title>
+    <url>/00000000014/</url>
+    <content><![CDATA[事情开端在看完绝区零新剧情的妄想天使三小只的支线剧情以及妄想天使的主题活动后，萌生了为三小只制作一个同人专属播放器的想法绝对不是因为太可爱才出现想法的，让我为你介绍一下三小只成员一：千夏，妄想天使团队的编曲大人可爱小哭包
+成员二：南宫羽，妄想天使的舞蹈担当兼队长团队财务担当，
+成员三：爱芮，妄想天使的主唱，香香软软的构造体
+技术选型采用了QT6.10进行开发软件，为什么选择这个呢？因为作者恰巧会一点点的CPP索性就选择了QT，原计划是双端开发的(win和android)但是只开发出了win端绝对不是因为作者不熟悉android开发才放弃的开发时遇到的一些小问题：原计划采用相对路径进行文件的存放，但是QT组件播放器没办法读取到，可能是因为作者的QT技艺不太熟练造成的，反反复复的试验做了5版才完成了开发，猜你想问怎么解决的，解决方法就是放入QRC文件中这个笨办法不要模仿，在进行安卓开发时一直遇到白屏问题和闪退就放弃了android开发UI设计与选型解决完技术问题后现在开始UI设计了，当我去翻找妄想天使的图片时却发现并没有合适的图片，正苦于没图片可用时脑中突然想起还有一个群聊，群里可能有我需要的图片，我便在群里将我的想法说出，顷刻间一呼百应源源不断的消息向我袭来，我一条条翻看着，在众多消息中发现了我想要的图片，我将得来的图片当作软件的背景图，配合上小千夏作为进度条，左上角是三小只的按钮按下它会有神奇效果哦项目发布项目地址在github，点击即可跳转哦，也可以复制链接手动打开哦,https://github.com/YueXia-DeLiSha/AOD_ZZZ项目图片如下：
+]]></content>
+      <tags>
+        <tag>妄想天使</tag>
+        <tag>zzz</tag>
+        <tag>绝区零</tag>
+        <tag>QT</tag>
+        <tag>AOD</tag>
       </tags>
   </entry>
   <entry>
@@ -1296,108 +1296,34 @@ BPDU——STP的通信基石STP协议依赖**BPDU（Bridge Protocol Data Unit，
       </tags>
   </entry>
   <entry>
-    <title>OSPF之LSA与LSDB</title>
-    <url>/000000023/</url>
-    <content><![CDATA[
-📘 OSPF 第二阶段实验笔记：LSA与链路状态数据库（LSDB）适用场景：三台华为路由器（R1、R2、R3）运行OSPF，分为两个区域（Area 0 和 Area 1），观察区域内路由（O）和区域间路由（O IA）是如何生成的。
-
-一、实验拓扑与IP规划（三台设备，双区域）
+    <title>OSPF之建立邻居教程</title>
+    <url>/000000022/</url>
+    <content><![CDATA[OSPF之建立邻居教程📘 OSPF 第一阶段实验笔记（邻居建立）适用场景：两台华为路由器（或三层交换机）通过以太网直连，运行OSPF协议，建立邻居关系。
+一、实验拓扑与IP规划
 
 
 设备
 接口
 IP地址&#x2F;掩码
 所属OSPF区域
-说明
 
 
 
-R1
-G0&#x2F;0&#x2F;0
+AR1
+GigabitEthernet0&#x2F;0&#x2F;0
 10.0.12.1/24
 Area 0
-连接R2
 
 
-R1
-Loopback 0
-1.1.1.1/32
-Area 0
-模拟R1自己带的一个“终端网段”
-
-
-R2
-G0&#x2F;0&#x2F;0
+AR2
+GigabitEthernet0&#x2F;0&#x2F;0
 10.0.12.2/24
 Area 0
-连接R1
 
 
-R2
-G0&#x2F;0&#x2F;1
-10.0.23.2/24
-Area 1
-连接R3
+连线方式：AR1的G0&#x2F;0&#x2F;0口 直连 AR2的G0&#x2F;0&#x2F;0口。
+二、配置步骤（每一步附带白话解释）第一步：进入系统视图并给设备命名&lt;AR1&gt; system-view[AR1] sysname AR1
 
-
-R2
-Loopback 0
-2.2.2.2/32
-不宣告（仅用于Router ID）
-仅用于标识
-
-
-R3
-G0&#x2F;0&#x2F;1
-10.0.23.3/24
-Area 1
-连接R2
-
-
-R3
-Loopback 0
-3.3.3.3/32
-Area 1
-模拟R3自己带的一个“终端网段”
-
-
-连线方式：
-
-R1的G0&#x2F;0&#x2F;0 直连 R2的G0&#x2F;0&#x2F;0
-R2的G0&#x2F;0&#x2F;1 直连 R3的G0&#x2F;0&#x2F;1
-
-
-二、核心概念铺垫（必须先搞懂这三个词）
-
-
-术语
-白话解释
-类似物
-
-
-
-LSA（链路状态通告）
-每台路由器把自己“看到”的网段，写成一条“朋友圈”发出去。
-相当于每个人在群里发一条消息：“我这里有网段X，连接方式Y。”
-
-
-LSDB（链路状态数据库）
-所有路由器收到的LSA集合，相当于收集了全网的“朋友圈”。
-相当于一个群聊记录，里面存着所有人发的地图碎片。
-
-
-SPF算法（最短路径树）
-每台路由器以自己的Router ID为根，用LSDB里的信息算出一棵最短路径树，得出路由表。
-相当于你看着群聊里的所有地图碎片，自己拼出一张完整地图，并标出到每个点最近的路。
-
-
-OSPF路由表中的两种标记（考试必考）：
-
-O（区域内路由）：目标网段在同一区域内，直接计算得出，优先级最高。
-O IA（区域间路由）：目标网段在其他区域，由ABR（区域边界路由器）翻译后发过来。
-
-
-三、配置步骤（每一条命令都带白话解释）第一步：R1 基础配置（接口IP + Loopback）&lt;Huawei&gt; system-view[Huawei] sysname R1// 配置物理接口[R1] interface GigabitEthernet0/0/0[R1-GigabitEthernet0/0/0] ip address 10.0.12.1 255.255.255.0[R1-GigabitEthernet0/0/0] undo shutdown[R1-GigabitEthernet0/0/0] quit// 配置环回口（Loopback接口是永远UP的逻辑接口，非常适合用来模拟PC网段或作为Router ID）[R1] interface LoopBack 0[R1-LoopBack0] ip address 1.1.1.1 255.255.255.255   // 注意：掩码是32位，代表只这个单个IP[R1-LoopBack0] quit
 
 
 
@@ -1407,173 +1333,205 @@ O IA（区域间路由）：目标网段在其他区域，由ABR（区域边界�
 
 
 
-interface LoopBack 0
-环回口是设备内部的虚拟接口，只要设备开机它就永远UP，永不down。
+system-view
+从用户视图（&lt; &gt;）进入系统配置视图（[ ]），这是所有配置动作的前提。
 
 
-ip address 1.1.1.1 255.255.255.255
-255.255.255.255（即/32）表示只宣告这一个IP，不包含任何其他地址。
-
-
-第二步：R1 启动 OSPF 并宣告网段[R1] ospf 1 router-id 1.1.1.1[R1-ospf-1] area 0[R1-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[R1-ospf-1-area-0.0.0.0] network 1.1.1.1 0.0.0.0    // 宣告环回口，通配符为0.0.0.0表示精确匹配这个IP[R1-ospf-1-area-0.0.0.0] quit[R1-ospf-1] quit
+sysname AR1
+修改设备的主机名，便于识别。在真实网络和排障时，看日志能立刻知道是哪台设备出了问题。
 
 
 
+第二步：配置物理接口的IP地址（让链路“活起来”）[AR1] interface GigabitEthernet0/0/0[AR1-GigabitEthernet0/0/0] ip address 10.0.12.1 255.255.255.0[AR1-GigabitEthernet0/0/0] undo shutdown[AR1-GigabitEthernet0/0/0] quit
 
-参数
+
+
+
+
+命令
 解释
 
 
 
-network 1.1.1.1 0.0.0.0
-通配符0.0.0.0表示“只匹配这一个IP”。因为环回口是/32，所以宣告时必须精确到这个IP，否则宣告不进去。
+interface GigabitEthernet0/0/0
+进入千兆以太网接口的配置视图。0/0/0 表示第1个槽位、第0个卡、第1号端口。
+
+
+ip address 10.0.12.1 255.255.255.0
+给该接口配置IP地址和子网掩码。/24（即255.255.255.0）表示这个接口所在的网段是 10.0.12.0/24。注意：对端AR2的接口必须配置同一网段的IP（如10.0.12.2），否则IP层无法通信。
+
+
+undo shutdown
+开启该接口（华为接口默认开启，但养成习惯敲这一句可以避免因误操作shutdown导致的故障）。
+
+
+quit
+退出当前接口视图，返回系统视图。
+
+
+验证这一步是否成功：
+[AR1] display ip interface brief
+
+查看 GigabitEthernet0/0/0 行的 Physical 和 Protocol 是否都是 UP。如果显示 DOWN，说明网线没插好、对端设备没开机或IP地址配错了。
+
+第三步：启动OSPF进程并配置Router ID[AR1] ospf 1 router-id 1.1.1.1
 
 
 
-第三步：R2 基础配置（连接两个区域的桥头堡）&lt;Huawei&gt; system-view[Huawei] sysname R2// 配置连接R1的接口[R2] interface GigabitEthernet0/0/0[R2-GigabitEthernet0/0/0] ip address 10.0.12.2 255.255.255.0[R2-GigabitEthernet0/0/0] undo shutdown[R2-GigabitEthernet0/0/0] quit// 配置连接R3的接口[R2] interface GigabitEthernet0/0/1[R2-GigabitEthernet0/0/1] ip address 10.0.23.2 255.255.255.0[R2-GigabitEthernet0/0/1] undo shutdown[R2-GigabitEthernet0/0/1] quit// 配置环回口（只做Router ID，不宣告OSPF）[R2] interface LoopBack 0[R2-LoopBack0] ip address 2.2.2.2 255.255.255.255[R2-LoopBack0] quit
-
-第四步：R2 启动 OSPF（同时属于两个区域——关键配置！）[R2] ospf 1 router-id 2.2.2.2[R2-ospf-1] area 0[R2-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255   // 把连接R1的网段放进Area 0[R2-ospf-1-area-0.0.0.0] quit[R2-ospf-1] area 1[R2-ospf-1-area-0.0.0.1] network 10.0.23.0 0.0.0.255   // 把连接R3的网段放进Area 1[R2-ospf-1-area-0.0.0.1] quit[R2-ospf-1] quit
 
 
-
-
-参数
+命令
 解释
 
 
 
-area 1
-Area 0 是骨干区域，Area 1 是非骨干区域。OSPF规定：所有非骨干区域必须直接连接到Area 0。R2同时连接了两个区域，所以它自动成为 ABR（区域边界路由器）。
+ospf 1
+在设备上创建一个OSPF进程，进程号（1）仅具有本地意义（相当于给这个OSPF实例起个名字）。在同一台设备上可以运行多个OSPF进程，用于隔离不同的网络域。
 
 
-ABR（区域边界路由器）的作用：它会把Area 0里的路由“翻译”成Type 3 LSA，发给Area 1；同时把Area 1里的路由翻译后发给Area 0。相当于两个区域之间的“翻译官”。
+router-id 1.1.1.1
+设置这台路由器在OSPF网络中的唯一标识符。必须手动指定，且全网唯一。如果不手动指定，设备会从所有接口IP中自动选一个最大的作为Router ID，这样会导致网络不稳定（如果接口IP变了，Router ID也跟着变）。建议使用环回口（Loopback）地址作为Router ID，因为它永远不down。
 
-第五步：R3 基础配置&lt;Huawei&gt; system-view[Huawei] sysname R3[R3] interface GigabitEthernet0/0/1[R3-GigabitEthernet0/0/1] ip address 10.0.23.3 255.255.255.0[R3-GigabitEthernet0/0/1] undo shutdown[R3-GigabitEthernet0/0/1] quit[R3] interface LoopBack 0[R3-LoopBack0] ip address 3.3.3.3 255.255.255.255[R3-LoopBack0] quit[R3] ospf 1 router-id 3.3.3.3[R3-ospf-1] area 1[R3-ospf-1-area-0.0.0.1] network 10.0.23.0 0.0.0.255[R3-ospf-1-area-0.0.0.1] network 3.3.3.3 0.0.0.0[R3-ospf-1-area-0.0.0.1] quit[R3-ospf-1] quit
 
+注意：Router ID 虽然看起来像IP地址，但它不是IP地址（不用于路由转发），它只是一个标识符。你可以写成 1.1.1.1，也可以写成 10.0.0.1，只要全网唯一即可。它不会在路由表里出现，你只能在 display ospf peer 输出里看到它。
 
-四、第二阶段核心查看命令（让你亲眼看见“地图”）1. 查看OSPF邻居状态（先确认邻居都起来了）[R1] display ospf peer brief
-
-预期输出：R1看到邻居是2.2.2.2，状态Full。R3看到邻居是2.2.2.2，状态Full。
-
-2. 查看链路状态数据库（LSDB）—— 这是第二阶段最核心的命令[R1] display ospf lsdb
-
-输出解读（重点看Type列）：
-Type      LinkState ID   AdvRouter          Age  Len   Sequence   MetricRouter    1.1.1.1        1.1.1.1            10   36    80000001   0Router    2.2.2.2        2.2.2.2            15   36    80000001   0Network   10.0.12.2      2.2.2.2            12   32    80000001   0Sum-Net   3.3.3.3        2.2.2.2            20   28    80000001   1
+第四步：进入OSPF区域视图并宣告网段[AR1-ospf-1] area 0[AR1-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[AR1-ospf-1-area-0.0.0.0] quit[AR1-ospf-1] quit
 
 
 
 
-LSA类型
-LinkState ID
-AdvRouter
-白话解释
 
-
-
-Router（Type 1）
-1.1.1.1
-1.1.1.1
-这是R1发的“自我介绍”，说自己的Router ID是1.1.1.1。
-
-
-Router（Type 1）
-2.2.2.2
-2.2.2.2
-这是R2发的“自我介绍”。
-
-
-Network（Type 2）
-10.0.12.2
-2.2.2.2
-在广播网（以太网）中，DR（指定路由器）发的“网段描述”，告诉大家“10.0.12.x这个网段上连接了谁”。
-
-
-Sum-Net（Type 3）
-3.3.3.3
-2.2.2.2
-这是ABR（R2）发的“区域间汇总”LSA，告诉Area 0：“有个网段3.3.3.3在Area 1里，想来的话找我R2！”
-
-
-观察实验：你在R1上敲display ospf lsdb看到Sum-Net 3.3.3.3，这就说明R2已经成功把Area 1的路由“翻译”给Area 0了。
-
-3. 查看OSPF路由表（看O和O IA的区别）[R1] display ospf routing
-
-输出解读：
-OSPF Process 1 with Router ID 1.1.1.1          Routing Tables Destination        Cost  Type       NextHop         AdvRouter       Area 10.0.12.0/24       1     Stub       10.0.12.1       1.1.1.1         0.0.0.0 1.1.1.1/32         0     Stub       1.1.1.1         1.1.1.1         0.0.0.0 10.0.23.0/24       2     Inter-area 10.0.12.2       2.2.2.2         0.0.0.0   // 注意这里！ 3.3.3.3/32         3     Inter-area 10.0.12.2       2.2.2.2         0.0.0.0
-
-
-
-
-字段
+命令
 解释
 
 
 
-Inter-area
-代表O IA（区域间路由），说明这个网段不在本区域，是R2（ABR）转发过来的。
+area 0
+进入OSPF区域0（即骨干区域）的配置视图。所有OSPF网络必须有一个Area 0，其他区域必须直接或间接连接到Area 0。你以后配多区域时，Area 0是“总枢纽”。
 
 
-Cost（开销）
-3.3.3.3的Cost为3（R1到R2的开销1 + R2到R3的开销1 + R3本地的开销1）。
-
-
-
-4. 查看全局IP路由表（与你已有的静态路由知识对接）[R1] display ip routing-table
-
-你会看到：
-10.0.12.0/24  Direct  0    0   10.0.12.1   G0/0/01.1.1.1/32    Direct  0    0   127.0.0.1   LoopBack010.0.23.0/24  OSPF    10   2   10.0.12.2   G0/0/0   // 注意Proto是OSPF，Pre是103.3.3.3/32    OSPF    10   3   10.0.12.2   G0/0/0   // 优先级10，胜过静态路由的60
-
-关键结论：OSPF协议的优先级（Pre）是 10，你之前学的静态路由优先级是 60。这意味着OSPF学到的路由会覆盖静态路由（如果去往同一个目标的话），因为数值更小更优先。
-
-五、第二阶段排错流程❌ 场景1：在R1的LSDB里看不到Sum-Net 3.3.3.3（缺少区域间路由）排查方向：
-
-检查R2是否确实是ABR：在R2上敲 display ospf brief，看 Border 字段是否显示 ABR。
-检查R3是否成功宣告了环回口：在R3上敲 display ospf interface LoopBack 0，看状态是否为UP，且在Area 1里。
-
-❌ 场景2：OSPF路由表中出现了O路由，但display ip routing-table里没有原因：华为VRP默认会优选直连路由和静态路由，但如果存在更优的OSPF路由（优先级10 &gt; 静态60），它会覆盖。但如果出现缺省路由（0.0.0.0/0）冲突，检查是否开启了 preference 调整。
-解决方法：在R1上敲 display ospf routing 确认OSPF是否计算出了该路由，再敲 display ip routing-table protocol ospf 查看OSPF路由是否被加载进全局表。
-❌ 场景3：邻居建立卡在2-Way不动（DR选举未完成）在广播网络中，OSPF需要选举DR（指定路由器）。如果多台设备互联在同一个交换网络，且Hello间隔一致但迟迟不进Full，检查是否强制配置了DR优先级为0（ospf dr-priority 0），这会导致该设备放弃竞选，从而延长选举时间。
-
-六、第二阶段核心笔记总结（速记口诀）
-
-
-关键词
-白话记忆
+network 10.0.12.0 0.0.0.255
+这是最关键的一句。- 10.0.12.0：要宣告的网段地址。- 0.0.0.255：通配符掩码（Wildcard Mask），不是子网掩码！它是子网掩码的“反码”（即 255.255.255.255 - 255.255.255.0 &#x3D; 0.0.0.255）。- 效果：告诉OSPF，“任何IP地址落在 10.0.12.0/24 这个范围内的接口，都在Area 0里运行OSPF”。新手常见错误：把 0.0.0.255 写成 255.255.255.0，这是错的！OSPF的network语句用的是通配符掩码。
 
 
 
-LSDB
-全网的“朋友圈消息汇总”
+AR2 配置（完全对称，只需改IP和Router ID）：
+&lt;AR2&gt; system-view[AR2] sysname AR2[AR2] interface GigabitEthernet0/0/0[AR2-GigabitEthernet0/0/0] ip address 10.0.12.2 255.255.255.0[AR2-GigabitEthernet0/0/0] undo shutdown[AR2-GigabitEthernet0/0/0] quit[AR2] ospf 1 router-id 2.2.2.2[AR2-ospf-1] area 0[AR2-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[AR2-ospf-1-area-0.0.0.0] quit[AR2-ospf-1] quit
+
+配置完成后，敲 display ospf peer brief 验证：
+[AR1] display ospf peer brief
+
+你应该看到：
+OSPF Process 1 with Router ID 1.1.1.1         Peer Statistic Information------------------------------------------------------------------- Area Id          Interface           Neighbor id    State   0.0.0.0          GigabitEthernet0/0/0  2.2.2.2        Full      -------------------------------------------------------------------
+
+State 为 Full 表示邻居关系建立成功，OSPF已开始交换路由信息。
+
+三、OSPF 邻居建立状态机（供笔记记录）
 
 
-Type 1 LSA (Router)
-每个人的“自我简介”
+状态
+含义
+排障切入点
 
 
-Type 2 LSA (Network)
-广播域里的“网段介绍”
+
+Down
+尚未收到对方的Hello报文
+检查物理链路（接口是否UP、IP是否配通）
 
 
-Type 3 LSA (Summary)
-ABR的“跨区域翻译件”
+Init
+收到了Hello报文，但未确认双向通信
+检查区域ID（Area）是否一致
 
 
-O vs O IA
-前者是“本村的人”，后者是“隔壁村的人”
+2-Way
+双向通信建立，开始选举DR&#x2F;BDR
+检查Hello&#x2F;Dead间隔是否一致
 
 
-ABR
-两个区域之间的“翻译官”
+Exstart
+开始主从协商，决定谁先发送数据库摘要
+检查MTU是否一致（华为默认忽略MTU检查，但在某些场景下需要手动开启）
+
+
+Exchange
+交换数据库摘要（DD报文），描述本地LSDB的目录
+检查是否收到DD报文（display ospf statistics）
+
+
+Loading
+请求并接收对方详细的链路状态信息（LSR&#x2F;LSU报文）
+检查网络是否丢包
+
+
+Full
+完全邻接，双方LSDB已同步
+✅ 成功状态
+
+
+关键约束条件（邻居建立必须匹配的“三要素”）：
+
+Area ID 必须一致。
+Hello 间隔（Hello Interval）和 Dead 间隔（Dead Interval）必须一致。
+认证类型和认证密码必须一致（如果配置了认证）。
+
+
+四、新手常见排错场景与解决办法❌ 场景1：display ospf peer 没有输出（邻居没建立）排查步骤：
+
+检查物理层：display interface GigabitEthernet0/0/0，确认 current state 是 UP。
+检查IP层：ping 10.0.12.2，确认能通。
+检查OSPF是否宣告正确：在AR1上敲 display ospf interface，看 GigabitEthernet0/0/0 的 State 是否为 DR 或 BDR 或 DROther。如果该接口未出现在此输出中，说明 network 宣告的网段与接口IP不在同一范围。
+
+❌ 场景2：邻居状态卡在 Exstart 或 Exchange 不动排查步骤：
+
+检查MTU是否一致：在接口视图下敲 display this，看 mtu 值（华为默认不强制MTU检查，但某些场景下需要手动关闭MTU检测：ospf mtu-enable）。
+检查是否启用了认证：如果一侧配了 ospf authentication-mode md5，另一侧没配，邻居会一直起不来。
+
+❌ 场景3：邻居状态在 2-Way 和 Full 之间反复震荡排查步骤：
+
+检查 Hello 间隔 和 Dead 间隔 是否一致。在接口视图下敲 ospf timer hello 10 可以修改（默认为10秒），Dead 默认为 Hello 的4倍（40秒）。如果一侧改了Hello为5秒，另一侧仍为10秒，则Dead时间会不一致（10秒 vs 40秒），邻居建立失败。
+
+
+五、你已有的命令速查表（放在笔记末尾）
+
+
+目的
+命令
+
+
+
+查看OSPF邻居状态
+display ospf peer brief
+
+
+查看OSPF邻居详细信息
+display ospf peer GigabitEthernet0/0/0
+
+
+查看OSPF接口状态
+display ospf interface
+
+
+查看OSPF错误统计
+display ospf error（排障神器）
+
+
+查看OSPF路由表
+display ospf routing
+
+
+查看当前所有OSPF配置
+&#96;display current-configuration
 
 
 
 ]]></content>
       <tags>
         <tag>网络运维</tag>
-        <tag>笔记</tag>
         <tag>交换机</tag>
-        <tag>OSPF</tag>
         <tag>路由器</tag>
+        <tag>ospf</tag>
       </tags>
   </entry>
   <entry>
@@ -1857,242 +1815,30 @@ area 1 + vlink-peer 对方Router ID（在两端ABR上配置）
       </tags>
   </entry>
   <entry>
-    <title>OSPF之建立邻居教程</title>
-    <url>/000000022/</url>
-    <content><![CDATA[OSPF之建立邻居教程📘 OSPF 第一阶段实验笔记（邻居建立）适用场景：两台华为路由器（或三层交换机）通过以太网直连，运行OSPF协议，建立邻居关系。
-一、实验拓扑与IP规划
-
-
-设备
-接口
-IP地址&#x2F;掩码
-所属OSPF区域
-
-
-
-AR1
-GigabitEthernet0&#x2F;0&#x2F;0
-10.0.12.1/24
-Area 0
-
-
-AR2
-GigabitEthernet0&#x2F;0&#x2F;0
-10.0.12.2/24
-Area 0
-
-
-连线方式：AR1的G0&#x2F;0&#x2F;0口 直连 AR2的G0&#x2F;0&#x2F;0口。
-二、配置步骤（每一步附带白话解释）第一步：进入系统视图并给设备命名&lt;AR1&gt; system-view[AR1] sysname AR1
-
-
-
-
-
-命令
-解释
-
-
-
-system-view
-从用户视图（&lt; &gt;）进入系统配置视图（[ ]），这是所有配置动作的前提。
-
-
-sysname AR1
-修改设备的主机名，便于识别。在真实网络和排障时，看日志能立刻知道是哪台设备出了问题。
-
-
-
-第二步：配置物理接口的IP地址（让链路“活起来”）[AR1] interface GigabitEthernet0/0/0[AR1-GigabitEthernet0/0/0] ip address 10.0.12.1 255.255.255.0[AR1-GigabitEthernet0/0/0] undo shutdown[AR1-GigabitEthernet0/0/0] quit
-
-
-
-
-
-命令
-解释
-
-
-
-interface GigabitEthernet0/0/0
-进入千兆以太网接口的配置视图。0/0/0 表示第1个槽位、第0个卡、第1号端口。
-
-
-ip address 10.0.12.1 255.255.255.0
-给该接口配置IP地址和子网掩码。/24（即255.255.255.0）表示这个接口所在的网段是 10.0.12.0/24。注意：对端AR2的接口必须配置同一网段的IP（如10.0.12.2），否则IP层无法通信。
-
-
-undo shutdown
-开启该接口（华为接口默认开启，但养成习惯敲这一句可以避免因误操作shutdown导致的故障）。
-
-
-quit
-退出当前接口视图，返回系统视图。
-
-
-验证这一步是否成功：
-[AR1] display ip interface brief
-
-查看 GigabitEthernet0/0/0 行的 Physical 和 Protocol 是否都是 UP。如果显示 DOWN，说明网线没插好、对端设备没开机或IP地址配错了。
-
-第三步：启动OSPF进程并配置Router ID[AR1] ospf 1 router-id 1.1.1.1
-
-
-
-
-
-命令
-解释
-
-
-
-ospf 1
-在设备上创建一个OSPF进程，进程号（1）仅具有本地意义（相当于给这个OSPF实例起个名字）。在同一台设备上可以运行多个OSPF进程，用于隔离不同的网络域。
-
-
-router-id 1.1.1.1
-设置这台路由器在OSPF网络中的唯一标识符。必须手动指定，且全网唯一。如果不手动指定，设备会从所有接口IP中自动选一个最大的作为Router ID，这样会导致网络不稳定（如果接口IP变了，Router ID也跟着变）。建议使用环回口（Loopback）地址作为Router ID，因为它永远不down。
-
-
-注意：Router ID 虽然看起来像IP地址，但它不是IP地址（不用于路由转发），它只是一个标识符。你可以写成 1.1.1.1，也可以写成 10.0.0.1，只要全网唯一即可。它不会在路由表里出现，你只能在 display ospf peer 输出里看到它。
-
-第四步：进入OSPF区域视图并宣告网段[AR1-ospf-1] area 0[AR1-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[AR1-ospf-1-area-0.0.0.0] quit[AR1-ospf-1] quit
-
-
-
-
-
-命令
-解释
-
-
-
-area 0
-进入OSPF区域0（即骨干区域）的配置视图。所有OSPF网络必须有一个Area 0，其他区域必须直接或间接连接到Area 0。你以后配多区域时，Area 0是“总枢纽”。
-
-
-network 10.0.12.0 0.0.0.255
-这是最关键的一句。- 10.0.12.0：要宣告的网段地址。- 0.0.0.255：通配符掩码（Wildcard Mask），不是子网掩码！它是子网掩码的“反码”（即 255.255.255.255 - 255.255.255.0 &#x3D; 0.0.0.255）。- 效果：告诉OSPF，“任何IP地址落在 10.0.12.0/24 这个范围内的接口，都在Area 0里运行OSPF”。新手常见错误：把 0.0.0.255 写成 255.255.255.0，这是错的！OSPF的network语句用的是通配符掩码。
-
-
-
-AR2 配置（完全对称，只需改IP和Router ID）：
-&lt;AR2&gt; system-view[AR2] sysname AR2[AR2] interface GigabitEthernet0/0/0[AR2-GigabitEthernet0/0/0] ip address 10.0.12.2 255.255.255.0[AR2-GigabitEthernet0/0/0] undo shutdown[AR2-GigabitEthernet0/0/0] quit[AR2] ospf 1 router-id 2.2.2.2[AR2-ospf-1] area 0[AR2-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[AR2-ospf-1-area-0.0.0.0] quit[AR2-ospf-1] quit
-
-配置完成后，敲 display ospf peer brief 验证：
-[AR1] display ospf peer brief
-
-你应该看到：
-OSPF Process 1 with Router ID 1.1.1.1         Peer Statistic Information------------------------------------------------------------------- Area Id          Interface           Neighbor id    State   0.0.0.0          GigabitEthernet0/0/0  2.2.2.2        Full      -------------------------------------------------------------------
-
-State 为 Full 表示邻居关系建立成功，OSPF已开始交换路由信息。
-
-三、OSPF 邻居建立状态机（供笔记记录）
-
-
-状态
-含义
-排障切入点
-
-
-
-Down
-尚未收到对方的Hello报文
-检查物理链路（接口是否UP、IP是否配通）
-
-
-Init
-收到了Hello报文，但未确认双向通信
-检查区域ID（Area）是否一致
-
-
-2-Way
-双向通信建立，开始选举DR&#x2F;BDR
-检查Hello&#x2F;Dead间隔是否一致
-
-
-Exstart
-开始主从协商，决定谁先发送数据库摘要
-检查MTU是否一致（华为默认忽略MTU检查，但在某些场景下需要手动开启）
-
-
-Exchange
-交换数据库摘要（DD报文），描述本地LSDB的目录
-检查是否收到DD报文（display ospf statistics）
-
-
-Loading
-请求并接收对方详细的链路状态信息（LSR&#x2F;LSU报文）
-检查网络是否丢包
-
-
-Full
-完全邻接，双方LSDB已同步
-✅ 成功状态
-
-
-关键约束条件（邻居建立必须匹配的“三要素”）：
-
-Area ID 必须一致。
-Hello 间隔（Hello Interval）和 Dead 间隔（Dead Interval）必须一致。
-认证类型和认证密码必须一致（如果配置了认证）。
-
-
-四、新手常见排错场景与解决办法❌ 场景1：display ospf peer 没有输出（邻居没建立）排查步骤：
-
-检查物理层：display interface GigabitEthernet0/0/0，确认 current state 是 UP。
-检查IP层：ping 10.0.12.2，确认能通。
-检查OSPF是否宣告正确：在AR1上敲 display ospf interface，看 GigabitEthernet0/0/0 的 State 是否为 DR 或 BDR 或 DROther。如果该接口未出现在此输出中，说明 network 宣告的网段与接口IP不在同一范围。
-
-❌ 场景2：邻居状态卡在 Exstart 或 Exchange 不动排查步骤：
-
-检查MTU是否一致：在接口视图下敲 display this，看 mtu 值（华为默认不强制MTU检查，但某些场景下需要手动关闭MTU检测：ospf mtu-enable）。
-检查是否启用了认证：如果一侧配了 ospf authentication-mode md5，另一侧没配，邻居会一直起不来。
-
-❌ 场景3：邻居状态在 2-Way 和 Full 之间反复震荡排查步骤：
-
-检查 Hello 间隔 和 Dead 间隔 是否一致。在接口视图下敲 ospf timer hello 10 可以修改（默认为10秒），Dead 默认为 Hello 的4倍（40秒）。如果一侧改了Hello为5秒，另一侧仍为10秒，则Dead时间会不一致（10秒 vs 40秒），邻居建立失败。
-
-
-五、你已有的命令速查表（放在笔记末尾）
-
-
-目的
-命令
-
-
-
-查看OSPF邻居状态
-display ospf peer brief
-
-
-查看OSPF邻居详细信息
-display ospf peer GigabitEthernet0/0/0
-
-
-查看OSPF接口状态
-display ospf interface
-
-
-查看OSPF错误统计
-display ospf error（排障神器）
-
-
-查看OSPF路由表
-display ospf routing
-
-
-查看当前所有OSPF配置
-&#96;display current-configuration
-
-
-
+    <title>《边界审计：当亲密关系成为侦察现场》</title>
+    <url>/0000001/</url>
+    <content><![CDATA[《边界审计：当亲密关系成为侦察现场》一段感情出现问题，有时不是突然的断裂，而是一点一滴的觉察。某个瞬间你开始注意到，那些本应专属的称呼出现在了别处，本该完整的关注被分成了碎片。这不是怀疑的开始，而是认知的清醒——当亲密关系不再安全，有人选择追问，有人选择侦察。
+从模糊地带开始的觉察起初，一切都藏在细节里。他常提到的“朋友”，有着过于频繁的互动频率；他承诺的“保持距离”，在行动上始终模糊不清。最敏锐的觉察往往始于这些微小处，像白纸上的第一道折痕，提醒着事情已经不同。
+感情之外，另一条线索悄然浮现。一笔不算大的借款，承诺的还款时间一再延后。这不是简单的拖延，而是某种模式的体现——当亲密关系中出现无法兑现的语言，它往往不是孤例。于是在某个时刻，一个具体的日期被提议出来，模糊的承诺终于有了清晰的边界。他说：“还完了就互不相欠了。”这话说得随意，却意外地指明了某种可能的方向。
+当观察成为必要的策略发现第三者的存在后，最本能的反应或许是愤怒或对峙。但还有另一种选择：保持接触，冷静观察。这不是妥协，而是一种克制的侦察——通过持续的交流，真相的轮廓逐渐清晰。那些他从未主动透露的信息，在看似平常的对话中一点点浮现。
+这段关系中的三方，都以为自己握着完整的拼图。只有最清醒的那个人知道，每一片碎片的位置和意义。她听着第三者的倾诉，收集着那些被隐藏的时间线，拼凑出完整的故事版本。没有质问，没有戳穿，只是安静地收集着所有需要的信息。
+时机的选择与彻底的切割感情的世界里，时机往往比话语更有力量。她等待，观察着第三者情感投入的曲线，看着那份依赖日渐加深。在最投入的时刻，选择离开——没有争吵，没有解释，只是干脆的告别和彻底的消失。后来的挽回与追问，都留在了被删除的联系方式之外，成为了无回音的独白。
+与此同时，那笔借款也到了该结清的时候。约定的日期到来，转账完成，经济上的联系就此切断。数字的结清往往比情感的结算更加清晰——当最后款项到账，她知道这一部分已经彻底结束。
+完整的告别与重建的边界最后的操作简洁如程序指令：删除所有联系方式，抹去所有可见的连接。这不是冲动的决定，而是所有侦察完成后的必然操作。当感情中的信任已经透支，当关系变成需要不断审计的账目，最彻底的止损就是完整的退出。
+这段经历留下的不是怨恨，而是一套清晰的边界认知。她学会了如何在不安全的关系中保护自己，如何通过观察而非争吵来获取真相，如何在适当的时候做出彻底的切割。更重要的是，她明白了亲密关系中那些不容模糊的底线——当一段关系需要被审计，它本身就已经失去了继续的意义。
+如今回看，那场持续数月的观察与判断，其实是一场安静的自我救赎。她没有在混乱中迷失方向，反而在复杂的情感迷宫中，为自己找到了一条清晰的路。当最后一道边界被确立，失去的是一段不再健康的关系，获得的却是对自己的完全认知与保护能力。
+那些曾经模糊的地带，如今都有了明确的标识。而人生的下一段旅程，将带着这些清晰的边界，走向更明亮的地方——在那里，亲密无需审计，信任不必侦察。
 ]]></content>
+      <categories>
+        <category>情感</category>
+        <category>爱情</category>
+      </categories>
       <tags>
-        <tag>网络运维</tag>
-        <tag>交换机</tag>
-        <tag>路由器</tag>
-        <tag>ospf</tag>
+        <tag>关系边界</tag>
+        <tag>情感止损</tag>
+        <tag>第一人称叙事</tag>
+        <tag>现代关系观察</tag>
+        <tag>情感纪实</tag>
       </tags>
   </entry>
   <entry>
@@ -2322,30 +2068,284 @@ display ospf brief
       </tags>
   </entry>
   <entry>
-    <title>《边界审计：当亲密关系成为侦察现场》</title>
-    <url>/0000001/</url>
-    <content><![CDATA[《边界审计：当亲密关系成为侦察现场》一段感情出现问题，有时不是突然的断裂，而是一点一滴的觉察。某个瞬间你开始注意到，那些本应专属的称呼出现在了别处，本该完整的关注被分成了碎片。这不是怀疑的开始，而是认知的清醒——当亲密关系不再安全，有人选择追问，有人选择侦察。
-从模糊地带开始的觉察起初，一切都藏在细节里。他常提到的“朋友”，有着过于频繁的互动频率；他承诺的“保持距离”，在行动上始终模糊不清。最敏锐的觉察往往始于这些微小处，像白纸上的第一道折痕，提醒着事情已经不同。
-感情之外，另一条线索悄然浮现。一笔不算大的借款，承诺的还款时间一再延后。这不是简单的拖延，而是某种模式的体现——当亲密关系中出现无法兑现的语言，它往往不是孤例。于是在某个时刻，一个具体的日期被提议出来，模糊的承诺终于有了清晰的边界。他说：“还完了就互不相欠了。”这话说得随意，却意外地指明了某种可能的方向。
-当观察成为必要的策略发现第三者的存在后，最本能的反应或许是愤怒或对峙。但还有另一种选择：保持接触，冷静观察。这不是妥协，而是一种克制的侦察——通过持续的交流，真相的轮廓逐渐清晰。那些他从未主动透露的信息，在看似平常的对话中一点点浮现。
-这段关系中的三方，都以为自己握着完整的拼图。只有最清醒的那个人知道，每一片碎片的位置和意义。她听着第三者的倾诉，收集着那些被隐藏的时间线，拼凑出完整的故事版本。没有质问，没有戳穿，只是安静地收集着所有需要的信息。
-时机的选择与彻底的切割感情的世界里，时机往往比话语更有力量。她等待，观察着第三者情感投入的曲线，看着那份依赖日渐加深。在最投入的时刻，选择离开——没有争吵，没有解释，只是干脆的告别和彻底的消失。后来的挽回与追问，都留在了被删除的联系方式之外，成为了无回音的独白。
-与此同时，那笔借款也到了该结清的时候。约定的日期到来，转账完成，经济上的联系就此切断。数字的结清往往比情感的结算更加清晰——当最后款项到账，她知道这一部分已经彻底结束。
-完整的告别与重建的边界最后的操作简洁如程序指令：删除所有联系方式，抹去所有可见的连接。这不是冲动的决定，而是所有侦察完成后的必然操作。当感情中的信任已经透支，当关系变成需要不断审计的账目，最彻底的止损就是完整的退出。
-这段经历留下的不是怨恨，而是一套清晰的边界认知。她学会了如何在不安全的关系中保护自己，如何通过观察而非争吵来获取真相，如何在适当的时候做出彻底的切割。更重要的是，她明白了亲密关系中那些不容模糊的底线——当一段关系需要被审计，它本身就已经失去了继续的意义。
-如今回看，那场持续数月的观察与判断，其实是一场安静的自我救赎。她没有在混乱中迷失方向，反而在复杂的情感迷宫中，为自己找到了一条清晰的路。当最后一道边界被确立，失去的是一段不再健康的关系，获得的却是对自己的完全认知与保护能力。
-那些曾经模糊的地带，如今都有了明确的标识。而人生的下一段旅程，将带着这些清晰的边界，走向更明亮的地方——在那里，亲密无需审计，信任不必侦察。
+    <title>OSPF之LSA与LSDB</title>
+    <url>/000000023/</url>
+    <content><![CDATA[
+📘 OSPF 第二阶段实验笔记：LSA与链路状态数据库（LSDB）适用场景：三台华为路由器（R1、R2、R3）运行OSPF，分为两个区域（Area 0 和 Area 1），观察区域内路由（O）和区域间路由（O IA）是如何生成的。
+
+一、实验拓扑与IP规划（三台设备，双区域）
+
+
+设备
+接口
+IP地址&#x2F;掩码
+所属OSPF区域
+说明
+
+
+
+R1
+G0&#x2F;0&#x2F;0
+10.0.12.1/24
+Area 0
+连接R2
+
+
+R1
+Loopback 0
+1.1.1.1/32
+Area 0
+模拟R1自己带的一个“终端网段”
+
+
+R2
+G0&#x2F;0&#x2F;0
+10.0.12.2/24
+Area 0
+连接R1
+
+
+R2
+G0&#x2F;0&#x2F;1
+10.0.23.2/24
+Area 1
+连接R3
+
+
+R2
+Loopback 0
+2.2.2.2/32
+不宣告（仅用于Router ID）
+仅用于标识
+
+
+R3
+G0&#x2F;0&#x2F;1
+10.0.23.3/24
+Area 1
+连接R2
+
+
+R3
+Loopback 0
+3.3.3.3/32
+Area 1
+模拟R3自己带的一个“终端网段”
+
+
+连线方式：
+
+R1的G0&#x2F;0&#x2F;0 直连 R2的G0&#x2F;0&#x2F;0
+R2的G0&#x2F;0&#x2F;1 直连 R3的G0&#x2F;0&#x2F;1
+
+
+二、核心概念铺垫（必须先搞懂这三个词）
+
+
+术语
+白话解释
+类似物
+
+
+
+LSA（链路状态通告）
+每台路由器把自己“看到”的网段，写成一条“朋友圈”发出去。
+相当于每个人在群里发一条消息：“我这里有网段X，连接方式Y。”
+
+
+LSDB（链路状态数据库）
+所有路由器收到的LSA集合，相当于收集了全网的“朋友圈”。
+相当于一个群聊记录，里面存着所有人发的地图碎片。
+
+
+SPF算法（最短路径树）
+每台路由器以自己的Router ID为根，用LSDB里的信息算出一棵最短路径树，得出路由表。
+相当于你看着群聊里的所有地图碎片，自己拼出一张完整地图，并标出到每个点最近的路。
+
+
+OSPF路由表中的两种标记（考试必考）：
+
+O（区域内路由）：目标网段在同一区域内，直接计算得出，优先级最高。
+O IA（区域间路由）：目标网段在其他区域，由ABR（区域边界路由器）翻译后发过来。
+
+
+三、配置步骤（每一条命令都带白话解释）第一步：R1 基础配置（接口IP + Loopback）&lt;Huawei&gt; system-view[Huawei] sysname R1// 配置物理接口[R1] interface GigabitEthernet0/0/0[R1-GigabitEthernet0/0/0] ip address 10.0.12.1 255.255.255.0[R1-GigabitEthernet0/0/0] undo shutdown[R1-GigabitEthernet0/0/0] quit// 配置环回口（Loopback接口是永远UP的逻辑接口，非常适合用来模拟PC网段或作为Router ID）[R1] interface LoopBack 0[R1-LoopBack0] ip address 1.1.1.1 255.255.255.255   // 注意：掩码是32位，代表只这个单个IP[R1-LoopBack0] quit
+
+
+
+
+命令
+解释
+
+
+
+interface LoopBack 0
+环回口是设备内部的虚拟接口，只要设备开机它就永远UP，永不down。
+
+
+ip address 1.1.1.1 255.255.255.255
+255.255.255.255（即/32）表示只宣告这一个IP，不包含任何其他地址。
+
+
+第二步：R1 启动 OSPF 并宣告网段[R1] ospf 1 router-id 1.1.1.1[R1-ospf-1] area 0[R1-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[R1-ospf-1-area-0.0.0.0] network 1.1.1.1 0.0.0.0    // 宣告环回口，通配符为0.0.0.0表示精确匹配这个IP[R1-ospf-1-area-0.0.0.0] quit[R1-ospf-1] quit
+
+
+
+
+参数
+解释
+
+
+
+network 1.1.1.1 0.0.0.0
+通配符0.0.0.0表示“只匹配这一个IP”。因为环回口是/32，所以宣告时必须精确到这个IP，否则宣告不进去。
+
+
+
+第三步：R2 基础配置（连接两个区域的桥头堡）&lt;Huawei&gt; system-view[Huawei] sysname R2// 配置连接R1的接口[R2] interface GigabitEthernet0/0/0[R2-GigabitEthernet0/0/0] ip address 10.0.12.2 255.255.255.0[R2-GigabitEthernet0/0/0] undo shutdown[R2-GigabitEthernet0/0/0] quit// 配置连接R3的接口[R2] interface GigabitEthernet0/0/1[R2-GigabitEthernet0/0/1] ip address 10.0.23.2 255.255.255.0[R2-GigabitEthernet0/0/1] undo shutdown[R2-GigabitEthernet0/0/1] quit// 配置环回口（只做Router ID，不宣告OSPF）[R2] interface LoopBack 0[R2-LoopBack0] ip address 2.2.2.2 255.255.255.255[R2-LoopBack0] quit
+
+第四步：R2 启动 OSPF（同时属于两个区域——关键配置！）[R2] ospf 1 router-id 2.2.2.2[R2-ospf-1] area 0[R2-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255   // 把连接R1的网段放进Area 0[R2-ospf-1-area-0.0.0.0] quit[R2-ospf-1] area 1[R2-ospf-1-area-0.0.0.1] network 10.0.23.0 0.0.0.255   // 把连接R3的网段放进Area 1[R2-ospf-1-area-0.0.0.1] quit[R2-ospf-1] quit
+
+
+
+
+参数
+解释
+
+
+
+area 1
+Area 0 是骨干区域，Area 1 是非骨干区域。OSPF规定：所有非骨干区域必须直接连接到Area 0。R2同时连接了两个区域，所以它自动成为 ABR（区域边界路由器）。
+
+
+ABR（区域边界路由器）的作用：它会把Area 0里的路由“翻译”成Type 3 LSA，发给Area 1；同时把Area 1里的路由翻译后发给Area 0。相当于两个区域之间的“翻译官”。
+
+第五步：R3 基础配置&lt;Huawei&gt; system-view[Huawei] sysname R3[R3] interface GigabitEthernet0/0/1[R3-GigabitEthernet0/0/1] ip address 10.0.23.3 255.255.255.0[R3-GigabitEthernet0/0/1] undo shutdown[R3-GigabitEthernet0/0/1] quit[R3] interface LoopBack 0[R3-LoopBack0] ip address 3.3.3.3 255.255.255.255[R3-LoopBack0] quit[R3] ospf 1 router-id 3.3.3.3[R3-ospf-1] area 1[R3-ospf-1-area-0.0.0.1] network 10.0.23.0 0.0.0.255[R3-ospf-1-area-0.0.0.1] network 3.3.3.3 0.0.0.0[R3-ospf-1-area-0.0.0.1] quit[R3-ospf-1] quit
+
+
+四、第二阶段核心查看命令（让你亲眼看见“地图”）1. 查看OSPF邻居状态（先确认邻居都起来了）[R1] display ospf peer brief
+
+预期输出：R1看到邻居是2.2.2.2，状态Full。R3看到邻居是2.2.2.2，状态Full。
+
+2. 查看链路状态数据库（LSDB）—— 这是第二阶段最核心的命令[R1] display ospf lsdb
+
+输出解读（重点看Type列）：
+Type      LinkState ID   AdvRouter          Age  Len   Sequence   MetricRouter    1.1.1.1        1.1.1.1            10   36    80000001   0Router    2.2.2.2        2.2.2.2            15   36    80000001   0Network   10.0.12.2      2.2.2.2            12   32    80000001   0Sum-Net   3.3.3.3        2.2.2.2            20   28    80000001   1
+
+
+
+
+LSA类型
+LinkState ID
+AdvRouter
+白话解释
+
+
+
+Router（Type 1）
+1.1.1.1
+1.1.1.1
+这是R1发的“自我介绍”，说自己的Router ID是1.1.1.1。
+
+
+Router（Type 1）
+2.2.2.2
+2.2.2.2
+这是R2发的“自我介绍”。
+
+
+Network（Type 2）
+10.0.12.2
+2.2.2.2
+在广播网（以太网）中，DR（指定路由器）发的“网段描述”，告诉大家“10.0.12.x这个网段上连接了谁”。
+
+
+Sum-Net（Type 3）
+3.3.3.3
+2.2.2.2
+这是ABR（R2）发的“区域间汇总”LSA，告诉Area 0：“有个网段3.3.3.3在Area 1里，想来的话找我R2！”
+
+
+观察实验：你在R1上敲display ospf lsdb看到Sum-Net 3.3.3.3，这就说明R2已经成功把Area 1的路由“翻译”给Area 0了。
+
+3. 查看OSPF路由表（看O和O IA的区别）[R1] display ospf routing
+
+输出解读：
+OSPF Process 1 with Router ID 1.1.1.1          Routing Tables Destination        Cost  Type       NextHop         AdvRouter       Area 10.0.12.0/24       1     Stub       10.0.12.1       1.1.1.1         0.0.0.0 1.1.1.1/32         0     Stub       1.1.1.1         1.1.1.1         0.0.0.0 10.0.23.0/24       2     Inter-area 10.0.12.2       2.2.2.2         0.0.0.0   // 注意这里！ 3.3.3.3/32         3     Inter-area 10.0.12.2       2.2.2.2         0.0.0.0
+
+
+
+
+字段
+解释
+
+
+
+Inter-area
+代表O IA（区域间路由），说明这个网段不在本区域，是R2（ABR）转发过来的。
+
+
+Cost（开销）
+3.3.3.3的Cost为3（R1到R2的开销1 + R2到R3的开销1 + R3本地的开销1）。
+
+
+
+4. 查看全局IP路由表（与你已有的静态路由知识对接）[R1] display ip routing-table
+
+你会看到：
+10.0.12.0/24  Direct  0    0   10.0.12.1   G0/0/01.1.1.1/32    Direct  0    0   127.0.0.1   LoopBack010.0.23.0/24  OSPF    10   2   10.0.12.2   G0/0/0   // 注意Proto是OSPF，Pre是103.3.3.3/32    OSPF    10   3   10.0.12.2   G0/0/0   // 优先级10，胜过静态路由的60
+
+关键结论：OSPF协议的优先级（Pre）是 10，你之前学的静态路由优先级是 60。这意味着OSPF学到的路由会覆盖静态路由（如果去往同一个目标的话），因为数值更小更优先。
+
+五、第二阶段排错流程❌ 场景1：在R1的LSDB里看不到Sum-Net 3.3.3.3（缺少区域间路由）排查方向：
+
+检查R2是否确实是ABR：在R2上敲 display ospf brief，看 Border 字段是否显示 ABR。
+检查R3是否成功宣告了环回口：在R3上敲 display ospf interface LoopBack 0，看状态是否为UP，且在Area 1里。
+
+❌ 场景2：OSPF路由表中出现了O路由，但display ip routing-table里没有原因：华为VRP默认会优选直连路由和静态路由，但如果存在更优的OSPF路由（优先级10 &gt; 静态60），它会覆盖。但如果出现缺省路由（0.0.0.0/0）冲突，检查是否开启了 preference 调整。
+解决方法：在R1上敲 display ospf routing 确认OSPF是否计算出了该路由，再敲 display ip routing-table protocol ospf 查看OSPF路由是否被加载进全局表。
+❌ 场景3：邻居建立卡在2-Way不动（DR选举未完成）在广播网络中，OSPF需要选举DR（指定路由器）。如果多台设备互联在同一个交换网络，且Hello间隔一致但迟迟不进Full，检查是否强制配置了DR优先级为0（ospf dr-priority 0），这会导致该设备放弃竞选，从而延长选举时间。
+
+六、第二阶段核心笔记总结（速记口诀）
+
+
+关键词
+白话记忆
+
+
+
+LSDB
+全网的“朋友圈消息汇总”
+
+
+Type 1 LSA (Router)
+每个人的“自我简介”
+
+
+Type 2 LSA (Network)
+广播域里的“网段介绍”
+
+
+Type 3 LSA (Summary)
+ABR的“跨区域翻译件”
+
+
+O vs O IA
+前者是“本村的人”，后者是“隔壁村的人”
+
+
+ABR
+两个区域之间的“翻译官”
+
+
+
 ]]></content>
-      <categories>
-        <category>情感</category>
-        <category>爱情</category>
-      </categories>
       <tags>
-        <tag>关系边界</tag>
-        <tag>情感止损</tag>
-        <tag>第一人称叙事</tag>
-        <tag>现代关系观察</tag>
-        <tag>情感纪实</tag>
+        <tag>网络运维</tag>
+        <tag>笔记</tag>
+        <tag>交换机</tag>
+        <tag>OSPF</tag>
+        <tag>路由器</tag>
       </tags>
   </entry>
   <entry>
@@ -2427,6 +2427,73 @@ WAF规则工作正常。所有攻击特征明显的请求都被准确识别和�
         <tag>跨境支付</tag>
         <tag>支付安全</tag>
         <tag>个人经验</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vs2022报错rc1015解决方案</title>
+    <url>/0000006/</url>
+    <content><![CDATA[解决 Visual Studio 2022 报错 RC1015 的指南🛠️ Visual Studio 2022 报错 RC1015 解决方案当在 Visual Studio 2022 中选择”添加资源”时出现 RC1015 错误（无法打开包含文件 winres.h），请按顺序尝试以下方法：
+
+✅ 解决方案步骤1. 检查 Windows SDK 版本
+确认已安装与项目兼容的 Windows SDK
+通过 Visual Studio Installer → 修改 → 单个组件
+检查并安装正确的 SDK 版本（如 10.0.19041+）
+
+2. 更新开发工具集
+安装最新的 MFC 组件
+更新 MSVC 工具集（最新版本）
+在 VS Installer 的”工作负载”中勾选：
+使用 C++ 的桌面开发
+确保包含 MFC 和 ATL 支持
+
+
+
+3. 添加系统环境变量
+打开系统属性 → 高级 → 环境变量
+
+在 系统变量 中添加以下路径（根据实际安装位置调整版本号）：
+INCLUDE &#x3D; C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\umINCLUDE &#x3D; C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared或path-&gt;新建-&gt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\sharedpath-&gt;新建-&gt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um
+
+重启系统使变量生效
+
+
+4. 配置项目包含目录
+在解决方案资源管理器 → 右键项目 → 属性
+
+导航路径：配置属性 → VC++ 目录 → 包含目录
+
+添加 SDK 路径（示例）：
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\umC:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared
+
+点击 应用 → 确定 保存配置
+
+
+
+⚠️ 注意事项
+路径版本号需与实际安装的 SDK 版本一致
+
+64位系统建议同时检查以下路径：
+C:\Program Files\Windows Kits\10\Include...
+
+操作完成后 重新生成解决方案 (Ctrl+Shift+B)
+
+
+
+💡 提示：通过 开始菜单 → Windows SDK 文件夹中的 Windows SDK 命令行工具 可快速验证 SDK 安装状态。
+
+
+
+
+Chatbox AI
+
+]]></content>
+      <categories>
+        <category>windows</category>
+        <category>系统报错</category>
+      </categories>
+      <tags>
+        <tag>开发环境搭建</tag>
+        <tag>-vs2022</tag>
       </tags>
   </entry>
   <entry>
@@ -2712,73 +2779,6 @@ ls &#x2F;quit
       </tags>
   </entry>
   <entry>
-    <title>vs2022报错rc1015解决方案</title>
-    <url>/0000006/</url>
-    <content><![CDATA[解决 Visual Studio 2022 报错 RC1015 的指南🛠️ Visual Studio 2022 报错 RC1015 解决方案当在 Visual Studio 2022 中选择”添加资源”时出现 RC1015 错误（无法打开包含文件 winres.h），请按顺序尝试以下方法：
-
-✅ 解决方案步骤1. 检查 Windows SDK 版本
-确认已安装与项目兼容的 Windows SDK
-通过 Visual Studio Installer → 修改 → 单个组件
-检查并安装正确的 SDK 版本（如 10.0.19041+）
-
-2. 更新开发工具集
-安装最新的 MFC 组件
-更新 MSVC 工具集（最新版本）
-在 VS Installer 的”工作负载”中勾选：
-使用 C++ 的桌面开发
-确保包含 MFC 和 ATL 支持
-
-
-
-3. 添加系统环境变量
-打开系统属性 → 高级 → 环境变量
-
-在 系统变量 中添加以下路径（根据实际安装位置调整版本号）：
-INCLUDE &#x3D; C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\umINCLUDE &#x3D; C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared或path-&gt;新建-&gt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\sharedpath-&gt;新建-&gt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um
-
-重启系统使变量生效
-
-
-4. 配置项目包含目录
-在解决方案资源管理器 → 右键项目 → 属性
-
-导航路径：配置属性 → VC++ 目录 → 包含目录
-
-添加 SDK 路径（示例）：
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\umC:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared
-
-点击 应用 → 确定 保存配置
-
-
-
-⚠️ 注意事项
-路径版本号需与实际安装的 SDK 版本一致
-
-64位系统建议同时检查以下路径：
-C:\Program Files\Windows Kits\10\Include...
-
-操作完成后 重新生成解决方案 (Ctrl+Shift+B)
-
-
-
-💡 提示：通过 开始菜单 → Windows SDK 文件夹中的 Windows SDK 命令行工具 可快速验证 SDK 安装状态。
-
-
-
-
-Chatbox AI
-
-]]></content>
-      <categories>
-        <category>windows</category>
-        <category>系统报错</category>
-      </categories>
-      <tags>
-        <tag>开发环境搭建</tag>
-        <tag>-vs2022</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>思域汽车漏电修车记录</title>
     <url>/0000008/</url>
     <content><![CDATA[记录一辆2021年9代思域29号保险后端线路漏电故障，故障如下：
@@ -2792,21 +2792,6 @@ Chatbox AI
         <tag>维修</tag>
         <tag>思域</tag>
         <tag>汽修</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小米新机体验</title>
-    <url>/0000009/</url>
-    <content><![CDATA[小手一点,小米到手(≧∀≦)ゞ你好呀，欢迎点击本文章本篇文章是为了记录我在TB网购小米手机的经过而诞生的哦
-在我看着手上的手机日渐卡顿，萌生了换手机的想法，于是便向AI提问“我想用xxx预算购买一台小米手机，你有什么推荐嘛”，当我问完时，AI给出的回复像潮水一样向我涌来我在这众多的答案中，找到了一款极具性价比的手机，它就是Redmi Troub4!你敢想象嘛，16+512的配置才1611￥!有图有真相
-]]></content>
-      <categories>
-        <category>生活记录</category>
-      </categories>
-      <tags>
-        <tag>手机</tag>
-        <tag>网购</tag>
-        <tag>生活记录</tag>
       </tags>
   </entry>
   <entry>
@@ -2875,6 +2860,21 @@ Chatbox AI
       </tags>
   </entry>
   <entry>
+    <title>小米新机体验</title>
+    <url>/0000009/</url>
+    <content><![CDATA[小手一点,小米到手(≧∀≦)ゞ你好呀，欢迎点击本文章本篇文章是为了记录我在TB网购小米手机的经过而诞生的哦
+在我看着手上的手机日渐卡顿，萌生了换手机的想法，于是便向AI提问“我想用xxx预算购买一台小米手机，你有什么推荐嘛”，当我问完时，AI给出的回复像潮水一样向我涌来我在这众多的答案中，找到了一款极具性价比的手机，它就是Redmi Troub4!你敢想象嘛，16+512的配置才1611￥!有图有真相
+]]></content>
+      <categories>
+        <category>生活记录</category>
+      </categories>
+      <tags>
+        <tag>手机</tag>
+        <tag>网购</tag>
+        <tag>生活记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>域名解析异常：DNSSEC 起了什么作用？</title>
     <url>/DNSSEC/</url>
     <content><![CDATA[前言事情是这样的：
@@ -2893,34 +2893,19 @@ Chatbox AI
       </tags>
   </entry>
   <entry>
-    <title>光猫桥接后租期一过就断网：ITMS 未注册背后的真相</title>
-    <url>/ITMS/</url>
-    <content><![CDATA[事情起因事情起因是这样的，在凌晨三点多，睡醒了下意识看了眼手机，在wifi图标上有一个显眼的感叹号，点开微信一看，提示说当前网络无法上网请检查连接
-看到这么多证据都指向网络问题，我看了眼路由器的指示灯，发现是黄色故障灯，心里一紧，打开路由器后台看到代表网络的地球图标那条线上有一个红色叉叉,然后看了眼WAN口信息，拨号失败，我就重启了一下光猫与路由器，等了几分钟，指示灯还是黄色，看了眼光猫的PON灯常亮，也就代表着光纤没问题，我思考了一会
-登录光猫后台决定上光猫后台看看，将路由器的IP改为静态IP，改为了192.168.1.x，这样子相当于临时搭建了一座桥，方便进入光猫后台查看各项信息，刚开始我没发现问题，原因是刚睡醒有点不太清醒，导致略过一些信息。当时我就疑惑了，没问题吗？ 不可能！经验告诉我，一定是在光猫这边的问题，我仔仔细细看了一遍，发现除了光纤的收发值有点小异常，在该项下面显眼的写着ITMS未注册，经验告诉我，问题就是这个了
-知识科普我来科普一下，ITMS是光猫的一个远程管理系统功能，专门用于运营商的远程管理，调整配置，监控链路状态等功能，ITMS未注册意味着光猫无法与远程管理系统通信，导致触发了一些规则，光猫在ITMS未注册状态下，会触发本地的数据面策略锁，拒绝转发所有去往Internet方向的数据帧。怎么解决的呢？我的解决方法如下：将网络链路从桥接改为了路由模式，这一步是让光猫与机房重新通信获取一个新的ITMS配置与新的地址租期，这样子相当于重置了地址租期，然后再改回桥接让路由器进行拨号上网。
-原理总结总结一下：注意哦，改模式前建议先把当前配置页面截图，避免误操作后忘记原参数哦。桥接模式下，光猫的管理进程会因CPU空闲而被系统调度器“冷冻”，导致ITMS心跳丢失。恰好与DHCP租期和OLT会话超时同步。切换至路由模式强制唤醒了TR-069进程并触发了ITMS重新注册，改回桥接后保留了新的租期状态，从而避开了原故障窗口。问题解决啦，希望本次凌晨三点爬起来的网络运维，能给你们带来一点有用的经验
+    <title>你想查询WHOIS？这是我的RDAP方案</title>
+    <url>/rdap-whois-api/</url>
+    <content><![CDATA[既然你点击了这篇文章，肯定是对标题内容感兴趣的吧！让我给你介绍一下，我是怎么搭建RDAP以及为什么搭建。
+事情起因是我在给AI发布查询域名有效期以及域名信息的时候，总感觉差点意思，我就在想要不要自己搭建一个whois查询API呢？我就开始寻找一些支持无服务器部署的项目，因为服务器的成本是一笔不小的支出，所以才寻找相关项目绝对不是因为没钱，嘿嘿,后面经过在github一顿翻找，找到了jakejarvis的rdapper项目，该项目支持RDAP与whois双支持，但是无服务器部署不支持whois，所以只要支持RDAP查询的域名都能查询，除了一些小众域名与一些国家级域名(ccTLD)不支持外都可以！RDAP现支持**1000+**域名后缀，不支持后缀示例如下：.de（德国）、.cn（中国）、.us（美国）、.jp（日本）、.it（意大利）、.es（西班牙）、.mx（墨西哥），可以期待一下，后续应该支持的。
+讲了这么多是时候解释我的API地址啦，API介绍页是https://whoiscx.delishahk.com,该介绍页支持输入域名与URL查询，高级玩家可以试试API调用，我来介绍一下API格式https://whoiscx.delishahk.com/api/?whois=查询的域名或URL，返回的数据如下：
+你还真希望我贴一长串的数据啊？麻烦去介绍页看看吧，嘿嘿，我选用cloudflare workers作为运行底座，实现高缓存加高可用，保证每次调用实现99%可用，你是不是想问：为什么不是100%？因为免费版套餐有次数限制呀，希望不要被恶意刷取吧，好啦该API是公益免费，不收费的哦，欢迎使用呀！后续会跟着RDAP更新的，希望RDAP能够支持更多域名，如果能支持所有域名就最好啦。
 ]]></content>
       <tags>
-        <tag>网络运维</tag>
-        <tag>光猫</tag>
-        <tag>桥接</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客搭建指南</title>
-    <url>/hexo-blog-setup-guide/</url>
-    <content><![CDATA[本小站也运行了1.8年，659天了，是时候介绍一下我的博客是怎么搭建的，为什么选这个框架了。
-建站初衷选择搭建博客是因为我想要一个属于自己的空间，记录一下生活琐事与学习时的笔记并分享一些我踩过的坑与解决办法。
-初探wordpress重量级框架的烦恼刚开始我选择的是本地服务器加wordpress博客框架，简称WP，但是WP的搭建过程比较复杂，首先下载WP的框架加MYSQL数据库，然后配置PHP环境，最后设置域名解析与端口映射，整个配置过程花了我 2 个小时。完成后我发现了一个奇怪的问题：通过域名访问时，会被强制带上端口号，导致访问报错。排查后发现是重定向配置的问题，修改 NGINX 配置文件后得以解决。虽然本地访问 WP 后台一切正常，但切换到域名访问时依然很慢，甚至偶尔打不开。后面我就查询了一下Cloudflare tunnel的相关文档，发现 Tunnel 虽然好用，但配合本地运行沉重的 WordPress（PHP+MySQL）会导致资源占用过高且动态内容难以缓存，索性放弃了 WP，开始寻找一些轻量级的博客框架，最好是静态的。
-邂逅HEXO经过关键词搜索，我找到了hexo,经过上手使用还挺不错，hexo是一个静态博客框架，使用nodejs开发的，安装起来也很简单，配置也很简单，最重要的是它是静态的，不需要数据库支持，直接生成静态文件就可以了。
-部署到github pages只不过呢后面我追求更快的速度和不想维护服务器就看到了hexo可以部署到github pages上面，我顿时一喜：太好了！于是我根据相关教程配置了github的上传插件与配置文件，成功部署到了github pages上面，只不过这个方案还是存在弊端，就是访问速度不太稳定，会不定时的阻断，我查了相关文档配置上了CF的CDN服务，解决了这个问题，稳定了访问速度，经过一段时间使用，发现好像速度还是不太满意，我就在想了，这难道是极限了吗？我发现CF有很多功能我都没有用上，其中提升速度最强的功能就是缓存规则，这个功能是让访问的资源存在CF的全球众多CDN中，保证了资源的访问速度，只不过如果将文章也长时间缓存的话，文章更新后就不能及时看到新文章了，所以我就只配置了图片与一些大文件的长缓存，再把图片压缩成webp格式，既保证了速度也能及时看见新文章，将访问速度从平均8s的加载降低到了平均2.7s,提升了5.3s,这个速度已经是现有条件的最好选择了，好啦本次搭建与优化就到这里啦！
-结语顺便一提我用的主题是solitude哦，如果各位朋友还有什么问题可以发到我邮箱(mail@delishahk.com)哦，我会及时回复并解决问题哒，谢谢阅读
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-        <tag>hexo</tag>
-        <tag>cloudflare</tag>
+        <tag>域名</tag>
+        <tag>RDAP</tag>
+        <tag>whois</tag>
+        <tag>闲聊</tag>
+        <tag>日常分享</tag>
       </tags>
   </entry>
   <entry>
@@ -2953,27 +2938,42 @@ Chatbox AI
 
 ]]></content>
       <tags>
+        <tag>日常分享</tag>
         <tag>BOC</tag>
         <tag>中国银行</tag>
         <tag>社保卡</tag>
         <tag>金融科普</tag>
-        <tag>日常分享</tag>
       </tags>
   </entry>
   <entry>
-    <title>你想查询WHOIS？这是我的RDAP方案</title>
-    <url>/rdap-whois-api/</url>
-    <content><![CDATA[既然你点击了这篇文章，肯定是对标题内容感兴趣的吧！让我给你介绍一下，我是怎么搭建RDAP以及为什么搭建。
-事情起因是我在给AI发布查询域名有效期以及域名信息的时候，总感觉差点意思，我就在想要不要自己搭建一个whois查询API呢？我就开始寻找一些支持无服务器部署的项目，因为服务器的成本是一笔不小的支出，所以才寻找相关项目绝对不是因为没钱，嘿嘿,后面经过在github一顿翻找，找到了jakejarvis的rdapper项目，该项目支持RDAP与whois双支持，但是无服务器部署不支持whois，所以只要支持RDAP查询的域名都能查询，除了一些小众域名与一些国家级域名(ccTLD)不支持外都可以！RDAP现支持**1000+**域名后缀，不支持后缀示例如下：.de（德国）、.cn（中国）、.us（美国）、.jp（日本）、.it（意大利）、.es（西班牙）、.mx（墨西哥），可以期待一下，后续应该支持的。
-讲了这么多是时候解释我的API地址啦，API介绍页是https://whoiscx.delishahk.com,该介绍页支持输入域名与URL查询，高级玩家可以试试API调用，我来介绍一下API格式https://whoiscx.delishahk.com/api/?whois=查询的域名或URL，返回的数据如下：
-你还真希望我贴一长串的数据啊？麻烦去介绍页看看吧，嘿嘿，我选用cloudflare workers作为运行底座，实现高缓存加高可用，保证每次调用实现99%可用，你是不是想问：为什么不是100%？因为免费版套餐有次数限制呀，希望不要被恶意刷取吧，好啦该API是公益免费，不收费的哦，欢迎使用呀！后续会跟着RDAP更新的，希望RDAP能够支持更多域名，如果能支持所有域名就最好啦。
+    <title>光猫桥接后租期一过就断网：ITMS 未注册背后的真相</title>
+    <url>/ITMS/</url>
+    <content><![CDATA[事情起因事情起因是这样的，在凌晨三点多，睡醒了下意识看了眼手机，在wifi图标上有一个显眼的感叹号，点开微信一看，提示说当前网络无法上网请检查连接
+看到这么多证据都指向网络问题，我看了眼路由器的指示灯，发现是黄色故障灯，心里一紧，打开路由器后台看到代表网络的地球图标那条线上有一个红色叉叉,然后看了眼WAN口信息，拨号失败，我就重启了一下光猫与路由器，等了几分钟，指示灯还是黄色，看了眼光猫的PON灯常亮，也就代表着光纤没问题，我思考了一会
+登录光猫后台决定上光猫后台看看，将路由器的IP改为静态IP，改为了192.168.1.x，这样子相当于临时搭建了一座桥，方便进入光猫后台查看各项信息，刚开始我没发现问题，原因是刚睡醒有点不太清醒，导致略过一些信息。当时我就疑惑了，没问题吗？ 不可能！经验告诉我，一定是在光猫这边的问题，我仔仔细细看了一遍，发现除了光纤的收发值有点小异常，在该项下面显眼的写着ITMS未注册，经验告诉我，问题就是这个了
+知识科普我来科普一下，ITMS是光猫的一个远程管理系统功能，专门用于运营商的远程管理，调整配置，监控链路状态等功能，ITMS未注册意味着光猫无法与远程管理系统通信，导致触发了一些规则，光猫在ITMS未注册状态下，会触发本地的数据面策略锁，拒绝转发所有去往Internet方向的数据帧。怎么解决的呢？我的解决方法如下：将网络链路从桥接改为了路由模式，这一步是让光猫与机房重新通信获取一个新的ITMS配置与新的地址租期，这样子相当于重置了地址租期，然后再改回桥接让路由器进行拨号上网。
+原理总结总结一下：注意哦，改模式前建议先把当前配置页面截图，避免误操作后忘记原参数哦。桥接模式下，光猫的管理进程会因CPU空闲而被系统调度器“冷冻”，导致ITMS心跳丢失。恰好与DHCP租期和OLT会话超时同步。切换至路由模式强制唤醒了TR-069进程并触发了ITMS重新注册，改回桥接后保留了新的租期状态，从而避开了原故障窗口。问题解决啦，希望本次凌晨三点爬起来的网络运维，能给你们带来一点有用的经验
 ]]></content>
       <tags>
-        <tag>域名</tag>
-        <tag>日常分享</tag>
-        <tag>RDAP</tag>
-        <tag>whois</tag>
-        <tag>闲聊</tag>
+        <tag>网络运维</tag>
+        <tag>光猫</tag>
+        <tag>桥接</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客搭建指南</title>
+    <url>/hexo-blog-setup-guide/</url>
+    <content><![CDATA[本小站也运行了1.8年，659天了，是时候介绍一下我的博客是怎么搭建的，为什么选这个框架了。
+建站初衷选择搭建博客是因为我想要一个属于自己的空间，记录一下生活琐事与学习时的笔记并分享一些我踩过的坑与解决办法。
+初探wordpress重量级框架的烦恼刚开始我选择的是本地服务器加wordpress博客框架，简称WP，但是WP的搭建过程比较复杂，首先下载WP的框架加MYSQL数据库，然后配置PHP环境，最后设置域名解析与端口映射，整个配置过程花了我 2 个小时。完成后我发现了一个奇怪的问题：通过域名访问时，会被强制带上端口号，导致访问报错。排查后发现是重定向配置的问题，修改 NGINX 配置文件后得以解决。虽然本地访问 WP 后台一切正常，但切换到域名访问时依然很慢，甚至偶尔打不开。后面我就查询了一下Cloudflare tunnel的相关文档，发现 Tunnel 虽然好用，但配合本地运行沉重的 WordPress（PHP+MySQL）会导致资源占用过高且动态内容难以缓存，索性放弃了 WP，开始寻找一些轻量级的博客框架，最好是静态的。
+邂逅HEXO经过关键词搜索，我找到了hexo,经过上手使用还挺不错，hexo是一个静态博客框架，使用nodejs开发的，安装起来也很简单，配置也很简单，最重要的是它是静态的，不需要数据库支持，直接生成静态文件就可以了。
+部署到github pages只不过呢后面我追求更快的速度和不想维护服务器就看到了hexo可以部署到github pages上面，我顿时一喜：太好了！于是我根据相关教程配置了github的上传插件与配置文件，成功部署到了github pages上面，只不过这个方案还是存在弊端，就是访问速度不太稳定，会不定时的阻断，我查了相关文档配置上了CF的CDN服务，解决了这个问题，稳定了访问速度，经过一段时间使用，发现好像速度还是不太满意，我就在想了，这难道是极限了吗？我发现CF有很多功能我都没有用上，其中提升速度最强的功能就是缓存规则，这个功能是让访问的资源存在CF的全球众多CDN中，保证了资源的访问速度，只不过如果将文章也长时间缓存的话，文章更新后就不能及时看到新文章了，所以我就只配置了图片与一些大文件的长缓存，再把图片压缩成webp格式，既保证了速度也能及时看见新文章，将访问速度从平均8s的加载降低到了平均2.7s,提升了5.3s,这个速度已经是现有条件的最好选择了，好啦本次搭建与优化就到这里啦！
+结语顺便一提我用的主题是solitude哦，如果各位朋友还有什么问题可以发到我邮箱(mail@delishahk.com)哦，我会及时回复并解决问题哒，谢谢阅读
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+        <tag>hexo</tag>
+        <tag>cloudflare</tag>
       </tags>
   </entry>
 </search>
