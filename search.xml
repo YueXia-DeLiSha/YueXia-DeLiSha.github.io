@@ -2976,4 +2976,27 @@ ADB 调试是否开启
         <tag>闲聊</tag>
       </tags>
   </entry>
+  <entry>
+    <title>天下苦官方 Sitemap 插件久矣！一个好用的Hexo Sitemap精细插件</title>
+    <url>/hexo-custom-sitemap-plugin/</url>
+    <content><![CDATA[天下苦官方地图插件(Sitemap)久矣！为什么这么说呢？官方插件主打“收罗万物”、讲究通用，零配置就能用，但代价是把不该收录的页面也塞了进去。听我细细道来。先拿我自己的一个场景说起吧
+我的场景之前我只想着有一个Sitemap文件让爬虫知道我的网站Sitemap就好啦，后面登录搜索引擎的管理后台时发现收到了几个警告，警告内容为：“在网站上的爬取能力有限”我就在想了我的博客文章就十几篇，为什么抓取能力有限呢？我就开始排查首先肯定是看看爬虫首选的Sitemap文件，不看不要紧，一看吓一跳呢！十几篇的文章得出一百多条的链接，里面主要是tag，categories什么的，全部收录进去了。我开始尝试通过AI去查询文档，看看有没有办法去禁止收录这些页面，得到了tag: false这个设置项，设置完成后，再看一眼Sitemap文件，文件大小没变内容当然也没变。官方并没有这个变量，看到这一幕就在想有没有其他插件有我想要的功能？查找了一通，都不太满意，主要是自由度不够，我就想自己其实是与大肥鱼一起开发怎么样？会不会好一点？说干就干   
+解决方案经过与大肥鱼协助，耗费了一些时间就做出来了！主要有哪些功能呢？首先肯定是最重要的兼容原先的Sitemap配置并新增tags，categories，这两个为布尔值控制是否收录到Sitemap，这样子就不用出现一堆非文章啦。但是考虑到可能出现想收录其他路径与外部URL到Sitemap中，我便添加了extra_urls字段，支持自定义路径与外部URL哦就像这样子：
+extra_urls:  - /tag  - /404.html
+当然除了添加还有排除，通过exclude字段，示例如下哦：
+exclude:  - /tag  - /404.html
+还有一个功能！Sitemap分片，这个功能是为了避免Sitemap文件太大做的一个功能，通过sitemap_index控制，false关闭true开启，默认是关闭哒。当开启时需要配置一个分片url数量，通过sitemap_index_size字段，接受1–50000输入。
+sitemap:  path: sitemap.xml  sitemap_index: true  sitemap_index_size: 5000
+用完之后sitemap回归到了我的文章数对应的十几条URL数量啦，主打一个自由与精细化!感兴趣的话可以去看看哦，项目地址与中文项目介绍写出来啦，点击就可以去看看啦，截至文章发布时间来说，版本稳定在1.0.6，后续会继续跟进更新哒，以适配更新的hexo版本，欢迎使用然后给我提建议的呀。后面附上示例代码：
+sitemap:  # 总开关，false 则完全不生成 Sitemap  status: true  # Sitemap 输出路径（开启分片后，此文件为索引文件）  path: sitemap.xml  # 是否收录常规页面（首页、关于页等非文章页）  rel: true  # 是否收录标签页 —— 关闭，避免标签页泛滥  tags: false  # 是否收录分类页 —— 关闭，避免分类页稀释权重  categories: false  # 排除规则：排除分页、归档页、404 等低价值页面  # 规则说明：  #   /page      → 排除整个 /page 路径及其下所有内容（如 /page/2/、/page/3/）  #   /archives  → 排除整个归档路径  #   /404.html  → 最后一段带扩展名，仅排除这一个文件  exclude:    - /page    - /archives    - /404.html  # 额外收录：显式添加到 Sitemap 中的路径、文件或站外完整 URL  # 注意：extra_urls 中的条目不受 exclude 规则影响，会强制收录  extra_urls:    - /about/    - /links/    - https://example.com/important-external-page  # 开启 Sitemap 分片，避免单文件过大  sitemap_index: true  # 每个分片文件包含的最大 URL 数，范围 1–50000  # 越界或非数字会输出 WARN 并回退为 5000  sitemap_index_size: 200
+示例生成文件如下：
+sitemap.xml        ← 索引文件，指向下面各分片sitemap-1.xml      ← 第 1–200 条 URLsitemap-2.xml      ← 第 201–400 条 URLsitemap-3.xml      ← ...]]></content>
+      <tags>
+        <tag>Hexo插件</tag>
+        <tag>Sitemap</tag>
+        <tag>Hexo</tag>
+        <tag>站点地图</tag>
+        <tag>SEO</tag>
+      </tags>
+  </entry>
 </search>

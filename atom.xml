@@ -10,7 +10,28 @@
   <rights>All rights reserved 2026, 挽着红月缓缓走</rights>
   <subtitle>一个技术情感博客</subtitle>
   <title>挽着红月缓缓走</title>
-  <updated>2026-10-12T15:53:30.000Z</updated>
+  <updated>2026-10-20T14:49:53.063Z</updated>
+  <entry>
+    <author>
+      <name>挽着红月缓缓走</name>
+    </author>
+    <category term="Hexo插件" scheme="https://blog.rinai.top/tags/Hexo%E6%8F%92%E4%BB%B6/"/>
+    <category term="Sitemap" scheme="https://blog.rinai.top/tags/Sitemap/"/>
+    <category term="Hexo" scheme="https://blog.rinai.top/tags/Hexo/"/>
+    <category term="站点地图" scheme="https://blog.rinai.top/tags/%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"/>
+    <category term="SEO" scheme="https://blog.rinai.top/tags/SEO/"/>
+    <content>
+      <![CDATA[<p><img src="https://delishahk.com/img/1999_007.webp" alt="天下苦官方 Sitemap 插件久矣！一个好用的Hexo Sitemap精细插件" /></p>
+Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生成一百多条链接。本文介绍 hexo-generator-custom-sitemap：通过 tags/categories 开关、exclude 排除、extra_urls 追加与 sitemap_index 分片，精准控制 Sitemap 内容，减少抓取预算浪费。]]>
+    </content>
+    <id>https://blog.rinai.top/hexo-custom-sitemap-plugin/</id>
+    <link href="https://blog.rinai.top/hexo-custom-sitemap-plugin/" rel="alternate"/>
+    <link href="https://delishahk.com/img/1999_007.webp" rel="enclosure" type="image/webp"/>
+    <published>2026-10-20T13:40:21.000Z</published>
+    <summary>Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生成一百多条链接。本文介绍 hexo-generator-custom-sitemap：通过 tags/categories 开关、exclude 排除、extra_urls 追加与 sitemap_index 分片，精准控制 Sitemap 内容，减少抓取预算浪费。</summary>
+    <title>天下苦官方 Sitemap 插件久矣！一个好用的Hexo Sitemap精细插件</title>
+    <updated>2026-10-20T14:49:53.063Z</updated>
+  </entry>
   <entry>
     <author>
       <name>挽着红月缓缓走</name>
@@ -400,27 +421,6 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <published>2026-04-16T05:55:44.000Z</published>
     <summary>记录我用 QT 框架为《绝区零》妄想天使阵营制作专属同人音乐播放器的全过程，包含界面设计、音频播放实现、以及遇到的坑与解决方法。</summary>
     <title>关于妄想天使三小只的专属音乐播放器制作旅程</title>
-    <updated>2026-10-12T15:53:30.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>挽着红月缓缓走</name>
-    </author>
-    <category term="twikoo" scheme="https://blog.rinai.top/tags/twikoo/"/>
-    <category term="Twikoo" scheme="https://blog.rinai.top/tags/Twikoo/"/>
-    <category term="常见小问题" scheme="https://blog.rinai.top/tags/%E5%B8%B8%E8%A7%81%E5%B0%8F%E9%97%AE%E9%A2%98/"/>
-    <content>
-      <![CDATA[<p><img src="https://delishahk.com/img/1999(13).webp" alt="关于twikoo不显示设置的问题" /></p>
-<h1 id="Twikoo-评论系统：找不到设置按钮？一招解决"><a href="#Twikoo-评论系统：找不到设置按钮？一招解决" class="headerlink" title="Twikoo 评论系统：找不到设置按钮？一招解决"></a>Twikoo 评论系统：找不]]>
-    </content>
-    <id>https://blog.rinai.top/0000000013/</id>
-    <link href="https://blog.rinai.top/0000000013/" rel="alternate"/>
-    <link href="https://delishahk.com/img/1999(13).webp" rel="enclosure" type="image/webp"/>
-    <published>2026-04-14T03:48:07.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="Twikoo-评论系统：找不到设置按钮？一招解决"><a href="#Twikoo-评论系统：找不到设置按钮？一招解决" class="headerlink" title="Twikoo 评论系统：找不到设置按钮？一招解决"></a>Twikoo 评论系统：找不]]>
-    </summary>
-    <title>关于twikoo不显示设置的问题</title>
     <updated>2026-10-12T15:53:30.000Z</updated>
   </entry>
 </feed>
