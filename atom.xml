@@ -93,8 +93,8 @@ Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="日常分享" scheme="https://rinai.top/tags/%E6%97%A5%E5%B8%B8%E5%88%86%E4%BA%AB/"/>
     <category term="域名" scheme="https://rinai.top/tags/%E5%9F%9F%E5%90%8D/"/>
+    <category term="日常分享" scheme="https://rinai.top/tags/%E6%97%A5%E5%B8%B8%E5%88%86%E4%BA%AB/"/>
     <category term="RDAP" scheme="https://rinai.top/tags/RDAP/"/>
     <category term="whois" scheme="https://rinai.top/tags/whois/"/>
     <category term="闲聊" scheme="https://rinai.top/tags/%E9%97%B2%E8%81%8A/"/>
