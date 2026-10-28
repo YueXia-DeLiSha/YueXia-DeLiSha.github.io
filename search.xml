@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>阿里云ESA与阿里云CDN使用体验</title>
-    <url>/0000000000018/</url>
+    <url>/post/0000000000018/</url>
     <content><![CDATA[阿里云ESA与阿里云CDN使用体验在我用CloudFlare的CDN时感觉服务不错，我就在想如果换近一点的CDN会不会更好啊？我考虑了很多CDN服务商，发现阿里云的CDN有着不错的口碑和性能表现，于是我决定试试
 我换到阿里云CDN后，感觉性能提升很大，尤其是国内访问明显加快了很多，例如之前用CF时候地图上显示的访问是淡绿色的，换完以后变成了深绿色，说明速度提升了很多，用了一段时间后，我在翻找阿里云控制台时发现了另一款产品——阿里云ESA（Edge Security Accelerator）。我对这个产品很感兴趣，决定也试用一下看看效果如何。由于大部分服务都在CF上不能把域名迁移到阿里云ESA上，我只能通过NS记录的方式将该子域名指向阿里云的ESA节点。设置完成后，我发现速度提升不明显，甚至有些时候还下降了，地图变成了黄色然后向官方反馈，他们说要调整缓存时间，针对静态的文件例如*.css,.js，.png等进行更长时间的缓存，调整后速度有所提升，但是感觉还是比不上纯CDN的效果，总的来说ESA产品很好，适合以下场景使用：
 
@@ -22,7 +22,7 @@ ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ES
   </entry>
   <entry>
     <title>《隔壁天使无意间把我养成废材了这件事》《邻家天使》强烈推荐！</title>
-    <url>/000000000017/</url>
+    <url>/post/000000000017/</url>
     <content><![CDATA[你或许想问，这部小说或者动漫的情节是怎么样的？为什么要推荐她？
 这一切要从前几天说起，我刚刚看完不时用俄语遮羞的艾莉同学这部番说起，当我看到剧中的艾莉同学明明是个想要男主夸奖的可爱女子却偏偏用俄语去掩饰——这种傲娇实在太可爱了，看完意犹未尽，想找一些类似的番剧看看，我左翻右翻的找番时，目光突然被一部名为隔壁天使无意间把我养成废材了这件事的番吸引住了。
 她的封面和简介看着觉得很有吸引力，点进去打开第一集映入眼帘的是真昼坐在秋千上，天空还下着小雨，此时男主(藤宫周)撑着伞从身边走过看到真昼便走了过去询问，两人的第一次交流就这样子开始了，男主也是很大方的把伞递给了真昼，不出所料第二天男主感冒了，在教室里男主的好基友树就调侃起了男主“明明昨天还这么健康怎么今天就感冒了？”，周回复“要你管”,视角跳到放学后真昼来还伞了，真昼看到男主因为淋雨感冒后就出现了想要照顾他的想法，亲手为周做了一份粥，并守候在其身边，在周康复后，真昼看到他的饮食习惯如此的不健康就将“剩饭”拿给了周，其实是一份从未动过的饭，两人的生活由此展开交集
@@ -44,7 +44,7 @@ ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ES
   </entry>
   <entry>
     <title>关于妄想天使三小只的专属音乐播放器制作旅程</title>
-    <url>/00000000014/</url>
+    <url>/post/00000000014/</url>
     <content><![CDATA[事情开端在看完绝区零新剧情的妄想天使三小只的支线剧情以及妄想天使的主题活动后，萌生了为三小只制作一个同人专属播放器的想法绝对不是因为太可爱才出现想法的，让我为你介绍一下三小只成员一：千夏，妄想天使团队的编曲大人可爱小哭包
 成员二：南宫羽，妄想天使的舞蹈担当兼队长团队财务担当，
 成员三：爱芮，妄想天使的主唱，香香软软的构造体
@@ -60,7 +60,7 @@ ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ES
   </entry>
   <entry>
     <title>关于twikoo不显示设置的问题</title>
-    <url>/0000000013/</url>
+    <url>/post/0000000013/</url>
     <content><![CDATA[Twikoo 评论系统：找不到设置按钮？一招解决问题现象当你部署好 Twikoo 评论系统后，想进入后台管理面板，却发现页面上怎么也找不到那个“齿轮”或“设置”图标，这是怎么回事？
 原因分析Twikoo 的设计逻辑是：只有被识别为博主（管理员）的访客，才能看到管理入口。如果你还没有在评论框中输入过你预设的博主昵称并提交一条评论，系统就无法确认你的身份，自然也就不会显示设置按钮。
 解决步骤第一步：输入博主昵称在评论区的昵称栏，输入你在 Twikoo 管理端（或环境变量）中设置的 ADMIN_NAME（博主昵称）。
@@ -82,7 +82,7 @@ ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ES
   </entry>
   <entry>
     <title>GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密</title>
-    <url>/0000000016/</url>
+    <url>/post/0000000016/</url>
     <content><![CDATA[GnuPG (GPG) 完整使用指南
 适用读者：开发者、系统运维、安全工程师，以及需要加密文件、签名 Git 提交或保护敏感数据的任何人。前置知识：基本的命令行操作（会打开终端、执行命令即可），无需 GPG 基础。版本说明：本文基于 GnuPG 2.2+，YubiKey 相关操作需要固件 5.x 以上。
 
@@ -843,7 +843,7 @@ GPG &gt;&#x3D;2.1
   </entry>
   <entry>
     <title>VS2022报错RC22103解决方法</title>
-    <url>/0000000019/</url>
+    <url>/post/0000000019/</url>
     <content><![CDATA[VS2022报错RC22103解决方法在使用Visual Studio 2022进行C++开发时，在添加资源时有时候会遇到报错RC22103的问题。这个错误通常是由于资源文件的路径或格式不正确引起的。下面将详细介绍解决该问题的步骤。
 
 检查资源文件路径确保资源文件的路径正确，并且文件存在于指定的位置。可以尝试将资源文件移动到项目的根目录下，或者使用绝对路径来引用资源文件。
@@ -864,7 +864,7 @@ GPG &gt;&#x3D;2.1
   </entry>
   <entry>
     <title>STP教程之display stp命令详解</title>
-    <url>/0000000021/</url>
+    <url>/post/0000000021/</url>
     <content><![CDATA[命令执行结果假设我们执行display stp命令假设得到如下数据：
 [sw1]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-ccde-02e8Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-ccde-02e8 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :12TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:2m:12sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][DISCARDING]---- Port Protocol       :Enabled Port Role           :Alternate Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :3                       TCN: 0, Config: 0, RST: 0, MST: 3 BPDU Received       :438                       TCN: 0, Config: 0, RST: 0, MST: 438----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :5 BPDU Sent           :4                       TCN: 0, Config: 0, RST: 0, MST: 4 BPDU Received       :440                       TCN: 0, Config: 0, RST: 0, MST: 440                                              [sw3]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc2b-47baConfig Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 0CIST RegRoot/IRPC   :32768.4c1f-cc2b-47ba / 0CIST RootPortId     :0.0BPDU-Protection     :DisabledTC or TCN received  :4TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:4m:52sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/1----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :1 TC or TCN received  :0 BPDU Sent           :132                       TCN: 0, Config: 0, RST: 0, MST: 132 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :0 BPDU Sent           :226                       TCN: 0, Config: 0, RST: 0, MST: 226 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1          &lt;sw2&gt;system-viewEnter system view, return user view with Ctrl+Z.[sw2]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc38-0f51Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-cc38-0f51 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :9TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:0m:3sNumber of TC        :8Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :9 TC or TCN received  :2 BPDU Sent           :545                       TCN: 0, Config: 0, RST: 0, MST: 545 BPDU Received       :3                       TCN: 0, Config: 0, RST: 0, MST: 3----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :6                       TCN: 0, Config: 0, RST: 0, MST: 6 BPDU Received       :549                       TCN: 0, Config: 0, RST: 0, MST: 549```          我们可以按照如下流程解读得到的数据：这是一份非常完整的STP（生成树协议）信息输出\## 📌 一、全局信息（Global Info）—— 网络的大局观这部分描述的是&quot;整个生成树网络&quot;的整体情况。
 ——-[CIST Global Info][Mode MSTP]——-
@@ -925,7 +925,7 @@ GPG &gt;&#x3D;2.1
   </entry>
   <entry>
     <title>OSPF之认证与路由汇总</title>
-    <url>/0000000025/</url>
+    <url>/post/0000000025/</url>
     <content><![CDATA[📘 OSPF 第四阶段实验笔记：认证与路由汇总适用场景：在已经跑通的多区域OSPF网络中，对Area 1启用认证，防止未经授权的路由器接入；同时在ABR上把多个细网段合并成一个大网段宣告，减少骨干路由器的负担。
 
 一、核心概念铺垫
@@ -1160,7 +1160,7 @@ asbr-summary 汇总网段 掩码（在ASBR的OSPF进程视图下）
   </entry>
   <entry>
     <title>友链界面大更新！</title>
-    <url>/0000000027/</url>
+    <url>/post/0000000027/</url>
     <content><![CDATA[事情起因作者在晚上闲的没事打开了一款游戏，本来想美美的玩几局的，结果不是因为匹配到一些神人队友就是被压制的很惨，整个人都心态爆炸了，翻来覆去睡不着绝对不是因为输了游戏,索性爬起来找点别的事做，看了看别人的友链界面在看了看我的友链，顿时就有了一个想法，为什么不把友链界面改的更好看一点呢？于是乎就有了这次的更新。
 本次友链采用Qwen3.7F与我的一些思路就有了本次的全新友链界面，为什么用Qwen3.7f呢？当然是因为我的订阅要过期啦，再不用就浪费了，顺便也想试试Qwen3.7f的能力，看看能不能帮我写出一个更好看的友链界面。
 详细介绍更新介绍新友链界面与旧友链的主要区别就是采用更简洁的设计与新增背景图，欢迎各位小伙伴们前往友链界面查看，如果发现您的友链没有背景图可以发邮件给我哦，收到后会及时更新到友链界面，当然没背景图也不影响使用为什么要这么改呢？为什么要增加背景图界面？让我来回答你的疑惑吧
@@ -1184,7 +1184,7 @@ Cloudflare - 综合网络服务商，提供CDN、DNS、WAF等服务，
   </entry>
   <entry>
     <title>CPP学习记录1</title>
-    <url>/000000015/</url>
+    <url>/post/000000015/</url>
     <content><![CDATA[]]></content>
       <tags>
         <tag>C++</tag>
@@ -1196,7 +1196,7 @@ Cloudflare - 综合网络服务商，提供CDN、DNS、WAF等服务，
   </entry>
   <entry>
     <title>STP生成树协议笔记</title>
-    <url>/000000020/</url>
+    <url>/post/000000020/</url>
     <content><![CDATA[STP生成树协议主要有以下知识点：
 
 根桥
@@ -1297,7 +1297,7 @@ BPDU——STP的通信基石STP协议依赖**BPDU（Bridge Protocol Data Unit，
   </entry>
   <entry>
     <title>OSPF之建立邻居教程</title>
-    <url>/000000022/</url>
+    <url>/post/000000022/</url>
     <content><![CDATA[OSPF之建立邻居教程📘 OSPF 第一阶段实验笔记（邻居建立）适用场景：两台华为路由器（或三层交换机）通过以太网直连，运行OSPF协议，建立邻居关系。
 一、实验拓扑与IP规划
 
@@ -1536,7 +1536,7 @@ display ospf routing
   </entry>
   <entry>
     <title>OSPF之LSA与LSDB</title>
-    <url>/000000023/</url>
+    <url>/post/000000023/</url>
     <content><![CDATA[
 📘 OSPF 第二阶段实验笔记：LSA与链路状态数据库（LSDB）适用场景：三台华为路由器（R1、R2、R3）运行OSPF，分为两个区域（Area 0 和 Area 1），观察区域内路由（O）和区域间路由（O IA）是如何生成的。
 
@@ -1817,7 +1817,7 @@ ABR
   </entry>
   <entry>
     <title>OSPF之特殊路由与路由优化</title>
-    <url>/000000024/</url>
+    <url>/post/000000024/</url>
     <content><![CDATA[📘 OSPF 第三阶段实验笔记：特殊区域与路由优化（Stub &#x2F; Totally Stub &#x2F; NSSA）适用场景：在一个多区域OSPF网络中，边缘区域（如分公司、监控网段）的路由器性能较弱，不需要知道全网详细的外部路由（比如互联网路由），只需要知道“怎么走出去”即可。
 
 一、核心概念铺垫（先理解“为什么要学这个”）问题场景：假设你有Area 0（骨干区）、Area 1（办公区）、Area 2（监控区）。Area 2里有200台监控摄像头，它们不需要知道总部有多少网段，也不需要知道互联网怎么走，它们只需要配置好“默认路由”把所有外网流量甩给总部即可。
@@ -2043,7 +2043,7 @@ display ospf brief
   </entry>
   <entry>
     <title>OSPF之重分发、默认路由注入与虚链路（高级特性与综合排障）</title>
-    <url>/000000026/</url>
+    <url>/post/000000026/</url>
     <content><![CDATA[📘 OSPF 第五阶段实验笔记：重分发、默认路由注入与虚链路（高级特性与综合排障）适用场景：公司有两个分部，分别运行OSPF和RIP协议，需要互通；总部路由器需要自动下发上网网关；一个非骨干区域（Area 2）因物理链路限制无法直连Area 0，需要借道Area 1绕行。
 
 一、核心概念铺垫（先理解为什么需要它们）
@@ -2322,35 +2322,8 @@ area 1 + vlink-peer 对方Router ID（在两端ABR上配置）
       </tags>
   </entry>
   <entry>
-    <title>《边界审计：当亲密关系成为侦察现场》</title>
-    <url>/0000001/</url>
-    <content><![CDATA[《边界审计：当亲密关系成为侦察现场》一段感情出现问题，有时不是突然的断裂，而是一点一滴的觉察。某个瞬间你开始注意到，那些本应专属的称呼出现在了别处，本该完整的关注被分成了碎片。这不是怀疑的开始，而是认知的清醒——当亲密关系不再安全，有人选择追问，有人选择侦察。
-从模糊地带开始的觉察起初，一切都藏在细节里。他常提到的“朋友”，有着过于频繁的互动频率；他承诺的“保持距离”，在行动上始终模糊不清。最敏锐的觉察往往始于这些微小处，像白纸上的第一道折痕，提醒着事情已经不同。
-感情之外，另一条线索悄然浮现。一笔不算大的借款，承诺的还款时间一再延后。这不是简单的拖延，而是某种模式的体现——当亲密关系中出现无法兑现的语言，它往往不是孤例。于是在某个时刻，一个具体的日期被提议出来，模糊的承诺终于有了清晰的边界。他说：“还完了就互不相欠了。”这话说得随意，却意外地指明了某种可能的方向。
-当观察成为必要的策略发现第三者的存在后，最本能的反应或许是愤怒或对峙。但还有另一种选择：保持接触，冷静观察。这不是妥协，而是一种克制的侦察——通过持续的交流，真相的轮廓逐渐清晰。那些他从未主动透露的信息，在看似平常的对话中一点点浮现。
-这段关系中的三方，都以为自己握着完整的拼图。只有最清醒的那个人知道，每一片碎片的位置和意义。她听着第三者的倾诉，收集着那些被隐藏的时间线，拼凑出完整的故事版本。没有质问，没有戳穿，只是安静地收集着所有需要的信息。
-时机的选择与彻底的切割感情的世界里，时机往往比话语更有力量。她等待，观察着第三者情感投入的曲线，看着那份依赖日渐加深。在最投入的时刻，选择离开——没有争吵，没有解释，只是干脆的告别和彻底的消失。后来的挽回与追问，都留在了被删除的联系方式之外，成为了无回音的独白。
-与此同时，那笔借款也到了该结清的时候。约定的日期到来，转账完成，经济上的联系就此切断。数字的结清往往比情感的结算更加清晰——当最后款项到账，她知道这一部分已经彻底结束。
-完整的告别与重建的边界最后的操作简洁如程序指令：删除所有联系方式，抹去所有可见的连接。这不是冲动的决定，而是所有侦察完成后的必然操作。当感情中的信任已经透支，当关系变成需要不断审计的账目，最彻底的止损就是完整的退出。
-这段经历留下的不是怨恨，而是一套清晰的边界认知。她学会了如何在不安全的关系中保护自己，如何通过观察而非争吵来获取真相，如何在适当的时候做出彻底的切割。更重要的是，她明白了亲密关系中那些不容模糊的底线——当一段关系需要被审计，它本身就已经失去了继续的意义。
-如今回看，那场持续数月的观察与判断，其实是一场安静的自我救赎。她没有在混乱中迷失方向，反而在复杂的情感迷宫中，为自己找到了一条清晰的路。当最后一道边界被确立，失去的是一段不再健康的关系，获得的却是对自己的完全认知与保护能力。
-那些曾经模糊的地带，如今都有了明确的标识。而人生的下一段旅程，将带着这些清晰的边界，走向更明亮的地方——在那里，亲密无需审计，信任不必侦察。
-]]></content>
-      <categories>
-        <category>情感</category>
-        <category>爱情</category>
-      </categories>
-      <tags>
-        <tag>关系边界</tag>
-        <tag>情感止损</tag>
-        <tag>第一人称叙事</tag>
-        <tag>现代关系观察</tag>
-        <tag>情感纪实</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《从悬赏到封禁：一个公益项目的WAF绕过攻击全记录与分析》</title>
-    <url>/0000002/</url>
+    <url>/post/0000002/</url>
     <content><![CDATA[一次价值十元人民币的攻击：我的公益网站漏洞悬赏计划实战复盘
 一条绕过WAF的SQL注入探测请求静静躺在Nginx日志里，它背后是一位跃跃欲试的安全测试者，而我正在思考该为这份“努力”支付多少报酬。
 
@@ -2404,8 +2377,35 @@ WAF规则工作正常。所有攻击特征明显的请求都被准确识别和�
       </tags>
   </entry>
   <entry>
+    <title>《边界审计：当亲密关系成为侦察现场》</title>
+    <url>/post/0000001/</url>
+    <content><![CDATA[《边界审计：当亲密关系成为侦察现场》一段感情出现问题，有时不是突然的断裂，而是一点一滴的觉察。某个瞬间你开始注意到，那些本应专属的称呼出现在了别处，本该完整的关注被分成了碎片。这不是怀疑的开始，而是认知的清醒——当亲密关系不再安全，有人选择追问，有人选择侦察。
+从模糊地带开始的觉察起初，一切都藏在细节里。他常提到的“朋友”，有着过于频繁的互动频率；他承诺的“保持距离”，在行动上始终模糊不清。最敏锐的觉察往往始于这些微小处，像白纸上的第一道折痕，提醒着事情已经不同。
+感情之外，另一条线索悄然浮现。一笔不算大的借款，承诺的还款时间一再延后。这不是简单的拖延，而是某种模式的体现——当亲密关系中出现无法兑现的语言，它往往不是孤例。于是在某个时刻，一个具体的日期被提议出来，模糊的承诺终于有了清晰的边界。他说：“还完了就互不相欠了。”这话说得随意，却意外地指明了某种可能的方向。
+当观察成为必要的策略发现第三者的存在后，最本能的反应或许是愤怒或对峙。但还有另一种选择：保持接触，冷静观察。这不是妥协，而是一种克制的侦察——通过持续的交流，真相的轮廓逐渐清晰。那些他从未主动透露的信息，在看似平常的对话中一点点浮现。
+这段关系中的三方，都以为自己握着完整的拼图。只有最清醒的那个人知道，每一片碎片的位置和意义。她听着第三者的倾诉，收集着那些被隐藏的时间线，拼凑出完整的故事版本。没有质问，没有戳穿，只是安静地收集着所有需要的信息。
+时机的选择与彻底的切割感情的世界里，时机往往比话语更有力量。她等待，观察着第三者情感投入的曲线，看着那份依赖日渐加深。在最投入的时刻，选择离开——没有争吵，没有解释，只是干脆的告别和彻底的消失。后来的挽回与追问，都留在了被删除的联系方式之外，成为了无回音的独白。
+与此同时，那笔借款也到了该结清的时候。约定的日期到来，转账完成，经济上的联系就此切断。数字的结清往往比情感的结算更加清晰——当最后款项到账，她知道这一部分已经彻底结束。
+完整的告别与重建的边界最后的操作简洁如程序指令：删除所有联系方式，抹去所有可见的连接。这不是冲动的决定，而是所有侦察完成后的必然操作。当感情中的信任已经透支，当关系变成需要不断审计的账目，最彻底的止损就是完整的退出。
+这段经历留下的不是怨恨，而是一套清晰的边界认知。她学会了如何在不安全的关系中保护自己，如何通过观察而非争吵来获取真相，如何在适当的时候做出彻底的切割。更重要的是，她明白了亲密关系中那些不容模糊的底线——当一段关系需要被审计，它本身就已经失去了继续的意义。
+如今回看，那场持续数月的观察与判断，其实是一场安静的自我救赎。她没有在混乱中迷失方向，反而在复杂的情感迷宫中，为自己找到了一条清晰的路。当最后一道边界被确立，失去的是一段不再健康的关系，获得的却是对自己的完全认知与保护能力。
+那些曾经模糊的地带，如今都有了明确的标识。而人生的下一段旅程，将带着这些清晰的边界，走向更明亮的地方——在那里，亲密无需审计，信任不必侦察。
+]]></content>
+      <categories>
+        <category>情感</category>
+        <category>爱情</category>
+      </categories>
+      <tags>
+        <tag>关系边界</tag>
+        <tag>情感止损</tag>
+        <tag>第一人称叙事</tag>
+        <tag>现代关系观察</tag>
+        <tag>情感纪实</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《跨境网购小技巧：用PayPal绑定国内卡，锁定银行汇率》</title>
-    <url>/0000003/</url>
+    <url>/post/0000003/</url>
     <content><![CDATA[我的 PayPal 使用手记：绑着工行卡，用着工行汇率，逛遍境网站前两天，我在一个国外网站上买了点东西。付款时，像往常一样，顺手点了那个熟悉的 PayPal 按钮。几秒钟后，手机“叮”一声，收据邮件就到了。看着截图里那笔 $2.00 USD 的交易，我突然觉得，是时候为这个跟了我这么多年的“支付搭档”写点什么了。
 对我来说，PayPal 不是什么遥不可及的东西，它就是一个帮我省事的 “中转站”。我把它和我用了很久的 工商银行信用卡 绑在一起。每次在那些语言半懂不懂、设计奇特的境外网站逛游时，只要看到结账处有它的 logo，我心里就稳了——我知道，又不用去翻那张实体卡了。
 “具体省了什么事？”
@@ -2431,7 +2431,7 @@ WAF规则工作正常。所有攻击特征明显的请求都被准确识别和�
   </entry>
   <entry>
     <title>《帷幕何时落下》《人生感慨》</title>
-    <url>/0000004/</url>
+    <url>/post/0000004/</url>
     <content><![CDATA[帷幕何时落下最近总在想，人生这场戏的终场，会以怎样的方式谢幕？
 这念头的袭来，常常毫无预兆。可能是在某个冗长会议走神的瞬间，窗外阳光正好移过一片云；也可能是深夜关掉最后一盏灯，黑暗瞬间吞没房间的时刻。那句“是今天吗？明天吗？还是现在呢？”的追问，像背景音般在意识深处低回。
 舞台上的我们，总在不自觉地调整姿态，以适应台下那些流动的目光。赞许让人挺直腰背，嘲讽让人蜷缩防备。我们学会了精湛的表演，把最华美的桥段留给最多的观众，却很少问自己：如果观众席空无一人，这场戏，我还愿意这样演吗？
@@ -2449,7 +2449,7 @@ WAF规则工作正常。所有攻击特征明显的请求都被准确识别和�
   </entry>
   <entry>
     <title>Ubuntu上传文件夹到FTP服务器指南</title>
-    <url>/0000005/</url>
+    <url>/post/0000005/</url>
     <content><![CDATA[
 本文介绍使用lftp工具在Ubuntu系统中高效上传文件夹到FTP服务器的方法，通过mirror命令实现智能增量同步，适合日志备份、网站部署等场景。
 
@@ -2563,7 +2563,7 @@ ls &#x2F;quit
   </entry>
   <entry>
     <title>vs2022报错rc1015解决方案</title>
-    <url>/0000006/</url>
+    <url>/post/0000006/</url>
     <content><![CDATA[解决 Visual Studio 2022 报错 RC1015 的指南🛠️ Visual Studio 2022 报错 RC1015 解决方案当在 Visual Studio 2022 中选择”添加资源”时出现 RC1015 错误（无法打开包含文件 winres.h），请按顺序尝试以下方法：
 
 ✅ 解决方案步骤1. 检查 Windows SDK 版本
@@ -2630,7 +2630,7 @@ Chatbox AI
   </entry>
   <entry>
     <title>碧蓝航线设置自定义教程</title>
-    <url>/0000007/</url>
+    <url>/post/0000007/</url>
     <content><![CDATA[碧蓝航线本地化文件修改教程本文介绍两种修改《碧蓝航线》游戏本地化文件的方法，通过将文件中的 false 改为 true 以启用特定功能。请确保在操作前备份重要数据，并谨慎操作，以免影响游戏正常运行。
 
 方法一：使用 Shizuku 和 MT 管理器（推荐）这种方法利用 Shizuku 授权 MT 管理器访问系统文件，适合有一定动手能力的用户。
@@ -2780,7 +2780,7 @@ ADB 调试是否开启
   </entry>
   <entry>
     <title>思域汽车漏电修车记录</title>
-    <url>/0000008/</url>
+    <url>/post/0000008/</url>
     <content><![CDATA[记录一辆2021年9代思域29号保险后端线路漏电故障，故障如下：
 关闭所有车门并上锁情况下，车辆静放两三天后出现电瓶电压降至12v以下，初步以为是电瓶损坏，更换电瓶后故障依旧，开始排查整车其他线路，遂发现为29号保险丝拔出后故障消失，按照原车维修手册查明后端线路，发现是汽车导航出现漏电情况，经过简单维修，故障消失，维修总过程（包括静置时间）耗时4天，维修结束！
 本次记录到此结束，记录员：挽着红月缓缓走
@@ -2796,7 +2796,7 @@ ADB 调试是否开启
   </entry>
   <entry>
     <title>小米新机体验</title>
-    <url>/0000009/</url>
+    <url>/post/0000009/</url>
     <content><![CDATA[小手一点,小米到手(≧∀≦)ゞ你好呀，欢迎点击本文章本篇文章是为了记录我在TB网购小米手机的经过而诞生的哦
 在我看着手上的手机日渐卡顿，萌生了换手机的想法，于是便向AI提问“我想用xxx预算购买一台小米手机，你有什么推荐嘛”，当我问完时，AI给出的回复像潮水一样向我涌来我在这众多的答案中，找到了一款极具性价比的手机，它就是Redmi Troub4!你敢想象嘛，16+512的配置才1611￥!有图有真相
 ]]></content>
@@ -2811,7 +2811,7 @@ ADB 调试是否开启
   </entry>
   <entry>
     <title>一场事先宣告的退场：当爱已成侦察</title>
-    <url>/0000010/</url>
+    <url>/post/0000010/</url>
     <content><![CDATA[在这段关系中，一切始于屏幕两端温暖的连接。主角与伴侣因缘际会在网络相识，最初的时光里，文字承载着彼此的关心与喜悦，构筑起一座看似坚固的情感城池。然而，任何稳固的关系都始于细小的裂隙——主角逐渐察觉到，那些伴侣屏幕亮起时下意识的躲避、对话中偶然提及却无法深究的名字、以及某些超越寻常友情的亲昵称谓，都像无声的潮水，悄然侵蚀着信任的岸基。
 察觉到异样的主角，曾选择以信任为基石进行沟通。伴侣将一切解释为“普通网友”的交往，并许下了保持距离的承诺。双方甚至以一场充满仪式感的“拉勾”，试图将这份承诺锚定。可惜，语言的重量有时轻如鸿毛。不久后，主角便再次撞见伴侣与另一位被称为“第三者”的网友，使用着寓意深长的情侣头像，日常的分享与问候密集得如同树藤交织。
 面对质问，伴侣的回应充满了艰难的撕扯，他诉说着“你们都对我很重要”的迷茫，仿佛站在一座独木桥中央，两端都是他害怕失去的风景。在主角坚定而不容回避的目光下，伴侣最终不情愿地向第三者发送了划清界限的信息，并更换了头像。风波似乎暂歇，主角尝试与伴侣深入探讨“朋友”与“恋人”之间那条应有的边界，试图修复规则的框架。然而，伴侣的回应总像蒙着一层雾，含糊其辞，试图将深刻的问题消解于无形。
@@ -2839,7 +2839,7 @@ ADB 调试是否开启
   </entry>
   <entry>
     <title>车机的“幽灵电流”：一场间歇性漏电的深度调查 思域汽车漏电</title>
-    <url>/0000011/</url>
+    <url>/post/0000011/</url>
     <content><![CDATA[本车车机的“幽灵电流”：一场间歇性漏电的深度调查序幕：重现的“幽灵”我的思域再次陷入了尴尬的境地——电瓶在毫无征兆的情况下彻底耗尽。之所以说“再次”，是因为同样的症状在数月前已经上演过一次。那一次，在束手无策之际，我尝试了最原始的方法：拔插了一次车机的主电源插头。随后，故障竟神奇地“消失”了，车辆恢复正常，我便将其归为一次难以解释的偶发事件，没有深究。
 然而，当“幽灵”在同一个地方第二次现身时，我明白，偶然的背后必然存在着必然。这次，我决定不再与它妥协，必须揭开这个本车系统为何会周期性“吸血”的真相。
 第一章：锁定嫌疑范围车辆无法启动，首要任务是测量蓄电池的静态放电电流。当万用表串联进电路时，一个清晰的信号出现了：锁车休眠后，整车的待机电流远超正常范围（通常应小于50mA）。初步的排查方法朴素但有效：逐一拔除保险丝。当拔掉涉及信息娱乐系统的保险丝时，万用表上异常的数字瞬间归复平静。
@@ -2875,26 +2875,8 @@ ADB 调试是否开启
       </tags>
   </entry>
   <entry>
-    <title>域名解析异常：DNSSEC 起了什么作用？</title>
-    <url>/DNSSEC/</url>
-    <content><![CDATA[前言事情是这样的：
-这得从我购买一个域名说起。我先去域名注册商挑选一个喜欢的域名，左挑右挑，发现不是已经被购买，就是高级域名（也就是高价值域名，通常都比较贵）。挑选并购买完成后，我第一时间将 NS 修改为我在 Cloudflare 分配到的 NS 地址。在 Cloudflare 等了一会儿，终于显示已完成。随后，我按照《HEXO 博客搭建指南》的教程将博客托管到 GitHub Pages，并在 Cloudflare 的 DNS 设置中，将我的子域名通过 CNAME 指向 GitHub Pages 地址。
-错误排查一切都结束了吗？当然不是，如果这么顺利，也就不会有这篇文章了，哈哈。
-等了几分钟后，我就访问了一下域名，结果提示的是 DNS_PROBE_FINISHED_NXDOMAIN。这个错误码的含义是：浏览器完成了 DNS 查询，但 DNS 服务器明确返回“该域名不存在”。一般来说，造成这种情况的原因有很多，例如：网址拼写错误（当然我不会犯这种错误）、域名未注册、已过期或被暂停、DNS 记录未配置或配置错误、DNS 缓存或传播问题、本地 DNS &#x2F;网络配置问题，以及 DNSSEC 配置问题等。
-刚开始我还以为是 CNAME 配置的问题，检查了一下，发现并没有错误；随后我又检查了 Pages 的配置，也没有发现问题。此时我忽然想到，难道是 DNS 传播问题吗？于是我去在线工具查看传播状态，一看全部都是 ❌，我瞬间意识到问题大概出在 DNS 层面。即使我之后更换了 DNS 地址，情况依然没有改善。
-解决方案我想到了 DNSSEC。这个技术的核心目标，是确保 DNS 响应的真实性和完整性，防止 DNS 欺骗和篡改。它通过数字签名，把域名解析链路上的数据校验串联起来，让解析结果更可信。虽然它并不是直接“解决所有 DNS 异常”的万能钥匙，但在排查这类问题时，它的确能帮助我们确认是否存在 DNS 数据完整性或校验状态异常。
-本次的关键点在于：我先确认了域名解析状态，再检查了 DNS 传播结果，最后意识到 DNSSEC 相关配置也需要同步到注册商。于是，我把 Cloudflare 的 DNSSEC 相关设置手动同步到了域名注册商，成功开启了这个功能。随后我再次测试传播，解析状态逐渐恢复正常，最终全部都解析完成了。再用浏览器访问时，页面已经完美显示为我想要的效果。
-如果各位想了解如何优化网站访问速度，可以看看我的另一篇文章《Hexo 博客搭建指南》。如果你也想了解 DNSSEC 该怎么配置，欢迎在评论区留言，或者直接发到我的邮箱。收到催更后，我会第一时间更新哦！
-]]></content>
-      <tags>
-        <tag>DNSSEC</tag>
-        <tag>DNS</tag>
-        <tag>域名</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>光猫桥接后租期一过就断网：ITMS 未注册背后的真相</title>
-    <url>/ITMS/</url>
+    <url>/post/ITMS/</url>
     <content><![CDATA[事情起因事情起因是这样的，在凌晨三点多，睡醒了下意识看了眼手机，在wifi图标上有一个显眼的感叹号，点开微信一看，提示说当前网络无法上网请检查连接
 看到这么多证据都指向网络问题，我看了眼路由器的指示灯，发现是黄色故障灯，心里一紧，打开路由器后台看到代表网络的地球图标那条线上有一个红色叉叉,然后看了眼WAN口信息，拨号失败，我就重启了一下光猫与路由器，等了几分钟，指示灯还是黄色，看了眼光猫的PON灯常亮，也就代表着光纤没问题，我思考了一会
 登录光猫后台决定上光猫后台看看，将路由器的IP改为静态IP，改为了192.168.1.x，这样子相当于临时搭建了一座桥，方便进入光猫后台查看各项信息，刚开始我没发现问题，原因是刚睡醒有点不太清醒，导致略过一些信息。当时我就疑惑了，没问题吗？ 不可能！经验告诉我，一定是在光猫这边的问题，我仔仔细细看了一遍，发现除了光纤的收发值有点小异常，在该项下面显眼的写着ITMS未注册，经验告诉我，问题就是这个了
@@ -2909,7 +2891,7 @@ ADB 调试是否开启
   </entry>
   <entry>
     <title>BOC Debit Card Guide 2026: 无业状态成功申请中行社保卡金融账户实录</title>
-    <url>/get-boc-debit-card/</url>
+    <url>/post/get-boc-debit-card/</url>
     <content><![CDATA[
 💡 阅读提示与免责声明：本文仅为作者 2026 年在无业状态下申请中国银行（BOC）社保卡金融账户的个人经历分享，不构成任何业务办理指导。银行政策与社保规定因地而异且随时可能调整，不保证他人能成功复刻。办理前请务必致电当地中国银行（95566）或社保局确认最新政策。据此操作，风险自担。
 
@@ -2945,8 +2927,26 @@ ADB 调试是否开启
       </tags>
   </entry>
   <entry>
+    <title>域名解析异常：DNSSEC 起了什么作用？</title>
+    <url>/post/DNSSEC/</url>
+    <content><![CDATA[前言事情是这样的：
+这得从我购买一个域名说起。我先去域名注册商挑选一个喜欢的域名，左挑右挑，发现不是已经被购买，就是高级域名（也就是高价值域名，通常都比较贵）。挑选并购买完成后，我第一时间将 NS 修改为我在 Cloudflare 分配到的 NS 地址。在 Cloudflare 等了一会儿，终于显示已完成。随后，我按照《HEXO 博客搭建指南》的教程将博客托管到 GitHub Pages，并在 Cloudflare 的 DNS 设置中，将我的子域名通过 CNAME 指向 GitHub Pages 地址。
+错误排查一切都结束了吗？当然不是，如果这么顺利，也就不会有这篇文章了，哈哈。
+等了几分钟后，我就访问了一下域名，结果提示的是 DNS_PROBE_FINISHED_NXDOMAIN。这个错误码的含义是：浏览器完成了 DNS 查询，但 DNS 服务器明确返回“该域名不存在”。一般来说，造成这种情况的原因有很多，例如：网址拼写错误（当然我不会犯这种错误）、域名未注册、已过期或被暂停、DNS 记录未配置或配置错误、DNS 缓存或传播问题、本地 DNS &#x2F;网络配置问题，以及 DNSSEC 配置问题等。
+刚开始我还以为是 CNAME 配置的问题，检查了一下，发现并没有错误；随后我又检查了 Pages 的配置，也没有发现问题。此时我忽然想到，难道是 DNS 传播问题吗？于是我去在线工具查看传播状态，一看全部都是 ❌，我瞬间意识到问题大概出在 DNS 层面。即使我之后更换了 DNS 地址，情况依然没有改善。
+解决方案我想到了 DNSSEC。这个技术的核心目标，是确保 DNS 响应的真实性和完整性，防止 DNS 欺骗和篡改。它通过数字签名，把域名解析链路上的数据校验串联起来，让解析结果更可信。虽然它并不是直接“解决所有 DNS 异常”的万能钥匙，但在排查这类问题时，它的确能帮助我们确认是否存在 DNS 数据完整性或校验状态异常。
+本次的关键点在于：我先确认了域名解析状态，再检查了 DNS 传播结果，最后意识到 DNSSEC 相关配置也需要同步到注册商。于是，我把 Cloudflare 的 DNSSEC 相关设置手动同步到了域名注册商，成功开启了这个功能。随后我再次测试传播，解析状态逐渐恢复正常，最终全部都解析完成了。再用浏览器访问时，页面已经完美显示为我想要的效果。
+如果各位想了解如何优化网站访问速度，可以看看我的另一篇文章《Hexo 博客搭建指南》。如果你也想了解 DNSSEC 该怎么配置，欢迎在评论区留言，或者直接发到我的邮箱。收到催更后，我会第一时间更新哦！
+]]></content>
+      <tags>
+        <tag>DNSSEC</tag>
+        <tag>DNS</tag>
+        <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客搭建指南</title>
-    <url>/hexo-blog-setup-guide/</url>
+    <url>/post/hexo-blog-setup-guide/</url>
     <content><![CDATA[本小站也运行了1.8年，659天了，是时候介绍一下我的博客是怎么搭建的，为什么选这个框架了。
 建站初衷选择搭建博客是因为我想要一个属于自己的空间，记录一下生活琐事与学习时的笔记并分享一些我踩过的坑与解决办法。
 初探wordpress重量级框架的烦恼刚开始我选择的是本地服务器加wordpress博客框架，简称WP，但是WP的搭建过程比较复杂，首先下载WP的框架加MYSQL数据库，然后配置PHP环境，最后设置域名解析与端口映射，整个配置过程花了我 2 个小时。完成后我发现了一个奇怪的问题：通过域名访问时，会被强制带上端口号，导致访问报错。排查后发现是重定向配置的问题，修改 NGINX 配置文件后得以解决。虽然本地访问 WP 后台一切正常，但切换到域名访问时依然很慢，甚至偶尔打不开。后面我就查询了一下Cloudflare tunnel的相关文档，发现 Tunnel 虽然好用，但配合本地运行沉重的 WordPress（PHP+MySQL）会导致资源占用过高且动态内容难以缓存，索性放弃了 WP，开始寻找一些轻量级的博客框架，最好是静态的。
@@ -2962,7 +2962,7 @@ ADB 调试是否开启
   </entry>
   <entry>
     <title>天下苦官方 Sitemap 插件久矣！一个好用的Hexo Sitemap精细插件</title>
-    <url>/hexo-custom-sitemap-plugin/</url>
+    <url>/post/hexo-custom-sitemap-plugin/</url>
     <content><![CDATA[天下苦官方地图插件(Sitemap)久矣！为什么这么说呢？官方插件主打“收罗万物”、讲究通用，零配置就能用，但代价是把不该收录的页面也塞了进去。听我细细道来。先拿我自己的一个场景说起吧
 我的场景之前我只想着有一个Sitemap文件让爬虫知道我的网站Sitemap就好啦，后面登录搜索引擎的管理后台时发现收到了几个警告，警告内容为：“在网站上的爬取能力有限”我就在想了我的博客文章就十几篇，为什么抓取能力有限呢？我就开始排查首先肯定是看看爬虫首选的Sitemap文件，不看不要紧，一看吓一跳呢！十几篇的文章得出一百多条的链接，里面主要是tag，categories什么的，全部收录进去了。我开始尝试通过AI去查询文档，看看有没有办法去禁止收录这些页面，得到了tag: false这个设置项，设置完成后，再看一眼Sitemap文件，文件大小没变内容当然也没变。官方并没有这个变量，看到这一幕就在想有没有其他插件有我想要的功能？查找了一通，都不太满意，主要是自由度不够，我就想自己其实是与大肥鱼一起开发怎么样？会不会好一点？说干就干   
 解决方案经过与大肥鱼协助，耗费了一些时间就做出来了！主要有哪些功能呢？首先肯定是最重要的兼容原先的Sitemap配置并新增tags，categories，这两个为布尔值控制是否收录到Sitemap，这样子就不用出现一堆非文章啦。但是考虑到可能出现想收录其他路径与外部URL到Sitemap中，我便添加了extra_urls字段，支持自定义路径与外部URL哦就像这样子：
@@ -2985,15 +2985,15 @@ sitemap.xml        ← 索引文件，指向下面各分片sitemap-1.xml      �
   </entry>
   <entry>
     <title>你想查询WHOIS？这是我的RDAP方案</title>
-    <url>/rdap-whois-api/</url>
+    <url>/post/rdap-whois-api/</url>
     <content><![CDATA[既然你点击了这篇文章，肯定是对标题内容感兴趣的吧！让我给你介绍一下，我是怎么搭建RDAP以及为什么搭建。
 事情起因是我在给AI发布查询域名有效期以及域名信息的时候，总感觉差点意思，我就在想要不要自己搭建一个whois查询API呢？我就开始寻找一些支持无服务器部署的项目，因为服务器的成本是一笔不小的支出，所以才寻找相关项目绝对不是因为没钱，嘿嘿,后面经过在github一顿翻找，找到了jakejarvis的rdapper项目，该项目支持RDAP与whois双支持，但是无服务器部署不支持whois，所以只要支持RDAP查询的域名都能查询，除了一些小众域名与一些国家级域名(ccTLD)不支持外都可以！RDAP现支持**1000+**域名后缀，不支持后缀示例如下：.de（德国）、.cn（中国）、.us（美国）、.jp（日本）、.it（意大利）、.es（西班牙）、.mx（墨西哥），可以期待一下，后续应该支持的。
 讲了这么多是时候解释我的API地址啦，API介绍页是https://whoiscx.delishahk.com,该介绍页支持输入域名与URL查询，高级玩家可以试试API调用，我来介绍一下API格式https://whoiscx.delishahk.com/api/?whois=查询的域名或URL，返回的数据如下：
 你还真希望我贴一长串的数据啊？麻烦去介绍页看看吧，嘿嘿，我选用cloudflare workers作为运行底座，实现高缓存加高可用，保证每次调用实现99%可用，你是不是想问：为什么不是100%？因为免费版套餐有次数限制呀，希望不要被恶意刷取吧，好啦该API是公益免费，不收费的哦，欢迎使用呀！后续会跟着RDAP更新的，希望RDAP能够支持更多域名，如果能支持所有域名就最好啦。
 ]]></content>
       <tags>
-        <tag>域名</tag>
         <tag>日常分享</tag>
+        <tag>域名</tag>
         <tag>RDAP</tag>
         <tag>whois</tag>
         <tag>闲聊</tag>

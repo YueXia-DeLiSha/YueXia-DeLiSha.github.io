@@ -4,9 +4,9 @@
     <name>挽着红月缓缓走</name>
   </author>
   <generator uri="https://hexo.io/">Hexo</generator>
-  <id>https://blog.rinai.top/</id>
-  <link href="https://blog.rinai.top/" rel="alternate"/>
-  <link href="https://blog.rinai.top/atom.xml" rel="self"/>
+  <id>https://rinai.top/</id>
+  <link href="https://rinai.top/" rel="alternate"/>
+  <link href="https://rinai.top/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, 挽着红月缓缓走</rights>
   <subtitle>一个技术情感博客</subtitle>
   <title>挽着红月缓缓走</title>
@@ -15,17 +15,17 @@
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="Hexo插件" scheme="https://blog.rinai.top/tags/Hexo%E6%8F%92%E4%BB%B6/"/>
-    <category term="Sitemap" scheme="https://blog.rinai.top/tags/Sitemap/"/>
-    <category term="Hexo" scheme="https://blog.rinai.top/tags/Hexo/"/>
-    <category term="站点地图" scheme="https://blog.rinai.top/tags/%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"/>
-    <category term="SEO" scheme="https://blog.rinai.top/tags/SEO/"/>
+    <category term="Hexo插件" scheme="https://rinai.top/tags/Hexo%E6%8F%92%E4%BB%B6/"/>
+    <category term="Sitemap" scheme="https://rinai.top/tags/Sitemap/"/>
+    <category term="Hexo" scheme="https://rinai.top/tags/Hexo/"/>
+    <category term="站点地图" scheme="https://rinai.top/tags/%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/"/>
+    <category term="SEO" scheme="https://rinai.top/tags/SEO/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/1999_007.webp" alt="天下苦官方 Sitemap 插件久矣！一个好用的Hexo Sitemap精细插件" /></p>
 Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生成一百多条链接。本文介绍 hexo-generator-custom-sitemap：通过 tags/categories 开关、exclude 排除、extra_urls 追加与 sitemap_index 分片，精准控制 Sitemap 内容，减少抓取预算浪费。]]>
     </content>
-    <id>https://blog.rinai.top/hexo-custom-sitemap-plugin/</id>
-    <link href="https://blog.rinai.top/hexo-custom-sitemap-plugin/" rel="alternate"/>
+    <id>https://rinai.top/post/hexo-custom-sitemap-plugin/</id>
+    <link href="https://rinai.top/post/hexo-custom-sitemap-plugin/" rel="alternate"/>
     <link href="https://delishahk.com/img/1999_007.webp" rel="enclosure" type="image/webp"/>
     <published>2026-10-20T13:40:21.000Z</published>
     <summary>Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生成一百多条链接。本文介绍 hexo-generator-custom-sitemap：通过 tags/categories 开关、exclude 排除、extra_urls 追加与 sitemap_index 分片，精准控制 Sitemap 内容，减少抓取预算浪费。</summary>
@@ -36,15 +36,15 @@ Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="DNSSEC" scheme="https://blog.rinai.top/tags/DNSSEC/"/>
-    <category term="DNS" scheme="https://blog.rinai.top/tags/DNS/"/>
-    <category term="域名" scheme="https://blog.rinai.top/tags/%E5%9F%9F%E5%90%8D/"/>
+    <category term="DNSSEC" scheme="https://rinai.top/tags/DNSSEC/"/>
+    <category term="DNS" scheme="https://rinai.top/tags/DNS/"/>
+    <category term="域名" scheme="https://rinai.top/tags/%E5%9F%9F%E5%90%8D/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/2024-11-21_045548.webp" alt="域名解析异常：DNSSEC 起了什么作用？" /></p>
 本文解析了 DNSSEC 的作用，并分享一次排查 DNS 解析异常的踩坑经验，提供一套清晰的排查思路。]]>
     </content>
-    <id>https://blog.rinai.top/DNSSEC/</id>
-    <link href="https://blog.rinai.top/DNSSEC/" rel="alternate"/>
+    <id>https://rinai.top/post/DNSSEC/</id>
+    <link href="https://rinai.top/post/DNSSEC/" rel="alternate"/>
     <link href="https://delishahk.com/img/2024-11-21_045548.webp" rel="enclosure" type="image/webp"/>
     <published>2026-09-14T13:17:18.000Z</published>
     <summary>本文解析了 DNSSEC 的作用，并分享一次排查 DNS 解析异常的踩坑经验，提供一套清晰的排查思路。</summary>
@@ -55,15 +55,15 @@ Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
-    <category term="光猫" scheme="https://blog.rinai.top/tags/%E5%85%89%E7%8C%AB/"/>
-    <category term="桥接" scheme="https://blog.rinai.top/tags/%E6%A1%A5%E6%8E%A5/"/>
+    <category term="网络运维" scheme="https://rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    <category term="光猫" scheme="https://rinai.top/tags/%E5%85%89%E7%8C%AB/"/>
+    <category term="桥接" scheme="https://rinai.top/tags/%E6%A1%A5%E6%8E%A5/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/bh3_001.webp" alt="光猫桥接后租期一过就断网：ITMS 未注册背后的真相" /></p>
 本文记录了一次半夜断网的光猫运维记录，从路由器重启到网线排查，再到光猫后台查看链路状态再进行维护]]>
     </content>
-    <id>https://blog.rinai.top/ITMS/</id>
-    <link href="https://blog.rinai.top/ITMS/" rel="alternate"/>
+    <id>https://rinai.top/post/ITMS/</id>
+    <link href="https://rinai.top/post/ITMS/" rel="alternate"/>
     <link href="https://delishahk.com/img/bh3_001.webp" rel="enclosure" type="image/webp"/>
     <published>2026-09-07T20:11:03.000Z</published>
     <summary>本文记录了一次半夜断网的光猫运维记录，从路由器重启到网线排查，再到光猫后台查看链路状态再进行维护</summary>
@@ -74,15 +74,15 @@ Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    <category term="hexo" scheme="https://blog.rinai.top/tags/hexo/"/>
-    <category term="cloudflare" scheme="https://blog.rinai.top/tags/cloudflare/"/>
+    <category term="笔记" scheme="https://rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="hexo" scheme="https://rinai.top/tags/hexo/"/>
+    <category term="cloudflare" scheme="https://rinai.top/tags/cloudflare/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/dls(84).webp" alt="Hexo博客搭建指南" /></p>
 介绍了静态博客的搭建选型与搭建心得]]>
     </content>
-    <id>https://blog.rinai.top/hexo-blog-setup-guide/</id>
-    <link href="https://blog.rinai.top/hexo-blog-setup-guide/" rel="alternate"/>
+    <id>https://rinai.top/post/hexo-blog-setup-guide/</id>
+    <link href="https://rinai.top/post/hexo-blog-setup-guide/" rel="alternate"/>
     <link href="https://delishahk.com/img/dls(84).webp" rel="enclosure" type="image/webp"/>
     <published>2026-09-03T13:22:09.000Z</published>
     <summary>介绍了静态博客的搭建选型与搭建心得</summary>
@@ -93,17 +93,17 @@ Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="域名" scheme="https://blog.rinai.top/tags/%E5%9F%9F%E5%90%8D/"/>
-    <category term="日常分享" scheme="https://blog.rinai.top/tags/%E6%97%A5%E5%B8%B8%E5%88%86%E4%BA%AB/"/>
-    <category term="RDAP" scheme="https://blog.rinai.top/tags/RDAP/"/>
-    <category term="whois" scheme="https://blog.rinai.top/tags/whois/"/>
-    <category term="闲聊" scheme="https://blog.rinai.top/tags/%E9%97%B2%E8%81%8A/"/>
+    <category term="日常分享" scheme="https://rinai.top/tags/%E6%97%A5%E5%B8%B8%E5%88%86%E4%BA%AB/"/>
+    <category term="域名" scheme="https://rinai.top/tags/%E5%9F%9F%E5%90%8D/"/>
+    <category term="RDAP" scheme="https://rinai.top/tags/RDAP/"/>
+    <category term="whois" scheme="https://rinai.top/tags/whois/"/>
+    <category term="闲聊" scheme="https://rinai.top/tags/%E9%97%B2%E8%81%8A/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/qx.webp" alt="你想查询WHOIS？这是我的RDAP方案" /></p>
 解释我是怎么搭建RDAP查询API，为什么搭建API的过程]]>
     </content>
-    <id>https://blog.rinai.top/rdap-whois-api/</id>
-    <link href="https://blog.rinai.top/rdap-whois-api/" rel="alternate"/>
+    <id>https://rinai.top/post/rdap-whois-api/</id>
+    <link href="https://rinai.top/post/rdap-whois-api/" rel="alternate"/>
     <link href="https://delishahk.com/img/qx.webp" rel="enclosure" type="image/webp"/>
     <published>2026-08-31T15:02:45.000Z</published>
     <summary>解释我是怎么搭建RDAP查询API，为什么搭建API的过程</summary>
@@ -114,22 +114,25 @@ Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="BOC" scheme="https://blog.rinai.top/tags/BOC/"/>
-    <category term="中国银行" scheme="https://blog.rinai.top/tags/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C/"/>
-    <category term="社保卡" scheme="https://blog.rinai.top/tags/%E7%A4%BE%E4%BF%9D%E5%8D%A1/"/>
-    <category term="金融科普" scheme="https://blog.rinai.top/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%99%AE/"/>
-    <category term="日常分享" scheme="https://blog.rinai.top/tags/%E6%97%A5%E5%B8%B8%E5%88%86%E4%BA%AB/"/>
+    <category term="BOC" scheme="https://rinai.top/tags/BOC/"/>
+    <category term="中国银行" scheme="https://rinai.top/tags/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C/"/>
+    <category term="社保卡" scheme="https://rinai.top/tags/%E7%A4%BE%E4%BF%9D%E5%8D%A1/"/>
+    <category term="金融科普" scheme="https://rinai.top/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%99%AE/"/>
+    <category term="日常分享" scheme="https://rinai.top/tags/%E6%97%A5%E5%B8%B8%E5%88%86%E4%BA%AB/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/1999_019.webp" alt="BOC Debit Card Guide 2026: 无业状态成功申请中行社保卡金融账户实录" /></p>
-<blockquote><p><strong>💡 阅读提示与免责声明：</strong><br>本文仅为作者 2026 年在无业状态下申请中国银行（BOC）社保卡金融账户的个人经历分享，<strong>不构成任何业务办理指导</strong>。银行政策与社保规定因地而异且随时]]>
+<blockquote><p><strong>💡 阅读提示与免责声明：</strong><br>本文仅为作者 2026 年在无业状态下申请中国银行（BOC）社保卡金融账户的个人经历分享，<strong>不构成任何业务办理指导</strong>。银行政策与社保规定因地而异且随时可能调整，不保证他人能成功复刻。办理前请务必致电当地中国银行（95566）或社保局确认最新政策。据此操作，风险自担。</p></blockquote><hr><h3 id="背景：无业状态下的开卡需求"><a href="#背景：无业状态下的开卡需求" class="headerlink" title="背景：无]]>
     </content>
-    <id>https://blog.rinai.top/get-boc-debit-card/</id>
-    <link href="https://blog.rinai.top/get-boc-debit-card/" rel="alternate"/>
+    <id>https://rinai.top/post/get-boc-debit-card/</id>
+    <link href="https://rinai.top/post/get-boc-debit-card/" rel="alternate"/>
     <link href="https://delishahk.com/img/1999_019.webp" rel="enclosure" type="image/webp"/>
     <published>2026-08-28T02:23:55.000Z</published>
     <summary>
       <![CDATA[<blockquote>
-<p><strong>💡 阅读提示与免责声明：</strong><br>本文仅为作者 2026 年在无业状态下申请中国银行（BOC）社保卡金融账户的个人经历分享，<strong>不构成任何业务办理指导</strong>。银行政策与社保规定因地而异且随时]]>
+<p><strong>💡 阅读提示与免责声明：</strong><br>本文仅为作者 2026 年在无业状态下申请中国银行（BOC）社保卡金融账户的个人经历分享，<strong>不构成任何业务办理指导</strong>。银行政策与社保规定因地而异且随时可能调整，不保证他人能成功复刻。办理前请务必致电当地中国银行（95566）或社保局确认最新政策。据此操作，风险自担。</p>
+</blockquote>
+<hr>
+<h3 id="背景：无业状态下的开卡需求"><a href="#背景：无业状态下的开卡需求" class="headerlink" title="背景：无]]>
     </summary>
     <title>BOC Debit Card Guide 2026: 无业状态成功申请中行社保卡金融账户实录</title>
     <updated>2026-10-12T15:53:30.000Z</updated>
@@ -138,14 +141,14 @@ Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="友链" scheme="https://blog.rinai.top/tags/%E5%8F%8B%E9%93%BE/"/>
-    <category term="随谈" scheme="https://blog.rinai.top/tags/%E9%9A%8F%E8%B0%88/"/>
+    <category term="友链" scheme="https://rinai.top/tags/%E5%8F%8B%E9%93%BE/"/>
+    <category term="随谈" scheme="https://rinai.top/tags/%E9%9A%8F%E8%B0%88/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/ys001.webp" alt="友链界面大更新！" /></p>
 描述了友链界面更新的原因与更新的内容]]>
     </content>
-    <id>https://blog.rinai.top/0000000027/</id>
-    <link href="https://blog.rinai.top/0000000027/" rel="alternate"/>
+    <id>https://rinai.top/post/0000000027/</id>
+    <link href="https://rinai.top/post/0000000027/" rel="alternate"/>
     <link href="https://delishahk.com/img/ys001.webp" rel="enclosure" type="image/webp"/>
     <published>2026-08-24T11:31:53.000Z</published>
     <summary>描述了友链界面更新的原因与更新的内容</summary>
@@ -156,17 +159,17 @@ Hexo 官方 Sitemap 插件暴力收录标签页、分类页，十几篇文章生
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
-    <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
-    <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="网络运维" scheme="https://rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    <category term="笔记" scheme="https://rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="交换机" scheme="https://rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
+    <category term="OSPF" scheme="https://rinai.top/tags/OSPF/"/>
+    <category term="路由器" scheme="https://rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/dls_047.webp" alt="OSPF之重分发、默认路由注入与虚链路（高级特性与综合排障）" /></p>
 OSPF 第五阶段实验笔记，讲解重分发、默认路由注入与虚链路配置与排错，适用于多协议互通与非骨干区域连通场景。]]>
     </content>
-    <id>https://blog.rinai.top/000000026/</id>
-    <link href="https://blog.rinai.top/000000026/" rel="alternate"/>
+    <id>https://rinai.top/post/000000026/</id>
+    <link href="https://rinai.top/post/000000026/" rel="alternate"/>
     <link href="https://delishahk.com/img/dls_047.webp" rel="enclosure" type="image/webp"/>
     <published>2026-08-07T16:11:42.000Z</published>
     <summary>OSPF 第五阶段实验笔记，讲解重分发、默认路由注入与虚链路配置与排错，适用于多协议互通与非骨干区域连通场景。</summary>
@@ -177,17 +180,17 @@ OSPF 第五阶段实验笔记，讲解重分发、默认路由注入与虚链路
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
-    <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
-    <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="网络运维" scheme="https://rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    <category term="笔记" scheme="https://rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="交换机" scheme="https://rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
+    <category term="OSPF" scheme="https://rinai.top/tags/OSPF/"/>
+    <category term="路由器" scheme="https://rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/dls_070.webp" alt="OSPF之认证与路由汇总" /></p>
 OSPF 第四阶段实验笔记，包含认证配置、ABR/ASBR 汇总和排错思路，适用于多区域网络优化。]]>
     </content>
-    <id>https://blog.rinai.top/0000000025/</id>
-    <link href="https://blog.rinai.top/0000000025/" rel="alternate"/>
+    <id>https://rinai.top/post/0000000025/</id>
+    <link href="https://rinai.top/post/0000000025/" rel="alternate"/>
     <link href="https://delishahk.com/img/dls_070.webp" rel="enclosure" type="image/webp"/>
     <published>2026-08-07T12:01:12.000Z</published>
     <summary>OSPF 第四阶段实验笔记，包含认证配置、ABR/ASBR 汇总和排错思路，适用于多区域网络优化。</summary>
@@ -198,17 +201,17 @@ OSPF 第四阶段实验笔记，包含认证配置、ABR/ASBR 汇总和排错思
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
-    <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
-    <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="网络运维" scheme="https://rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    <category term="笔记" scheme="https://rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="交换机" scheme="https://rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
+    <category term="OSPF" scheme="https://rinai.top/tags/OSPF/"/>
+    <category term="路由器" scheme="https://rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/1999(13).webp" alt="OSPF之特殊路由与路由优化" /></p>
 OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由优化与常见排错，帮助你把末节区域路由表压缩到最小并安全引入外部路由。]]>
     </content>
-    <id>https://blog.rinai.top/000000024/</id>
-    <link href="https://blog.rinai.top/000000024/" rel="alternate"/>
+    <id>https://rinai.top/post/000000024/</id>
+    <link href="https://rinai.top/post/000000024/" rel="alternate"/>
     <link href="https://delishahk.com/img/1999(13).webp" rel="enclosure" type="image/webp"/>
     <published>2026-08-03T04:44:51.000Z</published>
     <summary>OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由优化与常见排错，帮助你把末节区域路由表压缩到最小并安全引入外部路由。</summary>
@@ -219,17 +222,17 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
-    <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="OSPF" scheme="https://blog.rinai.top/tags/OSPF/"/>
-    <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="网络运维" scheme="https://rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    <category term="笔记" scheme="https://rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="交换机" scheme="https://rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
+    <category term="OSPF" scheme="https://rinai.top/tags/OSPF/"/>
+    <category term="路由器" scheme="https://rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/1999(8).webp" alt="OSPF之LSA与LSDB" /></p>
 面向网络运维的 OSPF 指南：理解 LSA/LSDB 与区域间路由（O vs O IA），并给出配置示例与排错流程。]]>
     </content>
-    <id>https://blog.rinai.top/000000023/</id>
-    <link href="https://blog.rinai.top/000000023/" rel="alternate"/>
+    <id>https://rinai.top/post/000000023/</id>
+    <link href="https://rinai.top/post/000000023/" rel="alternate"/>
     <link href="https://delishahk.com/img/1999(8).webp" rel="enclosure" type="image/webp"/>
     <published>2026-08-01T07:14:13.000Z</published>
     <summary>面向网络运维的 OSPF 指南：理解 LSA/LSDB 与区域间路由（O vs O IA），并给出配置示例与排错流程。</summary>
@@ -240,16 +243,16 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
-    <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="路由器" scheme="https://blog.rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
-    <category term="ospf" scheme="https://blog.rinai.top/tags/ospf/"/>
+    <category term="网络运维" scheme="https://rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    <category term="交换机" scheme="https://rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
+    <category term="路由器" scheme="https://rinai.top/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <category term="ospf" scheme="https://rinai.top/tags/ospf/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(3).webp" alt="OSPF之建立邻居教程" /></p>
 本文讲解华为路由器直连运行 OSPF 建立邻居关系的配置流程，包括接口地址、OSPF 进程与 Area 宣告，以及常见排障思路]]>
     </content>
-    <id>https://blog.rinai.top/000000022/</id>
-    <link href="https://blog.rinai.top/000000022/" rel="alternate"/>
+    <id>https://rinai.top/post/000000022/</id>
+    <link href="https://rinai.top/post/000000022/" rel="alternate"/>
     <link href="https://delishahk.com/img/bh3rd(3).webp" rel="enclosure" type="image/webp"/>
     <published>2026-07-31T03:09:45.000Z</published>
     <summary>本文讲解华为路由器直连运行 OSPF 建立邻居关系的配置流程，包括接口地址、OSPF 进程与 Area 宣告，以及常见排障思路</summary>
@@ -260,18 +263,18 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
-    <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="STP" scheme="https://blog.rinai.top/tags/STP/"/>
-    <category term="MSTP" scheme="https://blog.rinai.top/tags/MSTP/"/>
-    <category term="生成树协议" scheme="https://blog.rinai.top/tags/%E7%94%9F%E6%88%90%E6%A0%91%E5%8D%8F%E8%AE%AE/"/>
+    <category term="网络运维" scheme="https://rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    <category term="笔记" scheme="https://rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="交换机" scheme="https://rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
+    <category term="STP" scheme="https://rinai.top/tags/STP/"/>
+    <category term="MSTP" scheme="https://rinai.top/tags/MSTP/"/>
+    <category term="生成树协议" scheme="https://rinai.top/tags/%E7%94%9F%E6%88%90%E6%A0%91%E5%8D%8F%E8%AE%AE/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/zzz(11).webp" alt="STP教程之display stp命令详解" /></p>
 华为交换机 display stp 输出解析，逐项说明 CIST 全局信息、端口角色、BPDU 和拓扑变化，帮助理解 MSTP 生成树状态。]]>
     </content>
-    <id>https://blog.rinai.top/0000000021/</id>
-    <link href="https://blog.rinai.top/0000000021/" rel="alternate"/>
+    <id>https://rinai.top/post/0000000021/</id>
+    <link href="https://rinai.top/post/0000000021/" rel="alternate"/>
     <link href="https://delishahk.com/img/zzz(11).webp" rel="enclosure" type="image/webp"/>
     <published>2026-07-28T09:14:40.000Z</published>
     <summary>华为交换机 display stp 输出解析，逐项说明 CIST 全局信息、端口角色、BPDU 和拓扑变化，帮助理解 MSTP 生成树状态。</summary>
@@ -282,18 +285,18 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="网络运维" scheme="https://blog.rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
-    <category term="笔记" scheme="https://blog.rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
-    <category term="交换机" scheme="https://blog.rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
-    <category term="STP" scheme="https://blog.rinai.top/tags/STP/"/>
-    <category term="生成树协议" scheme="https://blog.rinai.top/tags/%E7%94%9F%E6%88%90%E6%A0%91%E5%8D%8F%E8%AE%AE/"/>
-    <category term="故障排查" scheme="https://blog.rinai.top/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/"/>
+    <category term="网络运维" scheme="https://rinai.top/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    <category term="笔记" scheme="https://rinai.top/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="交换机" scheme="https://rinai.top/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/"/>
+    <category term="STP" scheme="https://rinai.top/tags/STP/"/>
+    <category term="生成树协议" scheme="https://rinai.top/tags/%E7%94%9F%E6%88%90%E6%A0%91%E5%8D%8F%E8%AE%AE/"/>
+    <category term="故障排查" scheme="https://rinai.top/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/dls02_2.webp" alt="STP生成树协议笔记" /></p>
 本文详细解释了STP生成树协议中根桥选取机制以及如何防环路，适合各位想了解STP生成树协议的读者]]>
     </content>
-    <id>https://blog.rinai.top/000000020/</id>
-    <link href="https://blog.rinai.top/000000020/" rel="alternate"/>
+    <id>https://rinai.top/post/000000020/</id>
+    <link href="https://rinai.top/post/000000020/" rel="alternate"/>
     <link href="https://delishahk.com/img/dls02_2.webp" rel="enclosure" type="image/webp"/>
     <published>2026-07-26T16:28:27.000Z</published>
     <summary>本文详细解释了STP生成树协议中根桥选取机制以及如何防环路，适合各位想了解STP生成树协议的读者</summary>
@@ -304,17 +307,17 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="Visual Studio" scheme="https://blog.rinai.top/tags/Visual-Studio/"/>
-    <category term="C++" scheme="https://blog.rinai.top/tags/C/"/>
-    <category term="开发" scheme="https://blog.rinai.top/tags/%E5%BC%80%E5%8F%91/"/>
-    <category term="vs2022" scheme="https://blog.rinai.top/tags/vs2022/"/>
-    <category term="报错" scheme="https://blog.rinai.top/tags/%E6%8A%A5%E9%94%99/"/>
+    <category term="Visual Studio" scheme="https://rinai.top/tags/Visual-Studio/"/>
+    <category term="C++" scheme="https://rinai.top/tags/C/"/>
+    <category term="开发" scheme="https://rinai.top/tags/%E5%BC%80%E5%8F%91/"/>
+    <category term="vs2022" scheme="https://rinai.top/tags/vs2022/"/>
+    <category term="报错" scheme="https://rinai.top/tags/%E6%8A%A5%E9%94%99/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/dls02_2.webp" alt="VS2022报错RC22103解决方法" /></p>
 一步步解决VS2022报错RC22103的方法]]>
     </content>
-    <id>https://blog.rinai.top/0000000019/</id>
-    <link href="https://blog.rinai.top/0000000019/" rel="alternate"/>
+    <id>https://rinai.top/post/0000000019/</id>
+    <link href="https://rinai.top/post/0000000019/" rel="alternate"/>
     <link href="https://delishahk.com/img/dls02_2.webp" rel="enclosure" type="image/webp"/>
     <published>2026-07-07T02:34:44.000Z</published>
     <summary>一步步解决VS2022报错RC22103的方法</summary>
@@ -325,15 +328,15 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="阿里云" scheme="https://blog.rinai.top/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
-    <category term="ESA" scheme="https://blog.rinai.top/tags/ESA/"/>
-    <category term="CDN" scheme="https://blog.rinai.top/tags/CDN/"/>
+    <category term="阿里云" scheme="https://rinai.top/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    <category term="ESA" scheme="https://rinai.top/tags/ESA/"/>
+    <category term="CDN" scheme="https://rinai.top/tags/CDN/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(6).webp" alt="阿里云ESA与阿里云CDN使用体验" /></p>
 这篇文章分享了我在使用阿里云ESA和阿里云CDN的体验，包括性能、稳定性等方面的评价。]]>
     </content>
-    <id>https://blog.rinai.top/0000000000018/</id>
-    <link href="https://blog.rinai.top/0000000000018/" rel="alternate"/>
+    <id>https://rinai.top/post/0000000000018/</id>
+    <link href="https://rinai.top/post/0000000000018/" rel="alternate"/>
     <link href="https://delishahk.com/img/bh3rd(6).webp" rel="enclosure" type="image/webp"/>
     <published>2026-06-21T09:07:34.000Z</published>
     <summary>这篇文章分享了我在使用阿里云ESA和阿里云CDN的体验，包括性能、稳定性等方面的评价。</summary>
@@ -344,18 +347,18 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="小说推荐" scheme="https://blog.rinai.top/tags/%E5%B0%8F%E8%AF%B4%E6%8E%A8%E8%8D%90/"/>
-    <category term="隔壁天使无意间把我养成废材了这件事" scheme="https://blog.rinai.top/tags/%E9%9A%94%E5%A3%81%E5%A4%A9%E4%BD%BF%E6%97%A0%E6%84%8F%E9%97%B4%E6%8A%8A%E6%88%91%E5%85%BB%E6%88%90%E5%BA%9F%E6%9D%90%E4%BA%86%E8%BF%99%E4%BB%B6%E4%BA%8B/"/>
-    <category term="邻家天使" scheme="https://blog.rinai.top/tags/%E9%82%BB%E5%AE%B6%E5%A4%A9%E4%BD%BF/"/>
-    <category term="轻小说" scheme="https://blog.rinai.top/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/"/>
-    <category term="动漫推荐" scheme="https://blog.rinai.top/tags/%E5%8A%A8%E6%BC%AB%E6%8E%A8%E8%8D%90/"/>
-    <category term="治愈系" scheme="https://blog.rinai.top/tags/%E6%B2%BB%E6%84%88%E7%B3%BB/"/>
+    <category term="小说推荐" scheme="https://rinai.top/tags/%E5%B0%8F%E8%AF%B4%E6%8E%A8%E8%8D%90/"/>
+    <category term="隔壁天使无意间把我养成废材了这件事" scheme="https://rinai.top/tags/%E9%9A%94%E5%A3%81%E5%A4%A9%E4%BD%BF%E6%97%A0%E6%84%8F%E9%97%B4%E6%8A%8A%E6%88%91%E5%85%BB%E6%88%90%E5%BA%9F%E6%9D%90%E4%BA%86%E8%BF%99%E4%BB%B6%E4%BA%8B/"/>
+    <category term="邻家天使" scheme="https://rinai.top/tags/%E9%82%BB%E5%AE%B6%E5%A4%A9%E4%BD%BF/"/>
+    <category term="轻小说" scheme="https://rinai.top/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/"/>
+    <category term="动漫推荐" scheme="https://rinai.top/tags/%E5%8A%A8%E6%BC%AB%E6%8E%A8%E8%8D%90/"/>
+    <category term="治愈系" scheme="https://rinai.top/tags/%E6%B2%BB%E6%84%88%E7%B3%BB/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/zhenzhou.webp" alt="《隔壁天使无意间把我养成废材了这件事》《邻家天使》强烈推荐！" /></p>
 一部让人看完只想躺平被照顾的治愈系轻小说，《邻家天使》究竟如何“废材养成”？来聊聊这部糖分超标的恋爱喜剧。《隔壁天使无意间把我养成废材了这件事》（又名《邻家天使》）是一部治愈系轻小说，讲述了一个普通少年被隔壁的天使女孩无意间照顾得越来越废材的故事。小说以其甜蜜的恋爱喜剧元素和温馨的日常描写，深受读者喜爱。本文将深入探讨这部小说的魅力所在，以及为什么它成为了众多轻小说迷心中的宝藏。]]>
     </content>
-    <id>https://blog.rinai.top/000000000017/</id>
-    <link href="https://blog.rinai.top/000000000017/" rel="alternate"/>
+    <id>https://rinai.top/post/000000000017/</id>
+    <link href="https://rinai.top/post/000000000017/" rel="alternate"/>
     <link href="https://delishahk.com/img/zhenzhou.webp" rel="enclosure" type="image/webp"/>
     <published>2026-05-23T18:39:29.000Z</published>
     <summary>一部让人看完只想躺平被照顾的治愈系轻小说，《邻家天使》究竟如何“废材养成”？来聊聊这部糖分超标的恋爱喜剧。《隔壁天使无意间把我养成废材了这件事》（又名《邻家天使》）是一部治愈系轻小说，讲述了一个普通少年被隔壁的天使女孩无意间照顾得越来越废材的故事。小说以其甜蜜的恋爱喜剧元素和温馨的日常描写，深受读者喜爱。本文将深入探讨这部小说的魅力所在，以及为什么它成为了众多轻小说迷心中的宝藏。</summary>
@@ -366,22 +369,23 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="GPG" scheme="https://blog.rinai.top/tags/GPG/"/>
-    <category term="教程" scheme="https://blog.rinai.top/tags/%E6%95%99%E7%A8%8B/"/>
-    <category term="安全" scheme="https://blog.rinai.top/tags/%E5%AE%89%E5%85%A8/"/>
-    <category term="加密" scheme="https://blog.rinai.top/tags/%E5%8A%A0%E5%AF%86/"/>
-    <category term="密码学" scheme="https://blog.rinai.top/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
-    <category term="Git" scheme="https://blog.rinai.top/tags/Git/"/>
+    <category term="GPG" scheme="https://rinai.top/tags/GPG/"/>
+    <category term="教程" scheme="https://rinai.top/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="安全" scheme="https://rinai.top/tags/%E5%AE%89%E5%85%A8/"/>
+    <category term="加密" scheme="https://rinai.top/tags/%E5%8A%A0%E5%AF%86/"/>
+    <category term="密码学" scheme="https://rinai.top/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    <category term="Git" scheme="https://rinai.top/tags/Git/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(6).webp" alt="GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密" /></p>
-<h1 id="GnuPG-GPG-完整使用指南"><a href="#GnuPG-GPG-完整使用指南" class="headerlink" title="GnuPG (GPG) 完整使用指南"></a>GnuPG (GPG) 完整使用指南</h1><blockquote>]]>
+<h1 id="GnuPG-GPG-完整使用指南"><a href="#GnuPG-GPG-完整使用指南" class="headerlink" title="GnuPG (GPG) 完整使用指南"></a>GnuPG (GPG) 完整使用指南</h1><blockquote><p><strong>适用读者</strong>：开发者、系统运维、安全工程师，以及需要加密文件、签名 Git 提交或保护敏感数据的任何人。<br><strong>前置知识</strong>：基本的命令行操作（会打开终端、执行命令即可），无需 GPG 基础。<br><strong>版本说明</strong>：本文基于]]>
     </content>
-    <id>https://blog.rinai.top/0000000016/</id>
-    <link href="https://blog.rinai.top/0000000016/" rel="alternate"/>
+    <id>https://rinai.top/post/0000000016/</id>
+    <link href="https://rinai.top/post/0000000016/" rel="alternate"/>
     <link href="https://delishahk.com/img/bh3rd(6).webp" rel="enclosure" type="image/webp"/>
     <published>2026-05-18T10:41:32.000Z</published>
     <summary>
-      <![CDATA[<h1 id="GnuPG-GPG-完整使用指南"><a href="#GnuPG-GPG-完整使用指南" class="headerlink" title="GnuPG (GPG) 完整使用指南"></a>GnuPG (GPG) 完整使用指南</h1><blockquote>]]>
+      <![CDATA[<h1 id="GnuPG-GPG-完整使用指南"><a href="#GnuPG-GPG-完整使用指南" class="headerlink" title="GnuPG (GPG) 完整使用指南"></a>GnuPG (GPG) 完整使用指南</h1><blockquote>
+<p><strong>适用读者</strong>：开发者、系统运维、安全工程师，以及需要加密文件、签名 Git 提交或保护敏感数据的任何人。<br><strong>前置知识</strong>：基本的命令行操作（会打开终端、执行命令即可），无需 GPG 基础。<br><strong>版本说明</strong>：本文基于]]>
     </summary>
     <title>GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密</title>
     <updated>2026-10-12T15:53:30.000Z</updated>
@@ -390,13 +394,13 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="C++" scheme="https://blog.rinai.top/tags/C/"/>
-    <category term="CPP" scheme="https://blog.rinai.top/tags/CPP/"/>
-    <category term="学习笔记" scheme="https://blog.rinai.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <category term="编程" scheme="https://blog.rinai.top/tags/%E7%BC%96%E7%A8%8B/"/>
-    <category term="随记" scheme="https://blog.rinai.top/tags/%E9%9A%8F%E8%AE%B0/"/>
-    <id>https://blog.rinai.top/000000015/</id>
-    <link href="https://blog.rinai.top/000000015/" rel="alternate"/>
+    <category term="C++" scheme="https://rinai.top/tags/C/"/>
+    <category term="CPP" scheme="https://rinai.top/tags/CPP/"/>
+    <category term="学习笔记" scheme="https://rinai.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="编程" scheme="https://rinai.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    <category term="随记" scheme="https://rinai.top/tags/%E9%9A%8F%E8%AE%B0/"/>
+    <id>https://rinai.top/post/000000015/</id>
+    <link href="https://rinai.top/post/000000015/" rel="alternate"/>
     <link href="https://delishahk.com/img/cpp.png" rel="enclosure" type="image/png"/>
     <published>2026-05-10T22:46:10.000Z</published>
     <title>CPP学习记录1</title>
@@ -406,17 +410,17 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <author>
       <name>挽着红月缓缓走</name>
     </author>
-    <category term="妄想天使" scheme="https://blog.rinai.top/tags/%E5%A6%84%E6%83%B3%E5%A4%A9%E4%BD%BF/"/>
-    <category term="zzz" scheme="https://blog.rinai.top/tags/zzz/"/>
-    <category term="绝区零" scheme="https://blog.rinai.top/tags/%E7%BB%9D%E5%8C%BA%E9%9B%B6/"/>
-    <category term="QT" scheme="https://blog.rinai.top/tags/QT/"/>
-    <category term="AOD" scheme="https://blog.rinai.top/tags/AOD/"/>
+    <category term="妄想天使" scheme="https://rinai.top/tags/%E5%A6%84%E6%83%B3%E5%A4%A9%E4%BD%BF/"/>
+    <category term="zzz" scheme="https://rinai.top/tags/zzz/"/>
+    <category term="绝区零" scheme="https://rinai.top/tags/%E7%BB%9D%E5%8C%BA%E9%9B%B6/"/>
+    <category term="QT" scheme="https://rinai.top/tags/QT/"/>
+    <category term="AOD" scheme="https://rinai.top/tags/AOD/"/>
     <content>
       <![CDATA[<p><img src="https://delishahk.com/img/wxts.webp" alt="关于妄想天使三小只的专属音乐播放器制作旅程" /></p>
 记录我用 QT 框架为《绝区零》妄想天使阵营制作专属同人音乐播放器的全过程，包含界面设计、音频播放实现、以及遇到的坑与解决方法。]]>
     </content>
-    <id>https://blog.rinai.top/00000000014/</id>
-    <link href="https://blog.rinai.top/00000000014/" rel="alternate"/>
+    <id>https://rinai.top/post/00000000014/</id>
+    <link href="https://rinai.top/post/00000000014/" rel="alternate"/>
     <link href="https://delishahk.com/img/wxts.webp" rel="enclosure" type="image/webp"/>
     <published>2026-04-16T05:55:44.000Z</published>
     <summary>记录我用 QT 框架为《绝区零》妄想天使阵营制作专属同人音乐播放器的全过程，包含界面设计、音频播放实现、以及遇到的坑与解决方法。</summary>
