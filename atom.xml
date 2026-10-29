@@ -10,7 +10,27 @@
   <rights>All rights reserved 2026, 挽着红月缓缓走</rights>
   <subtitle>一个技术情感博客</subtitle>
   <title>挽着红月缓缓走</title>
-  <updated>2026-10-20T14:49:53.063Z</updated>
+  <updated>2026-10-29T13:55:31.854Z</updated>
+  <entry>
+    <author>
+      <name>挽着红月缓缓走</name>
+    </author>
+    <category term="subdomain" scheme="https://rinai.top/tags/subdomain/"/>
+    <category term="subdirectory" scheme="https://rinai.top/tags/subdirectory/"/>
+    <category term="seo" scheme="https://rinai.top/tags/seo/"/>
+    <category term="site-architecture" scheme="https://rinai.top/tags/site-architecture/"/>
+    <content>
+      <![CDATA[<p><img src="https://delishahk.com/dls_070.webp" alt="新站长避坑：为什么我建议你默认用子目录，而不是子域名？" /></p>
+我花半年从子域名搬回子目录。本文讲清子域名与子目录在 SEO、运维、Cookie 上的差异，并给新站长判断清单和迁移避坑表。]]>
+    </content>
+    <id>https://rinai.top/post/subdomain-vs-subdirectory-guide/</id>
+    <link href="https://rinai.top/post/subdomain-vs-subdirectory-guide/" rel="alternate"/>
+    <link href="https://delishahk.com/dls_070.webp" rel="enclosure" type="image/webp"/>
+    <published>2026-10-29T13:06:29.000Z</published>
+    <summary>我花半年从子域名搬回子目录。本文讲清子域名与子目录在 SEO、运维、Cookie 上的差异，并给新站长判断清单和迁移避坑表。</summary>
+    <title>新站长避坑：为什么我建议你默认用子目录，而不是子域名？</title>
+    <updated>2026-10-29T13:55:31.854Z</updated>
+  </entry>
   <entry>
     <author>
       <name>挽着红月缓缓走</name>
@@ -404,27 +424,6 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
     <link href="https://delishahk.com/img/cpp.png" rel="enclosure" type="image/png"/>
     <published>2026-05-10T22:46:10.000Z</published>
     <title>CPP学习记录1</title>
-    <updated>2026-10-12T15:53:30.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>挽着红月缓缓走</name>
-    </author>
-    <category term="妄想天使" scheme="https://rinai.top/tags/%E5%A6%84%E6%83%B3%E5%A4%A9%E4%BD%BF/"/>
-    <category term="zzz" scheme="https://rinai.top/tags/zzz/"/>
-    <category term="绝区零" scheme="https://rinai.top/tags/%E7%BB%9D%E5%8C%BA%E9%9B%B6/"/>
-    <category term="QT" scheme="https://rinai.top/tags/QT/"/>
-    <category term="AOD" scheme="https://rinai.top/tags/AOD/"/>
-    <content>
-      <![CDATA[<p><img src="https://delishahk.com/img/wxts.webp" alt="关于妄想天使三小只的专属音乐播放器制作旅程" /></p>
-记录我用 QT 框架为《绝区零》妄想天使阵营制作专属同人音乐播放器的全过程，包含界面设计、音频播放实现、以及遇到的坑与解决方法。]]>
-    </content>
-    <id>https://rinai.top/post/00000000014/</id>
-    <link href="https://rinai.top/post/00000000014/" rel="alternate"/>
-    <link href="https://delishahk.com/img/wxts.webp" rel="enclosure" type="image/webp"/>
-    <published>2026-04-16T05:55:44.000Z</published>
-    <summary>记录我用 QT 框架为《绝区零》妄想天使阵营制作专属同人音乐播放器的全过程，包含界面设计、音频播放实现、以及遇到的坑与解决方法。</summary>
-    <title>关于妄想天使三小只的专属音乐播放器制作旅程</title>
     <updated>2026-10-12T15:53:30.000Z</updated>
   </entry>
 </feed>
