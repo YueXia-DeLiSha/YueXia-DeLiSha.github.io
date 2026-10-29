@@ -6,7 +6,7 @@
     <description>一个技术情感博客</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, 挽着红月缓缓走</copyright>
-    <lastBuildDate>Thu, 29 Oct 2026 13:55:31 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 14:00:35 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://rinai.top/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
@@ -18,10 +18,10 @@
       <category domain="https://rinai.top/tags/subdirectory/">subdirectory</category>
       <category domain="https://rinai.top/tags/seo/">seo</category>
       <category domain="https://rinai.top/tags/site-architecture/">site-architecture</category>
-      <enclosure url="https://delishahk.com/dls_070.webp" type="image/webp"/>
+      <enclosure url="https://delishahk.com/img/dls_070.webp" type="image/webp"/>
       <pubDate>Thu, 29 Oct 2026 13:06:29 GMT</pubDate>
       <content:encoded>
-        <![CDATA[<p><img src="https://delishahk.com/dls_070.webp" alt="新站长避坑：为什么我建议你默认用子目录，而不是子域名？" /></p>
+        <![CDATA[<p><img src="https://delishahk.com/img/dls_070.webp" alt="新站长避坑：为什么我建议你默认用子目录，而不是子域名？" /></p>
 我花半年从子域名搬回子目录。本文讲清子域名与子目录在 SEO、运维、Cookie 上的差异，并给新站长判断清单和迁移避坑表。]]>
       </content:encoded>
     </item>
