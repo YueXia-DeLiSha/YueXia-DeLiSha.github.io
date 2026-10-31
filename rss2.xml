@@ -6,9 +6,26 @@
     <description>一个技术情感博客</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, 挽着红月缓缓走</copyright>
-    <lastBuildDate>Thu, 29 Oct 2026 14:00:35 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 09:06:18 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://rinai.top/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026新规改革后的低压电工实操科目一/第一项笔记</title>
+      <link>https://rinai.top/post/lv-electrician-2026-subject-1-task-1/</link>
+      <description>2026新规低压电工实操科目一第一项笔记：登杆作业流程、安全用具检查与验电笔、登高板、数字式万用表、漏电保护器测试仪使用记录，仅供个人复习参考。</description>
+      <author>挽着红月缓缓走</author>
+      <category domain="https://rinai.top/tags/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5/">低压电工</category>
+      <category domain="https://rinai.top/tags/2026%E6%96%B0%E8%A7%84/">2026新规</category>
+      <category domain="https://rinai.top/tags/%E5%AE%9E%E6%93%8D%E7%A7%91%E7%9B%AE%E4%B8%80/">实操科目一</category>
+      <category domain="https://rinai.top/tags/low-voltage-electrician/">low-voltage-electrician</category>
+      <category domain="https://rinai.top/tags/practical-exam-subject-1/">practical-exam-subject-1</category>
+      <enclosure url="https://delishahk.com/img/bh3rd(3).webp" type="image/webp"/>
+      <pubDate>Sat, 31 Oct 2026 07:52:02 GMT</pubDate>
+      <content:encoded>
+        <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(3).webp" alt="2026新规改革后的低压电工实操科目一/第一项笔记" /></p>
+2026新规低压电工实操科目一第一项笔记：登杆作业流程、安全用具检查与验电笔、登高板、数字式万用表、漏电保护器测试仪使用记录，仅供个人复习参考。]]>
+      </content:encoded>
+    </item>
     <item>
       <title>新站长避坑：为什么我建议你默认用子目录，而不是子域名？</title>
       <link>https://rinai.top/post/subdomain-vs-subdirectory-guide/</link>
@@ -331,18 +348,6 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
         <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(6).webp" alt="GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密" /></p>
 <h1 id="GnuPG-GPG-完整使用指南"><a href="#GnuPG-GPG-完整使用指南" class="headerlink" title="GnuPG (GPG) 完整使用指南"></a>GnuPG (GPG) 完整使用指南</h1><blockquote><p><strong>适用读者</strong>：开发者、系统运维、安全工程师，以及需要加密文件、签名 Git 提交或保护敏感数据的任何人。<br><strong>前置知识</strong>：基本的命令行操作（会打开终端、执行命令即可），无需 GPG 基础。<br><strong>版本说明</strong>：本文基于]]>
       </content:encoded>
-    </item>
-    <item>
-      <title>CPP学习记录1</title>
-      <link>https://rinai.top/post/000000015/</link>
-      <author>挽着红月缓缓走</author>
-      <category domain="https://rinai.top/tags/C/">C++</category>
-      <category domain="https://rinai.top/tags/CPP/">CPP</category>
-      <category domain="https://rinai.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</category>
-      <category domain="https://rinai.top/tags/%E7%BC%96%E7%A8%8B/">编程</category>
-      <category domain="https://rinai.top/tags/%E9%9A%8F%E8%AE%B0/">随记</category>
-      <enclosure url="https://delishahk.com/img/cpp.png" type="image/png"/>
-      <pubDate>Sun, 10 May 2026 22:46:10 GMT</pubDate>
     </item>
   </channel>
 </rss>

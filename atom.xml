@@ -10,7 +10,28 @@
   <rights>All rights reserved 2026, 挽着红月缓缓走</rights>
   <subtitle>一个技术情感博客</subtitle>
   <title>挽着红月缓缓走</title>
-  <updated>2026-10-29T14:00:35.632Z</updated>
+  <updated>2026-10-31T09:06:18.245Z</updated>
+  <entry>
+    <author>
+      <name>挽着红月缓缓走</name>
+    </author>
+    <category term="低压电工" scheme="https://rinai.top/tags/%E4%BD%8E%E5%8E%8B%E7%94%B5%E5%B7%A5/"/>
+    <category term="2026新规" scheme="https://rinai.top/tags/2026%E6%96%B0%E8%A7%84/"/>
+    <category term="实操科目一" scheme="https://rinai.top/tags/%E5%AE%9E%E6%93%8D%E7%A7%91%E7%9B%AE%E4%B8%80/"/>
+    <category term="low-voltage-electrician" scheme="https://rinai.top/tags/low-voltage-electrician/"/>
+    <category term="practical-exam-subject-1" scheme="https://rinai.top/tags/practical-exam-subject-1/"/>
+    <content>
+      <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(3).webp" alt="2026新规改革后的低压电工实操科目一/第一项笔记" /></p>
+2026新规低压电工实操科目一第一项笔记：登杆作业流程、安全用具检查与验电笔、登高板、数字式万用表、漏电保护器测试仪使用记录，仅供个人复习参考。]]>
+    </content>
+    <id>https://rinai.top/post/lv-electrician-2026-subject-1-task-1/</id>
+    <link href="https://rinai.top/post/lv-electrician-2026-subject-1-task-1/" rel="alternate"/>
+    <link href="https://delishahk.com/img/bh3rd(3).webp" rel="enclosure" type="image/webp"/>
+    <published>2026-10-31T07:52:02.000Z</published>
+    <summary>2026新规低压电工实操科目一第一项笔记：登杆作业流程、安全用具检查与验电笔、登高板、数字式万用表、漏电保护器测试仪使用记录，仅供个人复习参考。</summary>
+    <title>2026新规改革后的低压电工实操科目一/第一项笔记</title>
+    <updated>2026-10-31T09:06:18.245Z</updated>
+  </entry>
   <entry>
     <author>
       <name>挽着红月缓缓走</name>
@@ -408,22 +429,6 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
 <p><strong>适用读者</strong>：开发者、系统运维、安全工程师，以及需要加密文件、签名 Git 提交或保护敏感数据的任何人。<br><strong>前置知识</strong>：基本的命令行操作（会打开终端、执行命令即可），无需 GPG 基础。<br><strong>版本说明</strong>：本文基于]]>
     </summary>
     <title>GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密</title>
-    <updated>2026-10-12T15:53:30.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>挽着红月缓缓走</name>
-    </author>
-    <category term="C++" scheme="https://rinai.top/tags/C/"/>
-    <category term="CPP" scheme="https://rinai.top/tags/CPP/"/>
-    <category term="学习笔记" scheme="https://rinai.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <category term="编程" scheme="https://rinai.top/tags/%E7%BC%96%E7%A8%8B/"/>
-    <category term="随记" scheme="https://rinai.top/tags/%E9%9A%8F%E8%AE%B0/"/>
-    <id>https://rinai.top/post/000000015/</id>
-    <link href="https://rinai.top/post/000000015/" rel="alternate"/>
-    <link href="https://delishahk.com/img/cpp.png" rel="enclosure" type="image/png"/>
-    <published>2026-05-10T22:46:10.000Z</published>
-    <title>CPP学习记录1</title>
     <updated>2026-10-12T15:53:30.000Z</updated>
   </entry>
 </feed>
