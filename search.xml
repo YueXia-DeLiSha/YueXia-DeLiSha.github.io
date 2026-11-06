@@ -59,25 +59,64 @@ ESA的服务相较于CDN来说，更考验各位站长的钱包厚度，因为ES
       </tags>
   </entry>
   <entry>
-    <title>关于twikoo不显示设置的问题</title>
-    <url>/post/0000000013/</url>
-    <content><![CDATA[Twikoo 评论系统：找不到设置按钮？一招解决问题现象当你部署好 Twikoo 评论系统后，想进入后台管理面板，却发现页面上怎么也找不到那个“齿轮”或“设置”图标，这是怎么回事？
-原因分析Twikoo 的设计逻辑是：只有被识别为博主（管理员）的访客，才能看到管理入口。如果你还没有在评论框中输入过你预设的博主昵称并提交一条评论，系统就无法确认你的身份，自然也就不会显示设置按钮。
-解决步骤第一步：输入博主昵称在评论区的昵称栏，输入你在 Twikoo 管理端（或环境变量）中设置的 ADMIN_NAME（博主昵称）。
-第二步：发表一条评论随便输入一条评论内容，例如“测试”，然后点击提交。
-第三步：刷新页面评论提交成功后，按 F5 刷新页面。现在你应该能在评论区的右上角看到“设置”图标（齿轮状）了。点击它即可进入 Twikoo 管理面板。
-其他可能的原因如果以上操作后仍未出现，请检查：
+    <title>STP教程之display stp命令详解</title>
+    <url>/post/0000000021/</url>
+    <content><![CDATA[命令执行结果假设我们执行display stp命令假设得到如下数据：
+[sw1]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-ccde-02e8Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-ccde-02e8 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :12TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:2m:12sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][DISCARDING]---- Port Protocol       :Enabled Port Role           :Alternate Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :3                       TCN: 0, Config: 0, RST: 0, MST: 3 BPDU Received       :438                       TCN: 0, Config: 0, RST: 0, MST: 438----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :5 BPDU Sent           :4                       TCN: 0, Config: 0, RST: 0, MST: 4 BPDU Received       :440                       TCN: 0, Config: 0, RST: 0, MST: 440                                              [sw3]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc2b-47baConfig Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 0CIST RegRoot/IRPC   :32768.4c1f-cc2b-47ba / 0CIST RootPortId     :0.0BPDU-Protection     :DisabledTC or TCN received  :4TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:4m:52sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/1----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :1 TC or TCN received  :0 BPDU Sent           :132                       TCN: 0, Config: 0, RST: 0, MST: 132 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :0 BPDU Sent           :226                       TCN: 0, Config: 0, RST: 0, MST: 226 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1          &lt;sw2&gt;system-viewEnter system view, return user view with Ctrl+Z.[sw2]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc38-0f51Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-cc38-0f51 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :9TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:0m:3sNumber of TC        :8Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :9 TC or TCN received  :2 BPDU Sent           :545                       TCN: 0, Config: 0, RST: 0, MST: 545 BPDU Received       :3                       TCN: 0, Config: 0, RST: 0, MST: 3----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :6                       TCN: 0, Config: 0, RST: 0, MST: 6 BPDU Received       :549                       TCN: 0, Config: 0, RST: 0, MST: 549```          我们可以按照如下流程解读得到的数据：这是一份非常完整的STP（生成树协议）信息输出\## 📌 一、全局信息（Global Info）—— 网络的大局观这部分描述的是&quot;整个生成树网络&quot;的整体情况。
+——-[CIST Global Info][Mode MSTP]——-
+**解释**：CIST 是&quot;公共与内部生成树&quot;的缩写，是 MSTP 中所有实例的&quot;总根&quot;所在的树。`[Mode MSTP]` 表示当前运行的是多生成树协议模式。| 参数 | 数值（以SW1为例） | 直白翻译 | 作用 || :--- | :--- | :--- | :--- || **CIST Bridge** | `32768.4c1f-ccde-02e8` | **我（这台交换机）的身份ID**。由&quot;优先级(32768)+MAC地址&quot;组成。 | 在STP选举中，每个交换机都用这个ID标识自己。数值越小越优先。 || **Config Times** | `Hello 2s MaxAge 20s FwDly 15s MaxHop 20` | **配置的计时器参数**。 | 这是默认写在配置里的时间参数。Hello=2秒发一次心跳包；MaxAge=20秒收不到心跳就认为链路断了；FwDly=15秒状态切换延迟；MaxHop=20跳最大网络直径。 || **Active Times** | `Hello 2s MaxAge 20s FwDly 15s MaxHop 20` | **当前正在生效的计时器参数**。 | 正常情况下与Config一致。如果手动改了配置，这里显示实际生效的值。 || **CIST Root/ERPC** | `32768.4c1f-cc2b-47ba / 20000` | **根桥是谁，我到它的开销是多少。** | **这是最关键的信息之一**。根桥ID是`32768.4c1f-cc2b-47ba`，SW1到根桥的累计路径开销是20000。 || **CIST RegRoot/IRPC** | `32768.4c1f-ccde-02e8 / 0` | **我所在区域的根桥是谁，我到区域根的开销。** | 在MSTP中，每个区域有自己的根。这里显示区域根就是SW1自己（因为我的ID就是它），到自己开销为0。 || **CIST RootPortId** | `128.2` | **我去往根桥的&quot;出口&quot;是哪个端口。** | `128.2` 表示：端口优先级128 + 端口号2（即GigabitEthernet0/0/2）。意思就是：**SW1通过2号口去往根桥。** || **BPDU-Protection** | `Disabled` | **BPDU保护功能已关闭。** | 如果开启，当边缘端口收到BPDU时会自动关闭该端口，防止非法交换机接入。 || **TC or TCN received** | `12` | **这台交换机一共收到了12次拓扑变化通知。** | TC = Topology Change（拓扑变化）。每发生一次网络变动（比如线断了），这个数字就加1。如果数字疯狂增长，说明网络不稳定。 || **TC count per hello** | `0` | **每个Hello周期内收到的TC数量。** | 当前为0，表示最近网络很稳定，没有频繁变动。 || **STP Converge Mode** | `Normal` | **收敛模式为普通模式。** | 华为设备还有&quot;Fast&quot;模式，可以加速收敛。Normal是默认的。 || **Time since last TC** | `0 days 0h:2m:12s` | **距离上次拓扑变化过去了2分12秒。** | 说明网络在2分钟前刚发生过变化（可能你刚插拔了网线）。 || **Number of TC** | `7` | **已经累计发生了7次拓扑变化。** | 这是自从交换机开机以来的总次数。 || **Last TC occurred** | `GigabitEthernet0/0/2` | **最后一次拓扑变化发生在2号口。** | 说明最后一次网络变动是2号口引起的（可能拔插了2号口的线）。 |---## 📌 二、端口信息（Port Info）—— 每个接口的&quot;体检报告&quot;这部分针对每个物理端口，详细描述它在STP中的角色和状态。### 🔹 Port1（GigabitEthernet0/0/1）—— 被阻塞的备用端口
+—-[Port1(GigabitEthernet0&#x2F;0&#x2F;1)][DISCARDING]—-
+| 参数 | 数值 | 直白翻译 | 作用 || :--- | :--- | :--- | :--- || **Port Protocol** | `Enabled` | 这个端口启用了STP协议。 | 如果Disabled，这个口不参与STP计算，可能造成环路。 || **Port Role** | `Alternate Port` | **端口角色：替代端口（备用）** | 这是被阻塞的端口，平时不转发数据，只监听BPDU。如果根端口（ROOT）挂了，它会上位。 || **Port Priority** | `128` | 端口优先级为128。 | 默认值。在选举时，数值越小越优先。 || **Port Cost(Dot1T)** | `Config=auto / Active=20000` | 配置为自动计算，实际生效开销为20000。 | 端口开销表示&quot;通过这个口出去要花多大代价&quot;。越大说明路径越差。Active=20000是因为这是千兆口（默认开销值）。 || **Designated Bridge/Port** | `32768.4c1f-cc38-0f51 / 128.1` | **这条链路对面的交换机ID和对面的端口号。** | 对面是SW2（MAC `...38-0f51`），它用1号口连接我。这说明了&quot;谁在对岸&quot;。 || **Port Edged** | `Config=default / Active=disabled` | 配置默认，实际未启用边缘端口。 | 边缘端口是专门接PC的，能快速收敛。这里Disabled说明接的是交换机。 || **Point-to-point** | `Config=auto / Active=true` | 自动检测，实际为点对点链路。 | 说明这个口接的是另一台交换机（而不是集线器），全双工。 || **Transit Limit** | `147 packets/hello-time` | 每个Hello周期内最多发送147个BPDU。 | 防止BPDU风暴的限速机制。 || **Protection Type** | `None` | 未开启任何端口保护。 | 常见保护类型有：Root（根保护）、Loop（环路保护）、BPDU（BPDU保护）。 || **Port STP Mode** | `MSTP` | 这个端口运行的是MSTP协议。 | 与全局一致。 || **Port Protocol Type** | `Config=auto / Active=dot1s` | 协议类型自动，实际为dot1s（MSTP标准）。 | dot1s是IEEE关于MSTP的标准编号。 || **BPDU Encapsulation** | `Config=stp / Active=stp` | BPDU封装格式为STP标准格式。 | 华为设备默认使用标准格式，保持兼容性。 || **PortTimes** | `Hello 2s MaxAge 20s FwDly 15s RemHop 20` | 这个端口的计时器参数。 | RemHop=剩余跳数，每经过一台设备减1。到达0时BPDU被丢弃，控制网络直径。 || **TC or TCN send** | `2` | 这个端口发送了2次拓扑变化通知。 | 通知邻居网络发生了变化。 || **TC or TCN received** | `7` | 这个端口收到了7次拓扑变化通知。 | 说明邻居那边发生过7次网络变动。 || **BPDU Sent** | `3` | 总共发送了3个BPDU报文。 | 其中：TCN=0（拓扑变化通知包），Config=0（STP配置包），RST=0（RSTP包），MST=3（MSTP包）。**说明邻居之间只发了MSTP格式的BPDU。** || **BPDU Received** | `438` | 总共收到了438个BPDU报文。 | 全部是MSTP格式（438个）。说明对端设备也是MSTP模式，协商顺利。 |---### 🔹 Port2（GigabitEthernet0/0/2）—— 转发数据的主端口
+—-[Port2(GigabitEthernet0&#x2F;0&#x2F;2)][FORWARDING]—-
 
-你的 Twikoo 版本是否为最新。
-浏览器控制台（F12）是否有报错信息。
-是否在 Twikoo 环境变量中正确配置了 ADMIN_NAME。
+与Port1类似，但这里有几个关键差异：
 
-总结Twikoo 通过评论昵称来识别博主身份，这是一个非常巧妙且无需额外登录的安全机制。只要记住先“评论”再“管理”的逻辑即可。
-结后语作者热衷于帮每个人去解决一些力所能及的事情，如果你有问题可以联系mail@rinai这个邮箱哦，也可以在关于页看看作者的其他联系方式哦]]></content>
+| 参数 | 数值 | 解读 |
+| :--- | :--- | :--- |
+| **Port Role** | `Root Port` | **这是根端口！** 这个口是SW1去往根桥（SW3）的通道，正在转发数据。 |
+| **Designated Bridge/Port** | `32768.4c1f-cc2b-47ba / 128.1` | 对端是根桥SW3（MAC `...2b-47ba`），它用1号口连接我。**这说明SW1的2号口直接连到了根桥SW3的1号口！** |
+
+---
+
+## 🧠 三、综合&quot;案件分析&quot;—— 三台交换机的关系网
+
+根据你提供的三台交换机的输出，我们可以还原出整个拓扑：
+
+| 交换机 | CIST Bridge（自己ID） | 根桥是谁？ | 根端口是哪个？ | 端口角色总结 |
+| :--- | :--- | :--- | :--- | :--- |
+| **SW1** | `32768.4c1f-ccde-02e8` | SW3 | Port2（G0/0/2） | Port1=ALTE（阻塞），Port2=ROOT（转发） |
+| **SW2** | `32768.4c1f-cc38-0f51` | SW3 | Port2（G0/0/2） | Port1=DESI（转发），Port2=ROOT（转发） |
+| **SW3** | `32768.4c1f-cc2b-47ba` | 自己（根桥） | 无 | Port1=DESI（转发），Port2=DESI（转发） |
+
+### 🎯 结论：
+
+1. **根桥是 SW3**（因为它的 `CIST Root/ERPC` 中，根桥ID就是它自己，且 ERPC = 0）。
+2. **SW1 的 2 号口连到了 SW3 的 1 号口**（从 `Designated Bridge/Port` 可以确认）。
+3. **SW1 的 1 号口连到了 SW2 的 1 号口**（因为对面是 `...38-0f51`，即SW2）。
+4. **SW2 的 2 号口连到了 SW3 的 2 号口**（因为对面是 `...2b-47ba`，即SW3）。
+5. **环路被切断的位置**：SW1 的 1 号口被阻塞（`DISCARDING` / `Alternate Port`），因为 SW2 在链路竞争中获胜。
+
+---
+
+## 💎 快速记忆口诀（背下来，面试有用）
+
+- **CIST Bridge** = 我的身份证。
+- **CIST Root/ERPC** = 老大是谁，我到老大有多远。
+- **Root Port** = 我的耳朵（听老大的）。
+- **Designated Port** = 我的嘴巴（对下发言）。
+- **Alternate Port** = 我的备用耳朵（平时堵着，老大失聪了才用）。
+- **TC count** = 网络波动计数器，数字乱跳就说明网络不稳。
+
+这份笔记覆盖了华为交换机 `display stp` 输出的全部核心字段。
+
+]]></content>
       <tags>
-        <tag>twikoo</tag>
-        <tag>Twikoo</tag>
-        <tag>常见小问题</tag>
+        <tag>网络运维</tag>
+        <tag>笔记</tag>
+        <tag>交换机</tag>
+        <tag>STP</tag>
+        <tag>MSTP</tag>
+        <tag>生成树协议</tag>
       </tags>
   </entry>
   <entry>
@@ -842,6 +881,28 @@ GPG &gt;&#x3D;2.1
       </tags>
   </entry>
   <entry>
+    <title>关于twikoo不显示设置的问题</title>
+    <url>/post/0000000013/</url>
+    <content><![CDATA[Twikoo 评论系统：找不到设置按钮？一招解决问题现象当你部署好 Twikoo 评论系统后，想进入后台管理面板，却发现页面上怎么也找不到那个“齿轮”或“设置”图标，这是怎么回事？
+原因分析Twikoo 的设计逻辑是：只有被识别为博主（管理员）的访客，才能看到管理入口。如果你还没有在评论框中输入过你预设的博主昵称并提交一条评论，系统就无法确认你的身份，自然也就不会显示设置按钮。
+解决步骤第一步：输入博主昵称在评论区的昵称栏，输入你在 Twikoo 管理端（或环境变量）中设置的 ADMIN_NAME（博主昵称）。
+第二步：发表一条评论随便输入一条评论内容，例如“测试”，然后点击提交。
+第三步：刷新页面评论提交成功后，按 F5 刷新页面。现在你应该能在评论区的右上角看到“设置”图标（齿轮状）了。点击它即可进入 Twikoo 管理面板。
+其他可能的原因如果以上操作后仍未出现，请检查：
+
+你的 Twikoo 版本是否为最新。
+浏览器控制台（F12）是否有报错信息。
+是否在 Twikoo 环境变量中正确配置了 ADMIN_NAME。
+
+总结Twikoo 通过评论昵称来识别博主身份，这是一个非常巧妙且无需额外登录的安全机制。只要记住先“评论”再“管理”的逻辑即可。
+结后语作者热衷于帮每个人去解决一些力所能及的事情，如果你有问题可以联系mail@rinai这个邮箱哦，也可以在关于页看看作者的其他联系方式哦]]></content>
+      <tags>
+        <tag>twikoo</tag>
+        <tag>Twikoo</tag>
+        <tag>常见小问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VS2022报错RC22103解决方法</title>
     <url>/post/0000000019/</url>
     <content><![CDATA[VS2022报错RC22103解决方法在使用Visual Studio 2022进行C++开发时，在添加资源时有时候会遇到报错RC22103的问题。这个错误通常是由于资源文件的路径或格式不正确引起的。下面将详细介绍解决该问题的步骤。
@@ -863,64 +924,15 @@ GPG &gt;&#x3D;2.1
       </tags>
   </entry>
   <entry>
-    <title>STP教程之display stp命令详解</title>
-    <url>/post/0000000021/</url>
-    <content><![CDATA[命令执行结果假设我们执行display stp命令假设得到如下数据：
-[sw1]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-ccde-02e8Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-ccde-02e8 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :12TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:2m:12sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][DISCARDING]---- Port Protocol       :Enabled Port Role           :Alternate Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :3                       TCN: 0, Config: 0, RST: 0, MST: 3 BPDU Received       :438                       TCN: 0, Config: 0, RST: 0, MST: 438----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :5 BPDU Sent           :4                       TCN: 0, Config: 0, RST: 0, MST: 4 BPDU Received       :440                       TCN: 0, Config: 0, RST: 0, MST: 440                                              [sw3]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc2b-47baConfig Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 0CIST RegRoot/IRPC   :32768.4c1f-cc2b-47ba / 0CIST RootPortId     :0.0BPDU-Protection     :DisabledTC or TCN received  :4TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:4m:52sNumber of TC        :7Last TC occurred    :GigabitEthernet0/0/1----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :1 TC or TCN received  :0 BPDU Sent           :132                       TCN: 0, Config: 0, RST: 0, MST: 132 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :0 BPDU Sent           :226                       TCN: 0, Config: 0, RST: 0, MST: 226 BPDU Received       :1                       TCN: 0, Config: 0, RST: 0, MST: 1          &lt;sw2&gt;system-viewEnter system view, return user view with Ctrl+Z.[sw2]display stp-------[CIST Global Info][Mode MSTP]-------CIST Bridge         :32768.4c1f-cc38-0f51Config Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20Active Times        :Hello 2s MaxAge 20s FwDly 15s MaxHop 20CIST Root/ERPC      :32768.4c1f-cc2b-47ba / 20000CIST RegRoot/IRPC   :32768.4c1f-cc38-0f51 / 0CIST RootPortId     :128.2BPDU-Protection     :DisabledTC or TCN received  :9TC count per hello  :0STP Converge Mode   :Normal Time since last TC  :0 days 0h:0m:3sNumber of TC        :8Last TC occurred    :GigabitEthernet0/0/2----[Port1(GigabitEthernet0/0/1)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Designated Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc38-0f51 / 128.1 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :9 TC or TCN received  :2 BPDU Sent           :545                       TCN: 0, Config: 0, RST: 0, MST: 545 BPDU Received       :3                       TCN: 0, Config: 0, RST: 0, MST: 3----[Port2(GigabitEthernet0/0/2)][FORWARDING]---- Port Protocol       :Enabled Port Role           :Root Port Port Priority       :128 Port Cost(Dot1T )   :Config=auto / Active=20000 Designated Bridge/Port   :32768.4c1f-cc2b-47ba / 128.2 Port Edged          :Config=default / Active=disabled Point-to-point      :Config=auto / Active=true Transit Limit       :147 packets/hello-time Protection Type     :None Port STP Mode       :MSTP  Port Protocol Type  :Config=auto / Active=dot1s BPDU Encapsulation  :Config=stp / Active=stp PortTimes           :Hello 2s MaxAge 20s FwDly 15s RemHop 20 TC or TCN send      :2 TC or TCN received  :7 BPDU Sent           :6                       TCN: 0, Config: 0, RST: 0, MST: 6 BPDU Received       :549                       TCN: 0, Config: 0, RST: 0, MST: 549```          我们可以按照如下流程解读得到的数据：这是一份非常完整的STP（生成树协议）信息输出\## 📌 一、全局信息（Global Info）—— 网络的大局观这部分描述的是&quot;整个生成树网络&quot;的整体情况。
-——-[CIST Global Info][Mode MSTP]——-
-**解释**：CIST 是&quot;公共与内部生成树&quot;的缩写，是 MSTP 中所有实例的&quot;总根&quot;所在的树。`[Mode MSTP]` 表示当前运行的是多生成树协议模式。| 参数 | 数值（以SW1为例） | 直白翻译 | 作用 || :--- | :--- | :--- | :--- || **CIST Bridge** | `32768.4c1f-ccde-02e8` | **我（这台交换机）的身份ID**。由&quot;优先级(32768)+MAC地址&quot;组成。 | 在STP选举中，每个交换机都用这个ID标识自己。数值越小越优先。 || **Config Times** | `Hello 2s MaxAge 20s FwDly 15s MaxHop 20` | **配置的计时器参数**。 | 这是默认写在配置里的时间参数。Hello=2秒发一次心跳包；MaxAge=20秒收不到心跳就认为链路断了；FwDly=15秒状态切换延迟；MaxHop=20跳最大网络直径。 || **Active Times** | `Hello 2s MaxAge 20s FwDly 15s MaxHop 20` | **当前正在生效的计时器参数**。 | 正常情况下与Config一致。如果手动改了配置，这里显示实际生效的值。 || **CIST Root/ERPC** | `32768.4c1f-cc2b-47ba / 20000` | **根桥是谁，我到它的开销是多少。** | **这是最关键的信息之一**。根桥ID是`32768.4c1f-cc2b-47ba`，SW1到根桥的累计路径开销是20000。 || **CIST RegRoot/IRPC** | `32768.4c1f-ccde-02e8 / 0` | **我所在区域的根桥是谁，我到区域根的开销。** | 在MSTP中，每个区域有自己的根。这里显示区域根就是SW1自己（因为我的ID就是它），到自己开销为0。 || **CIST RootPortId** | `128.2` | **我去往根桥的&quot;出口&quot;是哪个端口。** | `128.2` 表示：端口优先级128 + 端口号2（即GigabitEthernet0/0/2）。意思就是：**SW1通过2号口去往根桥。** || **BPDU-Protection** | `Disabled` | **BPDU保护功能已关闭。** | 如果开启，当边缘端口收到BPDU时会自动关闭该端口，防止非法交换机接入。 || **TC or TCN received** | `12` | **这台交换机一共收到了12次拓扑变化通知。** | TC = Topology Change（拓扑变化）。每发生一次网络变动（比如线断了），这个数字就加1。如果数字疯狂增长，说明网络不稳定。 || **TC count per hello** | `0` | **每个Hello周期内收到的TC数量。** | 当前为0，表示最近网络很稳定，没有频繁变动。 || **STP Converge Mode** | `Normal` | **收敛模式为普通模式。** | 华为设备还有&quot;Fast&quot;模式，可以加速收敛。Normal是默认的。 || **Time since last TC** | `0 days 0h:2m:12s` | **距离上次拓扑变化过去了2分12秒。** | 说明网络在2分钟前刚发生过变化（可能你刚插拔了网线）。 || **Number of TC** | `7` | **已经累计发生了7次拓扑变化。** | 这是自从交换机开机以来的总次数。 || **Last TC occurred** | `GigabitEthernet0/0/2` | **最后一次拓扑变化发生在2号口。** | 说明最后一次网络变动是2号口引起的（可能拔插了2号口的线）。 |---## 📌 二、端口信息（Port Info）—— 每个接口的&quot;体检报告&quot;这部分针对每个物理端口，详细描述它在STP中的角色和状态。### 🔹 Port1（GigabitEthernet0/0/1）—— 被阻塞的备用端口
-—-[Port1(GigabitEthernet0&#x2F;0&#x2F;1)][DISCARDING]—-
-| 参数 | 数值 | 直白翻译 | 作用 || :--- | :--- | :--- | :--- || **Port Protocol** | `Enabled` | 这个端口启用了STP协议。 | 如果Disabled，这个口不参与STP计算，可能造成环路。 || **Port Role** | `Alternate Port` | **端口角色：替代端口（备用）** | 这是被阻塞的端口，平时不转发数据，只监听BPDU。如果根端口（ROOT）挂了，它会上位。 || **Port Priority** | `128` | 端口优先级为128。 | 默认值。在选举时，数值越小越优先。 || **Port Cost(Dot1T)** | `Config=auto / Active=20000` | 配置为自动计算，实际生效开销为20000。 | 端口开销表示&quot;通过这个口出去要花多大代价&quot;。越大说明路径越差。Active=20000是因为这是千兆口（默认开销值）。 || **Designated Bridge/Port** | `32768.4c1f-cc38-0f51 / 128.1` | **这条链路对面的交换机ID和对面的端口号。** | 对面是SW2（MAC `...38-0f51`），它用1号口连接我。这说明了&quot;谁在对岸&quot;。 || **Port Edged** | `Config=default / Active=disabled` | 配置默认，实际未启用边缘端口。 | 边缘端口是专门接PC的，能快速收敛。这里Disabled说明接的是交换机。 || **Point-to-point** | `Config=auto / Active=true` | 自动检测，实际为点对点链路。 | 说明这个口接的是另一台交换机（而不是集线器），全双工。 || **Transit Limit** | `147 packets/hello-time` | 每个Hello周期内最多发送147个BPDU。 | 防止BPDU风暴的限速机制。 || **Protection Type** | `None` | 未开启任何端口保护。 | 常见保护类型有：Root（根保护）、Loop（环路保护）、BPDU（BPDU保护）。 || **Port STP Mode** | `MSTP` | 这个端口运行的是MSTP协议。 | 与全局一致。 || **Port Protocol Type** | `Config=auto / Active=dot1s` | 协议类型自动，实际为dot1s（MSTP标准）。 | dot1s是IEEE关于MSTP的标准编号。 || **BPDU Encapsulation** | `Config=stp / Active=stp` | BPDU封装格式为STP标准格式。 | 华为设备默认使用标准格式，保持兼容性。 || **PortTimes** | `Hello 2s MaxAge 20s FwDly 15s RemHop 20` | 这个端口的计时器参数。 | RemHop=剩余跳数，每经过一台设备减1。到达0时BPDU被丢弃，控制网络直径。 || **TC or TCN send** | `2` | 这个端口发送了2次拓扑变化通知。 | 通知邻居网络发生了变化。 || **TC or TCN received** | `7` | 这个端口收到了7次拓扑变化通知。 | 说明邻居那边发生过7次网络变动。 || **BPDU Sent** | `3` | 总共发送了3个BPDU报文。 | 其中：TCN=0（拓扑变化通知包），Config=0（STP配置包），RST=0（RSTP包），MST=3（MSTP包）。**说明邻居之间只发了MSTP格式的BPDU。** || **BPDU Received** | `438` | 总共收到了438个BPDU报文。 | 全部是MSTP格式（438个）。说明对端设备也是MSTP模式，协商顺利。 |---### 🔹 Port2（GigabitEthernet0/0/2）—— 转发数据的主端口
-—-[Port2(GigabitEthernet0&#x2F;0&#x2F;2)][FORWARDING]—-
-
-与Port1类似，但这里有几个关键差异：
-
-| 参数 | 数值 | 解读 |
-| :--- | :--- | :--- |
-| **Port Role** | `Root Port` | **这是根端口！** 这个口是SW1去往根桥（SW3）的通道，正在转发数据。 |
-| **Designated Bridge/Port** | `32768.4c1f-cc2b-47ba / 128.1` | 对端是根桥SW3（MAC `...2b-47ba`），它用1号口连接我。**这说明SW1的2号口直接连到了根桥SW3的1号口！** |
-
----
-
-## 🧠 三、综合&quot;案件分析&quot;—— 三台交换机的关系网
-
-根据你提供的三台交换机的输出，我们可以还原出整个拓扑：
-
-| 交换机 | CIST Bridge（自己ID） | 根桥是谁？ | 根端口是哪个？ | 端口角色总结 |
-| :--- | :--- | :--- | :--- | :--- |
-| **SW1** | `32768.4c1f-ccde-02e8` | SW3 | Port2（G0/0/2） | Port1=ALTE（阻塞），Port2=ROOT（转发） |
-| **SW2** | `32768.4c1f-cc38-0f51` | SW3 | Port2（G0/0/2） | Port1=DESI（转发），Port2=ROOT（转发） |
-| **SW3** | `32768.4c1f-cc2b-47ba` | 自己（根桥） | 无 | Port1=DESI（转发），Port2=DESI（转发） |
-
-### 🎯 结论：
-
-1. **根桥是 SW3**（因为它的 `CIST Root/ERPC` 中，根桥ID就是它自己，且 ERPC = 0）。
-2. **SW1 的 2 号口连到了 SW3 的 1 号口**（从 `Designated Bridge/Port` 可以确认）。
-3. **SW1 的 1 号口连到了 SW2 的 1 号口**（因为对面是 `...38-0f51`，即SW2）。
-4. **SW2 的 2 号口连到了 SW3 的 2 号口**（因为对面是 `...2b-47ba`，即SW3）。
-5. **环路被切断的位置**：SW1 的 1 号口被阻塞（`DISCARDING` / `Alternate Port`），因为 SW2 在链路竞争中获胜。
-
----
-
-## 💎 快速记忆口诀（背下来，面试有用）
-
-- **CIST Bridge** = 我的身份证。
-- **CIST Root/ERPC** = 老大是谁，我到老大有多远。
-- **Root Port** = 我的耳朵（听老大的）。
-- **Designated Port** = 我的嘴巴（对下发言）。
-- **Alternate Port** = 我的备用耳朵（平时堵着，老大失聪了才用）。
-- **TC count** = 网络波动计数器，数字乱跳就说明网络不稳。
-
-这份笔记覆盖了华为交换机 `display stp` 输出的全部核心字段。
-
-]]></content>
+    <title>CPP学习记录1</title>
+    <url>/post/000000015/</url>
+    <content><![CDATA[]]></content>
       <tags>
-        <tag>网络运维</tag>
-        <tag>笔记</tag>
-        <tag>交换机</tag>
-        <tag>STP</tag>
-        <tag>MSTP</tag>
-        <tag>生成树协议</tag>
+        <tag>C++</tag>
+        <tag>CPP</tag>
+        <tag>学习笔记</tag>
+        <tag>编程</tag>
+        <tag>随记</tag>
       </tags>
   </entry>
   <entry>
@@ -1183,18 +1195,6 @@ Cloudflare - 综合网络服务商，提供CDN、DNS、WAF等服务，
       </tags>
   </entry>
   <entry>
-    <title>CPP学习记录1</title>
-    <url>/post/000000015/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>C++</tag>
-        <tag>CPP</tag>
-        <tag>学习笔记</tag>
-        <tag>编程</tag>
-        <tag>随记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>STP生成树协议笔记</title>
     <url>/post/000000020/</url>
     <content><![CDATA[STP生成树协议主要有以下知识点：
@@ -1293,245 +1293,6 @@ BPDU——STP的通信基石STP协议依赖**BPDU（Bridge Protocol Data Unit，
         <tag>STP</tag>
         <tag>生成树协议</tag>
         <tag>故障排查</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OSPF之建立邻居教程</title>
-    <url>/post/000000022/</url>
-    <content><![CDATA[OSPF之建立邻居教程📘 OSPF 第一阶段实验笔记（邻居建立）适用场景：两台华为路由器（或三层交换机）通过以太网直连，运行OSPF协议，建立邻居关系。
-一、实验拓扑与IP规划
-
-
-设备
-接口
-IP地址&#x2F;掩码
-所属OSPF区域
-
-
-
-AR1
-GigabitEthernet0&#x2F;0&#x2F;0
-10.0.12.1/24
-Area 0
-
-
-AR2
-GigabitEthernet0&#x2F;0&#x2F;0
-10.0.12.2/24
-Area 0
-
-
-连线方式：AR1的G0&#x2F;0&#x2F;0口 直连 AR2的G0&#x2F;0&#x2F;0口。
-二、配置步骤（每一步附带白话解释）第一步：进入系统视图并给设备命名&lt;AR1&gt; system-view[AR1] sysname AR1
-
-
-
-
-
-命令
-解释
-
-
-
-system-view
-从用户视图（&lt; &gt;）进入系统配置视图（[ ]），这是所有配置动作的前提。
-
-
-sysname AR1
-修改设备的主机名，便于识别。在真实网络和排障时，看日志能立刻知道是哪台设备出了问题。
-
-
-
-第二步：配置物理接口的IP地址（让链路“活起来”）[AR1] interface GigabitEthernet0/0/0[AR1-GigabitEthernet0/0/0] ip address 10.0.12.1 255.255.255.0[AR1-GigabitEthernet0/0/0] undo shutdown[AR1-GigabitEthernet0/0/0] quit
-
-
-
-
-
-命令
-解释
-
-
-
-interface GigabitEthernet0/0/0
-进入千兆以太网接口的配置视图。0/0/0 表示第1个槽位、第0个卡、第1号端口。
-
-
-ip address 10.0.12.1 255.255.255.0
-给该接口配置IP地址和子网掩码。/24（即255.255.255.0）表示这个接口所在的网段是 10.0.12.0/24。注意：对端AR2的接口必须配置同一网段的IP（如10.0.12.2），否则IP层无法通信。
-
-
-undo shutdown
-开启该接口（华为接口默认开启，但养成习惯敲这一句可以避免因误操作shutdown导致的故障）。
-
-
-quit
-退出当前接口视图，返回系统视图。
-
-
-验证这一步是否成功：
-[AR1] display ip interface brief
-
-查看 GigabitEthernet0/0/0 行的 Physical 和 Protocol 是否都是 UP。如果显示 DOWN，说明网线没插好、对端设备没开机或IP地址配错了。
-
-第三步：启动OSPF进程并配置Router ID[AR1] ospf 1 router-id 1.1.1.1
-
-
-
-
-
-命令
-解释
-
-
-
-ospf 1
-在设备上创建一个OSPF进程，进程号（1）仅具有本地意义（相当于给这个OSPF实例起个名字）。在同一台设备上可以运行多个OSPF进程，用于隔离不同的网络域。
-
-
-router-id 1.1.1.1
-设置这台路由器在OSPF网络中的唯一标识符。必须手动指定，且全网唯一。如果不手动指定，设备会从所有接口IP中自动选一个最大的作为Router ID，这样会导致网络不稳定（如果接口IP变了，Router ID也跟着变）。建议使用环回口（Loopback）地址作为Router ID，因为它永远不down。
-
-
-注意：Router ID 虽然看起来像IP地址，但它不是IP地址（不用于路由转发），它只是一个标识符。你可以写成 1.1.1.1，也可以写成 10.0.0.1，只要全网唯一即可。它不会在路由表里出现，你只能在 display ospf peer 输出里看到它。
-
-第四步：进入OSPF区域视图并宣告网段[AR1-ospf-1] area 0[AR1-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[AR1-ospf-1-area-0.0.0.0] quit[AR1-ospf-1] quit
-
-
-
-
-
-命令
-解释
-
-
-
-area 0
-进入OSPF区域0（即骨干区域）的配置视图。所有OSPF网络必须有一个Area 0，其他区域必须直接或间接连接到Area 0。你以后配多区域时，Area 0是“总枢纽”。
-
-
-network 10.0.12.0 0.0.0.255
-这是最关键的一句。- 10.0.12.0：要宣告的网段地址。- 0.0.0.255：通配符掩码（Wildcard Mask），不是子网掩码！它是子网掩码的“反码”（即 255.255.255.255 - 255.255.255.0 &#x3D; 0.0.0.255）。- 效果：告诉OSPF，“任何IP地址落在 10.0.12.0/24 这个范围内的接口，都在Area 0里运行OSPF”。新手常见错误：把 0.0.0.255 写成 255.255.255.0，这是错的！OSPF的network语句用的是通配符掩码。
-
-
-
-AR2 配置（完全对称，只需改IP和Router ID）：
-&lt;AR2&gt; system-view[AR2] sysname AR2[AR2] interface GigabitEthernet0/0/0[AR2-GigabitEthernet0/0/0] ip address 10.0.12.2 255.255.255.0[AR2-GigabitEthernet0/0/0] undo shutdown[AR2-GigabitEthernet0/0/0] quit[AR2] ospf 1 router-id 2.2.2.2[AR2-ospf-1] area 0[AR2-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[AR2-ospf-1-area-0.0.0.0] quit[AR2-ospf-1] quit
-
-配置完成后，敲 display ospf peer brief 验证：
-[AR1] display ospf peer brief
-
-你应该看到：
-OSPF Process 1 with Router ID 1.1.1.1         Peer Statistic Information------------------------------------------------------------------- Area Id          Interface           Neighbor id    State   0.0.0.0          GigabitEthernet0/0/0  2.2.2.2        Full      -------------------------------------------------------------------
-
-State 为 Full 表示邻居关系建立成功，OSPF已开始交换路由信息。
-
-三、OSPF 邻居建立状态机（供笔记记录）
-
-
-状态
-含义
-排障切入点
-
-
-
-Down
-尚未收到对方的Hello报文
-检查物理链路（接口是否UP、IP是否配通）
-
-
-Init
-收到了Hello报文，但未确认双向通信
-检查区域ID（Area）是否一致
-
-
-2-Way
-双向通信建立，开始选举DR&#x2F;BDR
-检查Hello&#x2F;Dead间隔是否一致
-
-
-Exstart
-开始主从协商，决定谁先发送数据库摘要
-检查MTU是否一致（华为默认忽略MTU检查，但在某些场景下需要手动开启）
-
-
-Exchange
-交换数据库摘要（DD报文），描述本地LSDB的目录
-检查是否收到DD报文（display ospf statistics）
-
-
-Loading
-请求并接收对方详细的链路状态信息（LSR&#x2F;LSU报文）
-检查网络是否丢包
-
-
-Full
-完全邻接，双方LSDB已同步
-✅ 成功状态
-
-
-关键约束条件（邻居建立必须匹配的“三要素”）：
-
-Area ID 必须一致。
-Hello 间隔（Hello Interval）和 Dead 间隔（Dead Interval）必须一致。
-认证类型和认证密码必须一致（如果配置了认证）。
-
-
-四、新手常见排错场景与解决办法❌ 场景1：display ospf peer 没有输出（邻居没建立）排查步骤：
-
-检查物理层：display interface GigabitEthernet0/0/0，确认 current state 是 UP。
-检查IP层：ping 10.0.12.2，确认能通。
-检查OSPF是否宣告正确：在AR1上敲 display ospf interface，看 GigabitEthernet0/0/0 的 State 是否为 DR 或 BDR 或 DROther。如果该接口未出现在此输出中，说明 network 宣告的网段与接口IP不在同一范围。
-
-❌ 场景2：邻居状态卡在 Exstart 或 Exchange 不动排查步骤：
-
-检查MTU是否一致：在接口视图下敲 display this，看 mtu 值（华为默认不强制MTU检查，但某些场景下需要手动关闭MTU检测：ospf mtu-enable）。
-检查是否启用了认证：如果一侧配了 ospf authentication-mode md5，另一侧没配，邻居会一直起不来。
-
-❌ 场景3：邻居状态在 2-Way 和 Full 之间反复震荡排查步骤：
-
-检查 Hello 间隔 和 Dead 间隔 是否一致。在接口视图下敲 ospf timer hello 10 可以修改（默认为10秒），Dead 默认为 Hello 的4倍（40秒）。如果一侧改了Hello为5秒，另一侧仍为10秒，则Dead时间会不一致（10秒 vs 40秒），邻居建立失败。
-
-
-五、你已有的命令速查表（放在笔记末尾）
-
-
-目的
-命令
-
-
-
-查看OSPF邻居状态
-display ospf peer brief
-
-
-查看OSPF邻居详细信息
-display ospf peer GigabitEthernet0/0/0
-
-
-查看OSPF接口状态
-display ospf interface
-
-
-查看OSPF错误统计
-display ospf error（排障神器）
-
-
-查看OSPF路由表
-display ospf routing
-
-
-查看当前所有OSPF配置
-&#96;display current-configuration
-
-
-
-]]></content>
-      <tags>
-        <tag>网络运维</tag>
-        <tag>交换机</tag>
-        <tag>路由器</tag>
-        <tag>ospf</tag>
       </tags>
   </entry>
   <entry>
@@ -1816,6 +1577,245 @@ ABR
       </tags>
   </entry>
   <entry>
+    <title>OSPF之建立邻居教程</title>
+    <url>/post/000000022/</url>
+    <content><![CDATA[OSPF之建立邻居教程📘 OSPF 第一阶段实验笔记（邻居建立）适用场景：两台华为路由器（或三层交换机）通过以太网直连，运行OSPF协议，建立邻居关系。
+一、实验拓扑与IP规划
+
+
+设备
+接口
+IP地址&#x2F;掩码
+所属OSPF区域
+
+
+
+AR1
+GigabitEthernet0&#x2F;0&#x2F;0
+10.0.12.1/24
+Area 0
+
+
+AR2
+GigabitEthernet0&#x2F;0&#x2F;0
+10.0.12.2/24
+Area 0
+
+
+连线方式：AR1的G0&#x2F;0&#x2F;0口 直连 AR2的G0&#x2F;0&#x2F;0口。
+二、配置步骤（每一步附带白话解释）第一步：进入系统视图并给设备命名&lt;AR1&gt; system-view[AR1] sysname AR1
+
+
+
+
+
+命令
+解释
+
+
+
+system-view
+从用户视图（&lt; &gt;）进入系统配置视图（[ ]），这是所有配置动作的前提。
+
+
+sysname AR1
+修改设备的主机名，便于识别。在真实网络和排障时，看日志能立刻知道是哪台设备出了问题。
+
+
+
+第二步：配置物理接口的IP地址（让链路“活起来”）[AR1] interface GigabitEthernet0/0/0[AR1-GigabitEthernet0/0/0] ip address 10.0.12.1 255.255.255.0[AR1-GigabitEthernet0/0/0] undo shutdown[AR1-GigabitEthernet0/0/0] quit
+
+
+
+
+
+命令
+解释
+
+
+
+interface GigabitEthernet0/0/0
+进入千兆以太网接口的配置视图。0/0/0 表示第1个槽位、第0个卡、第1号端口。
+
+
+ip address 10.0.12.1 255.255.255.0
+给该接口配置IP地址和子网掩码。/24（即255.255.255.0）表示这个接口所在的网段是 10.0.12.0/24。注意：对端AR2的接口必须配置同一网段的IP（如10.0.12.2），否则IP层无法通信。
+
+
+undo shutdown
+开启该接口（华为接口默认开启，但养成习惯敲这一句可以避免因误操作shutdown导致的故障）。
+
+
+quit
+退出当前接口视图，返回系统视图。
+
+
+验证这一步是否成功：
+[AR1] display ip interface brief
+
+查看 GigabitEthernet0/0/0 行的 Physical 和 Protocol 是否都是 UP。如果显示 DOWN，说明网线没插好、对端设备没开机或IP地址配错了。
+
+第三步：启动OSPF进程并配置Router ID[AR1] ospf 1 router-id 1.1.1.1
+
+
+
+
+
+命令
+解释
+
+
+
+ospf 1
+在设备上创建一个OSPF进程，进程号（1）仅具有本地意义（相当于给这个OSPF实例起个名字）。在同一台设备上可以运行多个OSPF进程，用于隔离不同的网络域。
+
+
+router-id 1.1.1.1
+设置这台路由器在OSPF网络中的唯一标识符。必须手动指定，且全网唯一。如果不手动指定，设备会从所有接口IP中自动选一个最大的作为Router ID，这样会导致网络不稳定（如果接口IP变了，Router ID也跟着变）。建议使用环回口（Loopback）地址作为Router ID，因为它永远不down。
+
+
+注意：Router ID 虽然看起来像IP地址，但它不是IP地址（不用于路由转发），它只是一个标识符。你可以写成 1.1.1.1，也可以写成 10.0.0.1，只要全网唯一即可。它不会在路由表里出现，你只能在 display ospf peer 输出里看到它。
+
+第四步：进入OSPF区域视图并宣告网段[AR1-ospf-1] area 0[AR1-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[AR1-ospf-1-area-0.0.0.0] quit[AR1-ospf-1] quit
+
+
+
+
+
+命令
+解释
+
+
+
+area 0
+进入OSPF区域0（即骨干区域）的配置视图。所有OSPF网络必须有一个Area 0，其他区域必须直接或间接连接到Area 0。你以后配多区域时，Area 0是“总枢纽”。
+
+
+network 10.0.12.0 0.0.0.255
+这是最关键的一句。- 10.0.12.0：要宣告的网段地址。- 0.0.0.255：通配符掩码（Wildcard Mask），不是子网掩码！它是子网掩码的“反码”（即 255.255.255.255 - 255.255.255.0 &#x3D; 0.0.0.255）。- 效果：告诉OSPF，“任何IP地址落在 10.0.12.0/24 这个范围内的接口，都在Area 0里运行OSPF”。新手常见错误：把 0.0.0.255 写成 255.255.255.0，这是错的！OSPF的network语句用的是通配符掩码。
+
+
+
+AR2 配置（完全对称，只需改IP和Router ID）：
+&lt;AR2&gt; system-view[AR2] sysname AR2[AR2] interface GigabitEthernet0/0/0[AR2-GigabitEthernet0/0/0] ip address 10.0.12.2 255.255.255.0[AR2-GigabitEthernet0/0/0] undo shutdown[AR2-GigabitEthernet0/0/0] quit[AR2] ospf 1 router-id 2.2.2.2[AR2-ospf-1] area 0[AR2-ospf-1-area-0.0.0.0] network 10.0.12.0 0.0.0.255[AR2-ospf-1-area-0.0.0.0] quit[AR2-ospf-1] quit
+
+配置完成后，敲 display ospf peer brief 验证：
+[AR1] display ospf peer brief
+
+你应该看到：
+OSPF Process 1 with Router ID 1.1.1.1         Peer Statistic Information------------------------------------------------------------------- Area Id          Interface           Neighbor id    State   0.0.0.0          GigabitEthernet0/0/0  2.2.2.2        Full      -------------------------------------------------------------------
+
+State 为 Full 表示邻居关系建立成功，OSPF已开始交换路由信息。
+
+三、OSPF 邻居建立状态机（供笔记记录）
+
+
+状态
+含义
+排障切入点
+
+
+
+Down
+尚未收到对方的Hello报文
+检查物理链路（接口是否UP、IP是否配通）
+
+
+Init
+收到了Hello报文，但未确认双向通信
+检查区域ID（Area）是否一致
+
+
+2-Way
+双向通信建立，开始选举DR&#x2F;BDR
+检查Hello&#x2F;Dead间隔是否一致
+
+
+Exstart
+开始主从协商，决定谁先发送数据库摘要
+检查MTU是否一致（华为默认忽略MTU检查，但在某些场景下需要手动开启）
+
+
+Exchange
+交换数据库摘要（DD报文），描述本地LSDB的目录
+检查是否收到DD报文（display ospf statistics）
+
+
+Loading
+请求并接收对方详细的链路状态信息（LSR&#x2F;LSU报文）
+检查网络是否丢包
+
+
+Full
+完全邻接，双方LSDB已同步
+✅ 成功状态
+
+
+关键约束条件（邻居建立必须匹配的“三要素”）：
+
+Area ID 必须一致。
+Hello 间隔（Hello Interval）和 Dead 间隔（Dead Interval）必须一致。
+认证类型和认证密码必须一致（如果配置了认证）。
+
+
+四、新手常见排错场景与解决办法❌ 场景1：display ospf peer 没有输出（邻居没建立）排查步骤：
+
+检查物理层：display interface GigabitEthernet0/0/0，确认 current state 是 UP。
+检查IP层：ping 10.0.12.2，确认能通。
+检查OSPF是否宣告正确：在AR1上敲 display ospf interface，看 GigabitEthernet0/0/0 的 State 是否为 DR 或 BDR 或 DROther。如果该接口未出现在此输出中，说明 network 宣告的网段与接口IP不在同一范围。
+
+❌ 场景2：邻居状态卡在 Exstart 或 Exchange 不动排查步骤：
+
+检查MTU是否一致：在接口视图下敲 display this，看 mtu 值（华为默认不强制MTU检查，但某些场景下需要手动关闭MTU检测：ospf mtu-enable）。
+检查是否启用了认证：如果一侧配了 ospf authentication-mode md5，另一侧没配，邻居会一直起不来。
+
+❌ 场景3：邻居状态在 2-Way 和 Full 之间反复震荡排查步骤：
+
+检查 Hello 间隔 和 Dead 间隔 是否一致。在接口视图下敲 ospf timer hello 10 可以修改（默认为10秒），Dead 默认为 Hello 的4倍（40秒）。如果一侧改了Hello为5秒，另一侧仍为10秒，则Dead时间会不一致（10秒 vs 40秒），邻居建立失败。
+
+
+五、你已有的命令速查表（放在笔记末尾）
+
+
+目的
+命令
+
+
+
+查看OSPF邻居状态
+display ospf peer brief
+
+
+查看OSPF邻居详细信息
+display ospf peer GigabitEthernet0/0/0
+
+
+查看OSPF接口状态
+display ospf interface
+
+
+查看OSPF错误统计
+display ospf error（排障神器）
+
+
+查看OSPF路由表
+display ospf routing
+
+
+查看当前所有OSPF配置
+&#96;display current-configuration
+
+
+
+]]></content>
+      <tags>
+        <tag>网络运维</tag>
+        <tag>交换机</tag>
+        <tag>路由器</tag>
+        <tag>ospf</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>OSPF之特殊路由与路由优化</title>
     <url>/post/000000024/</url>
     <content><![CDATA[📘 OSPF 第三阶段实验笔记：特殊区域与路由优化（Stub &#x2F; Totally Stub &#x2F; NSSA）适用场景：在一个多区域OSPF网络中，边缘区域（如分公司、监控网段）的路由器性能较弱，不需要知道全网详细的外部路由（比如互联网路由），只需要知道“怎么走出去”即可。
@@ -2042,313 +2042,6 @@ display ospf brief
       </tags>
   </entry>
   <entry>
-    <title>OSPF之重分发、默认路由注入与虚链路（高级特性与综合排障）</title>
-    <url>/post/000000026/</url>
-    <content><![CDATA[📘 OSPF 第五阶段实验笔记：重分发、默认路由注入与虚链路（高级特性与综合排障）适用场景：公司有两个分部，分别运行OSPF和RIP协议，需要互通；总部路由器需要自动下发上网网关；一个非骨干区域（Area 2）因物理链路限制无法直连Area 0，需要借道Area 1绕行。
-
-一、核心概念铺垫（先理解为什么需要它们）
-
-
-技术
-白话解释
-为什么需要它？
-
-
-
-重分发（Route Redistribution）
-把其他协议（如静态路由、RIP、BGP）翻译成OSPF的路由，让OSPF网络知道“外面还有路”。
-公司网络不可能只用OSPF，总会连接友商设备或专线，需要把对方的路由“搬运”进来。
-
-
-默认路由注入（Default-Route Advertise）
-ABR或ASBR主动向OSPF域内发一条“出门右拐”的路标（0.0.0.0/0）。
-让内部所有路由器自动知道通往Internet的总出口，不用给每台设备手动配静态默认路由。
-
-
-虚链路（Virtual Link）
-在两个ABR之间拉一条“逻辑隧道”，让一个不直连Area 0的区域通过第三个区域间接连接到Area 0。
-物理布线受限时（比如Area 2只有一根线连到Area 1，Area 1连Area 0），必须靠虚链路让Area 2的逻辑连接到Area 0，否则Area 2的路由无法传遍全网。
-
-
-
-二、实验拓扑与IP规划（四台设备，多协议+跨区域）
-
-
-设备
-接口
-IP地址&#x2F;掩码
-所属区域&#x2F;协议
-说明
-
-
-
-R1
-G0&#x2F;0&#x2F;0, Loop0
-10.0.12.1/24, 1.1.1.1/32
-Area 0
-骨干路由器，观察汇总效果
-
-
-R2（ABR）
-G0&#x2F;0&#x2F;0, G0&#x2F;0&#x2F;1
-10.0.12.2/24, 10.0.23.2/24
-Area 0 &#x2F; Area 1
-ABR，连接Area 0和Area 1
-
-
-R3（ASBR + ABR）
-G0&#x2F;0&#x2F;1, G0&#x2F;0&#x2F;2, Loop0
-10.0.23.3/24, 10.0.34.3/24, 3.3.3.3/32
-Area 1 &#x2F; Area 2
-同时是ABR（连接Area1&#x2F;2）和ASBR（引入RIP）
-
-
-R4（纯内部）
-G0&#x2F;0&#x2F;2, Loop0
-10.0.34.4/24, 4.4.4.4/32
-Area 2
-Area 2内部路由器，不直接连Area 0
-
-
-另外在R3上起一个RIP进程，模拟“另一家公司的网络”：
-
-R3的 interface LoopBack 10 配 172.16.10.1/24，并在RIP进程中宣告，模拟外部网络。
-
-
-三、第一部分：重分发（将其他协议的路由“翻译”进OSPF）第一步：在R3上配置RIP协议（模拟外部网络）[R3] rip 1[R3-rip-1] version 2   // 使用RIPv2（支持子网掩码）[R3-rip-1] network 172.16.0.0   // 宣告环回口所在的主类网段[R3-rip-1] quit[R3] interface LoopBack 10[R3-LoopBack10] ip address 172.16.10.1 255.255.255.0[R3-LoopBack10] quit
-
-
-
-
-
-命令&#x2F;参数
-白话解释
-
-
-
-rip 1
-启动一个RIP进程。RIP是一种距离矢量路由协议，以“跳数”计算路径（最大15跳）。
-
-
-version 2
-指定RIP版本2（支持CIDR和子网掩码，比version 1更常用）。
-
-
-network 172.16.0.0
-在RIP中宣告网段，注意这里只能写主类网段（A&#x2F;B&#x2F;C类默认掩码），不能写具体子网。
-
-
-第二步：在R3上配置OSPF重分发（将RIP路由翻译成OSPF）[R3] ospf 1[R3-ospf-1] import-route rip 1[R3-ospf-1] quit
-
-
-
-
-
-命令&#x2F;参数
-拆解
-白话解释
-
-
-
-import-route
-引入路由
-告诉OSPF：“去把RIP进程1里学到的所有路由，全部翻译成OSPF的Type 5 LSA（外部路由） 发出去。”
-
-
-rip 1
-指定源协议
-指定要从哪个协议进程里“搬运”路由。
-
-
-进阶控制（增加成本&#x2F;类型）：
-[R3-ospf-1] import-route rip 1 cost 10 type 1
-
-
-
-
-
-参数
-解释
-
-
-
-cost 10
-手动设置这条外部路由的开销为10（默认为1）。
-
-
-type 1
-外部路由类型为E1（累计内部开销+外部开销）。默认是 E2（只计外部开销，不累计内部路径开销）。考试重点：E1路径更精确，适合在复杂拓扑中选路；E2更简单，适合出口单一的汇聚点。
-
-
-验证重分发是否成功：在R1上敲 display ip routing-table | include 172.16，如果看到：
-172.16.10.0/24   OSPF   10   11   10.0.12.2   G0/0/0
-
-说明重分发成功。（Proto显示为OSPF，说明它已经被翻译成OSPF路由了）
-
-四、第二部分：默认路由注入（让全网自动获得“上网网关”）在实际企业网中，只有连接运营商的那台路由器（通常是出口防火墙或边界路由器）有一条指向公网的静态默认路由（ip route-static 0.0.0.0 0.0.0.0 x.x.x.x）。我们希望在R1（边界路由器）上配置这条静态默认路由，并把它注入到OSPF域内，让R2&#x2F;R3&#x2F;R4都能自动学到0.0.0.0&#x2F;0。
-第一步：在R1上配置指向外网的静态默认路由（模拟连运营商）[R1] ip route-static 0.0.0.0 0.0.0.0 100.1.1.1   // 假设对端运营商IP是100.1.1.1（仅模拟）
-
-（注意：在eNSP中，这个IP不一定存在，但我们只需在R1上制造一条静态默认路由即可）
-第二步：在R1的OSPF进程里注入这条默认路由[R1] ospf 1[R1-ospf-1] default-route-advertise[R1-ospf-1] quit
-
-
-
-
-
-命令
-解释
-
-
-
-default-route-advertise
-这条命令必须在ASBR（引入外部路由的路由器）上敲。它会检查本设备路由表中是否存在0.0.0.0/0（静态或其它协议学到的），如果存在，就生成一条Type 5 LSA（默认路由）发给全网。ASBR一般为引入外部路由的路由器就是ASBR一个网络中可以有多个ASBR，例如AR3为RIP的ASBR，AR1作为上网的ASBR，ASBR是一个动作，只要执行default-route-advertise(下发默认路由)与import-route(引入外部路由)那么他就是ASBR
-
-
-如果R1路由表里没有默认路由，但想强行下发（比如用于测试）：
-[R1-ospf-1] default-route-advertise always
-
-
-
-
-
-参数
-解释
-
-
-
-always
-强制执行。即使本设备路由表里没有默认路由，也强行向OSPF域内发一条默认路由（常用于备份出口场景）。
-
-
-验证默认路由是否注入成功：在R4上敲 display ip routing-table | include 0.0.0.0，如果看到：
-0.0.0.0/0   OSPF   10   1   10.0.34.3   G0/0/2
-
-说明R4已经学到了通往互联网的默认网关。
-
-五、第三部分：虚链路（Virtual-Link）—— 拯救“孤儿区域”背景：Area 2（R4所在区域）只连接了Area 1（R3），没有物理链路直连Area 0。在OSPF规则中，所有非骨干区域（非0）必须直接或通过虚链路连接到Area 0。如果不做虚链路，R4能学到Area 1内部的3.3.3.3，但绝对学不到Area 0的1.1.1.1，因为R3（ABR）不会把Area 2的路由传给Area 0（因为Area 2不满足连接到Area 0的条件）。
-解决方案：在R2（Area 0&#x2F;1的ABR）和R3（Area 1&#x2F;2的ABR）之间建立一条虚链路（Virtual Link），让Area 2“假装”通过Area 1这堵墙，逻辑上直接连到了Area 0。
-第一步：在R2（连接Area 0的ABR）上配置虚链路[R2] ospf 1[R2-ospf-1] area 1[R2-ospf-1-area-0.0.0.1] vlink-peer 3.3.3.3[R2-ospf-1-area-0.0.0.1] quit[R2-ospf-1] quit
-
-第二步：在R3（连接Area 2的ABR）上配置虚链路（对端Router ID必须与R2配置的相对应）[R3] ospf 1[R3-ospf-1] area 1[R3-ospf-1-area-0.0.0.1] vlink-peer 2.2.2.2[R3-ospf-1-area-0.0.0.1] quit[R3-ospf-1] quit
-
-
-
-
-
-命令&#x2F;参数
-拆解
-白话解释
-
-
-
-area 1
-虚链路所在的中转区域（Transit Area）
-虚链路必须在**同一个非骨干区域（这里是Area 1）**的两端配置。两端ABR必须都进入到这个区域的视图下配置。
-
-
-vlink-peer
-虚链路对端（Virtual Link Peer）
-指定对端ABR的Router ID（不是IP地址！）。- R2上的对端是R3的Router ID：3.3.3.3。- R3上的对端是R2的Router ID：2.2.2.2。注意：如果写错Router ID，虚链路永远起不来。
-
-
-验证虚链路是否建立成功：在R2上敲：
-[R2] display ospf vlink
-
-如果输出中 State 显示为 Full，说明虚链路已经建立成功。此时在R4上敲 display ip routing-table，你应该能看到 1.1.1.1/32（来自Area 0）和 10.0.12.0/24 了。
-虚链路配置要点（考试高频）：
-
-中转区域（Transit Area）不能是Stub&#x2F;NSSA。如果Area 1被配置成了Stub，虚链路会建立失败。必须先把Area 1的stub或nssa配置去掉，或者改用普通区域。
-两端必须互指Router ID，而非接口IP。
-虚链路也支持认证：在vlink-peer后面可以加authentication-mode md5参数，和接口认证的写法一致。
-
-
-六、第五阶段排错流程（新手避坑指南）❌ 场景1：重分发后，在R1上看不到外部路由（172.16.10.0）排查步骤：
-
-在R3上敲 display ip routing-table protocol rip，确认R3自己是否学到了RIP路由（如果没有，检查RIP配置和环回口IP是否在同一个主类网段）。
-在R3上敲 display ospf lsdb | include 172.16，看R3是否生成了Type 5 LSA（如果没生成，检查import-route命令是否敲在OSPF进程视图下）。
-检查Area 1是否被配置成了Stub区域（Stub区域禁止Type 5 LSA进入，如果Area 1是Stub，需要改成NSSA或者no-summary）。
-
-❌ 场景2：配置了default-route-advertise但内部路由器没收到默认路由排查步骤：
-
-在R1上敲 display ip routing-table | include 0.0.0.0，确认R1自己路由表里确实有静态默认路由（如果用的是always参数则忽略此步）。
-在R1上敲 display ospf lsdb | include 0.0.0.0，看R1是否生成了Type 5 LSA（LinkState ID应为0.0.0.0）。
-检查中间的ABR（R2&#x2F;R3）是否过滤了Type 5 LSA（比如配置了area 1 stub会丢弃Type 5，必须配置NSSA或普通区域）。
-
-❌ 场景3：虚链路状态卡在 Down 或 Init排查步骤：
-
-检查两端配置的vlink-peer是否写的是对方的Router ID（而不是IP地址）。
-检查中转区域（Area 1）是否为普通区域（不能是Stub或NSSA）。
-检查R2和R3之间是否能够IP层互通（必须能ping通对方的接口IP 10.0.23.2 和 10.0.23.3）。
-检查两端是否配置了认证：如果虚链路区域（Area 1）配置了区域认证，那么虚链路也会继承认证，必须保证两端认证密码一致。
-
-
-七、第五阶段核心笔记总结（速记口诀）
-
-
-场景
-命令（在谁上敲）
-白话解释
-
-
-
-把其他协议的路由搬进OSPF
-import-route rip 1（在ASBR的OSPF进程视图下）
-“把RIP学到的路由全部翻译成OSPF的外部路由（Type 5）。”
-
-
-给全网发一条“出门右拐”的路标
-default-route-advertise（在ASBR的OSPF进程视图下）
-“我这里有通往Internet的大门，你们都来我这上网。”
-
-
-强行下发默认路由（不管自己有没有）
-default-route-advertise always
-“即使我没有默认路由，我也硬发一条给你们，因为我是备份出口。”
-
-
-让孤儿区域（Area 2）连接到Area 0
-area 1 + vlink-peer 对方Router ID（在两端ABR上配置）
-“虽然我们隔着Area 1，但我俩建个秘密隧道，让Area 2的逻辑直连Area 0。”
-
-
-
-]]></content>
-      <tags>
-        <tag>网络运维</tag>
-        <tag>笔记</tag>
-        <tag>交换机</tag>
-        <tag>OSPF</tag>
-        <tag>路由器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《边界审计：当亲密关系成为侦察现场》</title>
-    <url>/post/0000001/</url>
-    <content><![CDATA[《边界审计：当亲密关系成为侦察现场》一段感情出现问题，有时不是突然的断裂，而是一点一滴的觉察。某个瞬间你开始注意到，那些本应专属的称呼出现在了别处，本该完整的关注被分成了碎片。这不是怀疑的开始，而是认知的清醒——当亲密关系不再安全，有人选择追问，有人选择侦察。
-从模糊地带开始的觉察起初，一切都藏在细节里。他常提到的“朋友”，有着过于频繁的互动频率；他承诺的“保持距离”，在行动上始终模糊不清。最敏锐的觉察往往始于这些微小处，像白纸上的第一道折痕，提醒着事情已经不同。
-感情之外，另一条线索悄然浮现。一笔不算大的借款，承诺的还款时间一再延后。这不是简单的拖延，而是某种模式的体现——当亲密关系中出现无法兑现的语言，它往往不是孤例。于是在某个时刻，一个具体的日期被提议出来，模糊的承诺终于有了清晰的边界。他说：“还完了就互不相欠了。”这话说得随意，却意外地指明了某种可能的方向。
-当观察成为必要的策略发现第三者的存在后，最本能的反应或许是愤怒或对峙。但还有另一种选择：保持接触，冷静观察。这不是妥协，而是一种克制的侦察——通过持续的交流，真相的轮廓逐渐清晰。那些他从未主动透露的信息，在看似平常的对话中一点点浮现。
-这段关系中的三方，都以为自己握着完整的拼图。只有最清醒的那个人知道，每一片碎片的位置和意义。她听着第三者的倾诉，收集着那些被隐藏的时间线，拼凑出完整的故事版本。没有质问，没有戳穿，只是安静地收集着所有需要的信息。
-时机的选择与彻底的切割感情的世界里，时机往往比话语更有力量。她等待，观察着第三者情感投入的曲线，看着那份依赖日渐加深。在最投入的时刻，选择离开——没有争吵，没有解释，只是干脆的告别和彻底的消失。后来的挽回与追问，都留在了被删除的联系方式之外，成为了无回音的独白。
-与此同时，那笔借款也到了该结清的时候。约定的日期到来，转账完成，经济上的联系就此切断。数字的结清往往比情感的结算更加清晰——当最后款项到账，她知道这一部分已经彻底结束。
-完整的告别与重建的边界最后的操作简洁如程序指令：删除所有联系方式，抹去所有可见的连接。这不是冲动的决定，而是所有侦察完成后的必然操作。当感情中的信任已经透支，当关系变成需要不断审计的账目，最彻底的止损就是完整的退出。
-这段经历留下的不是怨恨，而是一套清晰的边界认知。她学会了如何在不安全的关系中保护自己，如何通过观察而非争吵来获取真相，如何在适当的时候做出彻底的切割。更重要的是，她明白了亲密关系中那些不容模糊的底线——当一段关系需要被审计，它本身就已经失去了继续的意义。
-如今回看，那场持续数月的观察与判断，其实是一场安静的自我救赎。她没有在混乱中迷失方向，反而在复杂的情感迷宫中，为自己找到了一条清晰的路。当最后一道边界被确立，失去的是一段不再健康的关系，获得的却是对自己的完全认知与保护能力。
-那些曾经模糊的地带，如今都有了明确的标识。而人生的下一段旅程，将带着这些清晰的边界，走向更明亮的地方——在那里，亲密无需审计，信任不必侦察。
-]]></content>
-      <categories>
-        <category>情感</category>
-        <category>爱情</category>
-      </categories>
-      <tags>
-        <tag>关系边界</tag>
-        <tag>情感止损</tag>
-        <tag>第一人称叙事</tag>
-        <tag>现代关系观察</tag>
-        <tag>情感纪实</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《从悬赏到封禁：一个公益项目的WAF绕过攻击全记录与分析》</title>
     <url>/post/0000002/</url>
     <content><![CDATA[一次价值十元人民币的攻击：我的公益网站漏洞悬赏计划实战复盘
@@ -2427,6 +2120,33 @@ WAF规则工作正常。所有攻击特征明显的请求都被准确识别和�
         <tag>跨境支付</tag>
         <tag>支付安全</tag>
         <tag>个人经验</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《边界审计：当亲密关系成为侦察现场》</title>
+    <url>/post/0000001/</url>
+    <content><![CDATA[《边界审计：当亲密关系成为侦察现场》一段感情出现问题，有时不是突然的断裂，而是一点一滴的觉察。某个瞬间你开始注意到，那些本应专属的称呼出现在了别处，本该完整的关注被分成了碎片。这不是怀疑的开始，而是认知的清醒——当亲密关系不再安全，有人选择追问，有人选择侦察。
+从模糊地带开始的觉察起初，一切都藏在细节里。他常提到的“朋友”，有着过于频繁的互动频率；他承诺的“保持距离”，在行动上始终模糊不清。最敏锐的觉察往往始于这些微小处，像白纸上的第一道折痕，提醒着事情已经不同。
+感情之外，另一条线索悄然浮现。一笔不算大的借款，承诺的还款时间一再延后。这不是简单的拖延，而是某种模式的体现——当亲密关系中出现无法兑现的语言，它往往不是孤例。于是在某个时刻，一个具体的日期被提议出来，模糊的承诺终于有了清晰的边界。他说：“还完了就互不相欠了。”这话说得随意，却意外地指明了某种可能的方向。
+当观察成为必要的策略发现第三者的存在后，最本能的反应或许是愤怒或对峙。但还有另一种选择：保持接触，冷静观察。这不是妥协，而是一种克制的侦察——通过持续的交流，真相的轮廓逐渐清晰。那些他从未主动透露的信息，在看似平常的对话中一点点浮现。
+这段关系中的三方，都以为自己握着完整的拼图。只有最清醒的那个人知道，每一片碎片的位置和意义。她听着第三者的倾诉，收集着那些被隐藏的时间线，拼凑出完整的故事版本。没有质问，没有戳穿，只是安静地收集着所有需要的信息。
+时机的选择与彻底的切割感情的世界里，时机往往比话语更有力量。她等待，观察着第三者情感投入的曲线，看着那份依赖日渐加深。在最投入的时刻，选择离开——没有争吵，没有解释，只是干脆的告别和彻底的消失。后来的挽回与追问，都留在了被删除的联系方式之外，成为了无回音的独白。
+与此同时，那笔借款也到了该结清的时候。约定的日期到来，转账完成，经济上的联系就此切断。数字的结清往往比情感的结算更加清晰——当最后款项到账，她知道这一部分已经彻底结束。
+完整的告别与重建的边界最后的操作简洁如程序指令：删除所有联系方式，抹去所有可见的连接。这不是冲动的决定，而是所有侦察完成后的必然操作。当感情中的信任已经透支，当关系变成需要不断审计的账目，最彻底的止损就是完整的退出。
+这段经历留下的不是怨恨，而是一套清晰的边界认知。她学会了如何在不安全的关系中保护自己，如何通过观察而非争吵来获取真相，如何在适当的时候做出彻底的切割。更重要的是，她明白了亲密关系中那些不容模糊的底线——当一段关系需要被审计，它本身就已经失去了继续的意义。
+如今回看，那场持续数月的观察与判断，其实是一场安静的自我救赎。她没有在混乱中迷失方向，反而在复杂的情感迷宫中，为自己找到了一条清晰的路。当最后一道边界被确立，失去的是一段不再健康的关系，获得的却是对自己的完全认知与保护能力。
+那些曾经模糊的地带，如今都有了明确的标识。而人生的下一段旅程，将带着这些清晰的边界，走向更明亮的地方——在那里，亲密无需审计，信任不必侦察。
+]]></content>
+      <categories>
+        <category>情感</category>
+        <category>爱情</category>
+      </categories>
+      <tags>
+        <tag>关系边界</tag>
+        <tag>情感止损</tag>
+        <tag>第一人称叙事</tag>
+        <tag>现代关系观察</tag>
+        <tag>情感纪实</tag>
       </tags>
   </entry>
   <entry>
@@ -2779,6 +2499,21 @@ ADB 调试是否开启
       </tags>
   </entry>
   <entry>
+    <title>小米新机体验</title>
+    <url>/post/0000009/</url>
+    <content><![CDATA[小手一点,小米到手(≧∀≦)ゞ你好呀，欢迎点击本文章本篇文章是为了记录我在TB网购小米手机的经过而诞生的哦
+在我看着手上的手机日渐卡顿，萌生了换手机的想法，于是便向AI提问“我想用xxx预算购买一台小米手机，你有什么推荐嘛”，当我问完时，AI给出的回复像潮水一样向我涌来我在这众多的答案中，找到了一款极具性价比的手机，它就是Redmi Troub4!你敢想象嘛，16+512的配置才1611￥!有图有真相
+]]></content>
+      <categories>
+        <category>生活记录</category>
+      </categories>
+      <tags>
+        <tag>手机</tag>
+        <tag>网购</tag>
+        <tag>生活记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>思域汽车漏电修车记录</title>
     <url>/post/0000008/</url>
     <content><![CDATA[记录一辆2021年9代思域29号保险后端线路漏电故障，故障如下：
@@ -2792,21 +2527,6 @@ ADB 调试是否开启
         <tag>维修</tag>
         <tag>思域</tag>
         <tag>汽修</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小米新机体验</title>
-    <url>/post/0000009/</url>
-    <content><![CDATA[小手一点,小米到手(≧∀≦)ゞ你好呀，欢迎点击本文章本篇文章是为了记录我在TB网购小米手机的经过而诞生的哦
-在我看着手上的手机日渐卡顿，萌生了换手机的想法，于是便向AI提问“我想用xxx预算购买一台小米手机，你有什么推荐嘛”，当我问完时，AI给出的回复像潮水一样向我涌来我在这众多的答案中，找到了一款极具性价比的手机，它就是Redmi Troub4!你敢想象嘛，16+512的配置才1611￥!有图有真相
-]]></content>
-      <categories>
-        <category>生活记录</category>
-      </categories>
-      <tags>
-        <tag>手机</tag>
-        <tag>网购</tag>
-        <tag>生活记录</tag>
       </tags>
   </entry>
   <entry>
@@ -2835,6 +2555,24 @@ ADB 调试是否开启
         <tag>第一人称叙述[](https://)</tag>
         <tag>关系启示录</tag>
         <tag>情感主权</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>域名解析异常：DNSSEC 起了什么作用？</title>
+    <url>/post/DNSSEC/</url>
+    <content><![CDATA[前言事情是这样的：
+这得从我购买一个域名说起。我先去域名注册商挑选一个喜欢的域名，左挑右挑，发现不是已经被购买，就是高级域名（也就是高价值域名，通常都比较贵）。挑选并购买完成后，我第一时间将 NS 修改为我在 Cloudflare 分配到的 NS 地址。在 Cloudflare 等了一会儿，终于显示已完成。随后，我按照《HEXO 博客搭建指南》的教程将博客托管到 GitHub Pages，并在 Cloudflare 的 DNS 设置中，将我的子域名通过 CNAME 指向 GitHub Pages 地址。
+错误排查一切都结束了吗？当然不是，如果这么顺利，也就不会有这篇文章了，哈哈。
+等了几分钟后，我就访问了一下域名，结果提示的是 DNS_PROBE_FINISHED_NXDOMAIN。这个错误码的含义是：浏览器完成了 DNS 查询，但 DNS 服务器明确返回“该域名不存在”。一般来说，造成这种情况的原因有很多，例如：网址拼写错误（当然我不会犯这种错误）、域名未注册、已过期或被暂停、DNS 记录未配置或配置错误、DNS 缓存或传播问题、本地 DNS &#x2F;网络配置问题，以及 DNSSEC 配置问题等。
+刚开始我还以为是 CNAME 配置的问题，检查了一下，发现并没有错误；随后我又检查了 Pages 的配置，也没有发现问题。此时我忽然想到，难道是 DNS 传播问题吗？于是我去在线工具查看传播状态，一看全部都是 ❌，我瞬间意识到问题大概出在 DNS 层面。即使我之后更换了 DNS 地址，情况依然没有改善。
+解决方案我想到了 DNSSEC。这个技术的核心目标，是确保 DNS 响应的真实性和完整性，防止 DNS 欺骗和篡改。它通过数字签名，把域名解析链路上的数据校验串联起来，让解析结果更可信。虽然它并不是直接“解决所有 DNS 异常”的万能钥匙，但在排查这类问题时，它的确能帮助我们确认是否存在 DNS 数据完整性或校验状态异常。
+本次的关键点在于：我先确认了域名解析状态，再检查了 DNS 传播结果，最后意识到 DNSSEC 相关配置也需要同步到注册商。于是，我把 Cloudflare 的 DNSSEC 相关设置手动同步到了域名注册商，成功开启了这个功能。随后我再次测试传播，解析状态逐渐恢复正常，最终全部都解析完成了。再用浏览器访问时，页面已经完美显示为我想要的效果。
+如果各位想了解如何优化网站访问速度，可以看看我的另一篇文章《Hexo 博客搭建指南》。如果你也想了解 DNSSEC 该怎么配置，欢迎在评论区留言，或者直接发到我的邮箱。收到催更后，我会第一时间更新哦！
+]]></content>
+      <tags>
+        <tag>DNSSEC</tag>
+        <tag>DNS</tag>
+        <tag>域名</tag>
       </tags>
   </entry>
   <entry>
@@ -2872,24 +2610,6 @@ ADB 调试是否开启
         <tag>汽车电子</tag>
         <tag>故障诊断</tag>
         <tag>间歇性故障</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>域名解析异常：DNSSEC 起了什么作用？</title>
-    <url>/post/DNSSEC/</url>
-    <content><![CDATA[前言事情是这样的：
-这得从我购买一个域名说起。我先去域名注册商挑选一个喜欢的域名，左挑右挑，发现不是已经被购买，就是高级域名（也就是高价值域名，通常都比较贵）。挑选并购买完成后，我第一时间将 NS 修改为我在 Cloudflare 分配到的 NS 地址。在 Cloudflare 等了一会儿，终于显示已完成。随后，我按照《HEXO 博客搭建指南》的教程将博客托管到 GitHub Pages，并在 Cloudflare 的 DNS 设置中，将我的子域名通过 CNAME 指向 GitHub Pages 地址。
-错误排查一切都结束了吗？当然不是，如果这么顺利，也就不会有这篇文章了，哈哈。
-等了几分钟后，我就访问了一下域名，结果提示的是 DNS_PROBE_FINISHED_NXDOMAIN。这个错误码的含义是：浏览器完成了 DNS 查询，但 DNS 服务器明确返回“该域名不存在”。一般来说，造成这种情况的原因有很多，例如：网址拼写错误（当然我不会犯这种错误）、域名未注册、已过期或被暂停、DNS 记录未配置或配置错误、DNS 缓存或传播问题、本地 DNS &#x2F;网络配置问题，以及 DNSSEC 配置问题等。
-刚开始我还以为是 CNAME 配置的问题，检查了一下，发现并没有错误；随后我又检查了 Pages 的配置，也没有发现问题。此时我忽然想到，难道是 DNS 传播问题吗？于是我去在线工具查看传播状态，一看全部都是 ❌，我瞬间意识到问题大概出在 DNS 层面。即使我之后更换了 DNS 地址，情况依然没有改善。
-解决方案我想到了 DNSSEC。这个技术的核心目标，是确保 DNS 响应的真实性和完整性，防止 DNS 欺骗和篡改。它通过数字签名，把域名解析链路上的数据校验串联起来，让解析结果更可信。虽然它并不是直接“解决所有 DNS 异常”的万能钥匙，但在排查这类问题时，它的确能帮助我们确认是否存在 DNS 数据完整性或校验状态异常。
-本次的关键点在于：我先确认了域名解析状态，再检查了 DNS 传播结果，最后意识到 DNSSEC 相关配置也需要同步到注册商。于是，我把 Cloudflare 的 DNSSEC 相关设置手动同步到了域名注册商，成功开启了这个功能。随后我再次测试传播，解析状态逐渐恢复正常，最终全部都解析完成了。再用浏览器访问时，页面已经完美显示为我想要的效果。
-如果各位想了解如何优化网站访问速度，可以看看我的另一篇文章《Hexo 博客搭建指南》。如果你也想了解 DNSSEC 该怎么配置，欢迎在评论区留言，或者直接发到我的邮箱。收到催更后，我会第一时间更新哦！
-]]></content>
-      <tags>
-        <tag>DNSSEC</tag>
-        <tag>DNS</tag>
-        <tag>域名</tag>
       </tags>
   </entry>
   <entry>
@@ -2961,6 +2681,22 @@ ADB 调试是否开启
       </tags>
   </entry>
   <entry>
+    <title>你想查询WHOIS？这是我的RDAP方案</title>
+    <url>/post/rdap-whois-api/</url>
+    <content><![CDATA[既然你点击了这篇文章，肯定是对标题内容感兴趣的吧！让我给你介绍一下，我是怎么搭建RDAP以及为什么搭建。
+事情起因是我在给AI发布查询域名有效期以及域名信息的时候，总感觉差点意思，我就在想要不要自己搭建一个whois查询API呢？我就开始寻找一些支持无服务器部署的项目，因为服务器的成本是一笔不小的支出，所以才寻找相关项目绝对不是因为没钱，嘿嘿,后面经过在github一顿翻找，找到了jakejarvis的rdapper项目，该项目支持RDAP与whois双支持，但是无服务器部署不支持whois，所以只要支持RDAP查询的域名都能查询，除了一些小众域名与一些国家级域名(ccTLD)不支持外都可以！RDAP现支持**1000+**域名后缀，不支持后缀示例如下：.de（德国）、.cn（中国）、.us（美国）、.jp（日本）、.it（意大利）、.es（西班牙）、.mx（墨西哥），可以期待一下，后续应该支持的。
+讲了这么多是时候解释我的API地址啦，API介绍页是https://whoiscx.delishahk.com,该介绍页支持输入域名与URL查询，高级玩家可以试试API调用，我来介绍一下API格式https://whoiscx.delishahk.com/api/?whois=查询的域名或URL，返回的数据如下：
+你还真希望我贴一长串的数据啊？麻烦去介绍页看看吧，嘿嘿，我选用cloudflare workers作为运行底座，实现高缓存加高可用，保证每次调用实现99%可用，你是不是想问：为什么不是100%？因为免费版套餐有次数限制呀，希望不要被恶意刷取吧，好啦该API是公益免费，不收费的哦，欢迎使用呀！后续会跟着RDAP更新的，希望RDAP能够支持更多域名，如果能支持所有域名就最好啦。
+]]></content>
+      <tags>
+        <tag>域名</tag>
+        <tag>日常分享</tag>
+        <tag>RDAP</tag>
+        <tag>whois</tag>
+        <tag>闲聊</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>天下苦官方 Sitemap 插件久矣！一个好用的Hexo Sitemap精细插件</title>
     <url>/post/hexo-custom-sitemap-plugin/</url>
     <content><![CDATA[天下苦官方地图插件(Sitemap)久矣！为什么这么说呢？官方插件主打“收罗万物”、讲究通用，零配置就能用，但代价是把不该收录的页面也塞了进去。听我细细道来。先拿我自己的一个场景说起吧
@@ -2984,6 +2720,286 @@ sitemap.xml        ← 索引文件，指向下面各分片sitemap-1.xml      �
       </tags>
   </entry>
   <entry>
+    <title>OSPF之重分发、默认路由注入与虚链路（高级特性与综合排障）</title>
+    <url>/post/000000026/</url>
+    <content><![CDATA[📘 OSPF 第五阶段实验笔记：重分发、默认路由注入与虚链路（高级特性与综合排障）适用场景：公司有两个分部，分别运行OSPF和RIP协议，需要互通；总部路由器需要自动下发上网网关；一个非骨干区域（Area 2）因物理链路限制无法直连Area 0，需要借道Area 1绕行。
+
+一、核心概念铺垫（先理解为什么需要它们）
+
+
+技术
+白话解释
+为什么需要它？
+
+
+
+重分发（Route Redistribution）
+把其他协议（如静态路由、RIP、BGP）翻译成OSPF的路由，让OSPF网络知道“外面还有路”。
+公司网络不可能只用OSPF，总会连接友商设备或专线，需要把对方的路由“搬运”进来。
+
+
+默认路由注入（Default-Route Advertise）
+ABR或ASBR主动向OSPF域内发一条“出门右拐”的路标（0.0.0.0/0）。
+让内部所有路由器自动知道通往Internet的总出口，不用给每台设备手动配静态默认路由。
+
+
+虚链路（Virtual Link）
+在两个ABR之间拉一条“逻辑隧道”，让一个不直连Area 0的区域通过第三个区域间接连接到Area 0。
+物理布线受限时（比如Area 2只有一根线连到Area 1，Area 1连Area 0），必须靠虚链路让Area 2的逻辑连接到Area 0，否则Area 2的路由无法传遍全网。
+
+
+
+二、实验拓扑与IP规划（四台设备，多协议+跨区域）
+
+
+设备
+接口
+IP地址&#x2F;掩码
+所属区域&#x2F;协议
+说明
+
+
+
+R1
+G0&#x2F;0&#x2F;0, Loop0
+10.0.12.1/24, 1.1.1.1/32
+Area 0
+骨干路由器，观察汇总效果
+
+
+R2（ABR）
+G0&#x2F;0&#x2F;0, G0&#x2F;0&#x2F;1
+10.0.12.2/24, 10.0.23.2/24
+Area 0 &#x2F; Area 1
+ABR，连接Area 0和Area 1
+
+
+R3（ASBR + ABR）
+G0&#x2F;0&#x2F;1, G0&#x2F;0&#x2F;2, Loop0
+10.0.23.3/24, 10.0.34.3/24, 3.3.3.3/32
+Area 1 &#x2F; Area 2
+同时是ABR（连接Area1&#x2F;2）和ASBR（引入RIP）
+
+
+R4（纯内部）
+G0&#x2F;0&#x2F;2, Loop0
+10.0.34.4/24, 4.4.4.4/32
+Area 2
+Area 2内部路由器，不直接连Area 0
+
+
+另外在R3上起一个RIP进程，模拟“另一家公司的网络”：
+
+R3的 interface LoopBack 10 配 172.16.10.1/24，并在RIP进程中宣告，模拟外部网络。
+
+
+三、第一部分：重分发（将其他协议的路由“翻译”进OSPF）第一步：在R3上配置RIP协议（模拟外部网络）[R3] rip 1[R3-rip-1] version 2   // 使用RIPv2（支持子网掩码）[R3-rip-1] network 172.16.0.0   // 宣告环回口所在的主类网段[R3-rip-1] quit[R3] interface LoopBack 10[R3-LoopBack10] ip address 172.16.10.1 255.255.255.0[R3-LoopBack10] quit
+
+
+
+
+
+命令&#x2F;参数
+白话解释
+
+
+
+rip 1
+启动一个RIP进程。RIP是一种距离矢量路由协议，以“跳数”计算路径（最大15跳）。
+
+
+version 2
+指定RIP版本2（支持CIDR和子网掩码，比version 1更常用）。
+
+
+network 172.16.0.0
+在RIP中宣告网段，注意这里只能写主类网段（A&#x2F;B&#x2F;C类默认掩码），不能写具体子网。
+
+
+第二步：在R3上配置OSPF重分发（将RIP路由翻译成OSPF）[R3] ospf 1[R3-ospf-1] import-route rip 1[R3-ospf-1] quit
+
+
+
+
+
+命令&#x2F;参数
+拆解
+白话解释
+
+
+
+import-route
+引入路由
+告诉OSPF：“去把RIP进程1里学到的所有路由，全部翻译成OSPF的Type 5 LSA（外部路由） 发出去。”
+
+
+rip 1
+指定源协议
+指定要从哪个协议进程里“搬运”路由。
+
+
+进阶控制（增加成本&#x2F;类型）：
+[R3-ospf-1] import-route rip 1 cost 10 type 1
+
+
+
+
+
+参数
+解释
+
+
+
+cost 10
+手动设置这条外部路由的开销为10（默认为1）。
+
+
+type 1
+外部路由类型为E1（累计内部开销+外部开销）。默认是 E2（只计外部开销，不累计内部路径开销）。考试重点：E1路径更精确，适合在复杂拓扑中选路；E2更简单，适合出口单一的汇聚点。
+
+
+验证重分发是否成功：在R1上敲 display ip routing-table | include 172.16，如果看到：
+172.16.10.0/24   OSPF   10   11   10.0.12.2   G0/0/0
+
+说明重分发成功。（Proto显示为OSPF，说明它已经被翻译成OSPF路由了）
+
+四、第二部分：默认路由注入（让全网自动获得“上网网关”）在实际企业网中，只有连接运营商的那台路由器（通常是出口防火墙或边界路由器）有一条指向公网的静态默认路由（ip route-static 0.0.0.0 0.0.0.0 x.x.x.x）。我们希望在R1（边界路由器）上配置这条静态默认路由，并把它注入到OSPF域内，让R2&#x2F;R3&#x2F;R4都能自动学到0.0.0.0&#x2F;0。
+第一步：在R1上配置指向外网的静态默认路由（模拟连运营商）[R1] ip route-static 0.0.0.0 0.0.0.0 100.1.1.1   // 假设对端运营商IP是100.1.1.1（仅模拟）
+
+（注意：在eNSP中，这个IP不一定存在，但我们只需在R1上制造一条静态默认路由即可）
+第二步：在R1的OSPF进程里注入这条默认路由[R1] ospf 1[R1-ospf-1] default-route-advertise[R1-ospf-1] quit
+
+
+
+
+
+命令
+解释
+
+
+
+default-route-advertise
+这条命令必须在ASBR（引入外部路由的路由器）上敲。它会检查本设备路由表中是否存在0.0.0.0/0（静态或其它协议学到的），如果存在，就生成一条Type 5 LSA（默认路由）发给全网。ASBR一般为引入外部路由的路由器就是ASBR一个网络中可以有多个ASBR，例如AR3为RIP的ASBR，AR1作为上网的ASBR，ASBR是一个动作，只要执行default-route-advertise(下发默认路由)与import-route(引入外部路由)那么他就是ASBR
+
+
+如果R1路由表里没有默认路由，但想强行下发（比如用于测试）：
+[R1-ospf-1] default-route-advertise always
+
+
+
+
+
+参数
+解释
+
+
+
+always
+强制执行。即使本设备路由表里没有默认路由，也强行向OSPF域内发一条默认路由（常用于备份出口场景）。
+
+
+验证默认路由是否注入成功：在R4上敲 display ip routing-table | include 0.0.0.0，如果看到：
+0.0.0.0/0   OSPF   10   1   10.0.34.3   G0/0/2
+
+说明R4已经学到了通往互联网的默认网关。
+
+五、第三部分：虚链路（Virtual-Link）—— 拯救“孤儿区域”背景：Area 2（R4所在区域）只连接了Area 1（R3），没有物理链路直连Area 0。在OSPF规则中，所有非骨干区域（非0）必须直接或通过虚链路连接到Area 0。如果不做虚链路，R4能学到Area 1内部的3.3.3.3，但绝对学不到Area 0的1.1.1.1，因为R3（ABR）不会把Area 2的路由传给Area 0（因为Area 2不满足连接到Area 0的条件）。
+解决方案：在R2（Area 0&#x2F;1的ABR）和R3（Area 1&#x2F;2的ABR）之间建立一条虚链路（Virtual Link），让Area 2“假装”通过Area 1这堵墙，逻辑上直接连到了Area 0。
+第一步：在R2（连接Area 0的ABR）上配置虚链路[R2] ospf 1[R2-ospf-1] area 1[R2-ospf-1-area-0.0.0.1] vlink-peer 3.3.3.3[R2-ospf-1-area-0.0.0.1] quit[R2-ospf-1] quit
+
+第二步：在R3（连接Area 2的ABR）上配置虚链路（对端Router ID必须与R2配置的相对应）[R3] ospf 1[R3-ospf-1] area 1[R3-ospf-1-area-0.0.0.1] vlink-peer 2.2.2.2[R3-ospf-1-area-0.0.0.1] quit[R3-ospf-1] quit
+
+
+
+
+
+命令&#x2F;参数
+拆解
+白话解释
+
+
+
+area 1
+虚链路所在的中转区域（Transit Area）
+虚链路必须在**同一个非骨干区域（这里是Area 1）**的两端配置。两端ABR必须都进入到这个区域的视图下配置。
+
+
+vlink-peer
+虚链路对端（Virtual Link Peer）
+指定对端ABR的Router ID（不是IP地址！）。- R2上的对端是R3的Router ID：3.3.3.3。- R3上的对端是R2的Router ID：2.2.2.2。注意：如果写错Router ID，虚链路永远起不来。
+
+
+验证虚链路是否建立成功：在R2上敲：
+[R2] display ospf vlink
+
+如果输出中 State 显示为 Full，说明虚链路已经建立成功。此时在R4上敲 display ip routing-table，你应该能看到 1.1.1.1/32（来自Area 0）和 10.0.12.0/24 了。
+虚链路配置要点（考试高频）：
+
+中转区域（Transit Area）不能是Stub&#x2F;NSSA。如果Area 1被配置成了Stub，虚链路会建立失败。必须先把Area 1的stub或nssa配置去掉，或者改用普通区域。
+两端必须互指Router ID，而非接口IP。
+虚链路也支持认证：在vlink-peer后面可以加authentication-mode md5参数，和接口认证的写法一致。
+
+
+六、第五阶段排错流程（新手避坑指南）❌ 场景1：重分发后，在R1上看不到外部路由（172.16.10.0）排查步骤：
+
+在R3上敲 display ip routing-table protocol rip，确认R3自己是否学到了RIP路由（如果没有，检查RIP配置和环回口IP是否在同一个主类网段）。
+在R3上敲 display ospf lsdb | include 172.16，看R3是否生成了Type 5 LSA（如果没生成，检查import-route命令是否敲在OSPF进程视图下）。
+检查Area 1是否被配置成了Stub区域（Stub区域禁止Type 5 LSA进入，如果Area 1是Stub，需要改成NSSA或者no-summary）。
+
+❌ 场景2：配置了default-route-advertise但内部路由器没收到默认路由排查步骤：
+
+在R1上敲 display ip routing-table | include 0.0.0.0，确认R1自己路由表里确实有静态默认路由（如果用的是always参数则忽略此步）。
+在R1上敲 display ospf lsdb | include 0.0.0.0，看R1是否生成了Type 5 LSA（LinkState ID应为0.0.0.0）。
+检查中间的ABR（R2&#x2F;R3）是否过滤了Type 5 LSA（比如配置了area 1 stub会丢弃Type 5，必须配置NSSA或普通区域）。
+
+❌ 场景3：虚链路状态卡在 Down 或 Init排查步骤：
+
+检查两端配置的vlink-peer是否写的是对方的Router ID（而不是IP地址）。
+检查中转区域（Area 1）是否为普通区域（不能是Stub或NSSA）。
+检查R2和R3之间是否能够IP层互通（必须能ping通对方的接口IP 10.0.23.2 和 10.0.23.3）。
+检查两端是否配置了认证：如果虚链路区域（Area 1）配置了区域认证，那么虚链路也会继承认证，必须保证两端认证密码一致。
+
+
+七、第五阶段核心笔记总结（速记口诀）
+
+
+场景
+命令（在谁上敲）
+白话解释
+
+
+
+把其他协议的路由搬进OSPF
+import-route rip 1（在ASBR的OSPF进程视图下）
+“把RIP学到的路由全部翻译成OSPF的外部路由（Type 5）。”
+
+
+给全网发一条“出门右拐”的路标
+default-route-advertise（在ASBR的OSPF进程视图下）
+“我这里有通往Internet的大门，你们都来我这上网。”
+
+
+强行下发默认路由（不管自己有没有）
+default-route-advertise always
+“即使我没有默认路由，我也硬发一条给你们，因为我是备份出口。”
+
+
+让孤儿区域（Area 2）连接到Area 0
+area 1 + vlink-peer 对方Router ID（在两端ABR上配置）
+“虽然我们隔着Area 1，但我俩建个秘密隧道，让Area 2的逻辑直连Area 0。”
+
+
+
+]]></content>
+      <tags>
+        <tag>网络运维</tag>
+        <tag>笔记</tag>
+        <tag>交换机</tag>
+        <tag>OSPF</tag>
+        <tag>路由器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2026新规改革后的低压电工实操科目一/第一项笔记</title>
     <url>/post/lv-electrician-2026-subject-1-task-1/</url>
     <content><![CDATA[记录一下2026新规改革后的低压电工笔记吧，本文是科目一的第一项中的笔记，本文仅个人考场记录，具体以当地题库、培训机构和考官要求为准
@@ -3003,22 +3019,6 @@ sitemap.xml        ← 索引文件，指向下面各分片sitemap-1.xml      �
         <tag>实操科目一</tag>
         <tag>low-voltage-electrician</tag>
         <tag>practical-exam-subject-1</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你想查询WHOIS？这是我的RDAP方案</title>
-    <url>/post/rdap-whois-api/</url>
-    <content><![CDATA[既然你点击了这篇文章，肯定是对标题内容感兴趣的吧！让我给你介绍一下，我是怎么搭建RDAP以及为什么搭建。
-事情起因是我在给AI发布查询域名有效期以及域名信息的时候，总感觉差点意思，我就在想要不要自己搭建一个whois查询API呢？我就开始寻找一些支持无服务器部署的项目，因为服务器的成本是一笔不小的支出，所以才寻找相关项目绝对不是因为没钱，嘿嘿,后面经过在github一顿翻找，找到了jakejarvis的rdapper项目，该项目支持RDAP与whois双支持，但是无服务器部署不支持whois，所以只要支持RDAP查询的域名都能查询，除了一些小众域名与一些国家级域名(ccTLD)不支持外都可以！RDAP现支持**1000+**域名后缀，不支持后缀示例如下：.de（德国）、.cn（中国）、.us（美国）、.jp（日本）、.it（意大利）、.es（西班牙）、.mx（墨西哥），可以期待一下，后续应该支持的。
-讲了这么多是时候解释我的API地址啦，API介绍页是https://whoiscx.delishahk.com,该介绍页支持输入域名与URL查询，高级玩家可以试试API调用，我来介绍一下API格式https://whoiscx.delishahk.com/api/?whois=查询的域名或URL，返回的数据如下：
-你还真希望我贴一长串的数据啊？麻烦去介绍页看看吧，嘿嘿，我选用cloudflare workers作为运行底座，实现高缓存加高可用，保证每次调用实现99%可用，你是不是想问：为什么不是100%？因为免费版套餐有次数限制呀，希望不要被恶意刷取吧，好啦该API是公益免费，不收费的哦，欢迎使用呀！后续会跟着RDAP更新的，希望RDAP能够支持更多域名，如果能支持所有域名就最好啦。
-]]></content>
-      <tags>
-        <tag>域名</tag>
-        <tag>日常分享</tag>
-        <tag>RDAP</tag>
-        <tag>whois</tag>
-        <tag>闲聊</tag>
       </tags>
   </entry>
   <entry>
