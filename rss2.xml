@@ -6,9 +6,24 @@
     <description>一个技术情感博客</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, 挽着红月缓缓走</copyright>
-    <lastBuildDate>Sat, 31 Oct 2026 09:06:18 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 12:24:58 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://rinai.top/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>为什么不选择CD机而是转向DAC？！</title>
+      <link>https://rinai.top/post/why-i-stopped-chasing-cd-audio-with-optical-drives/</link>
+      <description>翻出四个旧光驱想做光雕CD，却被空白光雕盘价格劝退；转向 ESP32-S3 便携CD机方案后，又发现 CD 的 16bit/44.1K 反而不如原始 24bit/96K 音频。折腾三小时，我最终决定升级 DAC 与耳机，直接听高码率音频。</description>
+      <author>挽着红月缓缓走</author>
+      <category domain="https://rinai.top/tags/CD/">CD</category>
+      <category domain="https://rinai.top/tags/CD%E6%9C%BA/">CD机</category>
+      <category domain="https://rinai.top/tags/%E5%85%89%E9%A9%B1/">光驱</category>
+      <enclosure url="https://delishahk.com/img/1999_019.webp" type="image/webp"/>
+      <pubDate>Sun, 08 Nov 2026 04:07:23 GMT</pubDate>
+      <content:encoded>
+        <![CDATA[<p><img src="https://delishahk.com/img/1999_019.webp" alt="为什么不选择CD机而是转向DAC？！" /></p>
+翻出四个旧光驱想做光雕CD，却被空白光雕盘价格劝退；转向 ESP32-S3 便携CD机方案后，又发现 CD 的 16bit/44.1K 反而不如原始 24bit/96K 音频。折腾三小时，我最终决定升级 DAC 与耳机，直接听高码率音频。]]>
+      </content:encoded>
+    </item>
     <item>
       <title>2026新规改革后的低压电工实操科目一/第一项笔记</title>
       <link>https://rinai.top/post/lv-electrician-2026-subject-1-task-1/</link>
@@ -326,27 +341,6 @@ OSPF 特殊区域实战：详解 Stub、Totally Stub、NSSA 的配置、路由�
       <content:encoded>
         <![CDATA[<p><img src="https://delishahk.com/img/zhenzhou.webp" alt="《隔壁天使无意间把我养成废材了这件事》《邻家天使》强烈推荐！" /></p>
 一部让人看完只想躺平被照顾的治愈系轻小说，《邻家天使》究竟如何“废材养成”？来聊聊这部糖分超标的恋爱喜剧。《隔壁天使无意间把我养成废材了这件事》（又名《邻家天使》）是一部治愈系轻小说，讲述了一个普通少年被隔壁的天使女孩无意间照顾得越来越废材的故事。小说以其甜蜜的恋爱喜剧元素和温馨的日常描写，深受读者喜爱。本文将深入探讨这部小说的魅力所在，以及为什么它成为了众多轻小说迷心中的宝藏。]]>
-      </content:encoded>
-    </item>
-    <item>
-      <title>GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密</title>
-      <link>https://rinai.top/post/0000000016/</link>
-      <description>
-        <![CDATA[<h1 id="GnuPG-GPG-完整使用指南"><a href="#GnuPG-GPG-完整使用指南" class="headerlink" title="GnuPG (GPG) 完整使用指南"></a>GnuPG (GPG) 完整使用指南</h1><blockquote>
-<p><strong>适用读者</strong>：开发者、系统运维、安全工程师，以及需要加密文件、签名 Git 提交或保护敏感数据的任何人。<br><strong>前置知识</strong>：基本的命令行操作（会打开终端、执行命令即可），无需 GPG 基础。<br><strong>版本说明</strong>：本文基于]]>
-      </description>
-      <author>挽着红月缓缓走</author>
-      <category domain="https://rinai.top/tags/GPG/">GPG</category>
-      <category domain="https://rinai.top/tags/%E6%95%99%E7%A8%8B/">教程</category>
-      <category domain="https://rinai.top/tags/%E5%AE%89%E5%85%A8/">安全</category>
-      <category domain="https://rinai.top/tags/%E5%8A%A0%E5%AF%86/">加密</category>
-      <category domain="https://rinai.top/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</category>
-      <category domain="https://rinai.top/tags/Git/">Git</category>
-      <enclosure url="https://delishahk.com/img/bh3rd(6).webp" type="image/webp"/>
-      <pubDate>Mon, 18 May 2026 10:41:32 GMT</pubDate>
-      <content:encoded>
-        <![CDATA[<p><img src="https://delishahk.com/img/bh3rd(6).webp" alt="GPG 使用教程（2026）：命令行、Git 提交签名、YubiKey 配置、大型文件加密" /></p>
-<h1 id="GnuPG-GPG-完整使用指南"><a href="#GnuPG-GPG-完整使用指南" class="headerlink" title="GnuPG (GPG) 完整使用指南"></a>GnuPG (GPG) 完整使用指南</h1><blockquote><p><strong>适用读者</strong>：开发者、系统运维、安全工程师，以及需要加密文件、签名 Git 提交或保护敏感数据的任何人。<br><strong>前置知识</strong>：基本的命令行操作（会打开终端、执行命令即可），无需 GPG 基础。<br><strong>版本说明</strong>：本文基于]]>
       </content:encoded>
     </item>
   </channel>
